@@ -1,0 +1,139 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name AdropAds
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import AdropAds
+import Combine
+import CoreLocation
+import CoreText
+import CryptoKit
+import Dispatch
+import Foundation
+import MobileCoreServices
+import SafariServices
+import Security
+import StoreKit
+import Swift
+import SwiftUI
+import SystemConfiguration
+import UIKit
+import UniformTypeIdentifiers
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import zlib
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class AdropBanner : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var delegate: (any AdropAds.AdropBannerDelegate)?
+  @_Concurrency.MainActor(unsafe) public init(unitId: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func load()
+  @objc deinit
+}
+extension AdropAds.AdropBanner : WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation)
+}
+public enum AdropBannerSize : Swift.String {
+  case H50
+  case H80
+  case H100
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol AdropBannerDelegate {
+  func onAdReceived(_ banner: AdropAds.AdropBanner)
+  func onAdClicked(_ banner: AdropAds.AdropBanner)
+  func onAdFailedToReceive(_ banner: AdropAds.AdropBanner, _ error: AdropAds.AdropErrorCode)
+}
+@available(iOS 13.0, *)
+public struct AdropBannerRepresented : SwiftUI.UIViewRepresentable {
+  public typealias UIViewType = AdropAds.AdropBanner
+  public var banner: AdropAds.AdropBanner
+  public init(unitId: Swift.String)
+  public init(unitId: Swift.String, delegate: (any AdropAds.AdropBannerDelegate)?)
+  @_Concurrency.MainActor(unsafe) public func makeUIView(context: AdropAds.AdropBannerRepresented.Context) -> AdropAds.AdropBanner
+  @_Concurrency.MainActor(unsafe) public func updateUIView(_ uiView: AdropAds.AdropBanner, context: AdropAds.AdropBannerRepresented.Context)
+  public typealias Body = Swift.Never
+  public typealias Coordinator = Swift.Void
+}
+public typealias ulid_t = Foundation.uuid_t
+public struct ULID : Swift.Hashable, Swift.Equatable, Swift.Comparable, Swift.CustomStringConvertible {
+  public var ulid: (Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8) {
+    get
+  }
+  public init(ulid: AdropAds.ulid_t)
+  public init?(ulidData data: Foundation.Data)
+  public init?(ulidString string: Swift.String)
+  public init?(timestamp: Foundation.Date = Date(), randomPartData data: Foundation.Data)
+  public init<T>(timestamp: Foundation.Date, generator: inout T) where T : Swift.RandomNumberGenerator
+  public init(timestamp: Foundation.Date = Date())
+  public var ulidData: Foundation.Data {
+    get
+  }
+  public var ulidString: Swift.String {
+    get
+  }
+  public var timestamp: Foundation.Date {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (lhs: AdropAds.ULID, rhs: AdropAds.ULID) -> Swift.Bool
+  public static func < (lhs: AdropAds.ULID, rhs: AdropAds.ULID) -> Swift.Bool
+  public var description: Swift.String {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AdropAds.ULID : Swift.Codable {
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class Adrop {
+  public var isProduction: Swift.Bool {
+    get
+  }
+  public static func initialize(production: Swift.Bool = false)
+  @objc deinit
+}
+public enum AdropMetricCode : Swift.String {
+  case VALID
+  case INVALID
+  case INVALID_CREATIVE
+  case AD_IMPR
+  case AD_CLICK
+  case CLOSE
+  case OPEN
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum AdropErrorCode : Swift.String {
+  case ERROR_CODE_NETWORK
+  case ERROR_CODE_INTERNAL
+  case ERROR_CODE_INITIALIZE
+  case ERROR_CODE_INVALID_UNIT
+  case ERROR_CODE_AD_INACTIVE
+  case ERROR_CODE_AD_NO_FILL
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension AdropAds.AdropBannerSize : Swift.Equatable {}
+extension AdropAds.AdropBannerSize : Swift.Hashable {}
+extension AdropAds.AdropBannerSize : Swift.RawRepresentable {}
+extension AdropAds.AdropMetricCode : Swift.Equatable {}
+extension AdropAds.AdropMetricCode : Swift.Hashable {}
+extension AdropAds.AdropMetricCode : Swift.RawRepresentable {}
+extension AdropAds.AdropErrorCode : Swift.Equatable {}
+extension AdropAds.AdropErrorCode : Swift.Hashable {}
+extension AdropAds.AdropErrorCode : Swift.RawRepresentable {}
