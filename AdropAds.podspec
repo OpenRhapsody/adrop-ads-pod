@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.swift_version    = '5.3'
   s.platform         = :ios
   
-  s.source           = { :git => 'https://github.com/OpenRhapsody/adrop-ads-cocoapod.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/OpenRhapsody/adrop-ads-pod.git', :tag => s.version.to_s }
   s.ios.deployment_target = '14.0'
   s.ios.vendored_frameworks = 'AdropAds.xcframework'
 
