@@ -12852,7 +12852,7 @@
       "kind": "StringLiteral",
       "offset": 5115,
       "length": 7,
-      "value": "\"0.0.1\""
+      "value": "\"0.1.0\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
