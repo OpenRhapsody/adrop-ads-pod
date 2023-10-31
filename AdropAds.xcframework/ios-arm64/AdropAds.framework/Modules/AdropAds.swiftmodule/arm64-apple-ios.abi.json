@@ -12766,105 +12766,105 @@
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2319,
+      "offset": 2649,
       "length": 74,
       "value": "\"remote config failed. \""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2392,
+      "offset": 2722,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2497,
+      "offset": 2827,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2563,
+      "offset": 2893,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2611,
+      "offset": 2941,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "Array",
-      "offset": 3239,
+      "offset": 3569,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3506,
+      "offset": 3836,
       "length": 93,
       "value": "\"cannot synchronize \""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3547,
+      "offset": 3877,
       "length": 1,
       "value": "\". \""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3598,
+      "offset": 3928,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3704,
+      "offset": 4034,
       "length": 20,
       "value": "\"<%= data.markup %>\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3758,
+      "offset": 4088,
       "length": 1206,
       "value": "\"<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='imagetoolbar' content='no'><meta http-equiv='imagetoolbar' content='false'><meta name='robots' content='noindex'><meta name='robots' content='nofollow'><meta name='robots' content='noarchive'><meta name='robots' content='nosnippet'><meta name='robots' content='noodp'><meta name='viewport' content='width=device-width,height=device-height,initial-scale=1'><base target='_top'><title>Adrop Ads Banner<\/title><style>button,html,p{margin:0;padding:0}body{min-width:100%;width:1px;margin:0;padding:0;background-color:transparent;font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica,'맑은 고딕','Malgun Gothic','돋움',Dotum,sans-serif;font-size:12px;line-height:1.5;text-align:center;position:relative}body img{border:0;vertical-align:top}a{text-decoration:none;color:inherit}.creative{display:block;overflow:hidden;position:relative;max-height:80px;background-color:#f5f7f9;text-align:center}.creative::before{display:block;padding-top:21.334%;content:''}.creative img{position:absolute;top:0;left:0;right:0;bottom:0;width:100%;max-width:375px;margin:0 auto}<\/style><\/head><body><%= data.markup %><\/body><\/html>\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5038,
+      "offset": 5368,
       "length": 9,
       "value": "\"app_key\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5115,
+      "offset": 5445,
       "length": 7,
-      "value": "\"0.1.0\""
+      "value": "\"0.1.1\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5153,
+      "offset": 5483,
       "length": 30,
       "value": "\"https:\/\/api.adrop.io\/graphql\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5220,
+      "offset": 5550,
       "length": 7,
       "value": "1800000"
     },
