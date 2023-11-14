@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name AdropAds
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name AdropAds
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import AdropAds
 import Combine
@@ -24,9 +24,12 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import zlib
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class AdropBanner : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public var delegate: (any AdropAds.AdropBannerDelegate)?
-  @_Concurrency.MainActor(unsafe) public init(unitId: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func load()
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any AdropAds.AdropBannerDelegate)?
+  @objc @_Concurrency.MainActor(unsafe) public var id: Swift.String {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public init(unitId: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public func load()
   @objc deinit
 }
 extension AdropAds.AdropBanner : WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
@@ -44,10 +47,10 @@ public enum AdropBannerSize : Swift.String {
     get
   }
 }
-public protocol AdropBannerDelegate {
-  func onAdReceived(_ banner: AdropAds.AdropBanner)
-  func onAdClicked(_ banner: AdropAds.AdropBanner)
-  func onAdFailedToReceive(_ banner: AdropAds.AdropBanner, _ error: AdropAds.AdropErrorCode)
+@objc public protocol AdropBannerDelegate {
+  @objc func onAdReceived(_ banner: AdropAds.AdropBanner)
+  @objc func onAdClicked(_ banner: AdropAds.AdropBanner)
+  @objc func onAdFailedToReceive(_ banner: AdropAds.AdropBanner, _ error: AdropAds.AdropErrorCode)
 }
 @available(iOS 13.0, *)
 public struct AdropBannerRepresented : SwiftUI.UIViewRepresentable {
@@ -94,14 +97,15 @@ extension AdropAds.ULID : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
-@_hasMissingDesignatedInitializers public class Adrop {
+@_inheritsConvenienceInitializers @objc public class Adrop : ObjectiveC.NSObject {
   public var isProduction: Swift.Bool {
     get
   }
-  public static func initialize(production: Swift.Bool = false)
+  @objc public static func initialize(production: Swift.Bool = false)
+  @objc override dynamic public init()
   @objc deinit
 }
-public enum AdropMetricCode : Swift.String {
+@objc public enum AdropMetricCode : Swift.Int {
   case VALID
   case INVALID
   case INVALID_CREATIVE
@@ -109,25 +113,27 @@ public enum AdropMetricCode : Swift.String {
   case AD_CLICK
   case CLOSE
   case OPEN
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
 }
-public enum AdropErrorCode : Swift.String {
+public func AdropMetricCodeToString(code: AdropAds.AdropMetricCode) -> Swift.String
+@objc public enum AdropErrorCode : Swift.Int {
   case ERROR_CODE_NETWORK
   case ERROR_CODE_INTERNAL
   case ERROR_CODE_INITIALIZE
   case ERROR_CODE_INVALID_UNIT
   case ERROR_CODE_AD_INACTIVE
   case ERROR_CODE_AD_NO_FILL
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
 }
+public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.String
 extension AdropAds.AdropBannerSize : Swift.Equatable {}
 extension AdropAds.AdropBannerSize : Swift.Hashable {}
 extension AdropAds.AdropBannerSize : Swift.RawRepresentable {}

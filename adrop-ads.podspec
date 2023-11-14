@@ -8,17 +8,17 @@
 
 Pod::Spec.new do |s|
   s.name             = 'adrop-ads'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Adrop ads'
   s.homepage         = 'https://adrop.io'
   
   s.author           = { 'martin' => 'martin@openrhapsody.com' }
   s.license          = { :type => 'CUSTOM (https://adrop.io)' }
-  s.swift_version    = '5.3'
+  s.swift_version    = '5.0'
   s.platform         = :ios
   
   s.source           = { :git => 'https://github.com/OpenRhapsody/adrop-ads-pod.git', :tag => s.version.to_s }
-  s.ios.deployment_target = '14.0'
+  s.ios.deployment_target = '13.0'
   s.ios.vendored_frameworks = 'AdropAds.xcframework'
 
 end

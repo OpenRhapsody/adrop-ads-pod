@@ -12258,30 +12258,24 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AdropAds.AdropBannerDelegate?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdropBannerDelegate",
-                    "printedName": "AdropAds.AdropBannerDelegate",
-                    "usr": "s:8AdropAds0A14BannerDelegateP"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "WeakStorage",
+                "printedName": "AdropAds.AdropBannerDelegate?"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8AdropAds0A6BannerC8delegateAA0aC8Delegate_pSgvp",
+            "usr": "c:@M@AdropAds@objc(cs)AdropBanner(py)delegate",
             "mangledName": "$s8AdropAds0A6BannerC8delegateAA0aC8Delegate_pSgvp",
             "moduleName": "AdropAds",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Custom",
               "HasStorage",
-              "AccessControl"
+              "ReferenceOwnership",
+              "AccessControl",
+              "ObjC"
             ],
+            "ownership": 1,
             "hasStorage": true,
             "accessors": [
               {
@@ -12298,18 +12292,21 @@
                         "kind": "TypeNominal",
                         "name": "AdropBannerDelegate",
                         "printedName": "AdropAds.AdropBannerDelegate",
-                        "usr": "s:8AdropAds0A14BannerDelegateP"
+                        "usr": "c:@M@AdropAds@objc(pl)AdropBannerDelegate"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A6BannerC8delegateAA0aC8Delegate_pSgvg",
+                "usr": "c:@M@AdropAds@objc(cs)AdropBanner(im)delegate",
                 "mangledName": "$s8AdropAds0A6BannerC8delegateAA0aC8Delegate_pSgvg",
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -12331,18 +12328,21 @@
                         "kind": "TypeNominal",
                         "name": "AdropBannerDelegate",
                         "printedName": "AdropAds.AdropBannerDelegate",
-                        "usr": "s:8AdropAds0A14BannerDelegateP"
+                        "usr": "c:@M@AdropAds@objc(pl)AdropBannerDelegate"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A6BannerC8delegateAA0aC8Delegate_pSgvs",
+                "usr": "c:@M@AdropAds@objc(cs)AdropBanner(im)setDelegate:",
                 "mangledName": "$s8AdropAds0A6BannerC8delegateAA0aC8Delegate_pSgvs",
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -12367,6 +12367,53 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdropAds@objc(cs)AdropBanner(py)id",
+            "mangledName": "$s8AdropAds0A6BannerC2idSSvp",
+            "moduleName": "AdropAds",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdropAds@objc(cs)AdropBanner(im)id",
+                "mangledName": "$s8AdropAds0A6BannerC2idSSvg",
+                "moduleName": "AdropAds",
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(unitId:)",
@@ -12385,12 +12432,14 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8AdropAds0A6BannerC6unitIdACSS_tcfc",
+            "usr": "c:@M@AdropAds@objc(cs)AdropBanner(im)initWithUnitId:",
             "mangledName": "$s8AdropAds0A6BannerC6unitIdACSS_tcfc",
             "moduleName": "AdropAds",
+            "objc_name": "initWithUnitId:",
             "declAttributes": [
               "Custom",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "init_kind": "Designated"
           },
@@ -12446,13 +12495,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8AdropAds0A6BannerC4loadyyF",
+            "usr": "c:@M@AdropAds@objc(cs)AdropBanner(im)load",
             "mangledName": "$s8AdropAds0A6BannerC4loadyyF",
             "moduleName": "AdropAds",
             "isOpen": true,
             "declAttributes": [
               "Custom",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -45544,12 +45594,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8AdropAds0A14BannerDelegateP12onAdReceivedyyAA0aC0CF",
+            "usr": "c:@M@AdropAds@objc(pl)AdropBannerDelegate(im)onAdReceived:",
             "mangledName": "$s8AdropAds0A14BannerDelegateP12onAdReceivedyyAA0aC0CF",
             "moduleName": "AdropAds",
             "genericSig": "<τ_0_0 where τ_0_0 : AdropAds.AdropBannerDelegate>",
             "sugared_genericSig": "<Self where Self : AdropAds.AdropBannerDelegate>",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -45571,12 +45624,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8AdropAds0A14BannerDelegateP11onAdClickedyyAA0aC0CF",
+            "usr": "c:@M@AdropAds@objc(pl)AdropBannerDelegate(im)onAdClicked:",
             "mangledName": "$s8AdropAds0A14BannerDelegateP11onAdClickedyyAA0aC0CF",
             "moduleName": "AdropAds",
             "genericSig": "<τ_0_0 where τ_0_0 : AdropAds.AdropBannerDelegate>",
             "sugared_genericSig": "<Self where Self : AdropAds.AdropBannerDelegate>",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -45600,26 +45656,32 @@
                 "kind": "TypeNominal",
                 "name": "AdropErrorCode",
                 "printedName": "AdropAds.AdropErrorCode",
-                "usr": "s:8AdropAds0A9ErrorCodeO"
+                "usr": "c:@M@AdropAds@E@AdropErrorCode"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8AdropAds0A14BannerDelegateP19onAdFailedToReceiveyyAA0aC0C_AA0A9ErrorCodeOtF",
+            "usr": "c:@M@AdropAds@objc(pl)AdropBannerDelegate(im)onAdFailedToReceive::",
             "mangledName": "$s8AdropAds0A14BannerDelegateP19onAdFailedToReceiveyyAA0aC0C_AA0A9ErrorCodeOtF",
             "moduleName": "AdropAds",
             "genericSig": "<τ_0_0 where τ_0_0 : AdropAds.AdropBannerDelegate>",
             "sugared_genericSig": "<Self where Self : AdropAds.AdropBannerDelegate>",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:8AdropAds0A14BannerDelegateP",
+        "usr": "c:@M@AdropAds@objc(pl)AdropBannerDelegate",
         "mangledName": "$s8AdropAds0A14BannerDelegateP",
         "moduleName": "AdropAds",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
         ]
       },
       {
@@ -47440,688 +47502,6 @@
             "mangledName": "$sSH"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AdropAds",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "AdropAds"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "MraidState",
-        "printedName": "MraidState",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "loading",
-            "printedName": "loading",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdropAds.MraidState.Type) -> AdropAds.MraidState",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MraidState",
-                    "printedName": "AdropAds.MraidState",
-                    "usr": "s:8AdropAds10MraidStateO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdropAds.MraidState.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "MraidState",
-                        "printedName": "AdropAds.MraidState",
-                        "usr": "s:8AdropAds10MraidStateO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:8AdropAds10MraidStateO7loadingyA2CmF",
-            "mangledName": "$s8AdropAds10MraidStateO7loadingyA2CmF",
-            "moduleName": "AdropAds",
-            "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
-            "name": "default",
-            "printedName": "default",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdropAds.MraidState.Type) -> AdropAds.MraidState",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MraidState",
-                    "printedName": "AdropAds.MraidState",
-                    "usr": "s:8AdropAds10MraidStateO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdropAds.MraidState.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "MraidState",
-                        "printedName": "AdropAds.MraidState",
-                        "usr": "s:8AdropAds10MraidStateO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:8AdropAds10MraidStateO7defaultyA2CmF",
-            "mangledName": "$s8AdropAds10MraidStateO7defaultyA2CmF",
-            "moduleName": "AdropAds",
-            "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Var",
-            "name": "expanded",
-            "printedName": "expanded",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdropAds.MraidState.Type) -> AdropAds.MraidState",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MraidState",
-                    "printedName": "AdropAds.MraidState",
-                    "usr": "s:8AdropAds10MraidStateO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdropAds.MraidState.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "MraidState",
-                        "printedName": "AdropAds.MraidState",
-                        "usr": "s:8AdropAds10MraidStateO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:8AdropAds10MraidStateO8expandedyA2CmF",
-            "mangledName": "$s8AdropAds10MraidStateO8expandedyA2CmF",
-            "moduleName": "AdropAds",
-            "fixedbinaryorder": 2
-          },
-          {
-            "kind": "Var",
-            "name": "hidden",
-            "printedName": "hidden",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdropAds.MraidState.Type) -> AdropAds.MraidState",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MraidState",
-                    "printedName": "AdropAds.MraidState",
-                    "usr": "s:8AdropAds10MraidStateO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdropAds.MraidState.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "MraidState",
-                        "printedName": "AdropAds.MraidState",
-                        "usr": "s:8AdropAds10MraidStateO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:8AdropAds10MraidStateO6hiddenyA2CmF",
-            "mangledName": "$s8AdropAds10MraidStateO6hiddenyA2CmF",
-            "moduleName": "AdropAds",
-            "fixedbinaryorder": 3
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AdropAds.MraidState?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MraidState",
-                    "printedName": "AdropAds.MraidState",
-                    "usr": "s:8AdropAds10MraidStateO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:8AdropAds10MraidStateO8rawValueACSgSS_tcfc",
-            "mangledName": "$s8AdropAds10MraidStateO8rawValueACSgSS_tcfc",
-            "moduleName": "AdropAds",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:8AdropAds10MraidStateO8rawValueSSvp",
-            "mangledName": "$s8AdropAds10MraidStateO8rawValueSSvp",
-            "moduleName": "AdropAds",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8AdropAds10MraidStateO8rawValueSSvg",
-                "mangledName": "$s8AdropAds10MraidStateO8rawValueSSvg",
-                "moduleName": "AdropAds",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:8AdropAds10MraidStateO",
-        "mangledName": "$s8AdropAds10MraidStateO",
-        "moduleName": "AdropAds",
-        "enumRawTypeName": "String",
-        "isEnumExhaustive": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "MraidPlacementType",
-        "printedName": "MraidPlacementType",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "inline",
-            "printedName": "inline",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdropAds.MraidPlacementType.Type) -> AdropAds.MraidPlacementType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MraidPlacementType",
-                    "printedName": "AdropAds.MraidPlacementType",
-                    "usr": "s:8AdropAds18MraidPlacementTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdropAds.MraidPlacementType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "MraidPlacementType",
-                        "printedName": "AdropAds.MraidPlacementType",
-                        "usr": "s:8AdropAds18MraidPlacementTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:8AdropAds18MraidPlacementTypeO6inlineyA2CmF",
-            "mangledName": "$s8AdropAds18MraidPlacementTypeO6inlineyA2CmF",
-            "moduleName": "AdropAds",
-            "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
-            "name": "interstitial",
-            "printedName": "interstitial",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdropAds.MraidPlacementType.Type) -> AdropAds.MraidPlacementType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MraidPlacementType",
-                    "printedName": "AdropAds.MraidPlacementType",
-                    "usr": "s:8AdropAds18MraidPlacementTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdropAds.MraidPlacementType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "MraidPlacementType",
-                        "printedName": "AdropAds.MraidPlacementType",
-                        "usr": "s:8AdropAds18MraidPlacementTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:8AdropAds18MraidPlacementTypeO12interstitialyA2CmF",
-            "mangledName": "$s8AdropAds18MraidPlacementTypeO12interstitialyA2CmF",
-            "moduleName": "AdropAds",
-            "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AdropAds.MraidPlacementType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MraidPlacementType",
-                    "printedName": "AdropAds.MraidPlacementType",
-                    "usr": "s:8AdropAds18MraidPlacementTypeO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:8AdropAds18MraidPlacementTypeO8rawValueACSgSS_tcfc",
-            "mangledName": "$s8AdropAds18MraidPlacementTypeO8rawValueACSgSS_tcfc",
-            "moduleName": "AdropAds",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:8AdropAds18MraidPlacementTypeO8rawValueSSvp",
-            "mangledName": "$s8AdropAds18MraidPlacementTypeO8rawValueSSvp",
-            "moduleName": "AdropAds",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8AdropAds18MraidPlacementTypeO8rawValueSSvg",
-                "mangledName": "$s8AdropAds18MraidPlacementTypeO8rawValueSSvg",
-                "moduleName": "AdropAds",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:8AdropAds18MraidPlacementTypeO",
-        "mangledName": "$s8AdropAds18MraidPlacementTypeO",
-        "moduleName": "AdropAds",
-        "enumRawTypeName": "String",
-        "isEnumExhaustive": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "MraidController",
-        "printedName": "MraidController",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "currentState",
-            "printedName": "currentState",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "MraidState",
-                "printedName": "AdropAds.MraidState",
-                "usr": "s:8AdropAds10MraidStateO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:8AdropAds15MraidControllerP12currentStateAA0cF0Ovp",
-            "mangledName": "$s8AdropAds15MraidControllerP12currentStateAA0cF0Ovp",
-            "moduleName": "AdropAds",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MraidState",
-                    "printedName": "AdropAds.MraidState",
-                    "usr": "s:8AdropAds10MraidStateO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8AdropAds15MraidControllerP12currentStateAA0cF0Ovg",
-                "mangledName": "$s8AdropAds15MraidControllerP12currentStateAA0cF0Ovg",
-                "moduleName": "AdropAds",
-                "genericSig": "<τ_0_0 where τ_0_0 : AdropAds.MraidController>",
-                "sugared_genericSig": "<Self where Self : AdropAds.MraidController>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "getPlacementType",
-            "printedName": "getPlacementType()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "MraidPlacementType",
-                "printedName": "AdropAds.MraidPlacementType",
-                "usr": "s:8AdropAds18MraidPlacementTypeO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8AdropAds15MraidControllerP16getPlacementTypeAA0cfG0OyF",
-            "mangledName": "$s8AdropAds15MraidControllerP16getPlacementTypeAA0cfG0OyF",
-            "moduleName": "AdropAds",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdropAds.MraidController>",
-            "sugared_genericSig": "<Self where Self : AdropAds.MraidController>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "expand",
-            "printedName": "expand(width:height:url:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.URL?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URL",
-                    "printedName": "Foundation.URL",
-                    "usr": "s:10Foundation3URLV"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8AdropAds15MraidControllerP6expand5width6height3url10completionySd_Sd10Foundation3URLVSgyyctF",
-            "mangledName": "$s8AdropAds15MraidControllerP6expand5width6height3url10completionySd_Sd10Foundation3URLVSgyyctF",
-            "moduleName": "AdropAds",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdropAds.MraidController>",
-            "sugared_genericSig": "<Self where Self : AdropAds.MraidController>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "close",
-            "printedName": "close(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8AdropAds15MraidControllerP5close10completionyyyc_tF",
-            "mangledName": "$s8AdropAds15MraidControllerP5close10completionyyyc_tF",
-            "moduleName": "AdropAds",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdropAds.MraidController>",
-            "sugared_genericSig": "<Self where Self : AdropAds.MraidController>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:8AdropAds15MraidControllerP",
-        "mangledName": "$s8AdropAds15MraidControllerP",
-        "moduleName": "AdropAds"
       },
       {
         "kind": "Import",
@@ -50969,7 +50349,7 @@
                     "kind": "TypeNominal",
                     "name": "AdropBannerDelegate",
                     "printedName": "AdropAds.AdropBannerDelegate",
-                    "usr": "s:8AdropAds0A14BannerDelegateP"
+                    "usr": "c:@M@AdropAds@objc(pl)AdropBannerDelegate"
                   }
                 ],
                 "usr": "s:Sq"
@@ -94657,7 +94037,7 @@
                 "kind": "TypeNominal",
                 "name": "Adrop",
                 "printedName": "AdropAds.Adrop",
-                "usr": "s:8AdropAds0A0C"
+                "usr": "c:@M@AdropAds@objc(cs)Adrop"
               }
             ],
             "declKind": "Var",
@@ -94681,7 +94061,7 @@
                     "kind": "TypeNominal",
                     "name": "Adrop",
                     "printedName": "AdropAds.Adrop",
-                    "usr": "s:8AdropAds0A0C"
+                    "usr": "c:@M@AdropAds@objc(cs)Adrop"
                   }
                 ],
                 "declKind": "Accessor",
@@ -94691,7 +94071,6 @@
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Transparent",
                   "Final"
                 ],
                 "accessorKind": "get"
@@ -94710,7 +94089,7 @@
                     "kind": "TypeNominal",
                     "name": "Adrop",
                     "printedName": "AdropAds.Adrop",
-                    "usr": "s:8AdropAds0A0C"
+                    "usr": "c:@M@AdropAds@objc(cs)Adrop"
                   }
                 ],
                 "declKind": "Accessor",
@@ -94720,7 +94099,6 @@
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Transparent",
                   "Final"
                 ],
                 "accessorKind": "set"
@@ -94743,7 +94121,6 @@
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Transparent",
                   "Final"
                 ],
                 "accessorKind": "_modify"
@@ -95072,13 +94449,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8AdropAds0A0C10initialize10productionySb_tFZ",
+            "usr": "c:@M@AdropAds@objc(cs)Adrop(cm)initializeWithProduction:",
             "mangledName": "$s8AdropAds0A0C10initialize10productionySb_tFZ",
             "moduleName": "AdropAds",
             "static": true,
+            "objc_name": "initializeWithProduction:",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -95091,26 +94470,89 @@
                 "kind": "TypeNominal",
                 "name": "Adrop",
                 "printedName": "AdropAds.Adrop",
-                "usr": "s:8AdropAds0A0C"
+                "usr": "c:@M@AdropAds@objc(cs)Adrop"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8AdropAds0A0CACycfc",
+            "usr": "c:@M@AdropAds@objc(cs)Adrop(im)init",
             "mangledName": "$s8AdropAds0A0CACycfc",
             "moduleName": "AdropAds",
+            "overriding": true,
             "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
             "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
-        "usr": "s:8AdropAds0A0C",
+        "usr": "c:@M@AdropAds@objc(cs)Adrop",
         "mangledName": "$s8AdropAds0A0C",
         "moduleName": "AdropAds",
         "isOpen": true,
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
         ],
-        "hasMissingDesignatedInitializers": true
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -98717,7 +98159,7 @@
                 "kind": "TypeNominal",
                 "name": "AdropMetricCode",
                 "printedName": "AdropAds.AdropMetricCode",
-                "usr": "s:8AdropAds0A10MetricCodeO"
+                "usr": "c:@M@AdropAds@E@AdropMetricCode"
               },
               {
                 "kind": "TypeNominal",
@@ -99123,7 +98565,7 @@
                     "kind": "TypeNominal",
                     "name": "AdropMetricCode",
                     "printedName": "AdropAds.AdropMetricCode",
-                    "usr": "s:8AdropAds0A10MetricCodeO"
+                    "usr": "c:@M@AdropAds@E@AdropMetricCode"
                   },
                   {
                     "kind": "TypeNominal",
@@ -99134,7 +98576,7 @@
                         "kind": "TypeNominal",
                         "name": "AdropMetricCode",
                         "printedName": "AdropAds.AdropMetricCode",
-                        "usr": "s:8AdropAds0A10MetricCodeO"
+                        "usr": "c:@M@AdropAds@E@AdropMetricCode"
                       }
                     ]
                   }
@@ -99142,9 +98584,13 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8AdropAds0A10MetricCodeO5VALIDyA2CmF",
+            "usr": "c:@M@AdropAds@E@AdropMetricCode@AdropMetricCodeVALID",
             "mangledName": "$s8AdropAds0A10MetricCodeO5VALIDyA2CmF",
-            "moduleName": "AdropAds"
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
           },
           {
             "kind": "Var",
@@ -99160,7 +98606,7 @@
                     "kind": "TypeNominal",
                     "name": "AdropMetricCode",
                     "printedName": "AdropAds.AdropMetricCode",
-                    "usr": "s:8AdropAds0A10MetricCodeO"
+                    "usr": "c:@M@AdropAds@E@AdropMetricCode"
                   },
                   {
                     "kind": "TypeNominal",
@@ -99171,7 +98617,7 @@
                         "kind": "TypeNominal",
                         "name": "AdropMetricCode",
                         "printedName": "AdropAds.AdropMetricCode",
-                        "usr": "s:8AdropAds0A10MetricCodeO"
+                        "usr": "c:@M@AdropAds@E@AdropMetricCode"
                       }
                     ]
                   }
@@ -99179,9 +98625,13 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8AdropAds0A10MetricCodeO7INVALIDyA2CmF",
+            "usr": "c:@M@AdropAds@E@AdropMetricCode@AdropMetricCodeINVALID",
             "mangledName": "$s8AdropAds0A10MetricCodeO7INVALIDyA2CmF",
-            "moduleName": "AdropAds"
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
           },
           {
             "kind": "Var",
@@ -99197,7 +98647,7 @@
                     "kind": "TypeNominal",
                     "name": "AdropMetricCode",
                     "printedName": "AdropAds.AdropMetricCode",
-                    "usr": "s:8AdropAds0A10MetricCodeO"
+                    "usr": "c:@M@AdropAds@E@AdropMetricCode"
                   },
                   {
                     "kind": "TypeNominal",
@@ -99208,7 +98658,7 @@
                         "kind": "TypeNominal",
                         "name": "AdropMetricCode",
                         "printedName": "AdropAds.AdropMetricCode",
-                        "usr": "s:8AdropAds0A10MetricCodeO"
+                        "usr": "c:@M@AdropAds@E@AdropMetricCode"
                       }
                     ]
                   }
@@ -99216,9 +98666,13 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8AdropAds0A10MetricCodeO16INVALID_CREATIVEyA2CmF",
+            "usr": "c:@M@AdropAds@E@AdropMetricCode@AdropMetricCodeINVALID_CREATIVE",
             "mangledName": "$s8AdropAds0A10MetricCodeO16INVALID_CREATIVEyA2CmF",
-            "moduleName": "AdropAds"
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
           },
           {
             "kind": "Var",
@@ -99234,7 +98688,7 @@
                     "kind": "TypeNominal",
                     "name": "AdropMetricCode",
                     "printedName": "AdropAds.AdropMetricCode",
-                    "usr": "s:8AdropAds0A10MetricCodeO"
+                    "usr": "c:@M@AdropAds@E@AdropMetricCode"
                   },
                   {
                     "kind": "TypeNominal",
@@ -99245,7 +98699,7 @@
                         "kind": "TypeNominal",
                         "name": "AdropMetricCode",
                         "printedName": "AdropAds.AdropMetricCode",
-                        "usr": "s:8AdropAds0A10MetricCodeO"
+                        "usr": "c:@M@AdropAds@E@AdropMetricCode"
                       }
                     ]
                   }
@@ -99253,9 +98707,13 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8AdropAds0A10MetricCodeO7AD_IMPRyA2CmF",
+            "usr": "c:@M@AdropAds@E@AdropMetricCode@AdropMetricCodeAD_IMPR",
             "mangledName": "$s8AdropAds0A10MetricCodeO7AD_IMPRyA2CmF",
-            "moduleName": "AdropAds"
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
           },
           {
             "kind": "Var",
@@ -99271,7 +98729,7 @@
                     "kind": "TypeNominal",
                     "name": "AdropMetricCode",
                     "printedName": "AdropAds.AdropMetricCode",
-                    "usr": "s:8AdropAds0A10MetricCodeO"
+                    "usr": "c:@M@AdropAds@E@AdropMetricCode"
                   },
                   {
                     "kind": "TypeNominal",
@@ -99282,7 +98740,7 @@
                         "kind": "TypeNominal",
                         "name": "AdropMetricCode",
                         "printedName": "AdropAds.AdropMetricCode",
-                        "usr": "s:8AdropAds0A10MetricCodeO"
+                        "usr": "c:@M@AdropAds@E@AdropMetricCode"
                       }
                     ]
                   }
@@ -99290,9 +98748,13 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8AdropAds0A10MetricCodeO8AD_CLICKyA2CmF",
+            "usr": "c:@M@AdropAds@E@AdropMetricCode@AdropMetricCodeAD_CLICK",
             "mangledName": "$s8AdropAds0A10MetricCodeO8AD_CLICKyA2CmF",
-            "moduleName": "AdropAds"
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
           },
           {
             "kind": "Var",
@@ -99308,7 +98770,7 @@
                     "kind": "TypeNominal",
                     "name": "AdropMetricCode",
                     "printedName": "AdropAds.AdropMetricCode",
-                    "usr": "s:8AdropAds0A10MetricCodeO"
+                    "usr": "c:@M@AdropAds@E@AdropMetricCode"
                   },
                   {
                     "kind": "TypeNominal",
@@ -99319,7 +98781,7 @@
                         "kind": "TypeNominal",
                         "name": "AdropMetricCode",
                         "printedName": "AdropAds.AdropMetricCode",
-                        "usr": "s:8AdropAds0A10MetricCodeO"
+                        "usr": "c:@M@AdropAds@E@AdropMetricCode"
                       }
                     ]
                   }
@@ -99327,9 +98789,13 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8AdropAds0A10MetricCodeO5CLOSEyA2CmF",
+            "usr": "c:@M@AdropAds@E@AdropMetricCode@AdropMetricCodeCLOSE",
             "mangledName": "$s8AdropAds0A10MetricCodeO5CLOSEyA2CmF",
-            "moduleName": "AdropAds"
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Var",
@@ -99345,7 +98811,7 @@
                     "kind": "TypeNominal",
                     "name": "AdropMetricCode",
                     "printedName": "AdropAds.AdropMetricCode",
-                    "usr": "s:8AdropAds0A10MetricCodeO"
+                    "usr": "c:@M@AdropAds@E@AdropMetricCode"
                   },
                   {
                     "kind": "TypeNominal",
@@ -99356,7 +98822,7 @@
                         "kind": "TypeNominal",
                         "name": "AdropMetricCode",
                         "printedName": "AdropAds.AdropMetricCode",
-                        "usr": "s:8AdropAds0A10MetricCodeO"
+                        "usr": "c:@M@AdropAds@E@AdropMetricCode"
                       }
                     ]
                   }
@@ -99364,9 +98830,13 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8AdropAds0A10MetricCodeO4OPENyA2CmF",
+            "usr": "c:@M@AdropAds@E@AdropMetricCode@AdropMetricCodeOPEN",
             "mangledName": "$s8AdropAds0A10MetricCodeO4OPENyA2CmF",
-            "moduleName": "AdropAds"
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Constructor",
@@ -99382,21 +98852,21 @@
                     "kind": "TypeNominal",
                     "name": "AdropMetricCode",
                     "printedName": "AdropAds.AdropMetricCode",
-                    "usr": "s:8AdropAds0A10MetricCodeO"
+                    "usr": "c:@M@AdropAds@E@AdropMetricCode"
                   }
                 ],
                 "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8AdropAds0A10MetricCodeO8rawValueACSgSS_tcfc",
-            "mangledName": "$s8AdropAds0A10MetricCodeO8rawValueACSgSS_tcfc",
+            "usr": "s:8AdropAds0A10MetricCodeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s8AdropAds0A10MetricCodeO8rawValueACSgSi_tcfc",
             "moduleName": "AdropAds",
             "implicit": true,
             "init_kind": "Designated"
@@ -99408,14 +98878,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8AdropAds0A10MetricCodeO8rawValueSSvp",
-            "mangledName": "$s8AdropAds0A10MetricCodeO8rawValueSSvp",
+            "usr": "s:8AdropAds0A10MetricCodeO8rawValueSivp",
+            "mangledName": "$s8AdropAds0A10MetricCodeO8rawValueSivp",
             "moduleName": "AdropAds",
             "implicit": true,
             "accessors": [
@@ -99426,14 +98896,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A10MetricCodeO8rawValueSSvg",
-                "mangledName": "$s8AdropAds0A10MetricCodeO8rawValueSSvg",
+                "usr": "s:8AdropAds0A10MetricCodeO8rawValueSivg",
+                "mangledName": "$s8AdropAds0A10MetricCodeO8rawValueSivg",
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "accessorKind": "get"
@@ -99442,14 +98912,15 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "s:8AdropAds0A10MetricCodeO",
+        "usr": "c:@M@AdropAds@E@AdropMetricCode",
         "mangledName": "$s8AdropAds0A10MetricCodeO",
         "moduleName": "AdropAds",
         "declAttributes": [
           "AccessControl",
+          "ObjC",
           "RawDocComment"
         ],
-        "enumRawTypeName": "String",
+        "enumRawTypeName": "Int",
         "conformances": [
           {
             "kind": "Conformance",
@@ -99477,9 +98948,9 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ]
               }
@@ -99488,6 +98959,33 @@
             "mangledName": "$sSY"
           }
         ]
+      },
+      {
+        "kind": "Function",
+        "name": "AdropMetricCodeToString",
+        "printedName": "AdropMetricCodeToString(code:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "AdropMetricCode",
+            "printedName": "AdropAds.AdropMetricCode",
+            "usr": "c:@M@AdropAds@E@AdropMetricCode"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8AdropAds0A18MetricCodeToString4codeSSAA0acD0O_tF",
+        "mangledName": "$s8AdropAds0A18MetricCodeToString4codeSSAA0acD0O_tF",
+        "moduleName": "AdropAds",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
       },
       {
         "kind": "TypeDecl",
@@ -99508,7 +99006,7 @@
                     "kind": "TypeNominal",
                     "name": "AdropErrorCode",
                     "printedName": "AdropAds.AdropErrorCode",
-                    "usr": "s:8AdropAds0A9ErrorCodeO"
+                    "usr": "c:@M@AdropAds@E@AdropErrorCode"
                   },
                   {
                     "kind": "TypeNominal",
@@ -99519,7 +99017,7 @@
                         "kind": "TypeNominal",
                         "name": "AdropErrorCode",
                         "printedName": "AdropAds.AdropErrorCode",
-                        "usr": "s:8AdropAds0A9ErrorCodeO"
+                        "usr": "c:@M@AdropAds@E@AdropErrorCode"
                       }
                     ]
                   }
@@ -99527,9 +99025,13 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8AdropAds0A9ErrorCodeO18ERROR_CODE_NETWORKyA2CmF",
+            "usr": "c:@M@AdropAds@E@AdropErrorCode@AdropErrorCodeERROR_CODE_NETWORK",
             "mangledName": "$s8AdropAds0A9ErrorCodeO18ERROR_CODE_NETWORKyA2CmF",
-            "moduleName": "AdropAds"
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
           },
           {
             "kind": "Var",
@@ -99545,7 +99047,7 @@
                     "kind": "TypeNominal",
                     "name": "AdropErrorCode",
                     "printedName": "AdropAds.AdropErrorCode",
-                    "usr": "s:8AdropAds0A9ErrorCodeO"
+                    "usr": "c:@M@AdropAds@E@AdropErrorCode"
                   },
                   {
                     "kind": "TypeNominal",
@@ -99556,7 +99058,7 @@
                         "kind": "TypeNominal",
                         "name": "AdropErrorCode",
                         "printedName": "AdropAds.AdropErrorCode",
-                        "usr": "s:8AdropAds0A9ErrorCodeO"
+                        "usr": "c:@M@AdropAds@E@AdropErrorCode"
                       }
                     ]
                   }
@@ -99564,9 +99066,13 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8AdropAds0A9ErrorCodeO19ERROR_CODE_INTERNALyA2CmF",
+            "usr": "c:@M@AdropAds@E@AdropErrorCode@AdropErrorCodeERROR_CODE_INTERNAL",
             "mangledName": "$s8AdropAds0A9ErrorCodeO19ERROR_CODE_INTERNALyA2CmF",
-            "moduleName": "AdropAds"
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
           },
           {
             "kind": "Var",
@@ -99582,7 +99088,7 @@
                     "kind": "TypeNominal",
                     "name": "AdropErrorCode",
                     "printedName": "AdropAds.AdropErrorCode",
-                    "usr": "s:8AdropAds0A9ErrorCodeO"
+                    "usr": "c:@M@AdropAds@E@AdropErrorCode"
                   },
                   {
                     "kind": "TypeNominal",
@@ -99593,7 +99099,7 @@
                         "kind": "TypeNominal",
                         "name": "AdropErrorCode",
                         "printedName": "AdropAds.AdropErrorCode",
-                        "usr": "s:8AdropAds0A9ErrorCodeO"
+                        "usr": "c:@M@AdropAds@E@AdropErrorCode"
                       }
                     ]
                   }
@@ -99601,9 +99107,13 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8AdropAds0A9ErrorCodeO21ERROR_CODE_INITIALIZEyA2CmF",
+            "usr": "c:@M@AdropAds@E@AdropErrorCode@AdropErrorCodeERROR_CODE_INITIALIZE",
             "mangledName": "$s8AdropAds0A9ErrorCodeO21ERROR_CODE_INITIALIZEyA2CmF",
-            "moduleName": "AdropAds"
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
           },
           {
             "kind": "Var",
@@ -99619,7 +99129,7 @@
                     "kind": "TypeNominal",
                     "name": "AdropErrorCode",
                     "printedName": "AdropAds.AdropErrorCode",
-                    "usr": "s:8AdropAds0A9ErrorCodeO"
+                    "usr": "c:@M@AdropAds@E@AdropErrorCode"
                   },
                   {
                     "kind": "TypeNominal",
@@ -99630,7 +99140,7 @@
                         "kind": "TypeNominal",
                         "name": "AdropErrorCode",
                         "printedName": "AdropAds.AdropErrorCode",
-                        "usr": "s:8AdropAds0A9ErrorCodeO"
+                        "usr": "c:@M@AdropAds@E@AdropErrorCode"
                       }
                     ]
                   }
@@ -99638,9 +99148,13 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8AdropAds0A9ErrorCodeO23ERROR_CODE_INVALID_UNITyA2CmF",
+            "usr": "c:@M@AdropAds@E@AdropErrorCode@AdropErrorCodeERROR_CODE_INVALID_UNIT",
             "mangledName": "$s8AdropAds0A9ErrorCodeO23ERROR_CODE_INVALID_UNITyA2CmF",
-            "moduleName": "AdropAds"
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
           },
           {
             "kind": "Var",
@@ -99656,7 +99170,7 @@
                     "kind": "TypeNominal",
                     "name": "AdropErrorCode",
                     "printedName": "AdropAds.AdropErrorCode",
-                    "usr": "s:8AdropAds0A9ErrorCodeO"
+                    "usr": "c:@M@AdropAds@E@AdropErrorCode"
                   },
                   {
                     "kind": "TypeNominal",
@@ -99667,7 +99181,7 @@
                         "kind": "TypeNominal",
                         "name": "AdropErrorCode",
                         "printedName": "AdropAds.AdropErrorCode",
-                        "usr": "s:8AdropAds0A9ErrorCodeO"
+                        "usr": "c:@M@AdropAds@E@AdropErrorCode"
                       }
                     ]
                   }
@@ -99675,9 +99189,13 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8AdropAds0A9ErrorCodeO22ERROR_CODE_AD_INACTIVEyA2CmF",
+            "usr": "c:@M@AdropAds@E@AdropErrorCode@AdropErrorCodeERROR_CODE_AD_INACTIVE",
             "mangledName": "$s8AdropAds0A9ErrorCodeO22ERROR_CODE_AD_INACTIVEyA2CmF",
-            "moduleName": "AdropAds"
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
           },
           {
             "kind": "Var",
@@ -99693,7 +99211,7 @@
                     "kind": "TypeNominal",
                     "name": "AdropErrorCode",
                     "printedName": "AdropAds.AdropErrorCode",
-                    "usr": "s:8AdropAds0A9ErrorCodeO"
+                    "usr": "c:@M@AdropAds@E@AdropErrorCode"
                   },
                   {
                     "kind": "TypeNominal",
@@ -99704,7 +99222,7 @@
                         "kind": "TypeNominal",
                         "name": "AdropErrorCode",
                         "printedName": "AdropAds.AdropErrorCode",
-                        "usr": "s:8AdropAds0A9ErrorCodeO"
+                        "usr": "c:@M@AdropAds@E@AdropErrorCode"
                       }
                     ]
                   }
@@ -99712,9 +99230,13 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8AdropAds0A9ErrorCodeO21ERROR_CODE_AD_NO_FILLyA2CmF",
+            "usr": "c:@M@AdropAds@E@AdropErrorCode@AdropErrorCodeERROR_CODE_AD_NO_FILL",
             "mangledName": "$s8AdropAds0A9ErrorCodeO21ERROR_CODE_AD_NO_FILLyA2CmF",
-            "moduleName": "AdropAds"
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Constructor",
@@ -99730,21 +99252,21 @@
                     "kind": "TypeNominal",
                     "name": "AdropErrorCode",
                     "printedName": "AdropAds.AdropErrorCode",
-                    "usr": "s:8AdropAds0A9ErrorCodeO"
+                    "usr": "c:@M@AdropAds@E@AdropErrorCode"
                   }
                 ],
                 "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8AdropAds0A9ErrorCodeO8rawValueACSgSS_tcfc",
-            "mangledName": "$s8AdropAds0A9ErrorCodeO8rawValueACSgSS_tcfc",
+            "usr": "s:8AdropAds0A9ErrorCodeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s8AdropAds0A9ErrorCodeO8rawValueACSgSi_tcfc",
             "moduleName": "AdropAds",
             "implicit": true,
             "init_kind": "Designated"
@@ -99756,14 +99278,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8AdropAds0A9ErrorCodeO8rawValueSSvp",
-            "mangledName": "$s8AdropAds0A9ErrorCodeO8rawValueSSvp",
+            "usr": "s:8AdropAds0A9ErrorCodeO8rawValueSivp",
+            "mangledName": "$s8AdropAds0A9ErrorCodeO8rawValueSivp",
             "moduleName": "AdropAds",
             "implicit": true,
             "accessors": [
@@ -99774,14 +99296,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A9ErrorCodeO8rawValueSSvg",
-                "mangledName": "$s8AdropAds0A9ErrorCodeO8rawValueSSvg",
+                "usr": "s:8AdropAds0A9ErrorCodeO8rawValueSivg",
+                "mangledName": "$s8AdropAds0A9ErrorCodeO8rawValueSivg",
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "accessorKind": "get"
@@ -99790,13 +99312,14 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "s:8AdropAds0A9ErrorCodeO",
+        "usr": "c:@M@AdropAds@E@AdropErrorCode",
         "mangledName": "$s8AdropAds0A9ErrorCodeO",
         "moduleName": "AdropAds",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
         ],
-        "enumRawTypeName": "String",
+        "enumRawTypeName": "Int",
         "conformances": [
           {
             "kind": "Conformance",
@@ -99824,9 +99347,9 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ]
               }
@@ -99835,6 +99358,33 @@
             "mangledName": "$sSY"
           }
         ]
+      },
+      {
+        "kind": "Function",
+        "name": "AdropErrorCodeToString",
+        "printedName": "AdropErrorCodeToString(code:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "AdropErrorCode",
+            "printedName": "AdropAds.AdropErrorCode",
+            "usr": "c:@M@AdropAds@E@AdropErrorCode"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8AdropAds0A17ErrorCodeToString4codeSSAA0acD0O_tF",
+        "mangledName": "$s8AdropAds0A17ErrorCodeToString4codeSSAA0acD0O_tF",
+        "moduleName": "AdropAds",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
       },
       {
         "kind": "TypeDecl",
@@ -107257,14 +106807,14 @@
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "Dictionary",
-      "offset": 453,
+      "offset": 552,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 493,
+      "offset": 592,
       "length": 2,
       "value": "\"\""
     },
@@ -108342,56 +107892,56 @@
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4034,
+      "offset": 3967,
       "length": 20,
       "value": "\"<%= data.markup %>\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4088,
+      "offset": 4021,
       "length": 1206,
       "value": "\"<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='imagetoolbar' content='no'><meta http-equiv='imagetoolbar' content='false'><meta name='robots' content='noindex'><meta name='robots' content='nofollow'><meta name='robots' content='noarchive'><meta name='robots' content='nosnippet'><meta name='robots' content='noodp'><meta name='viewport' content='width=device-width,height=device-height,initial-scale=1'><base target='_top'><title>Adrop Ads Banner<\/title><style>button,html,p{margin:0;padding:0}body{min-width:100%;width:1px;margin:0;padding:0;background-color:transparent;font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica,'맑은 고딕','Malgun Gothic','돋움',Dotum,sans-serif;font-size:12px;line-height:1.5;text-align:center;position:relative}body img{border:0;vertical-align:top}a{text-decoration:none;color:inherit}.creative{display:block;overflow:hidden;position:relative;max-height:80px;background-color:#f5f7f9;text-align:center}.creative::before{display:block;padding-top:21.334%;content:''}.creative img{position:absolute;top:0;left:0;right:0;bottom:0;width:100%;max-width:375px;margin:0 auto}<\/style><\/head><body><%= data.markup %><\/body><\/html>\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5368,
+      "offset": 5301,
       "length": 9,
       "value": "\"app_key\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5445,
+      "offset": 5378,
       "length": 7,
-      "value": "\"0.1.1\""
+      "value": "\"0.1.2\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5483,
+      "offset": 5416,
       "length": 30,
       "value": "\"https:\/\/api.adrop.io\/graphql\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5550,
+      "offset": 5483,
       "length": 7,
       "value": "1800000"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/Adrop.swift",
       "kind": "BooleanLiteral",
-      "offset": 146,
+      "offset": 162,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/Adrop.swift",
       "kind": "BooleanLiteral",
-      "offset": 497,
+      "offset": 519,
       "length": 5,
       "value": "false"
     },
@@ -108597,6 +108147,160 @@
       "offset": 385,
       "length": 14,
       "value": "\"adrop_active\""
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 138,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 155,
+      "length": 16,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 181,
+      "length": 7,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 198,
+      "length": 8,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 216,
+      "length": 5,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 231,
+      "length": 4,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 138,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 155,
+      "length": 16,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 181,
+      "length": 7,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 198,
+      "length": 8,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 216,
+      "length": 5,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 231,
+      "length": 4,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 728,
+      "length": 19,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 757,
+      "length": 21,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 788,
+      "length": 23,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 821,
+      "length": 22,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 853,
+      "length": 21,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 728,
+      "length": 19,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 757,
+      "length": 21,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 788,
+      "length": 23,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 821,
+      "length": 22,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 853,
+      "length": 21,
+      "value": "5"
     }
   ]
 }

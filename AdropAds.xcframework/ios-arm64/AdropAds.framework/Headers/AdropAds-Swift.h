@@ -278,6 +278,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreFoundation;
+@import ObjectiveC;
 @import UIKit;
 @import WebKit;
 #endif
@@ -300,11 +301,24 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
+SWIFT_CLASS("_TtC8AdropAds5Adrop")
+@interface Adrop : NSObject
++ (void)initializeWithProduction:(BOOL)production;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@protocol AdropBannerDelegate;
+@class NSString;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @interface AdropBanner : UIView
+@property (nonatomic, weak) id <AdropBannerDelegate> _Nullable delegate;
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
+- (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)load;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -320,6 +334,34 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Nonnull)navigation;
 @end
+
+enum AdropErrorCode : NSInteger;
+
+SWIFT_PROTOCOL("_TtP8AdropAds19AdropBannerDelegate_")
+@protocol AdropBannerDelegate
+- (void)onAdReceived:(AdropBanner * _Nonnull)banner;
+- (void)onAdClicked:(AdropBanner * _Nonnull)banner;
+- (void)onAdFailedToReceive:(AdropBanner * _Nonnull)banner :(enum AdropErrorCode)error;
+@end
+
+typedef SWIFT_ENUM(NSInteger, AdropErrorCode, open) {
+  AdropErrorCodeERROR_CODE_NETWORK = 0,
+  AdropErrorCodeERROR_CODE_INTERNAL = 1,
+  AdropErrorCodeERROR_CODE_INITIALIZE = 2,
+  AdropErrorCodeERROR_CODE_INVALID_UNIT = 3,
+  AdropErrorCodeERROR_CODE_AD_INACTIVE = 4,
+  AdropErrorCodeERROR_CODE_AD_NO_FILL = 5,
+};
+
+typedef SWIFT_ENUM(NSInteger, AdropMetricCode, open) {
+  AdropMetricCodeVALID = 0,
+  AdropMetricCodeINVALID = 1,
+  AdropMetricCodeINVALID_CREATIVE = 2,
+  AdropMetricCodeAD_IMPR = 3,
+  AdropMetricCodeAD_CLICK = 4,
+  AdropMetricCodeCLOSE = 5,
+  AdropMetricCodeOPEN = 6,
+};
 
 
 
