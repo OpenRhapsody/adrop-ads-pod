@@ -107915,7 +107915,7 @@
       "kind": "StringLiteral",
       "offset": 5378,
       "length": 7,
-      "value": "\"0.1.4\""
+      "value": "\"0.1.5\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
@@ -107934,14 +107934,14 @@
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/Adrop.swift",
       "kind": "BooleanLiteral",
-      "offset": 162,
+      "offset": 212,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/Adrop.swift",
       "kind": "BooleanLiteral",
-      "offset": 519,
+      "offset": 569,
       "length": 5,
       "value": "false"
     },

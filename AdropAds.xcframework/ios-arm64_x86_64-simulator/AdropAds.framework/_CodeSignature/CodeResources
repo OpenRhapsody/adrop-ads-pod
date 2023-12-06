@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TkCrM4E3ubXROzsBaT2ICGB7I9M=
+		VKLjW2m1DS6Lm9hCiLaqQQJYIwY=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		QCwMkXwrClj6A2F02mDFhiLeMFw=
+		LYLO7uoCE+sd+SORRhbncLuPJtk=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ekxmbcXkxfMbe9BNX1oE022NXwk=
+		pxAZMyE/4G0sIBNQiQ3+2FW44+o=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		QCwMkXwrClj6A2F02mDFhiLeMFw=
+		LYLO7uoCE+sd+SORRhbncLuPJtk=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gD+AcRLNTsDJj1hvR9VYoPaAVaY=
+		AMl93cHJV+5eRgpEJy1i3So139c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kzFEgG4PewUlsTs5n+XBUEeHtqF4Sc2oelSvm0TX7QY=
+			n5Di4TxojUVcz71ehNCPQmL+OgCdyMIn6iNcvHAZHb4=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -109,14 +109,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zgD9uQhnmMZq3JB1kqvVWr4P4U66NKTsPbHdalIUAjQ=
+			4oihLVaH966/CW6oOHgkuPGSj9hD2srR+6GjWiddJAo=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kzFEgG4PewUlsTs5n+XBUEeHtqF4Sc2oelSvm0TX7QY=
+			n5Di4TxojUVcz71ehNCPQmL+OgCdyMIn6iNcvHAZHb4=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -144,7 +144,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b7O/ce0/KL488LI8v+i8j2gRwMZK6Rezz3wP5cNb1d8=
+			Jr3FWtlQkAwwTnow0NeV1o9Vq2mCTFV/htjvJ7Z4kns=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

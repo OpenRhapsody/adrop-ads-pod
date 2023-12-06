@@ -7555,63 +7555,63 @@
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 2314,
+      "offset": 2345,
       "length": 21,
       "value": "\"PUBLIC_TEST_UNIT_ID\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 2592,
+      "offset": 2623,
       "length": 49,
       "value": "\"request ad failed. \""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 2640,
+      "offset": 2671,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3027,
+      "offset": 3058,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 4056,
+      "offset": 4087,
       "length": 72,
       "value": "\"cannot open \""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 4075,
+      "offset": 4106,
       "length": 1,
       "value": "\". \""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 4127,
+      "offset": 4158,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 4306,
+      "offset": 4337,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 4579,
+      "offset": 4610,
       "length": 4,
       "value": "true"
     },
@@ -7625,21 +7625,21 @@
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 5502,
+      "offset": 5533,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 6470,
+      "offset": 6501,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 6550,
+      "offset": 6581,
       "length": 4,
       "value": "true"
     },
@@ -13087,7 +13087,7 @@
       "kind": "StringLiteral",
       "offset": 5378,
       "length": 7,
-      "value": "\"0.1.4\""
+      "value": "\"0.1.5\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
@@ -13106,16 +13106,23 @@
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/Adrop.swift",
       "kind": "BooleanLiteral",
-      "offset": 162,
+      "offset": 212,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/Adrop.swift",
       "kind": "BooleanLiteral",
-      "offset": 519,
+      "offset": 569,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/Adrop.swift",
+      "kind": "StringLiteral",
+      "offset": 648,
+      "length": 255,
+      "value": "\"⚠️ !!ATTENTION!! ⚠️ \nAdrop is not in production mode. \nPlease make sure that the Adrop SDK is set to production mode before deployment. \nLearn more: https:\/\/docs.adrop.io\/fundamentals\/get-started-with-adrop\/add-adrop-to-apple#initialize-adrop\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/Concurrency.swift",
