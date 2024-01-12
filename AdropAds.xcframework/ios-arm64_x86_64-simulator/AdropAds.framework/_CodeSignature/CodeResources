@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GEMnLN7j6ZGxBIgvyfupfrM8dts=
+		0AbOeqqtAcPaSsCgqK42EGcgktw=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		eNJJJE3Yr28BZJhVME7BlA8t0Z4=
+		7aiR/AiVTKUvV2/AZwUdHwI2L20=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		kosYm/654DA+w9kxTLUasRZzu74=
+		iOji3TAkzMcXe9hpx6xzSh/gG9o=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		X80mQ6MEO+Jn6Zs9ZXdz1qBPXOs=
+		/rGGelMK7apQhlwyfVHZ5KTnae4=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		kosYm/654DA+w9kxTLUasRZzu74=
+		iOji3TAkzMcXe9hpx6xzSh/gG9o=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GEnft0YdefEZtXIqEHFmxk91YtI=
+		64fi6w9ck8SAKHt8p48Z1mkpI4o=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		eNJJJE3Yr28BZJhVME7BlA8t0Z4=
+		7aiR/AiVTKUvV2/AZwUdHwI2L20=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		hgSQksKbCP3oGOTzmGGoNz/PM4M=
+		DyWLyQ0wTN8Tmvz8u6zyou+QLvA=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		AJD2iFvwX+Vn7UqkXt2RyMTeM00=
+		c0jNquwbZQpFNAgxcGFSIMH+9Ms=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		hgSQksKbCP3oGOTzmGGoNz/PM4M=
+		DyWLyQ0wTN8Tmvz8u6zyou+QLvA=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TTfS8JDPRhAI4lyA1WdF6GldltM=
+		mvCqN9+0krj8Ql94F8ec6sXPjcU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,70 +81,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/7jFpuiRPn0XMhYJ+Y+Z+5hKkGMjEA3+5hVS4tksw9c=
+			YtmNkP7h7bPBQIx2dPikMCp2xBZ+74OD+B5a/1O/FTw=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VFMnW4AZsO0igNV+CMF+JC0t2NKePEH6suPS+hk8hPg=
+			aMqk0ZIbFhkuzxuGiijFKlg88zxmt5HBDDgLgZi/s7Y=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZWxC+x4cQTlsAY1WrYE1OSBm0IlCceGWWqQ4rM93PVw=
+			LQXd8HqgJfL4H4JNNO5o774laJ4R8hyYO4vr7Zq/tnA=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VFMnW4AZsO0igNV+CMF+JC0t2NKePEH6suPS+hk8hPg=
+			aMqk0ZIbFhkuzxuGiijFKlg88zxmt5HBDDgLgZi/s7Y=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SAC/GCROSd/DpxVaRMI7JvRSBRxVbfPpZJBjbwzH5n8=
+			JAvCc+S7wA08QLa8NWpLZk/H9S//D7OqYf8MdQZmub0=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/7jFpuiRPn0XMhYJ+Y+Z+5hKkGMjEA3+5hVS4tksw9c=
+			YtmNkP7h7bPBQIx2dPikMCp2xBZ+74OD+B5a/1O/FTw=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i+j6yPJArZAVg1jkJpVNl1Q0Kr1uhk5XL+Zst2AeUVs=
+			OVMRx4Ujk+8wcu2INmlbXvFSJlwu7QxpGrg8S+QQR4o=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8XYkDLCesy/9IVduSSYLOJMUj8J9OY/J0c1rN4crPNc=
+			GpTfd+l8QydMze+qBTmde6vA59xp+DRdTWedrOfrKSE=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i+j6yPJArZAVg1jkJpVNl1Q0Kr1uhk5XL+Zst2AeUVs=
+			OVMRx4Ujk+8wcu2INmlbXvFSJlwu7QxpGrg8S+QQR4o=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6iIITscCplOfHEZVXM5XVPqehbYhoRKwNLW0RSsuG9E=
+			epoTvPbKvhPaEJ0z3JO1xGwAbkiXx8l3fiTkySIjjGI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

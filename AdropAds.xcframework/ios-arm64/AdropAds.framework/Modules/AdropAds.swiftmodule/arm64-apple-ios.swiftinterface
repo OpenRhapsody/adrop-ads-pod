@@ -2,6 +2,7 @@
 // swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AdropAds
 // swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
 @_exported import AdropAds
 import Combine
 import CoreLocation
@@ -23,15 +24,6 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import zlib
-public typealias AdropUserDidEarnRewardHandler = (_ type: Swift.Int, _ amount: Swift.Int) -> ()
-@_inheritsConvenienceInitializers @objc public class Adrop : ObjectiveC.NSObject {
-  public var isProduction: Swift.Bool {
-    get
-  }
-  @objc public static func initialize(production: Swift.Bool = false)
-  @objc override dynamic public init()
-  @objc deinit
-}
 @available(iOS 13.0, *)
 public struct AdropBannerRepresented : SwiftUI.UIViewRepresentable {
   public typealias UIViewType = AdropAds.AdropBanner
@@ -42,29 +34,6 @@ public struct AdropBannerRepresented : SwiftUI.UIViewRepresentable {
   @_Concurrency.MainActor(unsafe) public func updateUIView(_ uiView: AdropAds.AdropBanner, context: AdropAds.AdropBannerRepresented.Context)
   public typealias Body = Swift.Never
   public typealias Coordinator = Swift.Void
-}
-public enum AdropBannerSize : Swift.String {
-  case H50
-  case H80
-  case H100
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-@objc public class AdropRewardedAd : ObjectiveC.NSObject {
-  @objc weak public var delegate: (any AdropAds.AdropRewardedAdDelegate)?
-  @objc public var unitId: Swift.String {
-    @objc get
-  }
-  @objc public var isLoaded: Swift.Bool {
-    @objc get
-  }
-  @objc public init(unitId: Swift.String)
-  @objc public func load()
-  @objc public func show(fromRootViewController: UIKit.UIViewController, userDidEarnRewardHandler: @escaping AdropAds.AdropUserDidEarnRewardHandler)
-  @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class AdropBanner : UIKit.UIView {
   @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any AdropAds.AdropBannerDelegate)?
@@ -118,6 +87,26 @@ extension AdropAds.ULID : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
+public typealias AdropUserDidEarnRewardHandler = (_ type: Swift.Int, _ amount: Swift.Int) -> ()
+@_inheritsConvenienceInitializers @objc public class Adrop : ObjectiveC.NSObject {
+  public var isProduction: Swift.Bool {
+    get
+  }
+  @objc public static func initialize(production: Swift.Bool = false)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol AdropInterstitialAdDelegate {
+  @objc func onAdReceived(_ ad: AdropAds.AdropInterstitialAd)
+  @objc func onAdFailedToReceive(_ ad: AdropAds.AdropInterstitialAd, _ error: AdropAds.AdropErrorCode)
+  @objc func onAdImpression(_ ad: AdropAds.AdropInterstitialAd)
+  @objc func onAdClicked(_ ad: AdropAds.AdropInterstitialAd)
+  @objc func onAdWillPresentFullScreen(_ ad: AdropAds.AdropInterstitialAd)
+  @objc func onAdDidPresentFullScreen(_ ad: AdropAds.AdropInterstitialAd)
+  @objc func onAdWillDismissFullScreen(_ ad: AdropAds.AdropInterstitialAd)
+  @objc func onAdDidDismissFullScreen(_ ad: AdropAds.AdropInterstitialAd)
+  @objc func onAdFailedToShowFullScreen(_ ad: AdropAds.AdropInterstitialAd, _ errorCode: AdropAds.AdropErrorCode)
+}
 @objc public enum AdropMetricCode : Swift.Int {
   case VALID
   case INVALID
@@ -155,28 +144,6 @@ public func AdropMetricCodeToString(code: AdropAds.AdropMetricCode) -> Swift.Str
   }
 }
 public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.String
-@objc public protocol AdropInterstitialAdDelegate {
-  @objc func onAdReceived(_ ad: AdropAds.AdropInterstitialAd)
-  @objc func onAdFailedToReceive(_ ad: AdropAds.AdropInterstitialAd, _ error: AdropAds.AdropErrorCode)
-  @objc func onAdImpression(_ ad: AdropAds.AdropInterstitialAd)
-  @objc func onAdClicked(_ ad: AdropAds.AdropInterstitialAd)
-  @objc func onAdWillPresentFullScreen(_ ad: AdropAds.AdropInterstitialAd)
-  @objc func onAdDidPresentFullScreen(_ ad: AdropAds.AdropInterstitialAd)
-  @objc func onAdWillDismissFullScreen(_ ad: AdropAds.AdropInterstitialAd)
-  @objc func onAdDidDismissFullScreen(_ ad: AdropAds.AdropInterstitialAd)
-  @objc func onAdFailedToShowFullScreen(_ ad: AdropAds.AdropInterstitialAd, _ errorCode: AdropAds.AdropErrorCode)
-}
-@objc public protocol AdropRewardedAdDelegate {
-  @objc func onAdReceived(_ ad: AdropAds.AdropRewardedAd)
-  @objc func onAdFailedToReceive(_ ad: AdropAds.AdropRewardedAd, _ error: AdropAds.AdropErrorCode)
-  @objc func onAdImpression(_ ad: AdropAds.AdropRewardedAd)
-  @objc func onAdClicked(_ ad: AdropAds.AdropRewardedAd)
-  @objc func onAdWillPresentFullScreen(_ ad: AdropAds.AdropRewardedAd)
-  @objc func onAdDidPresentFullScreen(_ ad: AdropAds.AdropRewardedAd)
-  @objc func onAdWillDismissFullScreen(_ ad: AdropAds.AdropRewardedAd)
-  @objc func onAdDidDismissFullScreen(_ ad: AdropAds.AdropRewardedAd)
-  @objc func onAdFailedToShowFullScreen(_ ad: AdropAds.AdropRewardedAd, _ errorCode: AdropAds.AdropErrorCode)
-}
 @objc public class AdropInterstitialAd : ObjectiveC.NSObject {
   @objc weak public var delegate: (any AdropAds.AdropInterstitialAdDelegate)?
   @objc public var unitId: Swift.String {
@@ -190,17 +157,51 @@ public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.Strin
   @objc public func show(fromRootViewController: UIKit.UIViewController)
   @objc deinit
 }
+public enum AdropBannerSize : Swift.String {
+  case H50
+  case H80
+  case H100
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 @objc public protocol AdropBannerDelegate {
   @objc func onAdReceived(_ banner: AdropAds.AdropBanner)
   @objc func onAdClicked(_ banner: AdropAds.AdropBanner)
   @objc func onAdFailedToReceive(_ banner: AdropAds.AdropBanner, _ error: AdropAds.AdropErrorCode)
 }
-extension AdropAds.AdropBannerSize : Swift.Equatable {}
-extension AdropAds.AdropBannerSize : Swift.Hashable {}
-extension AdropAds.AdropBannerSize : Swift.RawRepresentable {}
+@objc public protocol AdropRewardedAdDelegate {
+  @objc func onAdReceived(_ ad: AdropAds.AdropRewardedAd)
+  @objc func onAdFailedToReceive(_ ad: AdropAds.AdropRewardedAd, _ error: AdropAds.AdropErrorCode)
+  @objc func onAdImpression(_ ad: AdropAds.AdropRewardedAd)
+  @objc func onAdClicked(_ ad: AdropAds.AdropRewardedAd)
+  @objc func onAdWillPresentFullScreen(_ ad: AdropAds.AdropRewardedAd)
+  @objc func onAdDidPresentFullScreen(_ ad: AdropAds.AdropRewardedAd)
+  @objc func onAdWillDismissFullScreen(_ ad: AdropAds.AdropRewardedAd)
+  @objc func onAdDidDismissFullScreen(_ ad: AdropAds.AdropRewardedAd)
+  @objc func onAdFailedToShowFullScreen(_ ad: AdropAds.AdropRewardedAd, _ errorCode: AdropAds.AdropErrorCode)
+}
+@objc public class AdropRewardedAd : ObjectiveC.NSObject {
+  @objc weak public var delegate: (any AdropAds.AdropRewardedAdDelegate)?
+  @objc public var unitId: Swift.String {
+    @objc get
+  }
+  @objc public var isLoaded: Swift.Bool {
+    @objc get
+  }
+  @objc public init(unitId: Swift.String)
+  @objc public func load()
+  @objc public func show(fromRootViewController: UIKit.UIViewController, userDidEarnRewardHandler: @escaping AdropAds.AdropUserDidEarnRewardHandler)
+  @objc deinit
+}
 extension AdropAds.AdropMetricCode : Swift.Equatable {}
 extension AdropAds.AdropMetricCode : Swift.Hashable {}
 extension AdropAds.AdropMetricCode : Swift.RawRepresentable {}
 extension AdropAds.AdropErrorCode : Swift.Equatable {}
 extension AdropAds.AdropErrorCode : Swift.Hashable {}
 extension AdropAds.AdropErrorCode : Swift.RawRepresentable {}
+extension AdropAds.AdropBannerSize : Swift.Equatable {}
+extension AdropAds.AdropBannerSize : Swift.Hashable {}
+extension AdropAds.AdropBannerSize : Swift.RawRepresentable {}
