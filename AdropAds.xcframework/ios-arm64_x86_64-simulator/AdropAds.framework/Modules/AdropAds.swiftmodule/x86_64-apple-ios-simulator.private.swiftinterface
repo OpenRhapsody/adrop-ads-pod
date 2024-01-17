@@ -98,14 +98,14 @@ public typealias AdropUserDidEarnRewardHandler = (_ type: Swift.Int, _ amount: S
 }
 @objc public protocol AdropInterstitialAdDelegate {
   @objc func onAdReceived(_ ad: AdropAds.AdropInterstitialAd)
-  @objc func onAdFailedToReceive(_ ad: AdropAds.AdropInterstitialAd, _ error: AdropAds.AdropErrorCode)
-  @objc func onAdImpression(_ ad: AdropAds.AdropInterstitialAd)
-  @objc func onAdClicked(_ ad: AdropAds.AdropInterstitialAd)
-  @objc func onAdWillPresentFullScreen(_ ad: AdropAds.AdropInterstitialAd)
-  @objc func onAdDidPresentFullScreen(_ ad: AdropAds.AdropInterstitialAd)
-  @objc func onAdWillDismissFullScreen(_ ad: AdropAds.AdropInterstitialAd)
-  @objc func onAdDidDismissFullScreen(_ ad: AdropAds.AdropInterstitialAd)
-  @objc func onAdFailedToShowFullScreen(_ ad: AdropAds.AdropInterstitialAd, _ errorCode: AdropAds.AdropErrorCode)
+  @objc func onAdFailedToReceive(_ ad: AdropAds.AdropInterstitialAd, _ errorCode: AdropAds.AdropErrorCode)
+  @objc optional func onAdImpression(_ ad: AdropAds.AdropInterstitialAd)
+  @objc optional func onAdClicked(_ ad: AdropAds.AdropInterstitialAd)
+  @objc optional func onAdWillPresentFullScreen(_ ad: AdropAds.AdropInterstitialAd)
+  @objc optional func onAdDidPresentFullScreen(_ ad: AdropAds.AdropInterstitialAd)
+  @objc optional func onAdWillDismissFullScreen(_ ad: AdropAds.AdropInterstitialAd)
+  @objc optional func onAdDidDismissFullScreen(_ ad: AdropAds.AdropInterstitialAd)
+  @objc optional func onAdFailedToShowFullScreen(_ ad: AdropAds.AdropInterstitialAd, _ errorCode: AdropAds.AdropErrorCode)
 }
 @objc public enum AdropMetricCode : Swift.Int {
   case VALID
@@ -169,19 +169,19 @@ public enum AdropBannerSize : Swift.String {
 }
 @objc public protocol AdropBannerDelegate {
   @objc func onAdReceived(_ banner: AdropAds.AdropBanner)
-  @objc func onAdClicked(_ banner: AdropAds.AdropBanner)
-  @objc func onAdFailedToReceive(_ banner: AdropAds.AdropBanner, _ error: AdropAds.AdropErrorCode)
+  @objc func onAdFailedToReceive(_ banner: AdropAds.AdropBanner, _ errorCode: AdropAds.AdropErrorCode)
+  @objc optional func onAdClicked(_ banner: AdropAds.AdropBanner)
 }
 @objc public protocol AdropRewardedAdDelegate {
   @objc func onAdReceived(_ ad: AdropAds.AdropRewardedAd)
-  @objc func onAdFailedToReceive(_ ad: AdropAds.AdropRewardedAd, _ error: AdropAds.AdropErrorCode)
-  @objc func onAdImpression(_ ad: AdropAds.AdropRewardedAd)
-  @objc func onAdClicked(_ ad: AdropAds.AdropRewardedAd)
-  @objc func onAdWillPresentFullScreen(_ ad: AdropAds.AdropRewardedAd)
-  @objc func onAdDidPresentFullScreen(_ ad: AdropAds.AdropRewardedAd)
-  @objc func onAdWillDismissFullScreen(_ ad: AdropAds.AdropRewardedAd)
-  @objc func onAdDidDismissFullScreen(_ ad: AdropAds.AdropRewardedAd)
-  @objc func onAdFailedToShowFullScreen(_ ad: AdropAds.AdropRewardedAd, _ errorCode: AdropAds.AdropErrorCode)
+  @objc func onAdFailedToReceive(_ ad: AdropAds.AdropRewardedAd, _ errorCode: AdropAds.AdropErrorCode)
+  @objc optional func onAdImpression(_ ad: AdropAds.AdropRewardedAd)
+  @objc optional func onAdClicked(_ ad: AdropAds.AdropRewardedAd)
+  @objc optional func onAdWillPresentFullScreen(_ ad: AdropAds.AdropRewardedAd)
+  @objc optional func onAdDidPresentFullScreen(_ ad: AdropAds.AdropRewardedAd)
+  @objc optional func onAdWillDismissFullScreen(_ ad: AdropAds.AdropRewardedAd)
+  @objc optional func onAdDidDismissFullScreen(_ ad: AdropAds.AdropRewardedAd)
+  @objc optional func onAdFailedToShowFullScreen(_ ad: AdropAds.AdropRewardedAd, _ errorCode: AdropAds.AdropErrorCode)
 }
 @objc public class AdropRewardedAd : ObjectiveC.NSObject {
   @objc weak public var delegate: (any AdropAds.AdropRewardedAdDelegate)?

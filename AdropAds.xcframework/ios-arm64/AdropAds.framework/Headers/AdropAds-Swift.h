@@ -341,8 +341,9 @@ enum AdropErrorCode : NSInteger;
 SWIFT_PROTOCOL("_TtP8AdropAds19AdropBannerDelegate_")
 @protocol AdropBannerDelegate
 - (void)onAdReceived:(AdropBanner * _Nonnull)banner;
+- (void)onAdFailedToReceive:(AdropBanner * _Nonnull)banner :(enum AdropErrorCode)errorCode;
+@optional
 - (void)onAdClicked:(AdropBanner * _Nonnull)banner;
-- (void)onAdFailedToReceive:(AdropBanner * _Nonnull)banner :(enum AdropErrorCode)error;
 @end
 
 typedef SWIFT_ENUM(NSInteger, AdropErrorCode, open) {
@@ -377,7 +378,8 @@ SWIFT_CLASS("_TtC8AdropAds19AdropInterstitialAd")
 SWIFT_PROTOCOL("_TtP8AdropAds27AdropInterstitialAdDelegate_")
 @protocol AdropInterstitialAdDelegate
 - (void)onAdReceived:(AdropInterstitialAd * _Nonnull)ad;
-- (void)onAdFailedToReceive:(AdropInterstitialAd * _Nonnull)ad :(enum AdropErrorCode)error;
+- (void)onAdFailedToReceive:(AdropInterstitialAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
+@optional
 - (void)onAdImpression:(AdropInterstitialAd * _Nonnull)ad;
 - (void)onAdClicked:(AdropInterstitialAd * _Nonnull)ad;
 - (void)onAdWillPresentFullScreen:(AdropInterstitialAd * _Nonnull)ad;
@@ -419,7 +421,8 @@ SWIFT_CLASS("_TtC8AdropAds15AdropRewardedAd")
 SWIFT_PROTOCOL("_TtP8AdropAds23AdropRewardedAdDelegate_")
 @protocol AdropRewardedAdDelegate
 - (void)onAdReceived:(AdropRewardedAd * _Nonnull)ad;
-- (void)onAdFailedToReceive:(AdropRewardedAd * _Nonnull)ad :(enum AdropErrorCode)error;
+- (void)onAdFailedToReceive:(AdropRewardedAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
+@optional
 - (void)onAdImpression:(AdropRewardedAd * _Nonnull)ad;
 - (void)onAdClicked:(AdropRewardedAd * _Nonnull)ad;
 - (void)onAdWillPresentFullScreen:(AdropRewardedAd * _Nonnull)ad;

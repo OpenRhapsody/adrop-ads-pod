@@ -2303,8 +2303,9 @@
             "sugared_genericSig": "<Self where Self : AdropAds.AdropInterstitialAdDelegate>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment",
-              "ObjC"
+              "Optional",
+              "ObjC",
+              "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -2334,6 +2335,7 @@
             "sugared_genericSig": "<Self where Self : AdropAds.AdropInterstitialAdDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -2364,8 +2366,9 @@
             "sugared_genericSig": "<Self where Self : AdropAds.AdropInterstitialAdDelegate>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment",
-              "ObjC"
+              "Optional",
+              "ObjC",
+              "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -2395,6 +2398,7 @@
             "sugared_genericSig": "<Self where Self : AdropAds.AdropInterstitialAdDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -2425,6 +2429,7 @@
             "sugared_genericSig": "<Self where Self : AdropAds.AdropInterstitialAdDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -2455,6 +2460,7 @@
             "sugared_genericSig": "<Self where Self : AdropAds.AdropInterstitialAdDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -2491,6 +2497,7 @@
             "sugared_genericSig": "<Self where Self : AdropAds.AdropInterstitialAdDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -4482,36 +4489,6 @@
           },
           {
             "kind": "Function",
-            "name": "onAdClicked",
-            "printedName": "onAdClicked(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AdropBanner",
-                "printedName": "AdropAds.AdropBanner",
-                "usr": "c:@M@AdropAds@objc(cs)AdropBanner"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AdropAds@objc(pl)AdropBannerDelegate(im)onAdClicked:",
-            "mangledName": "$s8AdropAds0A14BannerDelegateP11onAdClickedyyAA0aC0CF",
-            "moduleName": "AdropAds",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdropAds.AdropBannerDelegate>",
-            "sugared_genericSig": "<Self where Self : AdropAds.AdropBannerDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "onAdFailedToReceive",
             "printedName": "onAdFailedToReceive(_:_:)",
             "children": [
@@ -4541,6 +4518,37 @@
             "sugared_genericSig": "<Self where Self : AdropAds.AdropBannerDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAdClicked",
+            "printedName": "onAdClicked(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdropBanner",
+                "printedName": "AdropAds.AdropBanner",
+                "usr": "c:@M@AdropAds@objc(cs)AdropBanner"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdropAds@objc(pl)AdropBannerDelegate(im)onAdClicked:",
+            "mangledName": "$s8AdropAds0A14BannerDelegateP11onAdClickedyyAA0aC0CF",
+            "moduleName": "AdropAds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdropAds.AdropBannerDelegate>",
+            "sugared_genericSig": "<Self where Self : AdropAds.AdropBannerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -4884,8 +4892,9 @@
             "sugared_genericSig": "<Self where Self : AdropAds.AdropRewardedAdDelegate>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment",
-              "ObjC"
+              "Optional",
+              "ObjC",
+              "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -4915,6 +4924,7 @@
             "sugared_genericSig": "<Self where Self : AdropAds.AdropRewardedAdDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -4945,8 +4955,9 @@
             "sugared_genericSig": "<Self where Self : AdropAds.AdropRewardedAdDelegate>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment",
-              "ObjC"
+              "Optional",
+              "ObjC",
+              "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -4976,6 +4987,7 @@
             "sugared_genericSig": "<Self where Self : AdropAds.AdropRewardedAdDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -5006,6 +5018,7 @@
             "sugared_genericSig": "<Self where Self : AdropAds.AdropRewardedAdDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -5036,6 +5049,7 @@
             "sugared_genericSig": "<Self where Self : AdropAds.AdropRewardedAdDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -5072,6 +5086,7 @@
             "sugared_genericSig": "<Self where Self : AdropAds.AdropRewardedAdDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "Optional",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -8241,63 +8256,63 @@
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 2474,
+      "offset": 2475,
       "length": 21,
       "value": "\"PUBLIC_TEST_UNIT_ID\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 2753,
+      "offset": 2754,
       "length": 49,
       "value": "\"request ad failed. \""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 2801,
+      "offset": 2802,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3496,
+      "offset": 3497,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 4317,
+      "offset": 4318,
       "length": 72,
       "value": "\"cannot open \""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 4336,
+      "offset": 4337,
       "length": 1,
       "value": "\". \""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 4388,
+      "offset": 4389,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 4567,
+      "offset": 4568,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 4840,
+      "offset": 4841,
       "length": 4,
       "value": "true"
     },
@@ -8311,21 +8326,21 @@
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 5764,
+      "offset": 5765,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 6735,
+      "offset": 6736,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 6815,
+      "offset": 6816,
       "length": 4,
       "value": "true"
     },
@@ -8831,7 +8846,7 @@
       "kind": "StringLiteral",
       "offset": 5356,
       "length": 7,
-      "value": "\"0.2.1\""
+      "value": "\"0.2.2\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropConfig.swift",
@@ -11972,14 +11987,14 @@
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/FileDownloader.swift",
       "kind": "StringLiteral",
-      "offset": 3782,
-      "length": 64,
-      "value": "\"Adrop>FileDownloader: Error while deleting old files: \""
+      "offset": 4039,
+      "length": 42,
+      "value": "\"Error while deleting old files: \""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/FileDownloader.swift",
       "kind": "StringLiteral",
-      "offset": 3845,
+      "offset": 4080,
       "length": 2,
       "value": "\"\""
     },
@@ -13358,98 +13373,98 @@
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropRewardedAdFSM.swift",
       "kind": "BooleanLiteral",
-      "offset": 1694,
+      "offset": 1762,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropRewardedAdFSM.swift",
       "kind": "BooleanLiteral",
-      "offset": 1790,
+      "offset": 1858,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropRewardedAdFSM.swift",
       "kind": "BooleanLiteral",
-      "offset": 2107,
+      "offset": 2175,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropRewardedAdFSM.swift",
       "kind": "BooleanLiteral",
-      "offset": 2608,
+      "offset": 2676,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropRewardedAdFSM.swift",
       "kind": "StringLiteral",
-      "offset": 2650,
-      "length": 88,
-      "value": "\"AdropRewardedAdFSM: 오디오 세션 설정 중 오류가 발생했습니다: \""
+      "offset": 2725,
+      "length": 90,
+      "value": "\"setAudioSessionActive 오디오 세션 설정 중 오류가 발생했습니다: \""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropRewardedAdFSM.swift",
       "kind": "StringLiteral",
-      "offset": 2737,
+      "offset": 2814,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropRewardedAdFSM.swift",
       "kind": "BooleanLiteral",
-      "offset": 2819,
+      "offset": 2896,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropRewardedAdFSM.swift",
       "kind": "BooleanLiteral",
-      "offset": 3005,
+      "offset": 3082,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropRewardedAdFSM.swift",
       "kind": "BooleanLiteral",
-      "offset": 3398,
+      "offset": 3475,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropRewardedAdFSM.swift",
       "kind": "BooleanLiteral",
-      "offset": 3507,
+      "offset": 3584,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropRewardedAdFSM.swift",
       "kind": "StringLiteral",
-      "offset": 3577,
-      "length": 88,
-      "value": "\"AdropRewardedAdFSM: 오디오 세션 설정 중 오류가 발생했습니다: \""
+      "offset": 3648,
+      "length": 92,
+      "value": "\"setAudioSessionInactive 오디오 세션 설정 중 오류가 발생했습니다: \""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropRewardedAdFSM.swift",
       "kind": "StringLiteral",
-      "offset": 3664,
+      "offset": 3739,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropRewardedAdFSM.swift",
       "kind": "BooleanLiteral",
-      "offset": 3746,
+      "offset": 3821,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/min-u-im\/dev\/adrop-ios-deploy\/AdropAds\/AdropAds\/AdropRewardedAdFSM.swift",
       "kind": "BooleanLiteral",
-      "offset": 3777,
+      "offset": 3852,
       "length": 4,
       "value": "true"
     },
