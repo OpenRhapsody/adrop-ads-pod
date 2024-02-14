@@ -403,6 +403,43 @@ typedef SWIFT_ENUM(NSInteger, AdropMetricCode, open) {
   AdropMetricCodeOPEN_INVALID = 10,
 };
 
+@protocol AdropNativeAdDelegate;
+
+SWIFT_CLASS("_TtC8AdropAds13AdropNativeAd")
+@interface AdropNativeAd : NSObject
+@property (nonatomic, weak) id <AdropNativeAdDelegate> _Nullable delegate;
+@property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
+@property (nonatomic, readonly) BOOL isLoaded;
+- (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
+- (void)load;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP8AdropAds21AdropNativeAdDelegate_")
+@protocol AdropNativeAdDelegate
+- (void)onAdReceived:(AdropNativeAd * _Nonnull)ad;
+- (void)onAdFailedToReceive:(AdropNativeAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
+- (void)onAdClicked:(AdropNativeAd * _Nonnull)ad;
+@end
+
+
+SWIFT_CLASS("_TtC8AdropAds17AdropNativeAdView")
+@interface AdropNativeAdView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)awakeFromNib;
+- (void)setNativeAd:(AdropNativeAd * _Nonnull)ad;
+- (void)setAdvertiserView:(UIView * _Nonnull)view onClick:(void (^ _Nullable)(AdropNativeAd * _Nullable, UIView * _Nonnull))onClick;
+- (void)setHeadLineView:(UIView * _Nonnull)view onClick:(void (^ _Nullable)(AdropNativeAd * _Nullable, UIView * _Nonnull))onClick;
+- (void)setIconView:(UIView * _Nonnull)view onClick:(void (^ _Nullable)(AdropNativeAd * _Nullable, UIView * _Nonnull))onClick;
+- (void)setCallToActionView:(UIView * _Nonnull)view onClick:(void (^ _Nullable)(AdropNativeAd * _Nullable, UIView * _Nonnull))onClick;
+- (void)setMediaView:(UIView * _Nonnull)view;
+- (void)setBodyView:(UIView * _Nonnull)view;
+@end
+
+
 @protocol AdropRewardedAdDelegate;
 
 SWIFT_CLASS("_TtC8AdropAds15AdropRewardedAd")
@@ -431,6 +468,7 @@ SWIFT_PROTOCOL("_TtP8AdropAds23AdropRewardedAdDelegate_")
 - (void)onAdDidDismissFullScreen:(AdropRewardedAd * _Nonnull)ad;
 - (void)onAdFailedToShowFullScreen:(AdropRewardedAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
 @end
+
 
 
 
@@ -856,6 +894,43 @@ typedef SWIFT_ENUM(NSInteger, AdropMetricCode, open) {
   AdropMetricCodeOPEN_INVALID = 10,
 };
 
+@protocol AdropNativeAdDelegate;
+
+SWIFT_CLASS("_TtC8AdropAds13AdropNativeAd")
+@interface AdropNativeAd : NSObject
+@property (nonatomic, weak) id <AdropNativeAdDelegate> _Nullable delegate;
+@property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
+@property (nonatomic, readonly) BOOL isLoaded;
+- (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
+- (void)load;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP8AdropAds21AdropNativeAdDelegate_")
+@protocol AdropNativeAdDelegate
+- (void)onAdReceived:(AdropNativeAd * _Nonnull)ad;
+- (void)onAdFailedToReceive:(AdropNativeAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
+- (void)onAdClicked:(AdropNativeAd * _Nonnull)ad;
+@end
+
+
+SWIFT_CLASS("_TtC8AdropAds17AdropNativeAdView")
+@interface AdropNativeAdView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)awakeFromNib;
+- (void)setNativeAd:(AdropNativeAd * _Nonnull)ad;
+- (void)setAdvertiserView:(UIView * _Nonnull)view onClick:(void (^ _Nullable)(AdropNativeAd * _Nullable, UIView * _Nonnull))onClick;
+- (void)setHeadLineView:(UIView * _Nonnull)view onClick:(void (^ _Nullable)(AdropNativeAd * _Nullable, UIView * _Nonnull))onClick;
+- (void)setIconView:(UIView * _Nonnull)view onClick:(void (^ _Nullable)(AdropNativeAd * _Nullable, UIView * _Nonnull))onClick;
+- (void)setCallToActionView:(UIView * _Nonnull)view onClick:(void (^ _Nullable)(AdropNativeAd * _Nullable, UIView * _Nonnull))onClick;
+- (void)setMediaView:(UIView * _Nonnull)view;
+- (void)setBodyView:(UIView * _Nonnull)view;
+@end
+
+
 @protocol AdropRewardedAdDelegate;
 
 SWIFT_CLASS("_TtC8AdropAds15AdropRewardedAd")
@@ -884,6 +959,7 @@ SWIFT_PROTOCOL("_TtP8AdropAds23AdropRewardedAdDelegate_")
 - (void)onAdDidDismissFullScreen:(AdropRewardedAd * _Nonnull)ad;
 - (void)onAdFailedToShowFullScreen:(AdropRewardedAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
 @end
+
 
 
 
