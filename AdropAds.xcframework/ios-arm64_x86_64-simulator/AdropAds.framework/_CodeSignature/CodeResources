@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		z/1BGifWoq3rZ4yJCHZZTSyHI+Q=
+		uGIZ0b91rk93Ai6T8IO3aFBD1U4=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		eGXGHymwiBgneEsZfVOT7HsDGi8=
+		4CclwjWBYq0+G86Xy4bMr1rQAIc=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zT7FmVHJQq13re/QFz7V7GdqFZM=
+		IDZUKGaymLpTxQ0ms5prHXsB5Aw=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		eGXGHymwiBgneEsZfVOT7HsDGi8=
+		4CclwjWBYq0+G86Xy4bMr1rQAIc=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,11 +54,15 @@
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		H+qZCLY9KZJ8Fs8Lq9dqdViVT+k=
+		JZP9rAHW4EnAr09ZCZt55YH1a34=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		82SDa4g0/i9oo1UlpxiFcXMKmlU=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		5H+aNbPIEftP2g/630/wKkZ//bk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -81,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3MDzAZnAgEWCgOgrDJ/NqzStRdwTxSoqhdz6ofEi5E8=
+			6WaSiAHz1+9MOzx0KsE3kExtXUCwPZXqNjGUrKh/X5k=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -109,14 +113,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FyPUw+BYSolfPBWU08IP0CNSf9VQjwGTcqEk6/H5lls=
+			qxsWO2Lzd8ZkAAPuA1UDpZrGgcb2JFnU/NSOAuR1b0o=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3MDzAZnAgEWCgOgrDJ/NqzStRdwTxSoqhdz6ofEi5E8=
+			6WaSiAHz1+9MOzx0KsE3kExtXUCwPZXqNjGUrKh/X5k=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -144,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6ay5gCZEHOw8Gof2fQZdIXerhcnYg6KvOs8AP4ofK4k=
+			bmtetzsZ7VCtYl9XTGZrLGXwSv0BTqRscDJnbTPLsNw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -152,6 +156,13 @@
 			<key>hash2</key>
 			<data>
 			173qBaq629qnEUcnmZrF+6Hanhei/8Jk30hZttTPnjU=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			brUWTyJ5zMGI1dIAO48ejMZlwtRsQjVxRREtt4ftBqw=
 			</data>
 		</dict>
 	</dict>
