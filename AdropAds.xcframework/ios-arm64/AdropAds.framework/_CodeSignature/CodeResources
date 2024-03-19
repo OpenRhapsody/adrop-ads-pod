@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AdropAds-Swift.h</key>
 		<data>
-		XIiayJmSYqFfaPJAUvle8OmsnLo=
+		oy79qDPrqVoObt6ycWiw3Uu3Jcs=
 		</data>
 		<key>Headers/AdropAds.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4sbs5jDSELbEDie0aggTmLpkE+Q=
+		r3v25M7mHih/7Ua4NyepOjET090=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Yrz6JiYqXlFjjKAt5CqMjmx8bE8=
+		A0cKW8sNRwceNFoV/CEngHdGNvI=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		l5vGHa6sLNLsQEeRJvQojtoourI=
+		SUZ6dEBv80IN5ahiTZc8glvbxD0=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		kPPCfFFvdnDgqcxM9azYCed1BBE=
+		6fHHyNGg5KZ4g6LedhYIfsbtixA=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		l5vGHa6sLNLsQEeRJvQojtoourI=
+		SUZ6dEBv80IN5ahiTZc8glvbxD0=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		rqfTRMgRJ8xInAW9RQ1UPlhnGrU=
+		gMqIkfWAT9IyYeju7voDjSItKaM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		5H+aNbPIEftP2g/630/wKkZ//bk=
+		+TI1szNiwd410SgLJxRYAsZsZn0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wLIY73zrzRnG0seEh91MPyT9lcsPK/34bExcX4KoKp4=
+			+hJIMYuBz950iQh/aE0xnCg9iIQRR7SLTFNk22ueZ/o=
 			</data>
 		</dict>
 		<key>Headers/AdropAds.h</key>
@@ -65,35 +65,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bzme2lUZUr3Yq2xxdvAvWNDLlna7+1tA15Maas+nNto=
+			yEywbEhApNfR13SPSE5ExjEzC7cFKh0eTdA+R0jDUYU=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ar/eQvhYNuo0BTvUG54cl4bNqlFAhnbNZZkdb5zvhOY=
+			JbBrv6IS43QYLKhyw8u5KezoXelUl2qwCCgxcRJFbcE=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eIWDamcm4xIgrkO5VWbcC4y0lhzQxOEAZrM1ijxYGXI=
+			g29ee8TbCkGf8cM4TIP1gd4ypN0QEgzu80gUXzt8xTA=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ar/eQvhYNuo0BTvUG54cl4bNqlFAhnbNZZkdb5zvhOY=
+			JbBrv6IS43QYLKhyw8u5KezoXelUl2qwCCgxcRJFbcE=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6P7I8AlL4nzNN6PSsakXaqm1a5yx5tmu81mUYUezCn4=
+			y3o5imco2PsAJcIvnzbse7B2D3ZgMFWqrmcZ/wLmYU4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -107,7 +107,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			brUWTyJ5zMGI1dIAO48ejMZlwtRsQjVxRREtt4ftBqw=
+			RZoL/mc+mhvXbT2mD8vkqd7Ax1Y6+Adi3JYYvASWsFg=
 			</data>
 		</dict>
 	</dict>
