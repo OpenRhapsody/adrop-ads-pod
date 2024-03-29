@@ -51,6 +51,7 @@ public typealias AdropUserDidEarnRewardHandler = (_ type: Swift.Int, _ amount: S
   case OPEN_INVALID
   case PAGE_ATS
   case PAGE_ATTACH
+  case SET_PROPERTY
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -148,12 +149,11 @@ extension AdropAds.AdropBanner : WebKit.WKNavigationDelegate, WebKit.WKUIDelegat
   @objc optional func onAdDidDismissFullScreen(_ ad: AdropAds.AdropRewardedAd)
   @objc optional func onAdFailedToShowFullScreen(_ ad: AdropAds.AdropRewardedAd, _ errorCode: AdropAds.AdropErrorCode)
 }
-@_inheritsConvenienceInitializers @objc public class Adrop : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Adrop : ObjectiveC.NSObject {
   public var isProduction: Swift.Bool {
     get
   }
   @objc public static func initialize(production: Swift.Bool = false)
-  @objc override dynamic public init()
   @objc deinit
 }
 @available(iOS 13.0, *)

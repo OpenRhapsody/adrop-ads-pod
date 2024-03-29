@@ -304,8 +304,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC8AdropAds5Adrop")
 @interface Adrop : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (void)initializeWithProduction:(BOOL)production;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @protocol AdropBannerDelegate;
@@ -403,6 +404,7 @@ typedef SWIFT_ENUM(NSInteger, AdropMetricCode, open) {
   AdropMetricCodeOPEN_INVALID = 10,
   AdropMetricCodePAGE_ATS = 11,
   AdropMetricCodePAGE_ATTACH = 12,
+  AdropMetricCodeSET_PROPERTY = 13,
 };
 
 @protocol AdropNativeAdDelegate;
@@ -799,8 +801,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC8AdropAds5Adrop")
 @interface Adrop : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (void)initializeWithProduction:(BOOL)production;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @protocol AdropBannerDelegate;
@@ -898,6 +901,7 @@ typedef SWIFT_ENUM(NSInteger, AdropMetricCode, open) {
   AdropMetricCodeOPEN_INVALID = 10,
   AdropMetricCodePAGE_ATS = 11,
   AdropMetricCodePAGE_ATTACH = 12,
+  AdropMetricCodeSET_PROPERTY = 13,
 };
 
 @protocol AdropNativeAdDelegate;
