@@ -49,6 +49,7 @@ import zlib
   case ERROR_CODE_INTERNAL
   case ERROR_CODE_INITIALIZE
   case ERROR_CODE_INVALID_UNIT
+  case ERROR_CODE_NOT_TARGET_COUNTRY
   case ERROR_CODE_AD_INACTIVE
   case ERROR_CODE_AD_NO_FILL
   case ERROR_CODE_AD_LOAD_DUPLICATED
@@ -237,7 +238,7 @@ public class AdropPageTracker {
   public var isProduction: Swift.Bool {
     get
   }
-  @objc public static func initialize(production: Swift.Bool = false)
+  @objc public static func initialize(production: Swift.Bool = false, targetCountries: [Swift.String]? = nil)
   @objc deinit
 }
 @objc public protocol AdropNativeAdDelegate {

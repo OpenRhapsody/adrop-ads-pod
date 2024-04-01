@@ -302,16 +302,16 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class NSString;
 
 SWIFT_CLASS("_TtC8AdropAds5Adrop")
 @interface Adrop : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-+ (void)initializeWithProduction:(BOOL)production;
++ (void)initializeWithProduction:(BOOL)production targetCountries:(NSArray<NSString *> * _Nullable)targetCountries;
 @end
 
 @protocol AdropBannerDelegate;
-@class NSString;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
@@ -320,8 +320,8 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull id SWIFT_DEPRECATED_MSG("", "unitId");
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)load;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -353,12 +353,13 @@ typedef SWIFT_ENUM(NSInteger, AdropErrorCode, open) {
   AdropErrorCodeERROR_CODE_INTERNAL = 1,
   AdropErrorCodeERROR_CODE_INITIALIZE = 2,
   AdropErrorCodeERROR_CODE_INVALID_UNIT = 3,
-  AdropErrorCodeERROR_CODE_AD_INACTIVE = 4,
-  AdropErrorCodeERROR_CODE_AD_NO_FILL = 5,
-  AdropErrorCodeERROR_CODE_AD_LOAD_DUPLICATED = 6,
-  AdropErrorCodeERROR_CODE_AD_LOADING = 7,
-  AdropErrorCodeERROR_CODE_AD_EMPTY = 8,
-  AdropErrorCodeERROR_CODE_AD_SHOWN = 9,
+  AdropErrorCodeERROR_CODE_NOT_TARGET_COUNTRY = 4,
+  AdropErrorCodeERROR_CODE_AD_INACTIVE = 5,
+  AdropErrorCodeERROR_CODE_AD_NO_FILL = 6,
+  AdropErrorCodeERROR_CODE_AD_LOAD_DUPLICATED = 7,
+  AdropErrorCodeERROR_CODE_AD_LOADING = 8,
+  AdropErrorCodeERROR_CODE_AD_EMPTY = 9,
+  AdropErrorCodeERROR_CODE_AD_SHOWN = 10,
 };
 
 @protocol AdropInterstitialAdDelegate;
