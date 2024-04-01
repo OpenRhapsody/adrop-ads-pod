@@ -278,6 +278,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreFoundation;
+@import Foundation;
 @import ObjectiveC;
 @import UIKit;
 @import WebKit;
@@ -390,6 +391,19 @@ SWIFT_PROTOCOL("_TtP8AdropAds27AdropInterstitialAdDelegate_")
 - (void)onAdFailedToShowFullScreen:(AdropInterstitialAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
 @end
 
+
+SWIFT_CLASS("_TtC8AdropAds8AdropKey")
+@interface AdropKey : NSString
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull AGE;)
++ (NSString * _Nonnull)AGE SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull BIRTH;)
++ (NSString * _Nonnull)BIRTH SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull GENDER;)
++ (NSString * _Nonnull)GENDER SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 typedef SWIFT_ENUM(NSInteger, AdropMetricCode, open) {
   AdropMetricCodeVALID = 0,
   AdropMetricCodeINVALID = 1,
@@ -406,6 +420,12 @@ typedef SWIFT_ENUM(NSInteger, AdropMetricCode, open) {
   AdropMetricCodePAGE_ATTACH = 12,
   AdropMetricCodeSET_PROPERTY = 13,
 };
+
+
+SWIFT_CLASS("_TtC8AdropAds12AdropMetrics")
+@interface AdropMetrics : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 @protocol AdropNativeAdDelegate;
 
@@ -471,6 +491,28 @@ SWIFT_PROTOCOL("_TtP8AdropAds23AdropRewardedAdDelegate_")
 - (void)onAdWillDismissFullScreen:(AdropRewardedAd * _Nonnull)ad;
 - (void)onAdDidDismissFullScreen:(AdropRewardedAd * _Nonnull)ad;
 - (void)onAdFailedToShowFullScreen:(AdropRewardedAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
+@end
+
+
+SWIFT_CLASS("_TtC8AdropAds10AdropValue")
+@interface AdropValue : NSString
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull UNKNOWN;)
++ (NSString * _Nonnull)UNKNOWN SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtCC8AdropAds10AdropValue11AdropGender")
+@interface AdropGender : NSString
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull MALE;)
++ (NSString * _Nonnull)MALE SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull FEMALE;)
++ (NSString * _Nonnull)FEMALE SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull OTHER;)
++ (NSString * _Nonnull)OTHER SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
