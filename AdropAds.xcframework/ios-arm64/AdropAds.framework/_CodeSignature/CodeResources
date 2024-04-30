@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		r3v25M7mHih/7Ua4NyepOjET090=
+		tMSYuaFgrqcb9aIQRYblyZYPvb4=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		O0Ds/B9NR/m4Iwe1QHdRxPICHUk=
+		pZXz41OjqVdA4qDqb5Tsem3Xweo=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		cleYB9KO0p3j4B9F8gTRYnwcsvs=
+		CJg3HKgWnnNO9ZFsKur03N4ozgE=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		cleYB9KO0p3j4B9F8gTRYnwcsvs=
+		CJg3HKgWnnNO9ZFsKur03N4ozgE=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		G3zCO5D+csyBPDEB0P6GNmAl6iw=
+		l3DNs2qomx8cJAQmbGDb/FnWuBk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -44,6 +44,24 @@
 		<data>
 		+TI1szNiwd410SgLJxRYAsZsZn0=
 		</data>
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Xihp+fksRE8T29OMsE0H5BNmEQo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1T+LhWgYCH1QRX+QXWvsv0JCTjM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -65,14 +83,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kx9C1c8Rj61LYXubqHiGaoClt/qNH8Ep8SjQO8YqZQc=
+			ozE4b/ohCbDXMOvM/U+z6CSDNlgd0oxO99PZHF15gi4=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			l8mMZfNQCItvzkYyEnZmWr7fDLHQHwMoghMiOn6NcPw=
+			2Off10JzETJG9WMD4ip91DJOgx6sO3s8NhbOD9i3YE8=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -86,14 +104,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l8mMZfNQCItvzkYyEnZmWr7fDLHQHwMoghMiOn6NcPw=
+			2Off10JzETJG9WMD4ip91DJOgx6sO3s8NhbOD9i3YE8=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TFuqPy3vVW0QiRBNHlL8yi5e/TWpdglmoyviMKAOVG0=
+			nldmrrvpQXCHlnKLlOdm5E0/aDeaQe3ltLyyrF3XfiY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -109,6 +127,24 @@
 			<data>
 			RZoL/mc+mhvXbT2mD8vkqd7Ax1Y6+Adi3JYYvASWsFg=
 			</data>
+		</dict>
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			72fxEuO5fRs7afXmJlTbRIkFs0Vbrg7FTQdrz2GQPhg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			h8reHnn13b6DxVjOKy8sdF+iJrZprTjlRoa81RpNCDE=
+			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>
