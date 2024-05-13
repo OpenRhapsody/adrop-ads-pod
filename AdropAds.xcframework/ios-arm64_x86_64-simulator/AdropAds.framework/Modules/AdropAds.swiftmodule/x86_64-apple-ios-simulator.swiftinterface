@@ -61,6 +61,7 @@ import zlib
 }
 @_inheritsConvenienceInitializers @objc public class AdropMetrics : ObjectiveC.NSObject {
   public static func setProperty(key: Swift.String, value: Swift.String)
+  public static func logEvent(name: Swift.String, params: [Swift.String : any Swift.Encodable])
   @objc override dynamic public init()
   @objc deinit
 }

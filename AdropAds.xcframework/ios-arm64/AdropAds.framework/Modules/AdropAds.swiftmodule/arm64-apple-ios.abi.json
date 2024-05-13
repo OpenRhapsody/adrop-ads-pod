@@ -1499,6 +1499,54 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "logEvent",
+            "printedName": "logEvent(name:params:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : any Swift.Encodable]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encodable",
+                    "printedName": "any Swift.Encodable",
+                    "usr": "s:SE"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AdropAds0A7MetricsC8logEvent4name6paramsySS_SDySSSE_pGtFZ",
+            "mangledName": "$s8AdropAds0A7MetricsC8logEvent4name6paramsySS_SDySSSE_pGtFZ",
+            "moduleName": "AdropAds",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -11525,16 +11573,23 @@
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropMetrics.swift",
       "kind": "StringLiteral",
-      "offset": 97,
+      "offset": 427,
       "length": 18,
       "value": "\"io.adrop.metrics\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropMetrics.swift",
       "kind": "IntegerLiteral",
-      "offset": 219,
+      "offset": 549,
       "length": 1,
       "value": "1"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropMetrics.swift",
+      "kind": "Dictionary",
+      "offset": 668,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropRewardedAdViewController.swift",
@@ -13228,7 +13283,7 @@
       "kind": "StringLiteral",
       "offset": 6108,
       "length": 7,
-      "value": "\"0.4.1\""
+      "value": "\"0.4.2\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
