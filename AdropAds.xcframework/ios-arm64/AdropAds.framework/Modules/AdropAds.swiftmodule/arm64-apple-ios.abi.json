@@ -1516,28 +1516,37 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : any Swift.Encodable]",
+                "name": "Optional",
+                "printedName": "[Swift.String : any Swift.Encodable]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Encodable",
-                    "printedName": "any Swift.Encodable",
-                    "usr": "s:SE"
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : any Swift.Encodable]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Encodable",
+                        "printedName": "any Swift.Encodable",
+                        "usr": "s:SE"
+                      }
+                    ],
+                    "usr": "s:SD"
                   }
                 ],
-                "usr": "s:SD"
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8AdropAds0A7MetricsC8logEvent4name6paramsySS_SDySSSE_pGtFZ",
-            "mangledName": "$s8AdropAds0A7MetricsC8logEvent4name6paramsySS_SDySSSE_pGtFZ",
+            "usr": "s:8AdropAds0A7MetricsC8logEvent4name6paramsySS_SDySSSE_pGSgtFZ",
+            "mangledName": "$s8AdropAds0A7MetricsC8logEvent4name6paramsySS_SDySSSE_pGSgtFZ",
             "moduleName": "AdropAds",
             "static": true,
             "declAttributes": [
@@ -11592,6 +11601,13 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropMetrics.swift",
+      "kind": "Dictionary",
+      "offset": 1131,
+      "length": 3,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 461,
@@ -13283,7 +13299,7 @@
       "kind": "StringLiteral",
       "offset": 6108,
       "length": 7,
-      "value": "\"0.4.2\""
+      "value": "\"0.4.3\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
