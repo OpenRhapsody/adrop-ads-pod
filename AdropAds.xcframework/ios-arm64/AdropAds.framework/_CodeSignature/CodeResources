@@ -4,9 +4,29 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AdropAccessPointView.nib</key>
+		<data>
+		8YiWG67FZCSssAA28jCQaD0+cik=
+		</data>
+		<key>AdropOptInOutProgressView.nib</key>
+		<data>
+		2hqz+VenkTriuTmrJrZlO7XERHo=
+		</data>
+		<key>AdropPopupAdViewBottom.nib</key>
+		<data>
+		um01CEVwM/84xWYHlu5GQ2z/7po=
+		</data>
+		<key>AdropPopupAdViewCenter.nib</key>
+		<data>
+		GTjkk+flu+jd8M1quULz5vlhF+c=
+		</data>
+		<key>AdropSplashViewController.nib</key>
+		<data>
+		AfwZPfb38niJXr6kfzZqZTft3CA=
+		</data>
 		<key>Headers/AdropAds-Swift.h</key>
 		<data>
-		mfmIcther77H2KNH9Dpq6JrleEw=
+		9NixIluYHMx5MtPVgvriCf75m5s=
 		</data>
 		<key>Headers/AdropAds.h</key>
 		<data>
@@ -18,23 +38,23 @@
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		4+2jnOgSSZrjxAQ0zNS/Q3/WLP0=
+		e/jKLxCenjIciQog8LuOo8Upvd4=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		bPABmwHID+/6omy3/NgpQmcXCFY=
+		ww3B4EgS7Kd8FIUT7kzjlT+uRC8=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		6fHHyNGg5KZ4g6LedhYIfsbtixA=
+		qb3TpSkWehgJ4KcIw3IBGuHeYww=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		bPABmwHID+/6omy3/NgpQmcXCFY=
+		ww3B4EgS7Kd8FIUT7kzjlT+uRC8=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		OZKfOM7y3YrfT0bq8yU7nNetWPQ=
+		j/zfH/lMwJ5TcsjS4Y1CGilyWgI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -48,7 +68,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xihp+fksRE8T29OMsE0H5BNmEQo=
+			nVRwqYt2tNZXtXhgQdtyfQXFBzU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -57,7 +77,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1T+LhWgYCH1QRX+QXWvsv0JCTjM=
+			FJzD//OihR6PHGys3pR+5NDQQMk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -65,11 +85,46 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AdropAccessPointView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TjRrNLSGllWjyCXOwzOlHaAi/0/ZvgQ22+DKbZVMQ18=
+			</data>
+		</dict>
+		<key>AdropOptInOutProgressView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IHWrKBvc05YyIo8rIcM1MhpnjS7UMiwtz09vqmREsu0=
+			</data>
+		</dict>
+		<key>AdropPopupAdViewBottom.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RCEakRyTxuyF1DyhTK90E5jf44CFOC4WgDN2uI/gytY=
+			</data>
+		</dict>
+		<key>AdropPopupAdViewCenter.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ECJcXQ2fHh/oCejkuHgCZFlNYxIKzEkcuTVoeOsgBck=
+			</data>
+		</dict>
+		<key>AdropSplashViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GG8IOLsfK8t+NTERiFZD3GcFfLlnsl99deiKQndXH+U=
+			</data>
+		</dict>
 		<key>Headers/AdropAds-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L4e6w8k8S+NAocPQMHsbYSqT7gOgxUXS0382N8kr2y0=
+			+F5wDNiDl1NIE++0A+LIAR6dBMYpwJehVXQKX69yZ+4=
 			</data>
 		</dict>
 		<key>Headers/AdropAds.h</key>
@@ -83,35 +138,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ugtd6aUg5juNR/eKb4MwWPXJMsCrAK4PVSzVWkykSgM=
+			Q1k4Lu2fcBBar9dBvfFYsDHV6jHr7+ZIpoVni9GPZPE=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WXY+1KXT6X1I9dfdXQd5M84M4t4ZS234GEyP9gPaWWU=
+			Gpc/xj/QeoOCkApEGugTe7hK8KgQOrB2enFDPVzelR0=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g29ee8TbCkGf8cM4TIP1gd4ypN0QEgzu80gUXzt8xTA=
+			U3QBo1Dp4xqw0UASxTjlk8WxcrQZI16N4196LrR0bEI=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WXY+1KXT6X1I9dfdXQd5M84M4t4ZS234GEyP9gPaWWU=
+			Gpc/xj/QeoOCkApEGugTe7hK8KgQOrB2enFDPVzelR0=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kRxOxro1STarjb+rTEY+yzXHsTalv9z5yYV3u4Pewug=
+			crDVPK5/6ZTsaIcN3JKX1LL2tbV7dGIKOsGi0o4osc8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -132,7 +187,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			72fxEuO5fRs7afXmJlTbRIkFs0Vbrg7FTQdrz2GQPhg=
+			r4R0COmbJqW8DnpEICoFpfMezz2oSbAbEoOmKYt4VTc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -141,7 +196,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			h8reHnn13b6DxVjOKy8sdF+iJrZprTjlRoa81RpNCDE=
+			ZnD1kd3KM8ZMzPXECTv/I3Y7zWyZZh4+I8bCzqaAz8o=
 			</data>
 			<key>optional</key>
 			<true/>

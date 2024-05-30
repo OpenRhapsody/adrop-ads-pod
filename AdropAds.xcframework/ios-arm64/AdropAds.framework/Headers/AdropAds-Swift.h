@@ -311,6 +311,13 @@ SWIFT_CLASS("_TtC8AdropAds5Adrop")
 + (void)initializeWithProduction:(BOOL)production targetCountries:(NSArray<NSString *> * _Nullable)targetCountries;
 @end
 
+
+SWIFT_CLASS("_TtC8AdropAds16AdropApplication")
+@interface AdropApplication : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @protocol AdropBannerDelegate;
 @class NSCoder;
 
@@ -360,6 +367,7 @@ typedef SWIFT_ENUM(NSInteger, AdropErrorCode, open) {
   AdropErrorCodeERROR_CODE_AD_LOADING = 8,
   AdropErrorCodeERROR_CODE_AD_EMPTY = 9,
   AdropErrorCodeERROR_CODE_AD_SHOWN = 10,
+  AdropErrorCodeERROR_CODE_AD_HIDE_FOR_TODAY = 11,
 };
 
 @protocol AdropInterstitialAdDelegate;
@@ -465,6 +473,43 @@ SWIFT_CLASS("_TtC8AdropAds17AdropNativeAdView")
 @end
 
 
+@protocol AdropPopupAdDelegate;
+
+SWIFT_CLASS("_TtC8AdropAds12AdropPopupAd")
+@interface AdropPopupAd : NSObject
+@property (nonatomic, weak) id <AdropPopupAdDelegate> _Nullable delegate;
+@property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
+@property (nonatomic, readonly) BOOL isLoaded;
+- (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
+- (void)load;
+- (void)showFromRootViewController:(UIViewController * _Nonnull)fromRootViewController;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
+SWIFT_PROTOCOL("_TtP8AdropAds20AdropPopupAdDelegate_")
+@protocol AdropPopupAdDelegate
+- (void)onAdReceived:(AdropPopupAd * _Nonnull)ad;
+- (void)onAdFailedToReceive:(AdropPopupAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
+@optional
+- (void)onAdImpression:(AdropPopupAd * _Nonnull)ad;
+- (void)onAdClicked:(AdropPopupAd * _Nonnull)ad;
+- (void)onAdWillPresentFullScreen:(AdropPopupAd * _Nonnull)ad;
+- (void)onAdDidPresentFullScreen:(AdropPopupAd * _Nonnull)ad;
+- (void)onAdWillDismissFullScreen:(AdropPopupAd * _Nonnull)ad;
+- (void)onAdDidDismissFullScreen:(AdropPopupAd * _Nonnull)ad;
+- (void)onAdFailedToShowFullScreen:(AdropPopupAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
+@end
+
+
+SWIFT_CLASS("_TtC8AdropAds26AdropPopupAdViewController")
+@interface AdropPopupAdViewController : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @protocol AdropRewardedAdDelegate;
 
 SWIFT_CLASS("_TtC8AdropAds15AdropRewardedAd")
@@ -494,6 +539,37 @@ SWIFT_PROTOCOL("_TtP8AdropAds23AdropRewardedAdDelegate_")
 - (void)onAdFailedToShowFullScreen:(AdropRewardedAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
 @end
 
+@protocol AdropSplashAdDelegate;
+
+SWIFT_CLASS("_TtC8AdropAds13AdropSplashAd")
+@interface AdropSplashAd : NSObject
+@property (nonatomic, weak) id <AdropSplashAdDelegate> _Nullable delegate;
+@property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP8AdropAds21AdropSplashAdDelegate_")
+@protocol AdropSplashAdDelegate
+- (void)onAdReceived:(AdropSplashAd * _Nonnull)ad;
+- (void)onAdFailedToReceive:(AdropSplashAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
+@optional
+- (void)onAdImpression:(AdropSplashAd * _Nonnull)ad;
+@end
+
+@class NSBundle;
+
+/// @class AdropSplashViewController
+/// @brief for Splash Ad
+SWIFT_CLASS("_TtC8AdropAds25AdropSplashViewController")
+@interface AdropSplashViewController : UIViewController
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
 
 SWIFT_CLASS("_TtC8AdropAds10AdropValue")
 @interface AdropValue : NSString
@@ -515,6 +591,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 
