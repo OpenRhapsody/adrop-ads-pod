@@ -4125,14 +4125,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8AdropAds0A20SplashViewControllerC15backgroundColorSo7UIColorCSgvp",
+            "usr": "c:@M@AdropAds@objc(cs)AdropSplashViewController(py)backgroundColor",
             "mangledName": "$s8AdropAds0A20SplashViewControllerC15backgroundColorSo7UIColorCSgvp",
             "moduleName": "AdropAds",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
               "Custom",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -4157,10 +4158,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A20SplashViewControllerC15backgroundColorSo7UIColorCSgvg",
+                "usr": "c:@M@AdropAds@objc(cs)AdropSplashViewController(im)backgroundColor",
                 "mangledName": "$s8AdropAds0A20SplashViewControllerC15backgroundColorSo7UIColorCSgvg",
                 "moduleName": "AdropAds",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -4189,10 +4193,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A20SplashViewControllerC15backgroundColorSo7UIColorCSgvs",
+                "usr": "c:@M@AdropAds@objc(cs)AdropSplashViewController(im)setBackgroundColor:",
                 "mangledName": "$s8AdropAds0A20SplashViewControllerC15backgroundColorSo7UIColorCSgvs",
                 "moduleName": "AdropAds",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -4236,14 +4243,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8AdropAds0A20SplashViewControllerC9logoImageSo7UIImageCSgvp",
+            "usr": "c:@M@AdropAds@objc(cs)AdropSplashViewController(py)logoImage",
             "mangledName": "$s8AdropAds0A20SplashViewControllerC9logoImageSo7UIImageCSgvp",
             "moduleName": "AdropAds",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
               "Custom",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -4268,10 +4276,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A20SplashViewControllerC9logoImageSo7UIImageCSgvg",
+                "usr": "c:@M@AdropAds@objc(cs)AdropSplashViewController(im)logoImage",
                 "mangledName": "$s8AdropAds0A20SplashViewControllerC9logoImageSo7UIImageCSgvg",
                 "moduleName": "AdropAds",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -4300,10 +4311,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A20SplashViewControllerC9logoImageSo7UIImageCSgvs",
+                "usr": "c:@M@AdropAds@objc(cs)AdropSplashViewController(im)setLogoImage:",
                 "mangledName": "$s8AdropAds0A20SplashViewControllerC9logoImageSo7UIImageCSgvs",
                 "moduleName": "AdropAds",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -4347,14 +4361,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8AdropAds0A20SplashViewControllerC04maindE0So06UIViewE0CSgvp",
+            "usr": "c:@M@AdropAds@objc(cs)AdropSplashViewController(py)mainViewController",
             "mangledName": "$s8AdropAds0A20SplashViewControllerC04maindE0So06UIViewE0CSgvp",
             "moduleName": "AdropAds",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
               "Custom",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -4379,10 +4394,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A20SplashViewControllerC04maindE0So06UIViewE0CSgvg",
+                "usr": "c:@M@AdropAds@objc(cs)AdropSplashViewController(im)mainViewController",
                 "mangledName": "$s8AdropAds0A20SplashViewControllerC04maindE0So06UIViewE0CSgvg",
                 "moduleName": "AdropAds",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -4411,10 +4429,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A20SplashViewControllerC04maindE0So06UIViewE0CSgvs",
+                "usr": "c:@M@AdropAds@objc(cs)AdropSplashViewController(im)setMainViewController:",
                 "mangledName": "$s8AdropAds0A20SplashViewControllerC04maindE0So06UIViewE0CSgvs",
                 "moduleName": "AdropAds",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -4450,12 +4471,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8AdropAds0A20SplashViewControllerC7timeoutSdvp",
+            "usr": "c:@M@AdropAds@objc(cs)AdropSplashViewController(py)timeout",
             "mangledName": "$s8AdropAds0A20SplashViewControllerC7timeoutSdvp",
             "moduleName": "AdropAds",
             "declAttributes": [
               "Custom",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "accessors": [
               {
@@ -4471,9 +4493,12 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A20SplashViewControllerC7timeoutSdvg",
+                "usr": "c:@M@AdropAds@objc(cs)AdropSplashViewController(im)timeout",
                 "mangledName": "$s8AdropAds0A20SplashViewControllerC7timeoutSdvg",
                 "moduleName": "AdropAds",
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -4494,9 +4519,12 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A20SplashViewControllerC7timeoutSdvs",
+                "usr": "c:@M@AdropAds@objc(cs)AdropSplashViewController(im)setTimeout:",
                 "mangledName": "$s8AdropAds0A20SplashViewControllerC7timeoutSdvs",
                 "moduleName": "AdropAds",
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -4532,12 +4560,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8AdropAds0A20SplashViewControllerC8splashAdAA0acG0Cvp",
+            "usr": "c:@M@AdropAds@objc(cs)AdropSplashViewController(py)splashAd",
             "mangledName": "$s8AdropAds0A20SplashViewControllerC8splashAdAA0acG0Cvp",
             "moduleName": "AdropAds",
             "declAttributes": [
               "Custom",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "accessors": [
               {
@@ -4553,9 +4582,12 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A20SplashViewControllerC8splashAdAA0acG0Cvg",
+                "usr": "c:@M@AdropAds@objc(cs)AdropSplashViewController(im)splashAd",
                 "mangledName": "$s8AdropAds0A20SplashViewControllerC8splashAdAA0acG0Cvg",
                 "moduleName": "AdropAds",
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -4572,13 +4604,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8AdropAds0A20SplashViewControllerC8delegateAA0aC10AdDelegate_pSgvp",
+            "usr": "c:@M@AdropAds@objc(cs)AdropSplashViewController(py)delegate",
             "mangledName": "$s8AdropAds0A20SplashViewControllerC8delegateAA0aC10AdDelegate_pSgvp",
             "moduleName": "AdropAds",
             "declAttributes": [
               "Custom",
               "ReferenceOwnership",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "ownership": 1,
             "accessors": [
@@ -4603,9 +4636,12 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A20SplashViewControllerC8delegateAA0aC10AdDelegate_pSgvg",
+                "usr": "c:@M@AdropAds@objc(cs)AdropSplashViewController(im)delegate",
                 "mangledName": "$s8AdropAds0A20SplashViewControllerC8delegateAA0aC10AdDelegate_pSgvg",
                 "moduleName": "AdropAds",
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -4634,9 +4670,12 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A20SplashViewControllerC8delegateAA0aC10AdDelegate_pSgvs",
+                "usr": "c:@M@AdropAds@objc(cs)AdropSplashViewController(im)setDelegate:",
                 "mangledName": "$s8AdropAds0A20SplashViewControllerC8delegateAA0aC10AdDelegate_pSgvs",
                 "moduleName": "AdropAds",
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -4678,12 +4717,14 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8AdropAds0A20SplashViewControllerC6unitIdACSS_tcfc",
+            "usr": "c:@M@AdropAds@objc(cs)AdropSplashViewController(im)initWithUnitId:",
             "mangledName": "$s8AdropAds0A20SplashViewControllerC6unitIdACSS_tcfc",
             "moduleName": "AdropAds",
+            "objc_name": "initWithUnitId:",
             "declAttributes": [
               "Custom",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "init_kind": "Designated"
           },
@@ -4757,12 +4798,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8AdropAds0A20SplashViewControllerC5closeyyF",
+            "usr": "c:@M@AdropAds@objc(cs)AdropSplashViewController(im)close",
             "mangledName": "$s8AdropAds0A20SplashViewControllerC5closeyyF",
             "moduleName": "AdropAds",
             "declAttributes": [
               "Custom",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -10799,13 +10841,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8AdropAds0A7PopupAdC15backgroundColorSo7UIColorCSgvp",
+            "usr": "c:@M@AdropAds@objc(cs)AdropPopupAd(py)backgroundColor",
             "mangledName": "$s8AdropAds0A7PopupAdC15backgroundColorSo7UIColorCSgvp",
             "moduleName": "AdropAds",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -10830,10 +10873,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A7PopupAdC15backgroundColorSo7UIColorCSgvg",
+                "usr": "c:@M@AdropAds@objc(cs)AdropPopupAd(im)backgroundColor",
                 "mangledName": "$s8AdropAds0A7PopupAdC15backgroundColorSo7UIColorCSgvg",
                 "moduleName": "AdropAds",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -10862,10 +10908,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A7PopupAdC15backgroundColorSo7UIColorCSgvs",
+                "usr": "c:@M@AdropAds@objc(cs)AdropPopupAd(im)setBackgroundColor:",
                 "mangledName": "$s8AdropAds0A7PopupAdC15backgroundColorSo7UIColorCSgvs",
                 "moduleName": "AdropAds",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -10909,13 +10958,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8AdropAds0A7PopupAdC21hideForTodayTextColorSo7UIColorCSgvp",
+            "usr": "c:@M@AdropAds@objc(cs)AdropPopupAd(py)hideForTodayTextColor",
             "mangledName": "$s8AdropAds0A7PopupAdC21hideForTodayTextColorSo7UIColorCSgvp",
             "moduleName": "AdropAds",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -10940,10 +10990,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A7PopupAdC21hideForTodayTextColorSo7UIColorCSgvg",
+                "usr": "c:@M@AdropAds@objc(cs)AdropPopupAd(im)hideForTodayTextColor",
                 "mangledName": "$s8AdropAds0A7PopupAdC21hideForTodayTextColorSo7UIColorCSgvg",
                 "moduleName": "AdropAds",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -10972,10 +11025,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A7PopupAdC21hideForTodayTextColorSo7UIColorCSgvs",
+                "usr": "c:@M@AdropAds@objc(cs)AdropPopupAd(im)setHideForTodayTextColor:",
                 "mangledName": "$s8AdropAds0A7PopupAdC21hideForTodayTextColorSo7UIColorCSgvs",
                 "moduleName": "AdropAds",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -11019,13 +11075,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8AdropAds0A7PopupAdC14closeTextColorSo7UIColorCSgvp",
+            "usr": "c:@M@AdropAds@objc(cs)AdropPopupAd(py)closeTextColor",
             "mangledName": "$s8AdropAds0A7PopupAdC14closeTextColorSo7UIColorCSgvp",
             "moduleName": "AdropAds",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -11050,10 +11107,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A7PopupAdC14closeTextColorSo7UIColorCSgvg",
+                "usr": "c:@M@AdropAds@objc(cs)AdropPopupAd(im)closeTextColor",
                 "mangledName": "$s8AdropAds0A7PopupAdC14closeTextColorSo7UIColorCSgvg",
                 "moduleName": "AdropAds",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -11082,10 +11142,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8AdropAds0A7PopupAdC14closeTextColorSo7UIColorCSgvs",
+                "usr": "c:@M@AdropAds@objc(cs)AdropPopupAd(im)setCloseTextColor:",
                 "mangledName": "$s8AdropAds0A7PopupAdC14closeTextColorSo7UIColorCSgvs",
                 "moduleName": "AdropAds",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -15245,21 +15308,21 @@
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropSplashViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 769,
+      "offset": 793,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropSplashViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1064,
+      "offset": 1094,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropSplashViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1105,
+      "offset": 1135,
       "length": 5,
       "value": "false"
     },
@@ -15548,7 +15611,7 @@
       "kind": "StringLiteral",
       "offset": 7312,
       "length": 15,
-      "value": "\"0.5.0-alpha.1\""
+      "value": "\"0.5.0-alpha.2\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
@@ -16687,14 +16750,14 @@
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAd.swift",
       "kind": "StringLiteral",
-      "offset": 805,
+      "offset": 823,
       "length": 19,
       "value": "\"io.adrop.popup-ad\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAd.swift",
       "kind": "StringLiteral",
-      "offset": 869,
+      "offset": 887,
       "length": 31,
       "value": "\"adrop_popup_ad_hide_for_today\""
     },

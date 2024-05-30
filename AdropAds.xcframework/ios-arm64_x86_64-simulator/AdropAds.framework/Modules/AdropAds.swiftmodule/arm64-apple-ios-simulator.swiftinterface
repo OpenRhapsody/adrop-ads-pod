@@ -164,24 +164,24 @@ public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.Strin
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class AdropSplashViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) public var backgroundColor: UIKit.UIColor?
-  @_Concurrency.MainActor(unsafe) public var logoImage: UIKit.UIImage?
-  @_Concurrency.MainActor(unsafe) public var mainViewController: UIKit.UIViewController?
-  @_Concurrency.MainActor(unsafe) public var timeout: Foundation.TimeInterval {
-    get
-    set
+  @objc @_Concurrency.MainActor(unsafe) public var backgroundColor: UIKit.UIColor?
+  @objc @_Concurrency.MainActor(unsafe) public var logoImage: UIKit.UIImage?
+  @objc @_Concurrency.MainActor(unsafe) public var mainViewController: UIKit.UIViewController?
+  @objc @_Concurrency.MainActor(unsafe) public var timeout: Foundation.TimeInterval {
+    @objc get
+    @objc set
   }
-  @_Concurrency.MainActor(unsafe) public var splashAd: AdropAds.AdropSplashAd {
-    get
+  @objc @_Concurrency.MainActor(unsafe) public var splashAd: AdropAds.AdropSplashAd {
+    @objc get
   }
-  @_Concurrency.MainActor(unsafe) weak public var delegate: (any AdropAds.AdropSplashAdDelegate)? {
-    get
-    set
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any AdropAds.AdropSplashAdDelegate)? {
+    @objc get
+    @objc set
   }
-  @_Concurrency.MainActor(unsafe) public init(unitId: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public init(unitId: Swift.String)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) public func close()
+  @objc @_Concurrency.MainActor(unsafe) public func close()
   @objc deinit
 }
 @objc public protocol AdropInterstitialAdDelegate {
@@ -352,9 +352,9 @@ public enum AdropBannerSize : Swift.String {
   @objc public var isLoaded: Swift.Bool {
     @objc get
   }
-  public var backgroundColor: UIKit.UIColor?
-  public var hideForTodayTextColor: UIKit.UIColor?
-  public var closeTextColor: UIKit.UIColor?
+  @objc public var backgroundColor: UIKit.UIColor?
+  @objc public var hideForTodayTextColor: UIKit.UIColor?
+  @objc public var closeTextColor: UIKit.UIColor?
   @objc public init(unitId: Swift.String)
   @objc public func load()
   @objc public func show(fromRootViewController: UIKit.UIViewController)

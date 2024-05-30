@@ -474,12 +474,16 @@ SWIFT_CLASS("_TtC8AdropAds17AdropNativeAdView")
 
 
 @protocol AdropPopupAdDelegate;
+@class UIColor;
 
 SWIFT_CLASS("_TtC8AdropAds12AdropPopupAd")
 @interface AdropPopupAd : NSObject
 @property (nonatomic, weak) id <AdropPopupAdDelegate> _Nullable delegate;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly) BOOL isLoaded;
+@property (nonatomic, strong) UIColor * _Nullable backgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable hideForTodayTextColor;
+@property (nonatomic, strong) UIColor * _Nullable closeTextColor;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)showFromRootViewController:(UIViewController * _Nonnull)fromRootViewController;
@@ -558,15 +562,24 @@ SWIFT_PROTOCOL("_TtP8AdropAds21AdropSplashAdDelegate_")
 - (void)onAdImpression:(AdropSplashAd * _Nonnull)ad;
 @end
 
+@class UIImage;
 @class NSBundle;
 
 /// @class AdropSplashViewController
 /// @brief for Splash Ad
 SWIFT_CLASS("_TtC8AdropAds25AdropSplashViewController")
 @interface AdropSplashViewController : UIViewController
+@property (nonatomic, strong) UIColor * _Nullable backgroundColor;
+@property (nonatomic, strong) UIImage * _Nullable logoImage;
+@property (nonatomic, strong) UIViewController * _Nullable mainViewController;
+@property (nonatomic) NSTimeInterval timeout;
+@property (nonatomic, readonly, strong) AdropSplashAd * _Nonnull splashAd;
+@property (nonatomic, weak) id <AdropSplashAdDelegate> _Nullable delegate;
+- (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
+- (void)close;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
