@@ -129,6 +129,9 @@ public class AdropPageTracker {
   case PAGE_ATS
   case PAGE_ATTACH
   case SET_PROPERTY
+  public var keyString: Swift.String {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -148,6 +151,9 @@ public class AdropPageTracker {
   case ERROR_CODE_AD_EMPTY
   case ERROR_CODE_AD_SHOWN
   case ERROR_CODE_AD_HIDE_FOR_TODAY
+  public var keyString: Swift.String {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
