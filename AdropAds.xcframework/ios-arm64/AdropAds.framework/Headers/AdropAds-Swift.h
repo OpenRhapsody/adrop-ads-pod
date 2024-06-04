@@ -567,8 +567,8 @@ SWIFT_PROTOCOL("_TtP8AdropAds21AdropSplashAdDelegate_")
 
 /// @class AdropSplashViewController
 /// @brief for Splash Ad
-SWIFT_CLASS("_TtC8AdropAds25AdropSplashViewController")
-@interface AdropSplashViewController : UIViewController
+SWIFT_CLASS("_TtC8AdropAds27AdropSplashAdViewController")
+@interface AdropSplashAdViewController : UIViewController
 @property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 @property (nonatomic, strong) UIImage * _Nullable logoImage;
 @property (nonatomic, strong) UIViewController * _Nullable mainViewController;

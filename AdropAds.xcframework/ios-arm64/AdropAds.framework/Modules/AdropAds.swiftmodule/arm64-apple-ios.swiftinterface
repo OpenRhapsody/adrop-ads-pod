@@ -169,27 +169,6 @@ public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.Strin
   public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class AdropSplashViewController : UIKit.UIViewController {
-  @objc @_Concurrency.MainActor(unsafe) public var backgroundColor: UIKit.UIColor?
-  @objc @_Concurrency.MainActor(unsafe) public var logoImage: UIKit.UIImage?
-  @objc @_Concurrency.MainActor(unsafe) public var mainViewController: UIKit.UIViewController?
-  @objc @_Concurrency.MainActor(unsafe) public var timeout: Foundation.TimeInterval {
-    @objc get
-    @objc set
-  }
-  @objc @_Concurrency.MainActor(unsafe) public var splashAd: AdropAds.AdropSplashAd {
-    @objc get
-  }
-  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any AdropAds.AdropSplashAdDelegate)? {
-    @objc get
-    @objc set
-  }
-  @objc @_Concurrency.MainActor(unsafe) public init(unitId: Swift.String)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public func close()
-  @objc deinit
-}
 @objc public protocol AdropInterstitialAdDelegate {
   @objc func onAdReceived(_ ad: AdropAds.AdropInterstitialAd)
   @objc func onAdFailedToReceive(_ ad: AdropAds.AdropInterstitialAd, _ errorCode: AdropAds.AdropErrorCode)
@@ -252,6 +231,27 @@ public struct AdropBannerRepresented : SwiftUI.UIViewRepresentable {
   @_Concurrency.MainActor(unsafe) public func updateUIView(_ uiView: AdropAds.AdropBanner, context: AdropAds.AdropBannerRepresented.Context)
   public typealias Body = Swift.Never
   public typealias Coordinator = Swift.Void
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class AdropSplashAdViewController : UIKit.UIViewController {
+  @objc @_Concurrency.MainActor(unsafe) public var backgroundColor: UIKit.UIColor?
+  @objc @_Concurrency.MainActor(unsafe) public var logoImage: UIKit.UIImage?
+  @objc @_Concurrency.MainActor(unsafe) public var mainViewController: UIKit.UIViewController?
+  @objc @_Concurrency.MainActor(unsafe) public var timeout: Foundation.TimeInterval {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var splashAd: AdropAds.AdropSplashAd {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any AdropAds.AdropSplashAdDelegate)? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public init(unitId: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public func close()
+  @objc deinit
 }
 @objc public protocol AdropNativeAdDelegate {
   @objc func onAdReceived(_ ad: AdropAds.AdropNativeAd)
