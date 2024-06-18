@@ -352,6 +352,7 @@ SWIFT_PROTOCOL("_TtP8AdropAds19AdropBannerDelegate_")
 - (void)onAdReceived:(AdropBanner * _Nonnull)banner;
 - (void)onAdFailedToReceive:(AdropBanner * _Nonnull)banner :(enum AdropErrorCode)errorCode;
 @optional
+- (void)onAdImpression:(AdropBanner * _Nonnull)banner;
 - (void)onAdClicked:(AdropBanner * _Nonnull)banner;
 @end
 
@@ -983,6 +984,7 @@ SWIFT_PROTOCOL("_TtP8AdropAds19AdropBannerDelegate_")
 - (void)onAdReceived:(AdropBanner * _Nonnull)banner;
 - (void)onAdFailedToReceive:(AdropBanner * _Nonnull)banner :(enum AdropErrorCode)errorCode;
 @optional
+- (void)onAdImpression:(AdropBanner * _Nonnull)banner;
 - (void)onAdClicked:(AdropBanner * _Nonnull)banner;
 @end
 
