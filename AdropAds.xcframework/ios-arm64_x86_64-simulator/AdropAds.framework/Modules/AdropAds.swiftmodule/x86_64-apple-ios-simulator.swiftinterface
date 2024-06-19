@@ -298,6 +298,9 @@ public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.Strin
   public var isProduction: Swift.Bool {
     get
   }
+  @objc public static var sdkVersion: Swift.String {
+    @objc get
+  }
   @objc public static func initialize(production: Swift.Bool = false, targetCountries: [Swift.String]? = nil)
   @objc deinit
 }

@@ -306,6 +306,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC8AdropAds5Adrop")
 @interface Adrop : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull sdkVersion;)
++ (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (void)initializeWithProduction:(BOOL)production targetCountries:(NSArray<NSString *> * _Nullable)targetCountries;

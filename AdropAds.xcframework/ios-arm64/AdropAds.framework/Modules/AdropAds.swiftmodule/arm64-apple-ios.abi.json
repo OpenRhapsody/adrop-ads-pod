@@ -8708,6 +8708,54 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "sdkVersion",
+            "printedName": "sdkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdropAds@objc(cs)Adrop(cpy)sdkVersion",
+            "mangledName": "$s8AdropAds0A0C10sdkVersionSSvpZ",
+            "moduleName": "AdropAds",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdropAds@objc(cs)Adrop(cm)sdkVersion",
+                "mangledName": "$s8AdropAds0A0C10sdkVersionSSvgZ",
+                "moduleName": "AdropAds",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "initialize",
             "printedName": "initialize(production:targetCountries:)",
@@ -15755,14 +15803,14 @@
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Adrop.swift",
       "kind": "BooleanLiteral",
-      "offset": 568,
+      "offset": 676,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Adrop.swift",
       "kind": "BooleanLiteral",
-      "offset": 699,
+      "offset": 807,
       "length": 5,
       "value": "false"
     },
@@ -15869,7 +15917,7 @@
       "kind": "StringLiteral",
       "offset": 7340,
       "length": 7,
-      "value": "\"0.5.1\""
+      "value": "\"0.5.2\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
