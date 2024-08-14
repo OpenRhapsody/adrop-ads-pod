@@ -26,11 +26,14 @@ import zlib
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class AdropNativeAdView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @objc @_Concurrency.MainActor(unsafe) public func setIsEntireClick(_ value: Swift.Bool)
   @objc @_Concurrency.MainActor(unsafe) public func setNativeAd(_ ad: AdropAds.AdropNativeAd)
   @objc @_Concurrency.MainActor(unsafe) public func setAdvertiserView(_ view: UIKit.UIView, onClick: ((AdropAds.AdropNativeAd?, UIKit.UIView) -> Swift.Void)? = nil)
   @objc @_Concurrency.MainActor(unsafe) public func setHeadLineView(_ view: UIKit.UIView, onClick: ((AdropAds.AdropNativeAd?, UIKit.UIView) -> Swift.Void)? = nil)
   @objc @_Concurrency.MainActor(unsafe) public func setIconView(_ view: UIKit.UIView, onClick: ((AdropAds.AdropNativeAd?, UIKit.UIView) -> Swift.Void)? = nil)
   @objc @_Concurrency.MainActor(unsafe) public func setCallToActionView(_ view: UIKit.UIView, onClick: ((AdropAds.AdropNativeAd?, UIKit.UIView) -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor(unsafe) public func setProfileLogoView(_ view: UIKit.UIView, onClick: ((AdropAds.AdropNativeAd?, UIKit.UIView) -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor(unsafe) public func setProfileNameView(_ view: UIKit.UIView, onClick: ((AdropAds.AdropNativeAd?, UIKit.UIView) -> Swift.Void)? = nil)
   @objc @_Concurrency.MainActor(unsafe) public func setMediaView(_ view: UIKit.UIView)
   @objc @_Concurrency.MainActor(unsafe) public func setBodyView(_ view: UIKit.UIView)
   @objc deinit
@@ -46,6 +49,9 @@ import zlib
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class AdropBanner : UIKit.UIView {
   @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any AdropAds.AdropBannerDelegate)?
   @objc @_Concurrency.MainActor(unsafe) public var unitId: Swift.String {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var creativeId: Swift.String {
     @objc get
   }
   @available(*, deprecated, renamed: "unitId")
@@ -64,6 +70,9 @@ extension AdropAds.AdropBanner : WebKit.WKNavigationDelegate, WebKit.WKUIDelegat
 @objc public class AdropPopupAd : ObjectiveC.NSObject {
   @objc weak public var delegate: (any AdropAds.AdropPopupAdDelegate)?
   @objc public var unitId: Swift.String {
+    @objc get
+  }
+  @objc public var creativeIds: [Swift.String] {
     @objc get
   }
   @objc public var isLoaded: Swift.Bool {
@@ -154,6 +163,9 @@ extension AdropAds.ULID : Swift.Codable {
   @objc public var unitId: Swift.String {
     @objc get
   }
+  @objc public var creativeId: Swift.String {
+    @objc get
+  }
   @objc public var isLoaded: Swift.Bool {
     @objc get
   }
@@ -169,6 +181,9 @@ extension AdropAds.ULID : Swift.Codable {
   }
   @objc public var isLoaded: Swift.Bool {
     @objc get
+  }
+  public var creativeId: Swift.String {
+    get
   }
   public var icon: Swift.String {
     get
@@ -188,6 +203,9 @@ extension AdropAds.ULID : Swift.Codable {
   public var body: Swift.String {
     get
   }
+  public var creative: Swift.String {
+    get
+  }
   public var destinationURL: Swift.String {
     get
   }
@@ -200,6 +218,12 @@ extension AdropAds.ULID : Swift.Codable {
   public var creativeTag: [Swift.String : Any] {
     get
   }
+  public var profile: AdropAds.AdropNativeAdProfile {
+    get
+  }
+  public var extra: [Swift.String : Swift.String] {
+    get
+  }
   @objc public init(unitId: Swift.String)
   @objc public func load()
   @objc deinit
@@ -210,6 +234,9 @@ extension AdropAds.ULID : Swift.Codable {
     @objc get
   }
   @objc public var isLoaded: Swift.Bool {
+    @objc get
+  }
+  @objc public var creativeId: Swift.String {
     @objc get
   }
   @objc public init(unitId: Swift.String)
@@ -323,6 +350,9 @@ public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.Strin
   @objc public var unitId: Swift.String {
     @objc get
   }
+  @objc public var creativeId: Swift.String {
+    @objc get
+  }
   public var readyToShow: Swift.Bool {
     get
   }
@@ -372,6 +402,11 @@ public struct AdropBannerRepresented : SwiftUI.UIViewRepresentable {
   @_Concurrency.MainActor(unsafe) public func updateUIView(_ uiView: AdropAds.AdropBanner, context: AdropAds.AdropBannerRepresented.Context)
   public typealias Body = Swift.Never
   public typealias Coordinator = Swift.Void
+}
+public struct AdropNativeAdProfile {
+  public let displayLogo: Swift.String
+  public let displayName: Swift.String
+  public let link: Swift.String?
 }
 public enum AdropBannerSize : Swift.String {
   case H50

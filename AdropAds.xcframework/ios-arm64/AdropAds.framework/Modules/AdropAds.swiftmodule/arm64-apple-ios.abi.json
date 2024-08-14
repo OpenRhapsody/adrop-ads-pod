@@ -138,6 +138,34 @@
           },
           {
             "kind": "Function",
+            "name": "setIsEntireClick",
+            "printedName": "setIsEntireClick(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdropAds@objc(cs)AdropNativeAdView(im)setIsEntireClick:",
+            "mangledName": "$s8AdropAds0A12NativeAdViewC16setIsEntireClickyySbF",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setNativeAd",
             "printedName": "setNativeAd(_:)",
             "children": [
@@ -312,8 +340,7 @@
             "declAttributes": [
               "Custom",
               "AccessControl",
-              "ObjC",
-              "RawDocComment"
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -462,6 +489,158 @@
             "declKind": "Func",
             "usr": "c:@M@AdropAds@objc(cs)AdropNativeAdView(im)setCallToActionView:onClick:",
             "mangledName": "$s8AdropAds0A12NativeAdViewC015setCallToActionE0_7onClickySo6UIViewC_yAA0acD0CSg_AGtcSgtF",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setProfileLogoView",
+            "printedName": "setProfileLogoView(_:onClick:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((AdropAds.AdropNativeAd?, UIKit.UIView) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AdropAds.AdropNativeAd?, UIKit.UIView) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(AdropAds.AdropNativeAd?, UIKit.UIView)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "AdropAds.AdropNativeAd?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "AdropNativeAd",
+                                "printedName": "AdropAds.AdropNativeAd",
+                                "usr": "c:@M@AdropAds@objc(cs)AdropNativeAd"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIView",
+                            "printedName": "UIKit.UIView",
+                            "usr": "c:objc(cs)UIView"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdropAds@objc(cs)AdropNativeAdView(im)setProfileLogoView:onClick:",
+            "mangledName": "$s8AdropAds0A12NativeAdViewC014setProfileLogoE0_7onClickySo6UIViewC_yAA0acD0CSg_AGtcSgtF",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setProfileNameView",
+            "printedName": "setProfileNameView(_:onClick:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((AdropAds.AdropNativeAd?, UIKit.UIView) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AdropAds.AdropNativeAd?, UIKit.UIView) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(AdropAds.AdropNativeAd?, UIKit.UIView)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "AdropAds.AdropNativeAd?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "AdropNativeAd",
+                                "printedName": "AdropAds.AdropNativeAd",
+                                "usr": "c:@M@AdropAds@objc(cs)AdropNativeAd"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIView",
+                            "printedName": "UIKit.UIView",
+                            "usr": "c:objc(cs)UIView"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdropAds@objc(cs)AdropNativeAdView(im)setProfileNameView:onClick:",
+            "mangledName": "$s8AdropAds0A12NativeAdViewC014setProfileNameE0_7onClickySo6UIViewC_yAA0acD0CSg_AGtcSgtF",
             "moduleName": "AdropAds",
             "declAttributes": [
               "Custom",
@@ -960,6 +1139,51 @@
                 "declKind": "Accessor",
                 "usr": "c:@M@AdropAds@objc(cs)AdropBanner(im)unitId",
                 "mangledName": "$s8AdropAds0A6BannerC6unitIdSSvg",
+                "moduleName": "AdropAds",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "creativeId",
+            "printedName": "creativeId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdropAds@objc(cs)AdropBanner(py)creativeId",
+            "mangledName": "$s8AdropAds0A6BannerC10creativeIdSSvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdropAds@objc(cs)AdropBanner(im)creativeId",
+                "mangledName": "$s8AdropAds0A6BannerC10creativeIdSSvg",
                 "moduleName": "AdropAds",
                 "declAttributes": [
                   "ObjC"
@@ -1522,6 +1746,66 @@
                 "declKind": "Accessor",
                 "usr": "c:@M@AdropAds@objc(cs)AdropPopupAd(im)unitId",
                 "mangledName": "$s8AdropAds0A7PopupAdC6unitIdSSvg",
+                "moduleName": "AdropAds",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "creativeIds",
+            "printedName": "creativeIds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdropAds@objc(cs)AdropPopupAd(py)creativeIds",
+            "mangledName": "$s8AdropAds0A7PopupAdC11creativeIdsSaySSGvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdropAds@objc(cs)AdropPopupAd(im)creativeIds",
+                "mangledName": "$s8AdropAds0A7PopupAdC11creativeIdsSaySSGvg",
                 "moduleName": "AdropAds",
                 "declAttributes": [
                   "ObjC"
@@ -4887,6 +5171,50 @@
           },
           {
             "kind": "Var",
+            "name": "creativeId",
+            "printedName": "creativeId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdropAds@objc(cs)AdropRewardedAd(py)creativeId",
+            "mangledName": "$s8AdropAds0A10RewardedAdC10creativeIdSSvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdropAds@objc(cs)AdropRewardedAd(im)creativeId",
+                "mangledName": "$s8AdropAds0A10RewardedAdC10creativeIdSSvg",
+                "moduleName": "AdropAds",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "isLoaded",
             "printedName": "isLoaded",
             "children": [
@@ -5381,6 +5709,46 @@
           },
           {
             "kind": "Var",
+            "name": "creativeId",
+            "printedName": "creativeId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AdropAds0A8NativeAdC10creativeIdSSvp",
+            "mangledName": "$s8AdropAds0A8NativeAdC10creativeIdSSvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A8NativeAdC10creativeIdSSvg",
+                "mangledName": "$s8AdropAds0A8NativeAdC10creativeIdSSvg",
+                "moduleName": "AdropAds",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "icon",
             "printedName": "icon",
             "children": [
@@ -5621,6 +5989,46 @@
           },
           {
             "kind": "Var",
+            "name": "creative",
+            "printedName": "creative",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AdropAds0A8NativeAdC8creativeSSvp",
+            "mangledName": "$s8AdropAds0A8NativeAdC8creativeSSvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A8NativeAdC8creativeSSvg",
+                "mangledName": "$s8AdropAds0A8NativeAdC8creativeSSvg",
+                "moduleName": "AdropAds",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "destinationURL",
             "printedName": "destinationURL",
             "children": [
@@ -5826,6 +6234,114 @@
                 "declKind": "Accessor",
                 "usr": "s:8AdropAds0A8NativeAdC11creativeTagSDySSypGvg",
                 "mangledName": "$s8AdropAds0A8NativeAdC11creativeTagSDySSypGvg",
+                "moduleName": "AdropAds",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "profile",
+            "printedName": "profile",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdropNativeAdProfile",
+                "printedName": "AdropAds.AdropNativeAdProfile",
+                "usr": "s:8AdropAds0A15NativeAdProfileV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AdropAds0A8NativeAdC7profileAA0acD7ProfileVvp",
+            "mangledName": "$s8AdropAds0A8NativeAdC7profileAA0acD7ProfileVvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdropNativeAdProfile",
+                    "printedName": "AdropAds.AdropNativeAdProfile",
+                    "usr": "s:8AdropAds0A15NativeAdProfileV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A8NativeAdC7profileAA0acD7ProfileVvg",
+                "mangledName": "$s8AdropAds0A8NativeAdC7profileAA0acD7ProfileVvg",
+                "moduleName": "AdropAds",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "extra",
+            "printedName": "extra",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AdropAds0A8NativeAdC5extraSDyS2SGvp",
+            "mangledName": "$s8AdropAds0A8NativeAdC5extraSDyS2SGvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A8NativeAdC5extraSDyS2SGvg",
+                "mangledName": "$s8AdropAds0A8NativeAdC5extraSDyS2SGvg",
                 "moduleName": "AdropAds",
                 "accessorKind": "get"
               }
@@ -6177,6 +6693,50 @@
                 "declKind": "Accessor",
                 "usr": "c:@M@AdropAds@objc(cs)AdropInterstitialAd(im)isLoaded",
                 "mangledName": "$s8AdropAds0A14InterstitialAdC8isLoadedSbvg",
+                "moduleName": "AdropAds",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "creativeId",
+            "printedName": "creativeId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdropAds@objc(cs)AdropInterstitialAd(py)creativeId",
+            "mangledName": "$s8AdropAds0A14InterstitialAdC10creativeIdSSvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdropAds@objc(cs)AdropInterstitialAd(im)creativeId",
+                "mangledName": "$s8AdropAds0A14InterstitialAdC10creativeIdSSvg",
                 "moduleName": "AdropAds",
                 "declAttributes": [
                   "ObjC"
@@ -9601,6 +10161,50 @@
           },
           {
             "kind": "Var",
+            "name": "creativeId",
+            "printedName": "creativeId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdropAds@objc(cs)AdropSplashAd(py)creativeId",
+            "mangledName": "$s8AdropAds0A8SplashAdC10creativeIdSSvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdropAds@objc(cs)AdropSplashAd(im)creativeId",
+                "mangledName": "$s8AdropAds0A8SplashAdC10creativeIdSSvg",
+                "moduleName": "AdropAds",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "readyToShow",
             "printedName": "readyToShow",
             "children": [
@@ -11531,6 +12135,168 @@
         "moduleName": "AdropAds",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdropNativeAdProfile",
+        "printedName": "AdropNativeAdProfile",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "displayLogo",
+            "printedName": "displayLogo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AdropAds0A15NativeAdProfileV11displayLogoSSvp",
+            "mangledName": "$s8AdropAds0A15NativeAdProfileV11displayLogoSSvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A15NativeAdProfileV11displayLogoSSvg",
+                "mangledName": "$s8AdropAds0A15NativeAdProfileV11displayLogoSSvg",
+                "moduleName": "AdropAds",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "displayName",
+            "printedName": "displayName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AdropAds0A15NativeAdProfileV11displayNameSSvp",
+            "mangledName": "$s8AdropAds0A15NativeAdProfileV11displayNameSSvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A15NativeAdProfileV11displayNameSSvg",
+                "mangledName": "$s8AdropAds0A15NativeAdProfileV11displayNameSSvg",
+                "moduleName": "AdropAds",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "link",
+            "printedName": "link",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AdropAds0A15NativeAdProfileV4linkSSSgvp",
+            "mangledName": "$s8AdropAds0A15NativeAdProfileV4linkSSSgvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A15NativeAdProfileV4linkSSSgvg",
+                "mangledName": "$s8AdropAds0A15NativeAdProfileV4linkSSSgvg",
+                "moduleName": "AdropAds",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8AdropAds0A15NativeAdProfileV",
+        "mangledName": "$s8AdropAds0A15NativeAdProfileV",
+        "moduleName": "AdropAds",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -14359,6 +15125,13 @@
       "value": "\"AdropAds.AdropPopupWebViewController\""
     },
     {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropNativeAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1143,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConnector.swift",
       "kind": "StringLiteral",
       "offset": 170,
@@ -14375,14 +15148,14 @@
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "Dictionary",
-      "offset": 655,
+      "offset": 777,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 682,
+      "offset": 804,
       "length": 2,
       "value": "\"\""
     },
@@ -14396,35 +15169,42 @@
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 504,
+      "offset": 622,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 530,
+      "offset": 648,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 554,
+      "offset": 672,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAd.swift",
+      "kind": "Array",
+      "offset": 869,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAd.swift",
       "kind": "StringLiteral",
-      "offset": 823,
+      "offset": 984,
       "length": 19,
       "value": "\"io.adrop.popup-ad\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAd.swift",
       "kind": "StringLiteral",
-      "offset": 887,
+      "offset": 1048,
       "length": 31,
       "value": "\"adrop_popup_ad_hide_for_today\""
     },
@@ -15005,28 +15785,28 @@
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 469,
+      "offset": 591,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 489,
+      "offset": 611,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 515,
+      "offset": 637,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 539,
+      "offset": 661,
       "length": 5,
       "value": "false"
     },
@@ -15250,28 +16030,28 @@
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 484,
+      "offset": 606,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 504,
+      "offset": 626,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 530,
+      "offset": 652,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 554,
+      "offset": 676,
       "length": 5,
       "value": "false"
     },
@@ -15917,7 +16697,7 @@
       "kind": "StringLiteral",
       "offset": 7340,
       "length": 7,
-      "value": "\"0.5.4\""
+      "value": "\"0.5.5\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
@@ -15971,21 +16751,21 @@
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 656,
+      "offset": 782,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 682,
+      "offset": 808,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 706,
+      "offset": 832,
       "length": 5,
       "value": "false"
     },
