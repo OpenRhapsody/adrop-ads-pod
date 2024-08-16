@@ -571,6 +571,7 @@ SWIFT_PROTOCOL("_TtP8AdropAds21AdropSplashAdDelegate_")
 - (void)onAdFailedToReceive:(AdropSplashAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
 @optional
 - (void)onAdImpression:(AdropSplashAd * _Nonnull)ad;
+- (void)onAdClose:(AdropSplashAd * _Nonnull)ad impressed:(BOOL)impressed;
 @end
 
 @class UIImage;
@@ -1213,6 +1214,7 @@ SWIFT_PROTOCOL("_TtP8AdropAds21AdropSplashAdDelegate_")
 - (void)onAdFailedToReceive:(AdropSplashAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
 @optional
 - (void)onAdImpression:(AdropSplashAd * _Nonnull)ad;
+- (void)onAdClose:(AdropSplashAd * _Nonnull)ad impressed:(BOOL)impressed;
 @end
 
 @class UIImage;

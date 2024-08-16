@@ -152,11 +152,11 @@ extension AdropAds.ULID : Swift.Codable {
     @objc get
     @objc set
   }
+  @objc deinit
   @objc @_Concurrency.MainActor(unsafe) public init(unitId: Swift.String)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @objc @_Concurrency.MainActor(unsafe) public func close()
-  @objc deinit
 }
 @objc public class AdropRewardedAd : ObjectiveC.NSObject {
   @objc weak public var delegate: (any AdropAds.AdropRewardedAdDelegate)?
@@ -267,6 +267,7 @@ public class AdropPageTracker {
   @objc func onAdReceived(_ ad: AdropAds.AdropSplashAd)
   @objc func onAdFailedToReceive(_ ad: AdropAds.AdropSplashAd, _ errorCode: AdropAds.AdropErrorCode)
   @objc optional func onAdImpression(_ ad: AdropAds.AdropSplashAd)
+  @objc optional func onAdClose(_ ad: AdropAds.AdropSplashAd, impressed: Swift.Bool)
 }
 @objc public enum AdropMetricCode : Swift.Int {
   case VALID
