@@ -574,7 +574,32 @@ SWIFT_PROTOCOL("_TtP8AdropAds21AdropSplashAdDelegate_")
 - (void)onAdClose:(AdropSplashAd * _Nonnull)ad impressed:(BOOL)impressed;
 @end
 
+@protocol AdropSplashAdViewDelegate;
 @class UIImage;
+
+SWIFT_CLASS("_TtC8AdropAds17AdropSplashAdView")
+@interface AdropSplashAdView : UIImageView
+@property (nonatomic, weak) id <AdropSplashAdViewDelegate> _Nullable delegate;
+@property (nonatomic, strong) AdropSplashAd * _Nonnull ad;
+@property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
+@property (nonatomic, readonly) BOOL isClosed;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)didMoveToSuperview;
+- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+
+@interface AdropSplashAdView (SWIFT_EXTENSION(AdropAds)) <AdropSplashAdDelegate>
+- (void)onAdReceived:(AdropSplashAd * _Nonnull)ad;
+- (void)onAdFailedToReceive:(AdropSplashAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
+- (void)onAdImpression:(AdropSplashAd * _Nonnull)ad;
+- (void)onAdClose:(AdropSplashAd * _Nonnull)ad impressed:(BOOL)impressed;
+@end
+
 @class NSBundle;
 
 /// @class AdropSplashViewController
@@ -593,6 +618,16 @@ SWIFT_CLASS("_TtC8AdropAds27AdropSplashAdViewController")
 - (void)viewDidAppear:(BOOL)animated;
 - (void)close;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_PROTOCOL("_TtP8AdropAds25AdropSplashAdViewDelegate_")
+@protocol AdropSplashAdViewDelegate
+- (void)onAdClose:(AdropSplashAdView * _Nonnull)adView impressed:(BOOL)impressed;
+@optional
+- (void)onAdReceived:(AdropSplashAdView * _Nonnull)adView;
+- (void)onAdFailedToReceive:(AdropSplashAdView * _Nonnull)adView :(enum AdropErrorCode)errorCode;
+- (void)onAdImpression:(AdropSplashAdView * _Nonnull)adView;
 @end
 
 

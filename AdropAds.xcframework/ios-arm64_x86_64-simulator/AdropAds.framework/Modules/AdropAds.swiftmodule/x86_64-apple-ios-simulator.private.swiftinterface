@@ -332,6 +332,28 @@ public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.Strin
   @objc public static func initialize(production: Swift.Bool = false, targetCountries: [Swift.String]? = nil)
   @objc deinit
 }
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class AdropSplashAdView : UIKit.UIImageView {
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any AdropAds.AdropSplashAdViewDelegate)?
+  @objc @_Concurrency.MainActor(unsafe) public var ad: AdropAds.AdropSplashAd
+  @objc @_Concurrency.MainActor(unsafe) public var unitId: Swift.String {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var creativeId: Swift.String {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var isClosed: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) public init(unitId: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToSuperview()
+  @objc deinit
+}
+extension AdropAds.AdropSplashAdView : AdropAds.AdropSplashAdDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func onAdReceived(_ ad: AdropAds.AdropSplashAd)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func onAdFailedToReceive(_ ad: AdropAds.AdropSplashAd, _ errorCode: AdropAds.AdropErrorCode)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func onAdImpression(_ ad: AdropAds.AdropSplashAd)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func onAdClose(_ ad: AdropAds.AdropSplashAd, impressed: Swift.Bool)
+}
 @objc @_hasMissingDesignatedInitializers public class AdropPopupAdViewController : ObjectiveC.NSObject {
   @objc deinit
 }
@@ -361,6 +383,12 @@ public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.Strin
     get
   }
   @objc deinit
+}
+@objc public protocol AdropSplashAdViewDelegate {
+  @objc func onAdClose(_ adView: AdropAds.AdropSplashAdView, impressed: Swift.Bool)
+  @objc optional func onAdReceived(_ adView: AdropAds.AdropSplashAdView)
+  @objc optional func onAdFailedToReceive(_ adView: AdropAds.AdropSplashAdView, _ errorCode: AdropAds.AdropErrorCode)
+  @objc optional func onAdImpression(_ adView: AdropAds.AdropSplashAdView)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AdropApplication : ObjectiveC.NSObject {
   public static var shared: AdropAds.AdropApplication
