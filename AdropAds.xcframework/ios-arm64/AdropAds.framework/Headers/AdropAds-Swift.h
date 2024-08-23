@@ -567,9 +567,9 @@ SWIFT_CLASS("_TtC8AdropAds13AdropSplashAd")
 
 SWIFT_PROTOCOL("_TtP8AdropAds21AdropSplashAdDelegate_")
 @protocol AdropSplashAdDelegate
+@optional
 - (void)onAdReceived:(AdropSplashAd * _Nonnull)ad;
 - (void)onAdFailedToReceive:(AdropSplashAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
-@optional
 - (void)onAdImpression:(AdropSplashAd * _Nonnull)ad;
 - (void)onAdClose:(AdropSplashAd * _Nonnull)ad impressed:(BOOL)impressed;
 @end

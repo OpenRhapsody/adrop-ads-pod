@@ -264,8 +264,8 @@ public class AdropPageTracker {
   @objc optional func onAdFailedToShowFullScreen(_ ad: AdropAds.AdropRewardedAd, _ errorCode: AdropAds.AdropErrorCode)
 }
 @objc public protocol AdropSplashAdDelegate {
-  @objc func onAdReceived(_ ad: AdropAds.AdropSplashAd)
-  @objc func onAdFailedToReceive(_ ad: AdropAds.AdropSplashAd, _ errorCode: AdropAds.AdropErrorCode)
+  @objc optional func onAdReceived(_ ad: AdropAds.AdropSplashAd)
+  @objc optional func onAdFailedToReceive(_ ad: AdropAds.AdropSplashAd, _ errorCode: AdropAds.AdropErrorCode)
   @objc optional func onAdImpression(_ ad: AdropAds.AdropSplashAd)
   @objc optional func onAdClose(_ ad: AdropAds.AdropSplashAd, impressed: Swift.Bool)
 }
