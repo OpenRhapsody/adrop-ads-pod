@@ -212,6 +212,9 @@ extension AdropAds.ULID : Swift.Codable {
   public var callToAction: Swift.String {
     get
   }
+  public var asset: Swift.String {
+    get
+  }
   public var accountTag: [Swift.String : Any] {
     get
   }
