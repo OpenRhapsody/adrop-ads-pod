@@ -141,7 +141,12 @@ extension AdropAds.ULID : Swift.Codable {
   @objc @_Concurrency.MainActor(unsafe) public var backgroundColor: UIKit.UIColor?
   @objc @_Concurrency.MainActor(unsafe) public var logoImage: UIKit.UIImage?
   @objc @_Concurrency.MainActor(unsafe) public var mainViewController: UIKit.UIViewController?
+  @available(*, deprecated, renamed: "displayDuration")
   @objc @_Concurrency.MainActor(unsafe) public var timeout: Foundation.TimeInterval {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var displayDuration: Foundation.TimeInterval {
     @objc get
     @objc set
   }
@@ -309,6 +314,8 @@ public class AdropPageTracker {
   case ERROR_CODE_AD_EMPTY
   case ERROR_CODE_AD_SHOWN
   case ERROR_CODE_AD_HIDE_FOR_TODAY
+  case ERROR_CODE_ACCOUNT_USAGE_LIMIT_EXCEEDED
+  case ERROR_CODE_LANDSCAPE_UNSUPPORTED
   public var keyString: Swift.String {
     get
   }
@@ -346,6 +353,10 @@ public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.Strin
   }
   @objc @_Concurrency.MainActor(unsafe) public var isClosed: Swift.Bool {
     @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var displayDuration: Foundation.TimeInterval {
+    @objc get
+    @objc set
   }
   @_Concurrency.MainActor(unsafe) public init(unitId: Swift.String)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToSuperview()

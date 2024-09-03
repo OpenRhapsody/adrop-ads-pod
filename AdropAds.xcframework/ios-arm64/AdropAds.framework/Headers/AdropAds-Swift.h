@@ -372,6 +372,8 @@ typedef SWIFT_ENUM(NSInteger, AdropErrorCode, open) {
   AdropErrorCodeERROR_CODE_AD_EMPTY = 9,
   AdropErrorCodeERROR_CODE_AD_SHOWN = 10,
   AdropErrorCodeERROR_CODE_AD_HIDE_FOR_TODAY = 11,
+  AdropErrorCodeERROR_CODE_ACCOUNT_USAGE_LIMIT_EXCEEDED = 12,
+  AdropErrorCodeERROR_CODE_LANDSCAPE_UNSUPPORTED = 13,
 };
 
 @protocol AdropInterstitialAdDelegate;
@@ -584,6 +586,7 @@ SWIFT_CLASS("_TtC8AdropAds17AdropSplashAdView")
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
 @property (nonatomic, readonly) BOOL isClosed;
+@property (nonatomic) NSTimeInterval displayDuration;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)didMoveToSuperview;
 - (nonnull instancetype)initWithImage:(UIImage * _Nullable)image SWIFT_UNAVAILABLE;
@@ -609,7 +612,8 @@ SWIFT_CLASS("_TtC8AdropAds27AdropSplashAdViewController")
 @property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 @property (nonatomic, strong) UIImage * _Nullable logoImage;
 @property (nonatomic, strong) UIViewController * _Nullable mainViewController;
-@property (nonatomic) NSTimeInterval timeout;
+@property (nonatomic) NSTimeInterval timeout SWIFT_DEPRECATED_MSG("", "displayDuration");
+@property (nonatomic) NSTimeInterval displayDuration;
 @property (nonatomic, readonly, strong) AdropSplashAd * _Nonnull splashAd;
 @property (nonatomic, weak) id <AdropSplashAdDelegate> _Nullable delegate;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;

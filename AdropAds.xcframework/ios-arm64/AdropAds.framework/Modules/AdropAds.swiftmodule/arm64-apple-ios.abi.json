@@ -4459,10 +4459,12 @@
             "usr": "c:@M@AdropAds@objc(cs)AdropSplashAdViewController(py)timeout",
             "mangledName": "$s8AdropAds0A22SplashAdViewControllerC7timeoutSdvp",
             "moduleName": "AdropAds",
+            "deprecated": true,
             "declAttributes": [
               "Custom",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "Available"
             ],
             "accessors": [
               {
@@ -4526,6 +4528,99 @@
                 "declKind": "Accessor",
                 "usr": "s:8AdropAds0A22SplashAdViewControllerC7timeoutSdvM",
                 "mangledName": "$s8AdropAds0A22SplashAdViewControllerC7timeoutSdvM",
+                "moduleName": "AdropAds",
+                "deprecated": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "displayDuration",
+            "printedName": "displayDuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdropAds@objc(cs)AdropSplashAdViewController(py)displayDuration",
+            "mangledName": "$s8AdropAds0A22SplashAdViewControllerC15displayDurationSdvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdropAds@objc(cs)AdropSplashAdViewController(im)displayDuration",
+                "mangledName": "$s8AdropAds0A22SplashAdViewControllerC15displayDurationSdvg",
+                "moduleName": "AdropAds",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdropAds@objc(cs)AdropSplashAdViewController(im)setDisplayDuration:",
+                "mangledName": "$s8AdropAds0A22SplashAdViewControllerC15displayDurationSdvs",
+                "moduleName": "AdropAds",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A22SplashAdViewControllerC15displayDurationSdvM",
+                "mangledName": "$s8AdropAds0A22SplashAdViewControllerC15displayDurationSdvM",
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -8865,6 +8960,88 @@
           },
           {
             "kind": "Var",
+            "name": "ERROR_CODE_ACCOUNT_USAGE_LIMIT_EXCEEDED",
+            "printedName": "ERROR_CODE_ACCOUNT_USAGE_LIMIT_EXCEEDED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdropAds.AdropErrorCode.Type) -> AdropAds.AdropErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdropErrorCode",
+                    "printedName": "AdropAds.AdropErrorCode",
+                    "usr": "c:@M@AdropAds@E@AdropErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdropAds.AdropErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdropErrorCode",
+                        "printedName": "AdropAds.AdropErrorCode",
+                        "usr": "c:@M@AdropAds@E@AdropErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdropAds@E@AdropErrorCode@AdropErrorCodeERROR_CODE_ACCOUNT_USAGE_LIMIT_EXCEEDED",
+            "mangledName": "$s8AdropAds0A9ErrorCodeO39ERROR_CODE_ACCOUNT_USAGE_LIMIT_EXCEEDEDyA2CmF",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 12
+          },
+          {
+            "kind": "Var",
+            "name": "ERROR_CODE_LANDSCAPE_UNSUPPORTED",
+            "printedName": "ERROR_CODE_LANDSCAPE_UNSUPPORTED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdropAds.AdropErrorCode.Type) -> AdropAds.AdropErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdropErrorCode",
+                    "printedName": "AdropAds.AdropErrorCode",
+                    "usr": "c:@M@AdropAds@E@AdropErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdropAds.AdropErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdropErrorCode",
+                        "printedName": "AdropAds.AdropErrorCode",
+                        "usr": "c:@M@AdropAds@E@AdropErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdropAds@E@AdropErrorCode@AdropErrorCodeERROR_CODE_LANDSCAPE_UNSUPPORTED",
+            "mangledName": "$s8AdropAds0A9ErrorCodeO32ERROR_CODE_LANDSCAPE_UNSUPPORTEDyA2CmF",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 13
+          },
+          {
+            "kind": "Var",
             "name": "keyString",
             "printedName": "keyString",
             "children": [
@@ -9866,6 +10043,95 @@
                   "ObjC"
                 ],
                 "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "displayDuration",
+            "printedName": "displayDuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdropAds@objc(cs)AdropSplashAdView(py)displayDuration",
+            "mangledName": "$s8AdropAds0A12SplashAdViewC15displayDurationSdvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdropAds@objc(cs)AdropSplashAdView(im)displayDuration",
+                "mangledName": "$s8AdropAds0A12SplashAdViewC15displayDurationSdvg",
+                "moduleName": "AdropAds",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdropAds@objc(cs)AdropSplashAdView(im)setDisplayDuration:",
+                "mangledName": "$s8AdropAds0A12SplashAdViewC15displayDurationSdvs",
+                "moduleName": "AdropAds",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A12SplashAdViewC15displayDurationSdvM",
+                "mangledName": "$s8AdropAds0A12SplashAdViewC15displayDurationSdvM",
+                "moduleName": "AdropAds",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -16121,14 +16387,14 @@
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConnector.swift",
       "kind": "StringLiteral",
-      "offset": 170,
+      "offset": 1165,
       "length": 25,
       "value": "\"X-Ios-Bundle-Identifier\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConnector.swift",
       "kind": "IntegerLiteral",
-      "offset": 3430,
+      "offset": 4464,
       "length": 1,
       "value": "1"
     },
@@ -16653,28 +16919,28 @@
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropSplashAdViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 867,
+      "offset": 1412,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropSplashAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 904,
+      "offset": 1449,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropSplashAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1209,
+      "offset": 1754,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropSplashAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1250,
+      "offset": 1795,
       "length": 5,
       "value": "false"
     },
@@ -17374,6 +17640,20 @@
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
+      "offset": 1644,
+      "length": 39,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1693,
+      "length": 32,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
       "offset": 1283,
       "length": 19,
       "value": "1"
@@ -17447,6 +17727,20 @@
       "offset": 1606,
       "length": 28,
       "value": "11"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1644,
+      "length": 39,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1693,
+      "length": 32,
+      "value": "13"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/UserContentControlAgent.swift",
@@ -17598,9 +17892,16 @@
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropSplashAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 794,
+      "offset": 789,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropSplashAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1276,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropSplashAdView.swift",
@@ -17726,7 +18027,7 @@
       "kind": "StringLiteral",
       "offset": 7340,
       "length": 7,
-      "value": "\"0.6.2\""
+      "value": "\"0.6.3\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
