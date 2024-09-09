@@ -2414,6 +2414,13 @@
       },
       {
         "kind": "Import",
+        "name": "SafariServices",
+        "printedName": "SafariServices",
+        "declKind": "Import",
+        "moduleName": "AdropAds"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -9525,6 +9532,91 @@
           },
           {
             "kind": "Var",
+            "name": "useInAppBrowser",
+            "printedName": "useInAppBrowser",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AdropAds0A0C15useInAppBrowserSbvp",
+            "mangledName": "$s8AdropAds0A0C15useInAppBrowserSbvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A0C15useInAppBrowserSbvg",
+                "mangledName": "$s8AdropAds0A0C15useInAppBrowserSbvg",
+                "moduleName": "AdropAds",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A0C15useInAppBrowserSbvs",
+                "mangledName": "$s8AdropAds0A0C15useInAppBrowserSbvs",
+                "moduleName": "AdropAds",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A0C15useInAppBrowserSbvM",
+                "mangledName": "$s8AdropAds0A0C15useInAppBrowserSbvM",
+                "moduleName": "AdropAds",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "sdkVersion",
             "printedName": "sdkVersion",
             "children": [
@@ -9574,12 +9666,19 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(production:targetCountries:)",
+            "printedName": "initialize(production:useInAppBrowser:targetCountries:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -9613,11 +9712,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdropAds@objc(cs)Adrop(cm)initializeWithProduction:targetCountries:",
-            "mangledName": "$s8AdropAds0A0C10initialize10production15targetCountriesySb_SaySSGSgtFZ",
+            "usr": "c:@M@AdropAds@objc(cs)Adrop(cm)initializeWithProduction:useInAppBrowser:targetCountries:",
+            "mangledName": "$s8AdropAds0A0C10initialize10production15useInAppBrowser15targetCountriesySb_SbSaySSGSgtFZ",
             "moduleName": "AdropAds",
             "static": true,
-            "objc_name": "initializeWithProduction:targetCountries:",
+            "objc_name": "initializeWithProduction:useInAppBrowser:targetCountries:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -17864,21 +17963,21 @@
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Adrop.swift",
       "kind": "BooleanLiteral",
-      "offset": 212,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Adrop.swift",
-      "kind": "BooleanLiteral",
-      "offset": 644,
+      "offset": 708,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Adrop.swift",
       "kind": "BooleanLiteral",
-      "offset": 775,
+      "offset": 928,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Adrop.swift",
+      "kind": "BooleanLiteral",
+      "offset": 959,
       "length": 5,
       "value": "false"
     },
@@ -18027,7 +18126,7 @@
       "kind": "StringLiteral",
       "offset": 7340,
       "length": 7,
-      "value": "\"0.6.3\""
+      "value": "\"0.6.4\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
