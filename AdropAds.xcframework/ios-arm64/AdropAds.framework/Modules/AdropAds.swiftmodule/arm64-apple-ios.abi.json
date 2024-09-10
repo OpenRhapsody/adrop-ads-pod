@@ -16500,14 +16500,14 @@
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "Dictionary",
-      "offset": 777,
+      "offset": 672,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 804,
+      "offset": 699,
       "length": 2,
       "value": "\"\""
     },
@@ -18126,7 +18126,7 @@
       "kind": "StringLiteral",
       "offset": 7340,
       "length": 7,
-      "value": "\"0.6.4\""
+      "value": "\"0.6.5\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
