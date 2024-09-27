@@ -46,7 +46,7 @@ import zlib
 @_hasMissingDesignatedInitializers public class AdropAccessPointViewController {
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class AdropBanner : UIKit.UIView {
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class AdropBanner : UIKit.UIView, AdropAds.HandleAdClickCustom {
   @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any AdropAds.AdropBannerDelegate)?
   @objc @_Concurrency.MainActor(unsafe) public var unitId: Swift.String {
     @objc get
@@ -58,8 +58,13 @@ import zlib
   @objc @_Concurrency.MainActor(unsafe) public var id: Swift.String {
     @objc get
   }
+  @_Concurrency.MainActor(unsafe) @objc public var destinationURL: Swift.String? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc public var handleAdClickCustom: Swift.Bool
   @objc @_Concurrency.MainActor(unsafe) public init(unitId: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) public func load()
+  @_Concurrency.MainActor(unsafe) @objc public func open(_ url: Swift.String? = nil)
   @objc deinit
 }
 extension AdropAds.AdropBanner : WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
@@ -67,7 +72,14 @@ extension AdropAds.AdropBanner : WebKit.WKNavigationDelegate, WebKit.WKUIDelegat
   @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation)
 }
-@objc public class AdropPopupAd : ObjectiveC.NSObject {
+@objc public class AdropPopupAd : ObjectiveC.NSObject, AdropAds.HandleAdClickCustom {
+  @objc public var destinationURL: Swift.String? {
+    @objc get
+  }
+  @objc public var handleAdClickCustom: Swift.Bool {
+    @objc get
+    @objc set
+  }
   @objc weak public var delegate: (any AdropAds.AdropPopupAdDelegate)?
   @objc public var unitId: Swift.String {
     @objc get
@@ -84,10 +96,11 @@ extension AdropAds.AdropBanner : WebKit.WKNavigationDelegate, WebKit.WKUIDelegat
   @objc public init(unitId: Swift.String)
   @objc public func load()
   @objc public func show(fromRootViewController: UIKit.UIViewController)
+  @objc public func open(_ url: Swift.String? = nil)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class AdropMetrics : ObjectiveC.NSObject {
-  public static func setProperty(key: Swift.String, value: Swift.String)
+  public static func setProperty(key: Swift.String, value: (any Swift.Encodable)?)
   public static func logEvent(name: Swift.String, params: [Swift.String : any Swift.Encodable]? = [:])
   @objc override dynamic public init()
   @objc deinit
@@ -440,6 +453,17 @@ public typealias AdropUserDidEarnRewardHandler = (_ type: Swift.Int, _ amount: S
 public struct AdropBannerRepresented : SwiftUI.UIViewRepresentable {
   public typealias UIViewType = AdropAds.AdropBanner
   public var banner: AdropAds.AdropBanner
+  public var destinationURL: Swift.String? {
+    get
+  }
+  public var handleAdClickCustom: Swift.Bool {
+    get
+    set
+  }
+  public var delegate: (any AdropAds.AdropBannerDelegate)? {
+    get
+    set
+  }
   public init(unitId: Swift.String)
   public init(unitId: Swift.String, delegate: (any AdropAds.AdropBannerDelegate)?)
   @_Concurrency.MainActor(unsafe) public func makeUIView(context: AdropAds.AdropBannerRepresented.Context) -> AdropAds.AdropBanner
@@ -451,6 +475,11 @@ public struct AdropNativeAdProfile {
   public let displayLogo: Swift.String
   public let displayName: Swift.String
   public let link: Swift.String?
+}
+@objc public protocol HandleAdClickCustom {
+  @objc var destinationURL: Swift.String? { get }
+  @objc var handleAdClickCustom: Swift.Bool { get set }
+  @objc func open(_ url: Swift.String?)
 }
 public enum AdropBannerSize : Swift.String {
   case H50

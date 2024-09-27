@@ -320,17 +320,28 @@ SWIFT_CLASS("_TtC8AdropAds16AdropApplication")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_PROTOCOL("_TtP8AdropAds19HandleAdClickCustom_")
+@protocol HandleAdClickCustom
+@property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
+@property (nonatomic) BOOL handleAdClickCustom;
+- (void)open:(NSString * _Nullable)url;
+@end
+
 @protocol AdropBannerDelegate;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
-@interface AdropBanner : UIView
+@interface AdropBanner : UIView <HandleAdClickCustom>
 @property (nonatomic, weak) id <AdropBannerDelegate> _Nullable delegate;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull id SWIFT_DEPRECATED_MSG("", "unitId");
+@property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
+@property (nonatomic) BOOL handleAdClickCustom;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
+- (void)open:(NSString * _Nullable)url;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
@@ -487,7 +498,9 @@ SWIFT_CLASS("_TtC8AdropAds17AdropNativeAdView")
 @class UIColor;
 
 SWIFT_CLASS("_TtC8AdropAds12AdropPopupAd")
-@interface AdropPopupAd : NSObject
+@interface AdropPopupAd : NSObject <HandleAdClickCustom>
+@property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
+@property (nonatomic) BOOL handleAdClickCustom;
 @property (nonatomic, weak) id <AdropPopupAdDelegate> _Nullable delegate;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull creativeIds;
@@ -498,6 +511,7 @@ SWIFT_CLASS("_TtC8AdropAds12AdropPopupAd")
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)showFromRootViewController:(UIViewController * _Nonnull)fromRootViewController;
+- (void)open:(NSString * _Nullable)url;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -655,6 +669,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 
