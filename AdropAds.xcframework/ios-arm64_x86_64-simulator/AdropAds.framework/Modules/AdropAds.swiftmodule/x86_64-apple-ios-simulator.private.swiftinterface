@@ -97,6 +97,7 @@ extension AdropAds.AdropBanner : WebKit.WKNavigationDelegate, WebKit.WKUIDelegat
   @objc public func load()
   @objc public func show(fromRootViewController: UIKit.UIViewController)
   @objc public func open(_ url: Swift.String? = nil)
+  @objc public func close()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class AdropMetrics : ObjectiveC.NSObject {

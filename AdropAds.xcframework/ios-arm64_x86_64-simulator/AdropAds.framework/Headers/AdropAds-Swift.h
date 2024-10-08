@@ -512,6 +512,7 @@ SWIFT_CLASS("_TtC8AdropAds12AdropPopupAd")
 - (void)load;
 - (void)showFromRootViewController:(UIViewController * _Nonnull)fromRootViewController;
 - (void)open:(NSString * _Nullable)url;
+- (void)close;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1209,6 +1210,7 @@ SWIFT_CLASS("_TtC8AdropAds12AdropPopupAd")
 - (void)load;
 - (void)showFromRootViewController:(UIViewController * _Nonnull)fromRootViewController;
 - (void)open:(NSString * _Nullable)url;
+- (void)close;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
