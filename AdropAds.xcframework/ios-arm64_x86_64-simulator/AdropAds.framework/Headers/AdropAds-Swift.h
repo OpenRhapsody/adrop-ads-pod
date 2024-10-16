@@ -601,7 +601,7 @@ SWIFT_CLASS("_TtC8AdropAds17AdropSplashAdView")
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
 @property (nonatomic, readonly) BOOL isClosed;
-@property (nonatomic) NSTimeInterval displayDuration;
+@property (nonatomic) NSTimeInterval displayDuration SWIFT_DEPRECATED_MSG("Warning: Set the splash ad duration in the ad unit settings on the Adrop console.");
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)didMoveToSuperview;
 - (nonnull instancetype)initWithImage:(UIImage * _Nullable)image SWIFT_UNAVAILABLE;
@@ -628,7 +628,7 @@ SWIFT_CLASS("_TtC8AdropAds27AdropSplashAdViewController")
 @property (nonatomic, strong) UIImage * _Nullable logoImage;
 @property (nonatomic, strong) UIViewController * _Nullable mainViewController;
 @property (nonatomic) NSTimeInterval timeout SWIFT_DEPRECATED_MSG("", "displayDuration");
-@property (nonatomic) NSTimeInterval displayDuration;
+@property (nonatomic) NSTimeInterval displayDuration SWIFT_DEPRECATED_MSG("Warning: Set the splash ad duration in the ad unit settings on the Adrop console.");
 @property (nonatomic, readonly, strong) AdropSplashAd * _Nonnull splashAd;
 @property (nonatomic, weak) id <AdropSplashAdDelegate> _Nullable delegate;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
@@ -1299,7 +1299,7 @@ SWIFT_CLASS("_TtC8AdropAds17AdropSplashAdView")
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
 @property (nonatomic, readonly) BOOL isClosed;
-@property (nonatomic) NSTimeInterval displayDuration;
+@property (nonatomic) NSTimeInterval displayDuration SWIFT_DEPRECATED_MSG("Warning: Set the splash ad duration in the ad unit settings on the Adrop console.");
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)didMoveToSuperview;
 - (nonnull instancetype)initWithImage:(UIImage * _Nullable)image SWIFT_UNAVAILABLE;
@@ -1326,7 +1326,7 @@ SWIFT_CLASS("_TtC8AdropAds27AdropSplashAdViewController")
 @property (nonatomic, strong) UIImage * _Nullable logoImage;
 @property (nonatomic, strong) UIViewController * _Nullable mainViewController;
 @property (nonatomic) NSTimeInterval timeout SWIFT_DEPRECATED_MSG("", "displayDuration");
-@property (nonatomic) NSTimeInterval displayDuration;
+@property (nonatomic) NSTimeInterval displayDuration SWIFT_DEPRECATED_MSG("Warning: Set the splash ad duration in the ad unit settings on the Adrop console.");
 @property (nonatomic, readonly, strong) AdropSplashAd * _Nonnull splashAd;
 @property (nonatomic, weak) id <AdropSplashAdDelegate> _Nullable delegate;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;

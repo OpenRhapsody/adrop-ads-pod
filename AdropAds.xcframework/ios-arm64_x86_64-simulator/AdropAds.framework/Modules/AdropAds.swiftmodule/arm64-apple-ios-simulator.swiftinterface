@@ -160,6 +160,7 @@ extension AdropAds.ULID : Swift.Codable {
     @objc get
     @objc set
   }
+  @available(*, deprecated, message: "Warning: Set the splash ad duration in the ad unit settings on the Adrop console.")
   @objc @_Concurrency.MainActor(unsafe) public var displayDuration: Foundation.TimeInterval {
     @objc get
     @objc set
@@ -369,6 +370,7 @@ public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.Strin
   @objc @_Concurrency.MainActor(unsafe) public var isClosed: Swift.Bool {
     @objc get
   }
+  @available(*, deprecated, message: "Warning: Set the splash ad duration in the ad unit settings on the Adrop console.")
   @objc @_Concurrency.MainActor(unsafe) public var displayDuration: Foundation.TimeInterval {
     @objc get
     @objc set
