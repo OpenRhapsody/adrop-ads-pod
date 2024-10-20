@@ -454,6 +454,7 @@ SWIFT_CLASS("_TtC8AdropAds12AdropMetrics")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 @protocol AdropNativeAdDelegate;
 
 SWIFT_CLASS("_TtC8AdropAds13AdropNativeAd")
