@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "AdropAds",
+    "printedName": "AdropAds",
     "children": [
       {
         "kind": "Import",
@@ -104,6 +104,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -130,6 +131,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -158,6 +160,7 @@
             "mangledName": "$s8AdropAds0A12NativeAdViewC16setIsEntireClickyySbF",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -186,6 +189,7 @@
             "mangledName": "$s8AdropAds0A12NativeAdViewC03setcD0yyAA0acD0CF",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -262,6 +266,7 @@
             "mangledName": "$s8AdropAds0A12NativeAdViewC013setAdvertiserE0_7onClickySo6UIViewC_yAA0acD0CSg_AGtcSgtF",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -338,6 +343,7 @@
             "mangledName": "$s8AdropAds0A12NativeAdViewC011setHeadLineE0_7onClickySo6UIViewC_yAA0acD0CSg_AGtcSgtF",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -414,6 +420,7 @@
             "mangledName": "$s8AdropAds0A12NativeAdViewC07setIconE0_7onClickySo6UIViewC_yAA0acD0CSg_AGtcSgtF",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -491,6 +498,7 @@
             "mangledName": "$s8AdropAds0A12NativeAdViewC015setCallToActionE0_7onClickySo6UIViewC_yAA0acD0CSg_AGtcSgtF",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -567,6 +575,7 @@
             "mangledName": "$s8AdropAds0A12NativeAdViewC014setProfileLogoE0_7onClickySo6UIViewC_yAA0acD0CSg_AGtcSgtF",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -643,6 +652,7 @@
             "mangledName": "$s8AdropAds0A12NativeAdViewC014setProfileNameE0_7onClickySo6UIViewC_yAA0acD0CSg_AGtcSgtF",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -671,6 +681,7 @@
             "mangledName": "$s8AdropAds0A12NativeAdViewC08setMediaE0yySo6UIViewCF",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -699,6 +710,7 @@
             "mangledName": "$s8AdropAds0A12NativeAdViewC07setBodyE0yySo6UIViewCF",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -711,6 +723,7 @@
         "mangledName": "$s8AdropAds0A12NativeAdViewC",
         "moduleName": "AdropAds",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -724,6 +737,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -930,6 +957,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -953,7 +996,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -1008,8 +1067,9 @@
             "moduleName": "AdropAds",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "ObjC"
@@ -1119,6 +1179,7 @@
             "mangledName": "$s8AdropAds0A6BannerC6unitIdSSvp",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1164,6 +1225,7 @@
             "mangledName": "$s8AdropAds0A6BannerC10creativeIdSSvp",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1210,6 +1272,7 @@
             "moduleName": "AdropAds",
             "deprecated": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -1266,6 +1329,7 @@
             "objc_name": "destinationURL",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1322,8 +1386,9 @@
             "declAttributes": [
               "HasInitialValue",
               "ObjC",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -1423,6 +1488,7 @@
             "moduleName": "AdropAds",
             "objc_name": "initWithUnitId:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -1446,6 +1512,7 @@
             "mangledName": "$s8AdropAds0A6BannerC4loadyyF",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1485,6 +1552,7 @@
             "objc_name": "open:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1518,6 +1586,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -1575,6 +1644,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1630,6 +1700,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1667,6 +1738,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1679,6 +1751,7 @@
         "mangledName": "$s8AdropAds0A6BannerC",
         "moduleName": "AdropAds",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -1697,6 +1770,20 @@
             "printedName": "HandleAdClickCustom",
             "usr": "c:@M@AdropAds@objc(pl)HandleAdClickCustom",
             "mangledName": "$s8AdropAds19HandleAdClickCustomP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -2752,6 +2839,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2995,6 +3096,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3991,6 +4106,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -4450,6 +4579,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -4554,8 +4699,9 @@
             "moduleName": "AdropAds",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "ObjC"
             ],
@@ -4672,8 +4818,9 @@
             "moduleName": "AdropAds",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "ObjC"
             ],
@@ -4790,8 +4937,9 @@
             "moduleName": "AdropAds",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "ObjC"
             ],
@@ -4900,6 +5048,7 @@
             "moduleName": "AdropAds",
             "deprecated": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -4995,6 +5144,7 @@
             "moduleName": "AdropAds",
             "deprecated": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -5089,6 +5239,7 @@
             "mangledName": "$s8AdropAds0A22SplashAdViewControllerC06splashD0AA0acD0Cvp",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -5133,6 +5284,7 @@
             "mangledName": "$s8AdropAds0A22SplashAdViewControllerC8delegateAA0acD8Delegate_pSgvp",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ReferenceOwnership",
               "AccessControl",
@@ -5247,6 +5399,7 @@
             "moduleName": "AdropAds",
             "objc_name": "initWithUnitId:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -5273,6 +5426,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -5305,6 +5459,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -5327,6 +5482,7 @@
             "mangledName": "$s8AdropAds0A22SplashAdViewControllerC5closeyyF",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -5383,6 +5539,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -5394,6 +5551,7 @@
         "mangledName": "$s8AdropAds0A22SplashAdViewControllerC",
         "moduleName": "AdropAds",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "RawDocComment",
@@ -5407,6 +5565,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -5946,6 +6118,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -7019,6 +7205,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -7445,6 +7645,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -7628,7 +7842,23 @@
           "AccessControl",
           "Available"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -7946,6 +8176,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -8109,6 +8355,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -8870,6 +9132,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -9610,6 +9886,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -9826,6 +10116,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -10180,6 +10486,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -10261,8 +10581,9 @@
             "moduleName": "AdropAds",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "ObjC"
@@ -10372,8 +10693,9 @@
             "mangledName": "$s8AdropAds0A12SplashAdViewC2adAA0acD0Cvp",
             "moduleName": "AdropAds",
             "declAttributes": [
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "ObjC"
             ],
@@ -10465,6 +10787,7 @@
             "mangledName": "$s8AdropAds0A12SplashAdViewC6unitIdSSvp",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -10510,6 +10833,7 @@
             "mangledName": "$s8AdropAds0A12SplashAdViewC10creativeIdSSvp",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -10555,6 +10879,7 @@
             "mangledName": "$s8AdropAds0A12SplashAdViewC8isClosedSbvp",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -10601,6 +10926,7 @@
             "moduleName": "AdropAds",
             "deprecated": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -10701,6 +11027,7 @@
             "mangledName": "$s8AdropAds0A12SplashAdViewC6unitIdACSS_tcfc",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -10726,6 +11053,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -10768,6 +11096,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -10824,6 +11153,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "Available"
@@ -10858,6 +11188,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -10888,6 +11219,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -10925,6 +11257,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -10956,6 +11289,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -10993,6 +11327,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -11005,6 +11340,7 @@
         "mangledName": "$s8AdropAds0A12SplashAdViewC",
         "moduleName": "AdropAds",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -11020,10 +11356,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "AdropSplashAdDelegate",
-            "printedName": "AdropSplashAdDelegate",
-            "usr": "c:@M@AdropAds@objc(pl)AdropSplashAdDelegate",
-            "mangledName": "$s8AdropAds0A16SplashAdDelegateP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -11094,6 +11437,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AdropSplashAdDelegate",
+            "printedName": "AdropSplashAdDelegate",
+            "usr": "c:@M@AdropAds@objc(pl)AdropSplashAdDelegate",
+            "mangledName": "$s8AdropAds0A16SplashAdDelegateP"
           }
         ]
       },
@@ -11197,6 +11547,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -11642,6 +12006,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -11996,6 +12376,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -12236,6 +12630,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -12471,6 +12881,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -12799,6 +13223,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -13236,6 +13674,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -13449,6 +13901,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -13620,6 +14086,8 @@
             "mangledName": "$s8AdropAds0A17BannerRepresentedV6bannerAA0aC0Cvp",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -13717,6 +14185,8 @@
             "mangledName": "$s8AdropAds0A17BannerRepresentedV14destinationURLSSSgvp",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "accessors": [
@@ -13765,6 +14235,8 @@
             "mangledName": "$s8AdropAds0A17BannerRepresentedV19handleAdClickCustomSbvp",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "accessors": [
@@ -13858,6 +14330,8 @@
             "mangledName": "$s8AdropAds0A17BannerRepresentedV8delegateAA0aC8Delegate_pSgvp",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "accessors": [
@@ -13965,6 +14439,8 @@
             "mangledName": "$s8AdropAds0A17BannerRepresentedV6unitIdACSS_tcfc",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "init_kind": "Designated"
@@ -14006,6 +14482,8 @@
             "mangledName": "$s8AdropAds0A17BannerRepresentedV6unitId8delegateACSS_AA0aC8Delegate_pSgtcfc",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "init_kind": "Designated"
@@ -14041,6 +14519,7 @@
             "mangledName": "$s8AdropAds0A17BannerRepresentedV10makeUIView7contextAA0aC0C7SwiftUI0F20RepresentableContextVyACG_tF",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -14082,6 +14561,7 @@
             "mangledName": "$s8AdropAds0A17BannerRepresentedV12updateUIView_7contextyAA0aC0C_7SwiftUI0F20RepresentableContextVyACGtF",
             "moduleName": "AdropAds",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -14094,10 +14574,26 @@
         "moduleName": "AdropAds",
         "intro_iOS": "13.0",
         "declAttributes": [
+          "Preconcurrency",
+          "Custom",
           "AccessControl",
           "Available"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "UIViewRepresentable",
@@ -14153,6 +14649,13 @@
             ],
             "usr": "s:7SwiftUI4ViewP",
             "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -14343,6 +14846,22 @@
         "moduleName": "AdropAds",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -14654,6 +15173,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -14866,6 +15401,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -14944,6 +15493,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -15007,6 +15570,20 @@
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -15546,12 +16123,6 @@
                         "name": "TransferRepresentation",
                         "printedName": "CoreTransferable.TransferRepresentation",
                         "usr": "s:16CoreTransferable22TransferRepresentationP"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Sendable",
-                        "printedName": "Swift.Sendable",
-                        "usr": "s:s8SendableP"
                       }
                     ]
                   }
@@ -15585,6 +16156,41 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "ReferenceConvertible",
             "printedName": "ReferenceConvertible",
             "children": [
@@ -15604,27 +16210,6 @@
             ],
             "usr": "s:10Foundation20ReferenceConvertibleP",
             "mangledName": "$s10Foundation20ReferenceConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -15710,12 +16295,6 @@
                         "name": "TransferRepresentation",
                         "printedName": "CoreTransferable.TransferRepresentation",
                         "usr": "s:16CoreTransferable22TransferRepresentationP"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Sendable",
-                        "printedName": "Swift.Sendable",
-                        "usr": "s:s8SendableP"
                       }
                     ]
                   }
@@ -15749,28 +16328,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "ReferenceConvertible",
-            "printedName": "ReferenceConvertible",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ReferenceType",
-                "printedName": "ReferenceType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSURLComponents",
-                    "printedName": "Foundation.NSURLComponents",
-                    "usr": "c:objc(cs)NSURLComponents"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation20ReferenceConvertibleP",
-            "mangledName": "$s10Foundation20ReferenceConvertibleP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -15792,6 +16349,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "CustomStringConvertible",
             "printedName": "CustomStringConvertible",
             "usr": "s:s23CustomStringConvertibleP",
@@ -15810,6 +16381,28 @@
             "printedName": "CustomReflectable",
             "usr": "s:s17CustomReflectableP",
             "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSURLComponents",
+                    "printedName": "Foundation.NSURLComponents",
+                    "usr": "c:objc(cs)NSURLComponents"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -15914,6 +16507,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "CustomStringConvertible",
             "printedName": "CustomStringConvertible",
             "usr": "s:s23CustomStringConvertibleP",
@@ -15979,6 +16586,20 @@
             "printedName": "_DestructorSafeContainer",
             "usr": "s:s24_DestructorSafeContainerP",
             "mangledName": "$ss24_DestructorSafeContainerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -16644,6 +17265,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -16716,6 +17351,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "TopLevelDecoder",
             "printedName": "TopLevelDecoder",
             "children": [
@@ -16768,10 +17417,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -16794,6 +17450,13 @@
             ],
             "usr": "s:7Combine15TopLevelDecoderP",
             "mangledName": "$s7Combine15TopLevelDecoderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -16811,6 +17474,20 @@
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "_CFObject",
@@ -16850,6 +17527,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_CFObject",
             "printedName": "_CFObject",
             "usr": "s:14CoreFoundation9_CFObjectP",
@@ -16885,6 +17576,20 @@
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "_CFObject",
@@ -17067,6 +17772,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -17230,6 +17949,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_FormatSpecifiable",
             "printedName": "_FormatSpecifiable",
             "children": [
@@ -17316,6 +18042,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "RawRepresentable",
             "printedName": "RawRepresentable",
             "children": [
@@ -17373,16 +18113,9 @@
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 573,
+      "offset": 568,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 133,
-      "length": 27,
-      "value": "\"AdropAds.AdropPopupWebViewController\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropNativeAdView.swift",
@@ -17425,13 +18158,6 @@
       "offset": 903,
       "length": 2,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropBanner.swift",
-      "kind": "StringLiteral",
-      "offset": 150,
-      "length": 11,
-      "value": "\"AdropAds.AdropBanner\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAd.swift",
@@ -17481,13 +18207,6 @@
       "offset": 1480,
       "length": 31,
       "value": "\"adrop_popup_ad_hide_for_today\""
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAd.swift",
-      "kind": "StringLiteral",
-      "offset": 95,
-      "length": 12,
-      "value": "\"AdropAds.AdropPopupAd\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropMetrics.swift",
@@ -17665,6 +18384,146 @@
       "value": "\"5.8.0\""
     },
     {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropWebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1088,
+      "length": 1063,
+      "value": "\"(function(history){\n    var pushState = history.pushState;\n    var replaceState = history.replaceState;\n\n    function sendLocation() {\n        window.webkit.messageHandlers.adrop.postMessage({ action: 'changeUrl', path: window.location.pathname } );\n    }\n\n    history.pushState = function(state) {\n        pushState.apply(history, arguments);\n        setTimeout(sendLocation, 0); \/\/ 바로 호출하지 않고, 이벤트 루프를 통해 호출\n    };\n\n    history.replaceState = function(state) {\n        replaceState.apply(history, arguments);\n        setTimeout(sendLocation, 0); \/\/ 바로 호출하지 않고, 이벤트 루프를 통해 호출\n    };\n})(window.history);\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropWebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2228,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropWebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2380,
+      "length": 7,
+      "value": "\"adrop\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropWebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2491,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropWebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2733,
+      "length": 4,
+      "value": "0xf2"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropWebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2738,
+      "length": 4,
+      "value": "0xff"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropWebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2751,
+      "length": 4,
+      "value": "0xf4"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropWebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2756,
+      "length": 4,
+      "value": "0xff"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropWebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2768,
+      "length": 4,
+      "value": "0xfa"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropWebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2773,
+      "length": 4,
+      "value": "0xff"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropWebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2786,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropWebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2896,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropWebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3003,
+      "length": 4,
+      "value": "0xf2"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropWebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3008,
+      "length": 4,
+      "value": "0xff"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropWebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3021,
+      "length": 4,
+      "value": "0xf4"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropWebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3026,
+      "length": 4,
+      "value": "0xff"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropWebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3038,
+      "length": 4,
+      "value": "0xfa"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropWebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3043,
+      "length": 4,
+      "value": "0xff"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropWebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3056,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropWebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3231,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/RequestCompression.swift",
       "kind": "BooleanLiteral",
       "offset": 3568,
@@ -17698,13 +18557,6 @@
       "offset": 479,
       "length": 1,
       "value": "1"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropNativeAdWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 119,
-      "length": 30,
-      "value": "\"AdropAds.AdropNativeAdWebViewController\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/HTTPHeaders.swift",
@@ -18008,13 +18860,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropSplashAdViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 169,
-      "length": 27,
-      "value": "\"AdropAds.AdropSplashAdViewController\""
-    },
-    {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropAccentButton.swift",
       "kind": "IntegerLiteral",
       "offset": 225,
@@ -18132,13 +18977,6 @@
       "offset": 661,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
-      "kind": "StringLiteral",
-      "offset": 98,
-      "length": 15,
-      "value": "\"AdropAds.AdropRewardedAd\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropSplashAdCache.swift",
@@ -18344,13 +19182,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropNativeAd.swift",
-      "kind": "StringLiteral",
-      "offset": 95,
-      "length": 13,
-      "value": "\"AdropAds.AdropNativeAd\""
-    },
-    {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "StringLiteral",
       "offset": 606,
@@ -18379,16 +19210,212 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
-      "kind": "StringLiteral",
-      "offset": 101,
-      "length": 19,
-      "value": "\"AdropAds.AdropInterstitialAd\""
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 819,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2162,
+      "length": 4,
+      "value": "0x25"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2167,
+      "length": 4,
+      "value": "0xff"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2180,
+      "length": 4,
+      "value": "0x25"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2185,
+      "length": 4,
+      "value": "0xff"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2197,
+      "length": 4,
+      "value": "0x25"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2202,
+      "length": 4,
+      "value": "0xff"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2215,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2471,
+      "length": 4,
+      "value": "0xA3"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2476,
+      "length": 4,
+      "value": "0xff"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2489,
+      "length": 4,
+      "value": "0xA3"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2494,
+      "length": 4,
+      "value": "0xff"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2506,
+      "length": 4,
+      "value": "0xA9"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2511,
+      "length": 4,
+      "value": "0xff"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2524,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2760,
+      "length": 4,
+      "value": "0xdb"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2765,
+      "length": 4,
+      "value": "0xff"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2778,
+      "length": 4,
+      "value": "0xdb"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2783,
+      "length": 4,
+      "value": "0xff"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2795,
+      "length": 4,
+      "value": "0xe4"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2800,
+      "length": 4,
+      "value": "0xff"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2813,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 819,
+      "offset": 2907,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2957,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 3660,
+      "length": 22,
+      "value": "\"adrop_hide_for_today\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 3691,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 3837,
+      "length": 13,
+      "value": "\"adrop_close\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 3859,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4051,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4233,
       "length": 5,
       "value": "false"
     },
@@ -18535,97 +19562,6 @@
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 138,
-      "length": 7,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 155,
-      "length": 12,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 177,
-      "length": 7,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 194,
-      "length": 8,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 212,
-      "length": 6,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 228,
-      "length": 5,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 243,
-      "length": 4,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 257,
-      "length": 10,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 277,
-      "length": 9,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 296,
-      "length": 12,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 318,
-      "length": 8,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 336,
-      "length": 11,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 357,
-      "length": 12,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
       "offset": 1283,
       "length": 19,
       "value": "1"
@@ -18713,104 +19649,6 @@
       "offset": 1693,
       "length": 32,
       "value": "13"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1283,
-      "length": 19,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1312,
-      "length": 21,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1343,
-      "length": 23,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1376,
-      "length": 29,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1415,
-      "length": 22,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1447,
-      "length": 21,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1478,
-      "length": 29,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1517,
-      "length": 21,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1548,
-      "length": 19,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1577,
-      "length": 19,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1606,
-      "length": 28,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1644,
-      "length": 39,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1693,
-      "length": 32,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/UserContentControlAgent.swift",
-      "kind": "StringLiteral",
-      "offset": 106,
-      "length": 23,
-      "value": "\"AdropAds.UserContentControlAgent\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/HTTPMethod.swift",
@@ -18898,10 +19736,17 @@
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropRewardedAdViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 105,
-      "length": 29,
-      "value": "\"AdropAds.AdropRewardedAdViewController\""
+      "kind": "BooleanLiteral",
+      "offset": 804,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropRewardedAdViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1073,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Response.swift",
@@ -18967,27 +19812,6 @@
       "value": "1"
     },
     {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropSplashAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 88,
-      "length": 17,
-      "value": "\"AdropAds.AdropSplashAdView\""
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropSplashAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 88,
-      "length": 17,
-      "value": "\"AdropAds.AdropSplashAdView\""
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropSplashAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 88,
-      "length": 17,
-      "value": "\"AdropAds.AdropSplashAdView\""
-    },
-    {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/RetryPolicy.swift",
       "kind": "IntegerLiteral",
       "offset": 1524,
@@ -19014,13 +19838,6 @@
       "offset": 3237,
       "length": 744,
       "value": "[408, 500, 502, 503, 504]"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/RetryPolicy.swift",
-      "kind": "StringLiteral",
-      "offset": 21141,
-      "length": 25,
-      "value": "\"AdropAds.ConnectionLostRetryPolicy\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/FileDownloader.swift",
@@ -19090,7 +19907,7 @@
       "kind": "StringLiteral",
       "offset": 6708,
       "length": 7,
-      "value": "\"0.8.0\""
+      "value": "\"0.8.1\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
@@ -19121,13 +19938,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropPopupAdViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 220,
-      "length": 26,
-      "value": "\"AdropAds.AdropPopupAdViewController\""
-    },
-    {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropAPI+GraphQL.swift",
       "kind": "IntegerLiteral",
       "offset": 218,
@@ -19140,13 +19950,6 @@
       "offset": 171,
       "length": 31,
       "value": "\"https:\/\/adrop-wallet.web.app\/\""
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropAccessPointView.swift",
-      "kind": "StringLiteral",
-      "offset": 211,
-      "length": 20,
-      "value": "\"AdropAds.AdropAccessPointView\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/VisibilityTracker.swift",
@@ -19175,13 +19978,6 @@
       "offset": 3147,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropSplashAd.swift",
-      "kind": "StringLiteral",
-      "offset": 88,
-      "length": 13,
-      "value": "\"AdropAds.AdropSplashAd\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropApplication.swift",
@@ -19444,108 +20240,10 @@
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropInterstitalAdViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 126,
-      "length": 33,
-      "value": "\"AdropAds.AdropInterstitialAdViewController\""
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdUnit.swift",
-      "kind": "IntegerLiteral",
-      "offset": 125,
-      "length": 6,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdUnit.swift",
-      "kind": "IntegerLiteral",
-      "offset": 133,
-      "length": 12,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdUnit.swift",
-      "kind": "IntegerLiteral",
-      "offset": 147,
-      "length": 8,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdUnit.swift",
-      "kind": "IntegerLiteral",
-      "offset": 157,
-      "length": 6,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdUnit.swift",
-      "kind": "IntegerLiteral",
-      "offset": 165,
-      "length": 11,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdUnit.swift",
-      "kind": "IntegerLiteral",
-      "offset": 178,
-      "length": 11,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdUnit.swift",
-      "kind": "IntegerLiteral",
-      "offset": 191,
-      "length": 6,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdUnit.swift",
-      "kind": "IntegerLiteral",
-      "offset": 125,
-      "length": 6,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdUnit.swift",
-      "kind": "IntegerLiteral",
-      "offset": 133,
-      "length": 12,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdUnit.swift",
-      "kind": "IntegerLiteral",
-      "offset": 147,
-      "length": 8,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdUnit.swift",
-      "kind": "IntegerLiteral",
-      "offset": 157,
-      "length": 6,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdUnit.swift",
-      "kind": "IntegerLiteral",
-      "offset": 165,
-      "length": 11,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdUnit.swift",
-      "kind": "IntegerLiteral",
-      "offset": 178,
-      "length": 11,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdUnit.swift",
-      "kind": "IntegerLiteral",
-      "offset": 191,
-      "length": 6,
-      "value": "7"
+      "kind": "BooleanLiteral",
+      "offset": 578,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdUnit.swift",
@@ -19714,6 +20412,237 @@
       "offset": 1004,
       "length": 27,
       "value": "\"AdropOptInOutProgressView\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "StringLiteral",
+      "offset": 1490,
+      "length": 28,
+      "value": "\"adrop_wallet_opt_in_goback\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1691,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1701,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1713,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1724,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1833,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "StringLiteral",
+      "offset": 1910,
+      "length": 32,
+      "value": "\"adrop_wallet_opt_in_connecting\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "StringLiteral",
+      "offset": 2031,
+      "length": 21,
+      "value": "\"CFBundleDisplayName\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "StringLiteral",
+      "offset": 2109,
+      "length": 14,
+      "value": "\"CFBundleName\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "StringLiteral",
+      "offset": 2139,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2364,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2545,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2751,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "StringLiteral",
+      "offset": 2947,
+      "length": 29,
+      "value": "\"adrop_wallet_opt_in_success\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3225,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3525,
+      "length": 2,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3754,
+      "length": 4,
+      "value": "0x2d"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3759,
+      "length": 4,
+      "value": "0xff"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3772,
+      "length": 4,
+      "value": "0x99"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3777,
+      "length": 4,
+      "value": "0xff"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3789,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3799,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "StringLiteral",
+      "offset": 4023,
+      "length": 26,
+      "value": "\"adrop_wallet_opt_in_fail\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "StringLiteral",
+      "offset": 4141,
+      "length": 27,
+      "value": "\"adrop_wallet_opt_in_retry\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "StringLiteral",
+      "offset": 4264,
+      "length": 13,
+      "value": "\"adrop_retry\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4495,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "FloatLiteral",
+      "offset": 4507,
+      "length": 4,
+      "value": "32.0"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4521,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4534,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4617,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4626,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4638,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4648,
+      "length": 2,
+      "value": "32"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropOptInOutProgressView.swift",
@@ -20010,13 +20939,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/SessionDelegate.swift",
-      "kind": "StringLiteral",
-      "offset": 1340,
-      "length": 15,
-      "value": "\"AdropAds.SessionDelegate\""
-    },
-    {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
       "kind": "Array",
       "offset": 5275,
@@ -20103,9 +21025,233 @@
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
       "kind": "StringLiteral",
-      "offset": 43845,
-      "length": 11,
-      "value": "\"AdropAds.DataRequest\""
+      "offset": 39687,
+      "length": 37,
+      "value": "\"$ curl command could not be created\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "Array",
+      "offset": 39753,
+      "length": 13,
+      "value": "[\"$ curl -v\"]"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 39794,
+      "length": 14,
+      "value": "\"-X \""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 39807,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "IntegerLiteral",
+      "offset": 40036,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 40580,
+      "length": 24,
+      "value": "\"-u \""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 40591,
+      "length": 1,
+      "value": "\":\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 40603,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 40796,
+      "length": 24,
+      "value": "\"-u \""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 40807,
+      "length": 1,
+      "value": "\":\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 40819,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 41178,
+      "length": 24,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 41189,
+      "length": 1,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 41201,
+      "length": 23,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 41223,
+      "length": 3,
+      "value": "\";\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 41263,
+      "length": 22,
+      "value": "\"-b \"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 41282,
+      "length": 1,
+      "value": "\"\"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 41484,
+      "length": 8,
+      "value": "\"Cookie\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 41631,
+      "length": 8,
+      "value": "\"Cookie\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 41802,
+      "length": 4,
+      "value": "\"\"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 41814,
+      "length": 6,
+      "value": "\"\\\"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 41852,
+      "length": 40,
+      "value": "\"-H \"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 41872,
+      "length": 1,
+      "value": "\": \""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 41889,
+      "length": 1,
+      "value": "\"\"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 42091,
+      "length": 6,
+      "value": "\"\\\"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 42105,
+      "length": 8,
+      "value": "\"\\\\\"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 42178,
+      "length": 4,
+      "value": "\"\"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 42190,
+      "length": 6,
+      "value": "\"\\\"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 42229,
+      "length": 23,
+      "value": "\"-d \"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 42249,
+      "length": 1,
+      "value": "\"\"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 42291,
+      "length": 27,
+      "value": "\"\"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 42315,
+      "length": 1,
+      "value": "\"\"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 42365,
+      "length": 9,
+      "value": "\" \\\n\t\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
@@ -20134,13 +21280,6 @@
       "offset": 60799,
       "length": 4,
       "value": "1024"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
-      "kind": "StringLiteral",
-      "offset": 51261,
-      "length": 17,
-      "value": "\"AdropAds.DataStreamRequest\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
@@ -20197,20 +21336,6 @@
       "offset": 69072,
       "length": 1,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
-      "kind": "StringLiteral",
-      "offset": 65643,
-      "length": 15,
-      "value": "\"AdropAds.DownloadRequest\""
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/Request.swift",
-      "kind": "StringLiteral",
-      "offset": 79404,
-      "length": 13,
-      "value": "\"AdropAds.UploadRequest\""
     }
   ]
 }
