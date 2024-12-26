@@ -18291,7 +18291,7 @@
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropMetrics.swift",
       "kind": "Dictionary",
-      "offset": 3461,
+      "offset": 3537,
       "length": 3,
       "value": "[]"
     },
@@ -19931,7 +19931,7 @@
       "kind": "StringLiteral",
       "offset": 6881,
       "length": 7,
-      "value": "\"1.0.2\""
+      "value": "\"1.0.3\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
