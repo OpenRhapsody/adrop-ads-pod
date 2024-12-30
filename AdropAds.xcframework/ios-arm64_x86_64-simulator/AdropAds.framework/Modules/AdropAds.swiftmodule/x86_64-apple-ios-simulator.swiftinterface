@@ -104,6 +104,7 @@ extension AdropAds.AdropBanner : WebKit.WKNavigationDelegate, WebKit.WKUIDelegat
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class AdropMetrics : ObjectiveC.NSObject {
+  public static func properties() -> [Swift.String : any Swift.Encodable]
   public static func setProperty(key: Swift.String, value: (any Swift.Encodable)?)
   public static func logEvent(name: Swift.String, params: [Swift.String : any Swift.Encodable]? = [:])
   @objc override dynamic public init()
@@ -176,7 +177,7 @@ extension AdropAds.ULID : Swift.Codable {
     @objc set
   }
   @objc deinit
-  @objc @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String)
+  @objc @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String, adRequestTimeout: Foundation.TimeInterval = 1)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @objc @_Concurrency.MainActor @preconcurrency public func close()
@@ -359,6 +360,7 @@ public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.Strin
     @objc get
   }
   @objc public static func initialize(production: Swift.Bool = false, useInAppBrowser: Swift.Bool = false, targetCountries: [Swift.String]? = nil)
+  @objc public static func setUID(_ uid: Swift.String)
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class AdropSplashAdView : UIKit.UIImageView {
@@ -378,7 +380,7 @@ public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.Strin
     @objc get
     @objc set
   }
-  @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String, adRequestTimeout: Foundation.TimeInterval = 1)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToSuperview()
   @objc deinit
 }
@@ -402,7 +404,7 @@ extension AdropAds.AdropSplashAdView : AdropAds.AdropSplashAdDelegate {
   @objc optional func onAdDidDismissFullScreen(_ ad: AdropAds.AdropPopupAd)
   @objc optional func onAdFailedToShowFullScreen(_ ad: AdropAds.AdropPopupAd, _ errorCode: AdropAds.AdropErrorCode)
 }
-@objc @_hasMissingDesignatedInitializers public class AdropSplashAd : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers public class AdropSplashAd : ObjectiveC.NSObject, Combine.ObservableObject {
   @objc weak public var delegate: (any AdropAds.AdropSplashAdDelegate)?
   @objc public var unitId: Swift.String {
     @objc get
@@ -417,6 +419,8 @@ extension AdropAds.AdropSplashAdView : AdropAds.AdropSplashAdDelegate {
     get
   }
   @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
 }
 @objc public protocol AdropSplashAdViewDelegate {
   @objc func onAdClose(_ adView: AdropAds.AdropSplashAdView, impressed: Swift.Bool)

@@ -315,6 +315,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (void)initializeWithProduction:(BOOL)production useInAppBrowser:(BOOL)useInAppBrowser targetCountries:(NSArray<NSString *> * _Nullable)targetCountries;
++ (void)setUID:(NSString * _Nonnull)uid;
 @end
 
 
@@ -636,7 +637,7 @@ SWIFT_CLASS("_TtC8AdropAds27AdropSplashAdViewController")
 @property (nonatomic) NSTimeInterval displayDuration SWIFT_DEPRECATED_MSG("Warning: Set the splash ad duration in the ad unit settings on the Adrop console.");
 @property (nonatomic, readonly, strong) AdropSplashAd * _Nonnull splashAd;
 @property (nonatomic, weak) id <AdropSplashAdDelegate> _Nullable delegate;
-- (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId adRequestTimeout:(NSTimeInterval)adRequestTimeout OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
