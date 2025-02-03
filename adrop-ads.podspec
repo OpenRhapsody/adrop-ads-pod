@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'adrop-ads'
-  s.version          = '1.2.0-alpha.mmtalk'
+  s.version          = '1.1.3'
   s.summary          = 'Adrop ads'
   s.homepage         = 'https://adrop.io'
   

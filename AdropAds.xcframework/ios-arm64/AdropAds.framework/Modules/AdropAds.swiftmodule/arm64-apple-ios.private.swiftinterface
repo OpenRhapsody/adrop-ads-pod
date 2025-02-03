@@ -65,10 +65,10 @@ import zlib
     @objc get
   }
   @_Concurrency.MainActor @preconcurrency @objc public var handleAdClickCustom: Swift.Bool
+  @objc deinit
   @objc @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String)
   @objc @_Concurrency.MainActor @preconcurrency public func load()
   @_Concurrency.MainActor @preconcurrency @objc public func open(_ url: Swift.String? = nil)
-  @objc deinit
 }
 extension AdropAds.AdropBanner : WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
