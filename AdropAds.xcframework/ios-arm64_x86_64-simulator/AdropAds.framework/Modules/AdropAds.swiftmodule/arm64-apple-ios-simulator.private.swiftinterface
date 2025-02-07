@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-bare-slash-regex -module-name AdropAds
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
@@ -419,7 +419,6 @@ extension AdropAds.AdropSplashAdView : AdropAds.AdropSplashAdDelegate {
     get
   }
   @objc deinit
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
 }
 @objc public protocol AdropSplashAdViewDelegate {
@@ -478,11 +477,9 @@ public typealias AdropUserDidEarnRewardHandler = (_ type: Swift.Int, _ amount: S
   @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String, delegate: (any AdropAds.AdropBannerDelegate)?)
   @_Concurrency.MainActor @preconcurrency public func makeUIView(context: AdropAds.AdropBannerRepresented.Context) -> AdropAds.AdropBanner
   @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: AdropAds.AdropBanner, context: AdropAds.AdropBannerRepresented.Context)
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @available(iOS 13.0, *)
   public typealias Body = Swift.Never
-  @available(iOS 13.0, tvOS 13.0, *)
-  @available(watchOS, unavailable)
-  @available(macOS, unavailable)
+  @available(iOS 13.0, *)
   public typealias Coordinator = Swift.Void
 }
 public struct AdropNativeAdProfile {
