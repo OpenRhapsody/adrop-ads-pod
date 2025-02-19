@@ -443,14 +443,15 @@ typedef SWIFT_ENUM(NSInteger, AdropMetricCode, open) {
   AdropMetricCodeAD_IMPR = 3,
   AdropMetricCodeAD_CLICK = 4,
   AdropMetricCodeAD_TRY = 5,
-  AdropMetricCodeCLOSE = 6,
-  AdropMetricCodeOPEN = 7,
-  AdropMetricCodeWILL_CLOSE = 8,
-  AdropMetricCodeWILL_OPEN = 9,
-  AdropMetricCodeOPEN_INVALID = 10,
-  AdropMetricCodePAGE_ATS = 11,
-  AdropMetricCodePAGE_ATTACH = 12,
-  AdropMetricCodeSET_PROPERTY = 13,
+  AdropMetricCodeAD_TODAY_OFF = 6,
+  AdropMetricCodeCLOSE = 7,
+  AdropMetricCodeOPEN = 8,
+  AdropMetricCodeWILL_CLOSE = 9,
+  AdropMetricCodeWILL_OPEN = 10,
+  AdropMetricCodeOPEN_INVALID = 11,
+  AdropMetricCodePAGE_ATS = 12,
+  AdropMetricCodePAGE_ATTACH = 13,
+  AdropMetricCodeSET_PROPERTY = 14,
 };
 
 
@@ -677,15 +678,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-enum ZingFormat : NSInteger;
-
-SWIFT_CLASS("_TtC8AdropAds15AdropZingBanner")
-@interface AdropZingBanner : AdropBanner
-- (nonnull instancetype)init:(enum ZingFormat)zingFormat OBJC_DESIGNATED_INITIALIZER;
-- (void)layoutSubviews;
-- (void)open:(NSString * _Nullable)url;
-- (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId SWIFT_UNAVAILABLE;
-@end
 
 
 
@@ -702,12 +694,6 @@ SWIFT_CLASS("_TtC8AdropAds15AdropZingBanner")
 
 
 
-
-
-typedef SWIFT_ENUM(NSInteger, ZingFormat, open) {
-  ZingFormatFEED = 0,
-  ZingFormatCOVER = 1,
-};
 
 #endif
 #if __has_attribute(external_source_symbol)
@@ -1162,14 +1148,15 @@ typedef SWIFT_ENUM(NSInteger, AdropMetricCode, open) {
   AdropMetricCodeAD_IMPR = 3,
   AdropMetricCodeAD_CLICK = 4,
   AdropMetricCodeAD_TRY = 5,
-  AdropMetricCodeCLOSE = 6,
-  AdropMetricCodeOPEN = 7,
-  AdropMetricCodeWILL_CLOSE = 8,
-  AdropMetricCodeWILL_OPEN = 9,
-  AdropMetricCodeOPEN_INVALID = 10,
-  AdropMetricCodePAGE_ATS = 11,
-  AdropMetricCodePAGE_ATTACH = 12,
-  AdropMetricCodeSET_PROPERTY = 13,
+  AdropMetricCodeAD_TODAY_OFF = 6,
+  AdropMetricCodeCLOSE = 7,
+  AdropMetricCodeOPEN = 8,
+  AdropMetricCodeWILL_CLOSE = 9,
+  AdropMetricCodeWILL_OPEN = 10,
+  AdropMetricCodeOPEN_INVALID = 11,
+  AdropMetricCodePAGE_ATS = 12,
+  AdropMetricCodePAGE_ATTACH = 13,
+  AdropMetricCodeSET_PROPERTY = 14,
 };
 
 
@@ -1396,15 +1383,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-enum ZingFormat : NSInteger;
-
-SWIFT_CLASS("_TtC8AdropAds15AdropZingBanner")
-@interface AdropZingBanner : AdropBanner
-- (nonnull instancetype)init:(enum ZingFormat)zingFormat OBJC_DESIGNATED_INITIALIZER;
-- (void)layoutSubviews;
-- (void)open:(NSString * _Nullable)url;
-- (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId SWIFT_UNAVAILABLE;
-@end
 
 
 
@@ -1421,12 +1399,6 @@ SWIFT_CLASS("_TtC8AdropAds15AdropZingBanner")
 
 
 
-
-
-typedef SWIFT_ENUM(NSInteger, ZingFormat, open) {
-  ZingFormatFEED = 0,
-  ZingFormatCOVER = 1,
-};
 
 #endif
 #if __has_attribute(external_source_symbol)

@@ -10,7 +10,7 @@
 		</data>
 		<key>ios-arm64/AdropAds.framework/AdropAds</key>
 		<data>
-		X0IrDTmfHTji90UmSs/FixzI5s4=
+		UdKCBI6PX/ChTMAyXwJ7vZHcats=
 		</data>
 		<key>ios-arm64/AdropAds.framework/AdropOptInOutProgressView.nib</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>ios-arm64/AdropAds.framework/Headers/AdropAds-Swift.h</key>
 		<data>
-		7ZAcGWs7MdeRbCQo7LY8qIubY9w=
+		FbUOzkstcgF1e+au1paSsnAzImk=
 		</data>
 		<key>ios-arm64/AdropAds.framework/Headers/AdropAds.h</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>ios-arm64/AdropAds.framework/Modules/AdropAds.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		IUvcAwBP9t9SGm11yM9pLYagt8U=
+		t6BcJa371H/0U9GoV/ROojdSM+0=
 		</data>
 		<key>ios-arm64/AdropAds.framework/Modules/AdropAds.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		+DAQggTbX2P8co6Ix7H+A9kVfsc=
+		GysU7yBOVlynyWg7IHp/XFafUqs=
 		</data>
 		<key>ios-arm64/AdropAds.framework/Modules/AdropAds.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>ios-arm64/AdropAds.framework/Modules/AdropAds.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		+DAQggTbX2P8co6Ix7H+A9kVfsc=
+		GysU7yBOVlynyWg7IHp/XFafUqs=
 		</data>
 		<key>ios-arm64/AdropAds.framework/Modules/module.modulemap</key>
 		<data>
@@ -63,10 +63,6 @@
 		<key>ios-arm64/AdropAds.framework/PrivacyInfo.xcprivacy</key>
 		<data>
 		+TI1szNiwd410SgLJxRYAsZsZn0=
-		</data>
-		<key>ios-arm64/AdropAds.framework/embla-carousel.js</key>
-		<data>
-		SUvR3hYpBXZUIKoN2piIP0wMGSQ=
 		</data>
 		<key>ios-arm64/AdropAds.framework/en.lproj/Localizable.strings</key>
 		<dict>
@@ -92,7 +88,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/AdropAds</key>
 		<data>
-		BDa7J2JIL3Nrv5C03rE6rzJkhDI=
+		8z8xHaXMjUq0DY3TYPCuwbzYlMw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/AdropOptInOutProgressView.nib</key>
 		<data>
@@ -112,7 +108,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/Headers/AdropAds-Swift.h</key>
 		<data>
-		+YRmwv8KqBF78N3z8+3qM2TQiQU=
+		2SNPX+BZ2i1pRXLfmcQS3Hbttc8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/Headers/AdropAds.h</key>
 		<data>
@@ -124,11 +120,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		BxEsRwdBM5JBiOb/gBifHWY7/H8=
+		SZDBba661JhmdvJp4cGxV8o9ojc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		lTmoFQRKF89ebglbCaQzIrtRYsA=
+		b0FwwMn8xkd3k0y0Y/oenMHusus=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -136,15 +132,15 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		lTmoFQRKF89ebglbCaQzIrtRYsA=
+		b0FwwMn8xkd3k0y0Y/oenMHusus=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		BxEsRwdBM5JBiOb/gBifHWY7/H8=
+		SZDBba661JhmdvJp4cGxV8o9ojc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		x1ukbtZ6yJ8lpFpCUgq2xuCMmMU=
+		o2ZzamzSC3qM+6pkeuZLY3to2Uo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -152,7 +148,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		x1ukbtZ6yJ8lpFpCUgq2xuCMmMU=
+		o2ZzamzSC3qM+6pkeuZLY3to2Uo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/Modules/module.modulemap</key>
 		<data>
@@ -164,11 +160,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/_CodeSignature/CodeResources</key>
 		<data>
-		qN0fShu7RgHNnZVDGJkFF5pY5T0=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AdropAds.framework/embla-carousel.js</key>
-		<data>
-		SUvR3hYpBXZUIKoN2piIP0wMGSQ=
+		Q/w1zW21Amjh5jflh5dugTrkZQ0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/en.lproj/Localizable.strings</key>
 		<dict>
@@ -206,11 +198,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			X0IrDTmfHTji90UmSs/FixzI5s4=
+			UdKCBI6PX/ChTMAyXwJ7vZHcats=
 			</data>
 			<key>hash2</key>
 			<data>
-			COKpd6SUoPV4het08NAakrUNreerVfgE9lZRPnnvFQs=
+			YZNLZZplUpmcw253I9+VxUVt4Kxh52YAY7FhzhxjGF4=
 			</data>
 		</dict>
 		<key>ios-arm64/AdropAds.framework/AdropOptInOutProgressView.nib</key>
@@ -261,11 +253,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7ZAcGWs7MdeRbCQo7LY8qIubY9w=
+			FbUOzkstcgF1e+au1paSsnAzImk=
 			</data>
 			<key>hash2</key>
 			<data>
-			6OE/doxxgDbtNsy5cR9I00+IstYWe0EUXwmxancbN1E=
+			lD7VrNeX/ed4HZKr4fvaKSyEa60jSQqiE0nd86Tjlmo=
 			</data>
 		</dict>
 		<key>ios-arm64/AdropAds.framework/Headers/AdropAds.h</key>
@@ -294,22 +286,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IUvcAwBP9t9SGm11yM9pLYagt8U=
+			t6BcJa371H/0U9GoV/ROojdSM+0=
 			</data>
 			<key>hash2</key>
 			<data>
-			6oY5PEtxDW/5//BE7QRFOJpt1izpEZNpFK4J9ztDvBI=
+			z6FDTVyoqML5f0J3WpGASi/hxwijPkYp0h2ymFewoOE=
 			</data>
 		</dict>
 		<key>ios-arm64/AdropAds.framework/Modules/AdropAds.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+DAQggTbX2P8co6Ix7H+A9kVfsc=
+			GysU7yBOVlynyWg7IHp/XFafUqs=
 			</data>
 			<key>hash2</key>
 			<data>
-			C6Eda2CsTQQfTKvNJ9RBt69gnUzACptOR62CwQlY4uM=
+			3MF1c0zWQzeXEWsQpdvzJY+t/xfBbSFHG4RQIEPtjCY=
 			</data>
 		</dict>
 		<key>ios-arm64/AdropAds.framework/Modules/AdropAds.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -327,11 +319,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+DAQggTbX2P8co6Ix7H+A9kVfsc=
+			GysU7yBOVlynyWg7IHp/XFafUqs=
 			</data>
 			<key>hash2</key>
 			<data>
-			C6Eda2CsTQQfTKvNJ9RBt69gnUzACptOR62CwQlY4uM=
+			3MF1c0zWQzeXEWsQpdvzJY+t/xfBbSFHG4RQIEPtjCY=
 			</data>
 		</dict>
 		<key>ios-arm64/AdropAds.framework/Modules/module.modulemap</key>
@@ -354,17 +346,6 @@
 			<key>hash2</key>
 			<data>
 			RZoL/mc+mhvXbT2mD8vkqd7Ax1Y6+Adi3JYYvASWsFg=
-			</data>
-		</dict>
-		<key>ios-arm64/AdropAds.framework/embla-carousel.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SUvR3hYpBXZUIKoN2piIP0wMGSQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			mlEroeJTgizB9+1++FuadjExyj3vRaYF78yb4h1/Zaw=
 			</data>
 		</dict>
 		<key>ios-arm64/AdropAds.framework/en.lproj/Localizable.strings</key>
@@ -408,11 +389,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BDa7J2JIL3Nrv5C03rE6rzJkhDI=
+			8z8xHaXMjUq0DY3TYPCuwbzYlMw=
 			</data>
 			<key>hash2</key>
 			<data>
-			ltr9HB9Os6kaJCoL4py79L84M+p00nJG68WpZawdtM8=
+			DIFNMAZrf4Y+8RzbJMGgVNhDIBBglnfdRITm3pTyYnA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/AdropOptInOutProgressView.nib</key>
@@ -463,11 +444,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+YRmwv8KqBF78N3z8+3qM2TQiQU=
+			2SNPX+BZ2i1pRXLfmcQS3Hbttc8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Fj+EZXd5eb//ebwTgXax58JYjT+878oAozu0+WzgOZQ=
+			z9uy1uEOBVHI5RuAA90aGT40BEcKDkEHBYPgH6NP5vA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/Headers/AdropAds.h</key>
@@ -496,22 +477,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BxEsRwdBM5JBiOb/gBifHWY7/H8=
+			SZDBba661JhmdvJp4cGxV8o9ojc=
 			</data>
 			<key>hash2</key>
 			<data>
-			VA6ilAXCv0jJwjXtz3E/JT8JcQAsX6jGPy8EXzitpF8=
+			1NZ8IrLZGGohZ5r8XrHP5tkX+XJHGcUXBQjhxl1ATCQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lTmoFQRKF89ebglbCaQzIrtRYsA=
+			b0FwwMn8xkd3k0y0Y/oenMHusus=
 			</data>
 			<key>hash2</key>
 			<data>
-			4int5aKyBAIS/fGfP60mSpi4YIT543K7q16MOwPNVww=
+			snlib/2OxIXPLpIdIXjOj/FUHNrGBIqYh0CaamTj+8k=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -529,33 +510,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lTmoFQRKF89ebglbCaQzIrtRYsA=
+			b0FwwMn8xkd3k0y0Y/oenMHusus=
 			</data>
 			<key>hash2</key>
 			<data>
-			4int5aKyBAIS/fGfP60mSpi4YIT543K7q16MOwPNVww=
+			snlib/2OxIXPLpIdIXjOj/FUHNrGBIqYh0CaamTj+8k=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BxEsRwdBM5JBiOb/gBifHWY7/H8=
+			SZDBba661JhmdvJp4cGxV8o9ojc=
 			</data>
 			<key>hash2</key>
 			<data>
-			VA6ilAXCv0jJwjXtz3E/JT8JcQAsX6jGPy8EXzitpF8=
+			1NZ8IrLZGGohZ5r8XrHP5tkX+XJHGcUXBQjhxl1ATCQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			x1ukbtZ6yJ8lpFpCUgq2xuCMmMU=
+			o2ZzamzSC3qM+6pkeuZLY3to2Uo=
 			</data>
 			<key>hash2</key>
 			<data>
-			qr2lBf9tIu0q1LZJTk25lwDfH1GuKSjUsU2dXCxIbow=
+			tWvVipXyWWbI0y79fHJf/nt8U2iJoMayokjkbffVJzk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -573,11 +554,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x1ukbtZ6yJ8lpFpCUgq2xuCMmMU=
+			o2ZzamzSC3qM+6pkeuZLY3to2Uo=
 			</data>
 			<key>hash2</key>
 			<data>
-			qr2lBf9tIu0q1LZJTk25lwDfH1GuKSjUsU2dXCxIbow=
+			tWvVipXyWWbI0y79fHJf/nt8U2iJoMayokjkbffVJzk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/Modules/module.modulemap</key>
@@ -606,22 +587,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qN0fShu7RgHNnZVDGJkFF5pY5T0=
+			Q/w1zW21Amjh5jflh5dugTrkZQ0=
 			</data>
 			<key>hash2</key>
 			<data>
-			UYDbmBLWQuABbh5qjhOC2Dt9NESTjP5m1SLVJTqQP+Y=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AdropAds.framework/embla-carousel.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SUvR3hYpBXZUIKoN2piIP0wMGSQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			mlEroeJTgizB9+1++FuadjExyj3vRaYF78yb4h1/Zaw=
+			9dV6GX64o+X2FaX9uv9EuUCXv7Ic+tPHJYBGCEFpcV0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/en.lproj/Localizable.strings</key>
