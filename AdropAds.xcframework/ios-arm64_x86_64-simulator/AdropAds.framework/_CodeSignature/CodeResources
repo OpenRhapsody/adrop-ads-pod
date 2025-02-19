@@ -84,6 +84,10 @@
 		<data>
 		+TI1szNiwd410SgLJxRYAsZsZn0=
 		</data>
+		<key>embla-carousel.js</key>
+		<data>
+		SUvR3hYpBXZUIKoN2piIP0wMGSQ=
+		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -236,6 +240,13 @@
 			<key>hash2</key>
 			<data>
 			RZoL/mc+mhvXbT2mD8vkqd7Ax1Y6+Adi3JYYvASWsFg=
+			</data>
+		</dict>
+		<key>embla-carousel.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mlEroeJTgizB9+1++FuadjExyj3vRaYF78yb4h1/Zaw=
 			</data>
 		</dict>
 		<key>en.lproj/Localizable.strings</key>

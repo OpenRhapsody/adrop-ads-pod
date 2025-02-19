@@ -64,6 +64,10 @@
 		<data>
 		+TI1szNiwd410SgLJxRYAsZsZn0=
 		</data>
+		<key>ios-arm64/AdropAds.framework/embla-carousel.js</key>
+		<data>
+		SUvR3hYpBXZUIKoN2piIP0wMGSQ=
+		</data>
 		<key>ios-arm64/AdropAds.framework/en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -88,7 +92,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/AdropAds</key>
 		<data>
-		8z8xHaXMjUq0DY3TYPCuwbzYlMw=
+		b5NUwdTPXvN4EGy+JRikXpzwjfg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/AdropOptInOutProgressView.nib</key>
 		<data>
@@ -160,7 +164,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/_CodeSignature/CodeResources</key>
 		<data>
-		Q/w1zW21Amjh5jflh5dugTrkZQ0=
+		D4lNQdL0n4QbZpgqYDJXhWmIlBg=
+		</data>
+		<key>ios-arm64_x86_64-simulator/AdropAds.framework/embla-carousel.js</key>
+		<data>
+		SUvR3hYpBXZUIKoN2piIP0wMGSQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/en.lproj/Localizable.strings</key>
 		<dict>
@@ -348,6 +356,17 @@
 			RZoL/mc+mhvXbT2mD8vkqd7Ax1Y6+Adi3JYYvASWsFg=
 			</data>
 		</dict>
+		<key>ios-arm64/AdropAds.framework/embla-carousel.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SUvR3hYpBXZUIKoN2piIP0wMGSQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			mlEroeJTgizB9+1++FuadjExyj3vRaYF78yb4h1/Zaw=
+			</data>
+		</dict>
 		<key>ios-arm64/AdropAds.framework/en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -389,11 +408,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8z8xHaXMjUq0DY3TYPCuwbzYlMw=
+			b5NUwdTPXvN4EGy+JRikXpzwjfg=
 			</data>
 			<key>hash2</key>
 			<data>
-			DIFNMAZrf4Y+8RzbJMGgVNhDIBBglnfdRITm3pTyYnA=
+			VoaAfDNjI5t4uwmFZsTijFJxkn/a24HdNYwSibAhoK8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/AdropOptInOutProgressView.nib</key>
@@ -587,11 +606,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q/w1zW21Amjh5jflh5dugTrkZQ0=
+			D4lNQdL0n4QbZpgqYDJXhWmIlBg=
 			</data>
 			<key>hash2</key>
 			<data>
-			9dV6GX64o+X2FaX9uv9EuUCXv7Ic+tPHJYBGCEFpcV0=
+			Fd8hZfEBWVQeUvZiuRV7Zo5l66lkFy/t9wo1eG7ENBc=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/AdropAds.framework/embla-carousel.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SUvR3hYpBXZUIKoN2piIP0wMGSQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			mlEroeJTgizB9+1++FuadjExyj3vRaYF78yb4h1/Zaw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdropAds.framework/en.lproj/Localizable.strings</key>
