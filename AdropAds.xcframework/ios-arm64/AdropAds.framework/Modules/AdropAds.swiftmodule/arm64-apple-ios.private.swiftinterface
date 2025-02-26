@@ -303,7 +303,6 @@ public class AdropPageTracker {
   case AD_IMPR
   case AD_CLICK
   case AD_TRY
-  case AD_TODAY_OFF
   case CLOSE
   case OPEN
   case WILL_CLOSE
