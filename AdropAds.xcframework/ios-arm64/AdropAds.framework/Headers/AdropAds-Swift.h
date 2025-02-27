@@ -677,6 +677,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+enum ZingFormat : NSInteger;
+
+SWIFT_CLASS("_TtC8AdropAds15AdropZingBanner")
+@interface AdropZingBanner : AdropBanner
+- (nonnull instancetype)init:(enum ZingFormat)zingFormat OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+- (void)open:(NSString * _Nullable)url;
+- (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId SWIFT_UNAVAILABLE;
+@end
 
 
 
@@ -693,6 +702,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 
 
+
+
+typedef SWIFT_ENUM(NSInteger, ZingFormat, open) {
+  ZingFormatFEED = 0,
+  ZingFormatCOVER = 1,
+};
 
 #endif
 #if __has_attribute(external_source_symbol)
