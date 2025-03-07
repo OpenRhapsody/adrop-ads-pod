@@ -10,6 +10,7 @@ import Combine
 import CoreLocation
 import CoreText
 import CryptoKit
+import DeveloperToolsSupport
 import Dispatch
 import Foundation
 import MobileCoreServices
@@ -26,21 +27,6 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import zlib
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class AdropNativeAdView : UIKit.UIView {
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
-  @objc @_Concurrency.MainActor @preconcurrency public func setIsEntireClick(_ value: Swift.Bool)
-  @objc @_Concurrency.MainActor @preconcurrency public func setNativeAd(_ ad: AdropAds.AdropNativeAd)
-  @objc @_Concurrency.MainActor @preconcurrency public func setAdvertiserView(_ view: UIKit.UIView, onClick: ((AdropAds.AdropNativeAd?, UIKit.UIView) -> Swift.Void)? = nil)
-  @objc @_Concurrency.MainActor @preconcurrency public func setHeadLineView(_ view: UIKit.UIView, onClick: ((AdropAds.AdropNativeAd?, UIKit.UIView) -> Swift.Void)? = nil)
-  @objc @_Concurrency.MainActor @preconcurrency public func setIconView(_ view: UIKit.UIView, onClick: ((AdropAds.AdropNativeAd?, UIKit.UIView) -> Swift.Void)? = nil)
-  @objc @_Concurrency.MainActor @preconcurrency public func setCallToActionView(_ view: UIKit.UIView, onClick: ((AdropAds.AdropNativeAd?, UIKit.UIView) -> Swift.Void)? = nil)
-  @objc @_Concurrency.MainActor @preconcurrency public func setProfileLogoView(_ view: UIKit.UIView, onClick: ((AdropAds.AdropNativeAd?, UIKit.UIView) -> Swift.Void)? = nil)
-  @objc @_Concurrency.MainActor @preconcurrency public func setProfileNameView(_ view: UIKit.UIView, onClick: ((AdropAds.AdropNativeAd?, UIKit.UIView) -> Swift.Void)? = nil)
-  @objc @_Concurrency.MainActor @preconcurrency public func setMediaView(_ view: UIKit.UIView)
-  @objc @_Concurrency.MainActor @preconcurrency public func setBodyView(_ view: UIKit.UIView)
-  @objc deinit
-}
 @objc public protocol AdropNativeAdDelegate {
   @objc func onAdReceived(_ ad: AdropAds.AdropNativeAd)
   @objc func onAdFailedToReceive(_ ad: AdropAds.AdropNativeAd, _ errorCode: AdropAds.AdropErrorCode)
@@ -75,40 +61,69 @@ extension AdropAds.AdropBanner : WebKit.WKNavigationDelegate, WebKit.WKUIDelegat
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation)
 }
-@objc public class AdropPopupAd : ObjectiveC.NSObject, AdropAds.HandleAdClickCustom {
-  @objc public var destinationURL: Swift.String? {
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class AdropSplashAdView : UIKit.UIImageView {
+  @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any AdropAds.AdropSplashAdViewDelegate)?
+  @objc @_Concurrency.MainActor @preconcurrency public var ad: AdropAds.AdropSplashAd
+  @objc @_Concurrency.MainActor @preconcurrency public var unitId: Swift.String {
     @objc get
   }
-  @objc public var handleAdClickCustom: Swift.Bool {
+  @objc @_Concurrency.MainActor @preconcurrency public var creativeId: Swift.String {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency public var isClosed: Swift.Bool {
+    @objc get
+  }
+  @available(*, deprecated, message: "Warning: Set the splash ad duration in the ad unit settings on the Adrop console.")
+  @objc @_Concurrency.MainActor @preconcurrency public var displayDuration: Foundation.TimeInterval {
     @objc get
     @objc set
   }
-  @objc weak public var delegate: (any AdropAds.AdropPopupAdDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String, adRequestTimeout: Foundation.TimeInterval = 1)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToSuperview()
+  @objc deinit
+}
+extension AdropAds.AdropSplashAdView : AdropAds.AdropSplashAdDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func onAdReceived(_ ad: AdropAds.AdropSplashAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func onAdFailedToReceive(_ ad: AdropAds.AdropSplashAd, _ errorCode: AdropAds.AdropErrorCode)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func onAdImpression(_ ad: AdropAds.AdropSplashAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func onAdClose(_ ad: AdropAds.AdropSplashAd, impressed: Swift.Bool)
+}
+@objc @_hasMissingDesignatedInitializers public class AdropPopupAdViewController : ObjectiveC.NSObject {
+  @objc deinit
+}
+@objc public protocol AdropBannerDelegate {
+  @objc func onAdReceived(_ banner: AdropAds.AdropBanner)
+  @objc func onAdFailedToReceive(_ banner: AdropAds.AdropBanner, _ errorCode: AdropAds.AdropErrorCode)
+  @objc optional func onAdImpression(_ banner: AdropAds.AdropBanner)
+  @objc optional func onAdClicked(_ banner: AdropAds.AdropBanner)
+}
+@objc public protocol HandleAdClickCustom {
+  @objc var destinationURL: Swift.String? { get }
+  @objc var handleAdClickCustom: Swift.Bool { get set }
+  @objc func open(_ url: Swift.String?)
+}
+@objc @_hasMissingDesignatedInitializers public class AdropSplashAd : ObjectiveC.NSObject, Combine.ObservableObject {
+  @objc weak public var delegate: (any AdropAds.AdropSplashAdDelegate)?
   @objc public var unitId: Swift.String {
     @objc get
   }
-  @objc public var creativeIds: [Swift.String] {
+  @objc public var creativeId: Swift.String {
     @objc get
   }
-  @objc public var isLoaded: Swift.Bool {
-    @objc get
+  public var readyToShow: Swift.Bool {
+    get
   }
-  @objc public var backgroundColor: UIKit.UIColor?
-  @objc public var hideForTodayTextColor: UIKit.UIColor?
-  @objc public var closeTextColor: UIKit.UIColor?
-  @objc public init(unitId: Swift.String)
-  @objc public func load()
-  @objc public func show(fromRootViewController: UIKit.UIViewController)
-  @objc public func open(_ url: Swift.String? = nil)
-  @objc public func close()
+  public var adImage: UIKit.UIImage? {
+    get
+  }
   @objc deinit
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
 }
-@_inheritsConvenienceInitializers @objc public class AdropMetrics : ObjectiveC.NSObject {
-  public static func properties() -> [Swift.String : any Swift.Encodable]
-  public static func setProperty(key: Swift.String, value: (any Swift.Encodable)?)
-  public static func logEvent(name: Swift.String, params: [Swift.String : any Swift.Encodable]? = [:])
-  @objc override dynamic public init()
-  @objc deinit
+@objc public protocol AdropSplashAdDelegate {
+  @objc optional func onAdReceived(_ ad: AdropAds.AdropSplashAd)
+  @objc optional func onAdFailedToReceive(_ ad: AdropAds.AdropSplashAd, _ errorCode: AdropAds.AdropErrorCode)
+  @objc optional func onAdImpression(_ ad: AdropAds.AdropSplashAd)
+  @objc optional func onAdClose(_ ad: AdropAds.AdropSplashAd, impressed: Swift.Bool)
 }
 public typealias ulid_t = Foundation.uuid_t
 public struct ULID : Swift.Hashable, Swift.Equatable, Swift.Comparable, Swift.CustomStringConvertible {
@@ -144,74 +159,11 @@ extension AdropAds.ULID : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
-@objc public protocol AdropInterstitialAdDelegate {
-  @objc func onAdReceived(_ ad: AdropAds.AdropInterstitialAd)
-  @objc func onAdFailedToReceive(_ ad: AdropAds.AdropInterstitialAd, _ errorCode: AdropAds.AdropErrorCode)
-  @objc optional func onAdImpression(_ ad: AdropAds.AdropInterstitialAd)
-  @objc optional func onAdClicked(_ ad: AdropAds.AdropInterstitialAd)
-  @objc optional func onAdWillPresentFullScreen(_ ad: AdropAds.AdropInterstitialAd)
-  @objc optional func onAdDidPresentFullScreen(_ ad: AdropAds.AdropInterstitialAd)
-  @objc optional func onAdWillDismissFullScreen(_ ad: AdropAds.AdropInterstitialAd)
-  @objc optional func onAdDidDismissFullScreen(_ ad: AdropAds.AdropInterstitialAd)
-  @objc optional func onAdFailedToShowFullScreen(_ ad: AdropAds.AdropInterstitialAd, _ errorCode: AdropAds.AdropErrorCode)
-}
-@objc public enum ZingFormat : Swift.Int {
-  case FEED
-  case COVER
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class AdropZingBanner : AdropAds.AdropBanner {
-  @objc @_Concurrency.MainActor @preconcurrency public init(_ zingFormat: AdropAds.ZingFormat)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
-  @_Concurrency.MainActor @preconcurrency @objc override public func open(_ url: Swift.String? = nil)
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class AdropSplashAdViewController : UIKit.UIViewController {
-  @objc @_Concurrency.MainActor @preconcurrency public var backgroundColor: UIKit.UIColor?
-  @objc @_Concurrency.MainActor @preconcurrency public var logoImage: UIKit.UIImage?
-  @objc @_Concurrency.MainActor @preconcurrency public var mainViewController: UIKit.UIViewController?
-  @available(*, deprecated, renamed: "displayDuration")
-  @objc @_Concurrency.MainActor @preconcurrency public var timeout: Foundation.TimeInterval {
-    @objc get
-    @objc set
-  }
-  @available(*, deprecated, message: "Warning: Set the splash ad duration in the ad unit settings on the Adrop console.")
-  @objc @_Concurrency.MainActor @preconcurrency public var displayDuration: Foundation.TimeInterval {
-    @objc get
-    @objc set
-  }
-  @objc @_Concurrency.MainActor @preconcurrency public var splashAd: AdropAds.AdropSplashAd {
-    @objc get
-  }
-  @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any AdropAds.AdropSplashAdDelegate)? {
-    @objc get
-    @objc set
-  }
-  @objc deinit
-  @objc @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String, adRequestTimeout: Foundation.TimeInterval = 1)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @objc @_Concurrency.MainActor @preconcurrency public func close()
-}
-@objc public class AdropRewardedAd : ObjectiveC.NSObject {
-  @objc weak public var delegate: (any AdropAds.AdropRewardedAdDelegate)?
-  @objc public var unitId: Swift.String {
-    @objc get
-  }
-  @objc public var creativeId: Swift.String {
-    @objc get
-  }
-  @objc public var isLoaded: Swift.Bool {
-    @objc get
-  }
-  @objc public init(unitId: Swift.String)
-  @objc public func load()
-  @objc public func show(fromRootViewController: UIKit.UIViewController, userDidEarnRewardHandler: @escaping AdropAds.AdropUserDidEarnRewardHandler)
-  @objc deinit
+public typealias AdropUserDidEarnRewardHandler = (_ type: Swift.Int, _ amount: Swift.Int) -> ()
+@objc public protocol AdropPopupAdCloseDelegate {
+  @objc optional func onClosed(_ ad: AdropAds.AdropPopupAd)
+  @objc optional func onDimClicked(_ ad: AdropAds.AdropPopupAd)
+  @objc optional func onTodayOffClicked(_ ad: AdropAds.AdropPopupAd)
 }
 @objc public class AdropNativeAd : ObjectiveC.NSObject {
   @objc weak public var delegate: (any AdropAds.AdropNativeAdDelegate)?
@@ -270,6 +222,59 @@ extension AdropAds.ULID : Swift.Codable {
   @objc public func load()
   @objc deinit
 }
+public struct AdropNativeAdProfile {
+  public let displayLogo: Swift.String
+  public let displayName: Swift.String
+  public let link: Swift.String?
+}
+@objc public protocol AdropPopupAdDelegate {
+  @objc func onAdReceived(_ ad: AdropAds.AdropPopupAd)
+  @objc func onAdFailedToReceive(_ ad: AdropAds.AdropPopupAd, _ errorCode: AdropAds.AdropErrorCode)
+  @objc optional func onAdImpression(_ ad: AdropAds.AdropPopupAd)
+  @objc optional func onAdClicked(_ ad: AdropAds.AdropPopupAd)
+  @objc optional func onAdWillPresentFullScreen(_ ad: AdropAds.AdropPopupAd)
+  @objc optional func onAdDidPresentFullScreen(_ ad: AdropAds.AdropPopupAd)
+  @objc optional func onAdWillDismissFullScreen(_ ad: AdropAds.AdropPopupAd)
+  @objc optional func onAdDidDismissFullScreen(_ ad: AdropAds.AdropPopupAd)
+  @objc optional func onAdFailedToShowFullScreen(_ ad: AdropAds.AdropPopupAd, _ errorCode: AdropAds.AdropErrorCode)
+}
+@_inheritsConvenienceInitializers @objc public class AdropKey : Foundation.NSString {
+  @objc public static let AGE: Swift.String
+  @objc public static let BIRTH: Swift.String
+  @objc public static let GENDER: Swift.String
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class AdropValue : Foundation.NSString {
+  @objc public static let UNKNOWN: Swift.String
+  @_inheritsConvenienceInitializers @objc public class AdropGender : Foundation.NSString {
+    @objc public static let MALE: Swift.String
+    @objc public static let FEMALE: Swift.String
+    @objc public static let OTHER: Swift.String
+    @objc override dynamic public init()
+    @objc required dynamic public init?(coder: Foundation.NSCoder)
+    @objc deinit
+  }
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class AdropMetrics : ObjectiveC.NSObject {
+  public static func properties() -> [Swift.String : any Swift.Encodable]
+  public static func setProperty(key: Swift.String, value: (any Swift.Encodable)?)
+  public static func logEvent(name: Swift.String, params: [Swift.String : any Swift.Encodable]? = [:])
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(*, deprecated, message: "Warning: This class should not be used for accurate data")
+public class AdropPageTracker {
+  @available(*, deprecated, message: "Warning: This function should not be used for accurate data")
+  public static func track(key: Swift.String, screen: Swift.String)
+  @available(*, deprecated, message: "Warning: This function should not be used for accurate data")
+  public static func attach(key: Swift.String, unitId: Swift.String, screen: Swift.String)
+  @objc deinit
+}
 @objc public class AdropInterstitialAd : ObjectiveC.NSObject {
   @objc weak public var delegate: (any AdropAds.AdropInterstitialAdDelegate)?
   @objc public var unitId: Swift.String {
@@ -286,13 +291,49 @@ extension AdropAds.ULID : Swift.Codable {
   @objc public func show(fromRootViewController: UIKit.UIViewController)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @available(*, deprecated, message: "Warning: This class should not be used for accurate data")
-public class AdropPageTracker {
-  @available(*, deprecated, message: "Warning: This function should not be used for accurate data")
-  public static func track(key: Swift.String, screen: Swift.String)
-  @available(*, deprecated, message: "Warning: This function should not be used for accurate data")
-  public static func attach(key: Swift.String, unitId: Swift.String, screen: Swift.String)
+@objc public protocol AdropSplashAdViewDelegate {
+  @objc func onAdClose(_ adView: AdropAds.AdropSplashAdView, impressed: Swift.Bool)
+  @objc optional func onAdReceived(_ adView: AdropAds.AdropSplashAdView)
+  @objc optional func onAdFailedToReceive(_ adView: AdropAds.AdropSplashAdView, _ errorCode: AdropAds.AdropErrorCode)
+  @objc optional func onAdImpression(_ adView: AdropAds.AdropSplashAdView)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class AdropSplashAdViewController : UIKit.UIViewController {
+  @objc @_Concurrency.MainActor @preconcurrency public var backgroundColor: UIKit.UIColor?
+  @objc @_Concurrency.MainActor @preconcurrency public var logoImage: UIKit.UIImage?
+  @objc @_Concurrency.MainActor @preconcurrency public var mainViewController: UIKit.UIViewController?
+  @available(*, deprecated, renamed: "displayDuration")
+  @objc @_Concurrency.MainActor @preconcurrency public var timeout: Foundation.TimeInterval {
+    @objc get
+    @objc set
+  }
+  @available(*, deprecated, message: "Warning: Set the splash ad duration in the ad unit settings on the Adrop console.")
+  @objc @_Concurrency.MainActor @preconcurrency public var displayDuration: Foundation.TimeInterval {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor @preconcurrency public var splashAd: AdropAds.AdropSplashAd {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any AdropAds.AdropSplashAdDelegate)? {
+    @objc get
+    @objc set
+  }
   @objc deinit
+  @objc @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String, adRequestTimeout: Foundation.TimeInterval = 1)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @objc @_Concurrency.MainActor @preconcurrency public func close()
+}
+@objc public protocol AdropInterstitialAdDelegate {
+  @objc func onAdReceived(_ ad: AdropAds.AdropInterstitialAd)
+  @objc func onAdFailedToReceive(_ ad: AdropAds.AdropInterstitialAd, _ errorCode: AdropAds.AdropErrorCode)
+  @objc optional func onAdImpression(_ ad: AdropAds.AdropInterstitialAd)
+  @objc optional func onAdClicked(_ ad: AdropAds.AdropInterstitialAd)
+  @objc optional func onAdWillPresentFullScreen(_ ad: AdropAds.AdropInterstitialAd)
+  @objc optional func onAdDidPresentFullScreen(_ ad: AdropAds.AdropInterstitialAd)
+  @objc optional func onAdWillDismissFullScreen(_ ad: AdropAds.AdropInterstitialAd)
+  @objc optional func onAdDidDismissFullScreen(_ ad: AdropAds.AdropInterstitialAd)
+  @objc optional func onAdFailedToShowFullScreen(_ ad: AdropAds.AdropInterstitialAd, _ errorCode: AdropAds.AdropErrorCode)
 }
 @objc public protocol AdropRewardedAdDelegate {
   @objc func onAdReceived(_ ad: AdropAds.AdropRewardedAd)
@@ -305,11 +346,88 @@ public class AdropPageTracker {
   @objc optional func onAdDidDismissFullScreen(_ ad: AdropAds.AdropRewardedAd)
   @objc optional func onAdFailedToShowFullScreen(_ ad: AdropAds.AdropRewardedAd, _ errorCode: AdropAds.AdropErrorCode)
 }
-@objc public protocol AdropSplashAdDelegate {
-  @objc optional func onAdReceived(_ ad: AdropAds.AdropSplashAd)
-  @objc optional func onAdFailedToReceive(_ ad: AdropAds.AdropSplashAd, _ errorCode: AdropAds.AdropErrorCode)
-  @objc optional func onAdImpression(_ ad: AdropAds.AdropSplashAd)
-  @objc optional func onAdClose(_ ad: AdropAds.AdropSplashAd, impressed: Swift.Bool)
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AdropApplication : ObjectiveC.NSObject {
+  public static var shared: AdropAds.AdropApplication
+  public func setScheme(_ scheme: Swift.String)
+  public func showProgressView()
+  @discardableResult
+  public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Adrop : ObjectiveC.NSObject {
+  public var isProduction: Swift.Bool {
+    get
+  }
+  public var useInAppBrowser: Swift.Bool
+  @objc public static var sdkVersion: Swift.String {
+    @objc get
+  }
+  @objc public static func initialize(production: Swift.Bool = false, useInAppBrowser: Swift.Bool = false, targetCountries: [Swift.String]? = nil)
+  @objc public static func setUID(_ uid: Swift.String)
+  @objc deinit
+}
+@objc public class AdropPopupAd : ObjectiveC.NSObject, AdropAds.HandleAdClickCustom {
+  @objc public var destinationURL: Swift.String? {
+    @objc get
+  }
+  @objc public var handleAdClickCustom: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc weak public var delegate: (any AdropAds.AdropPopupAdDelegate)?
+  @objc weak public var closeDelegate: (any AdropAds.AdropPopupAdCloseDelegate)?
+  @objc public var unitId: Swift.String {
+    @objc get
+  }
+  @objc public var creativeIds: [Swift.String] {
+    @objc get
+  }
+  @objc public var isLoaded: Swift.Bool {
+    @objc get
+  }
+  @objc public var backgroundColor: UIKit.UIColor?
+  @objc public var hideForTodayTextColor: UIKit.UIColor?
+  @objc public var closeTextColor: UIKit.UIColor?
+  @objc public init(unitId: Swift.String)
+  @objc public func load()
+  @objc public func show(fromRootViewController: UIKit.UIViewController)
+  @objc public func open(_ url: Swift.String? = nil)
+  @objc public func close()
+  @objc deinit
+}
+@available(iOS 13.0, *)
+@_Concurrency.MainActor @preconcurrency public struct AdropBannerRepresented : SwiftUI.UIViewRepresentable {
+  public typealias UIViewType = AdropAds.AdropBanner
+  @_Concurrency.MainActor @preconcurrency public var banner: AdropAds.AdropBanner
+  @_Concurrency.MainActor @preconcurrency public var destinationURL: Swift.String? {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var handleAdClickCustom: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var delegate: (any AdropAds.AdropBannerDelegate)? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String, delegate: (any AdropAds.AdropBannerDelegate)?)
+  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: AdropAds.AdropBannerRepresented.Context) -> AdropAds.AdropBanner
+  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: AdropAds.AdropBanner, context: AdropAds.AdropBannerRepresented.Context)
+  @available(iOS 13.0, *)
+  public typealias Body = Swift.Never
+  @available(iOS 13.0, *)
+  public typealias Coordinator = Swift.Void
+}
+public enum AdropBannerSize : Swift.String {
+  case H50
+  case H80
+  case H100
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 @objc public enum AdropMetricCode : Swift.Int {
   case VALID
@@ -318,6 +436,7 @@ public class AdropPageTracker {
   case AD_IMPR
   case AD_CLICK
   case AD_TRY
+  case AD_TODAY_OFF
   case CLOSE
   case OPEN
   case WILL_CLOSE
@@ -360,174 +479,45 @@ public class AdropPageTracker {
   }
 }
 public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.String
-@objc public protocol AdropBannerDelegate {
-  @objc func onAdReceived(_ banner: AdropAds.AdropBanner)
-  @objc func onAdFailedToReceive(_ banner: AdropAds.AdropBanner, _ errorCode: AdropAds.AdropErrorCode)
-  @objc optional func onAdImpression(_ banner: AdropAds.AdropBanner)
-  @objc optional func onAdClicked(_ banner: AdropAds.AdropBanner)
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Adrop : ObjectiveC.NSObject {
-  public var isProduction: Swift.Bool {
-    get
-  }
-  public var useInAppBrowser: Swift.Bool
-  @objc public static var sdkVersion: Swift.String {
-    @objc get
-  }
-  @objc public static func initialize(production: Swift.Bool = false, useInAppBrowser: Swift.Bool = false, targetCountries: [Swift.String]? = nil)
-  @objc public static func setUID(_ uid: Swift.String)
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class AdropSplashAdView : UIKit.UIImageView {
-  @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any AdropAds.AdropSplashAdViewDelegate)?
-  @objc @_Concurrency.MainActor @preconcurrency public var ad: AdropAds.AdropSplashAd
-  @objc @_Concurrency.MainActor @preconcurrency public var unitId: Swift.String {
-    @objc get
-  }
-  @objc @_Concurrency.MainActor @preconcurrency public var creativeId: Swift.String {
-    @objc get
-  }
-  @objc @_Concurrency.MainActor @preconcurrency public var isClosed: Swift.Bool {
-    @objc get
-  }
-  @available(*, deprecated, message: "Warning: Set the splash ad duration in the ad unit settings on the Adrop console.")
-  @objc @_Concurrency.MainActor @preconcurrency public var displayDuration: Foundation.TimeInterval {
-    @objc get
-    @objc set
-  }
-  @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String, adRequestTimeout: Foundation.TimeInterval = 1)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToSuperview()
-  @objc deinit
-}
-extension AdropAds.AdropSplashAdView : AdropAds.AdropSplashAdDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func onAdReceived(_ ad: AdropAds.AdropSplashAd)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func onAdFailedToReceive(_ ad: AdropAds.AdropSplashAd, _ errorCode: AdropAds.AdropErrorCode)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func onAdImpression(_ ad: AdropAds.AdropSplashAd)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func onAdClose(_ ad: AdropAds.AdropSplashAd, impressed: Swift.Bool)
-}
-@objc @_hasMissingDesignatedInitializers public class AdropPopupAdViewController : ObjectiveC.NSObject {
-  @objc deinit
-}
-@objc public protocol AdropPopupAdDelegate {
-  @objc func onAdReceived(_ ad: AdropAds.AdropPopupAd)
-  @objc func onAdFailedToReceive(_ ad: AdropAds.AdropPopupAd, _ errorCode: AdropAds.AdropErrorCode)
-  @objc optional func onAdImpression(_ ad: AdropAds.AdropPopupAd)
-  @objc optional func onAdClicked(_ ad: AdropAds.AdropPopupAd)
-  @objc optional func onAdWillPresentFullScreen(_ ad: AdropAds.AdropPopupAd)
-  @objc optional func onAdDidPresentFullScreen(_ ad: AdropAds.AdropPopupAd)
-  @objc optional func onAdWillDismissFullScreen(_ ad: AdropAds.AdropPopupAd)
-  @objc optional func onAdDidDismissFullScreen(_ ad: AdropAds.AdropPopupAd)
-  @objc optional func onAdFailedToShowFullScreen(_ ad: AdropAds.AdropPopupAd, _ errorCode: AdropAds.AdropErrorCode)
-}
-@objc @_hasMissingDesignatedInitializers public class AdropSplashAd : ObjectiveC.NSObject, Combine.ObservableObject {
-  @objc weak public var delegate: (any AdropAds.AdropSplashAdDelegate)?
+@objc public class AdropRewardedAd : ObjectiveC.NSObject {
+  @objc weak public var delegate: (any AdropAds.AdropRewardedAdDelegate)?
   @objc public var unitId: Swift.String {
     @objc get
   }
   @objc public var creativeId: Swift.String {
     @objc get
   }
-  public var readyToShow: Swift.Bool {
-    get
+  @objc public var isLoaded: Swift.Bool {
+    @objc get
   }
-  public var adImage: UIKit.UIImage? {
-    get
-  }
-  @objc deinit
-  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
-}
-@objc public protocol AdropSplashAdViewDelegate {
-  @objc func onAdClose(_ adView: AdropAds.AdropSplashAdView, impressed: Swift.Bool)
-  @objc optional func onAdReceived(_ adView: AdropAds.AdropSplashAdView)
-  @objc optional func onAdFailedToReceive(_ adView: AdropAds.AdropSplashAdView, _ errorCode: AdropAds.AdropErrorCode)
-  @objc optional func onAdImpression(_ adView: AdropAds.AdropSplashAdView)
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AdropApplication : ObjectiveC.NSObject {
-  public static var shared: AdropAds.AdropApplication
-  public func setScheme(_ scheme: Swift.String)
-  public func showProgressView()
-  @discardableResult
-  public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
+  @objc public init(unitId: Swift.String)
+  @objc public func load()
+  @objc public func show(fromRootViewController: UIKit.UIViewController, userDidEarnRewardHandler: @escaping AdropAds.AdropUserDidEarnRewardHandler)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class AdropKey : Foundation.NSString {
-  @objc public static let AGE: Swift.String
-  @objc public static let BIRTH: Swift.String
-  @objc public static let GENDER: Swift.String
-  @objc override dynamic public init()
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class AdropNativeAdView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @objc @_Concurrency.MainActor @preconcurrency public func setIsEntireClick(_ value: Swift.Bool)
+  @objc @_Concurrency.MainActor @preconcurrency public func setNativeAd(_ ad: AdropAds.AdropNativeAd)
+  @objc @_Concurrency.MainActor @preconcurrency public func setAdvertiserView(_ view: UIKit.UIView, onClick: ((AdropAds.AdropNativeAd?, UIKit.UIView) -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor @preconcurrency public func setHeadLineView(_ view: UIKit.UIView, onClick: ((AdropAds.AdropNativeAd?, UIKit.UIView) -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor @preconcurrency public func setIconView(_ view: UIKit.UIView, onClick: ((AdropAds.AdropNativeAd?, UIKit.UIView) -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor @preconcurrency public func setCallToActionView(_ view: UIKit.UIView, onClick: ((AdropAds.AdropNativeAd?, UIKit.UIView) -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor @preconcurrency public func setProfileLogoView(_ view: UIKit.UIView, onClick: ((AdropAds.AdropNativeAd?, UIKit.UIView) -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor @preconcurrency public func setProfileNameView(_ view: UIKit.UIView, onClick: ((AdropAds.AdropNativeAd?, UIKit.UIView) -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor @preconcurrency public func setMediaView(_ view: UIKit.UIView)
+  @objc @_Concurrency.MainActor @preconcurrency public func setBodyView(_ view: UIKit.UIView)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class AdropValue : Foundation.NSString {
-  @objc public static let UNKNOWN: Swift.String
-  @_inheritsConvenienceInitializers @objc public class AdropGender : Foundation.NSString {
-    @objc public static let MALE: Swift.String
-    @objc public static let FEMALE: Swift.String
-    @objc public static let OTHER: Swift.String
-    @objc override dynamic public init()
-    @objc required dynamic public init?(coder: Foundation.NSCoder)
-    @objc deinit
-  }
-  @objc override dynamic public init()
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
-public typealias AdropUserDidEarnRewardHandler = (_ type: Swift.Int, _ amount: Swift.Int) -> ()
 @available(iOS 13.0, *)
-@_Concurrency.MainActor @preconcurrency public struct AdropBannerRepresented : SwiftUI.UIViewRepresentable {
-  public typealias UIViewType = AdropAds.AdropBanner
-  @_Concurrency.MainActor @preconcurrency public var banner: AdropAds.AdropBanner
-  @_Concurrency.MainActor @preconcurrency public var destinationURL: Swift.String? {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var handleAdClickCustom: Swift.Bool {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public var delegate: (any AdropAds.AdropBannerDelegate)? {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String)
-  @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String, delegate: (any AdropAds.AdropBannerDelegate)?)
-  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: AdropAds.AdropBannerRepresented.Context) -> AdropAds.AdropBanner
-  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: AdropAds.AdropBanner, context: AdropAds.AdropBannerRepresented.Context)
-  @available(iOS 13.0, *)
-  public typealias Body = Swift.Never
-  @available(iOS 13.0, *)
-  public typealias Coordinator = Swift.Void
-}
-public struct AdropNativeAdProfile {
-  public let displayLogo: Swift.String
-  public let displayName: Swift.String
-  public let link: Swift.String?
-}
-@objc public protocol HandleAdClickCustom {
-  @objc var destinationURL: Swift.String? { get }
-  @objc var handleAdClickCustom: Swift.Bool { get set }
-  @objc func open(_ url: Swift.String?)
-}
-public enum AdropBannerSize : Swift.String {
-  case H50
-  case H80
-  case H100
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-extension AdropAds.ZingFormat : Swift.Equatable {}
-extension AdropAds.ZingFormat : Swift.Hashable {}
-extension AdropAds.ZingFormat : Swift.RawRepresentable {}
+extension AdropAds.AdropBannerRepresented : Swift.Sendable {}
+extension AdropAds.AdropBannerSize : Swift.Equatable {}
+extension AdropAds.AdropBannerSize : Swift.Hashable {}
+extension AdropAds.AdropBannerSize : Swift.RawRepresentable {}
 extension AdropAds.AdropMetricCode : Swift.Equatable {}
 extension AdropAds.AdropMetricCode : Swift.Hashable {}
 extension AdropAds.AdropMetricCode : Swift.RawRepresentable {}
 extension AdropAds.AdropErrorCode : Swift.Equatable {}
 extension AdropAds.AdropErrorCode : Swift.Hashable {}
 extension AdropAds.AdropErrorCode : Swift.RawRepresentable {}
-@available(iOS 13.0, *)
-extension AdropAds.AdropBannerRepresented : Swift.Sendable {}
-extension AdropAds.AdropBannerSize : Swift.Equatable {}
-extension AdropAds.AdropBannerSize : Swift.Hashable {}
-extension AdropAds.AdropBannerSize : Swift.RawRepresentable {}
