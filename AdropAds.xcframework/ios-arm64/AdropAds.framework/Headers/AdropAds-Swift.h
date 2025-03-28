@@ -558,6 +558,21 @@ SWIFT_CLASS("_TtC8AdropAds26AdropPopupAdViewController")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+enum AdropQuestBannerFormat : NSInteger;
+
+SWIFT_CLASS("_TtC8AdropAds16AdropQuestBanner")
+@interface AdropQuestBanner : AdropBanner
+- (nonnull instancetype)initWithChannel:(NSString * _Nonnull)channel format:(enum AdropQuestBannerFormat)format OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+- (void)open:(NSString * _Nullable)url;
+- (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId SWIFT_UNAVAILABLE;
+@end
+
+typedef SWIFT_ENUM(NSInteger, AdropQuestBannerFormat, open) {
+  AdropQuestBannerFormatFEED = 0,
+  AdropQuestBannerFormatCOVER = 1,
+};
+
 @protocol AdropRewardedAdDelegate;
 
 SWIFT_CLASS("_TtC8AdropAds15AdropRewardedAd")
