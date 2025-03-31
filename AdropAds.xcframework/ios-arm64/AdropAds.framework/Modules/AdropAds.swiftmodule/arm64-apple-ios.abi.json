@@ -21325,97 +21325,97 @@
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
       "offset": 8961,
-      "length": 15,
-      "value": "\"1.3.0-alpha.2\""
+      "length": 7,
+      "value": "\"1.3.0\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 9002,
+      "offset": 8994,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 9247,
+      "offset": 9239,
       "length": 36,
       "value": "\"https:\/\/api\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 9265,
+      "offset": 9257,
       "length": 1,
       "value": "\".adrop.io\/graphql\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 9317,
+      "offset": 9309,
       "length": 31,
       "value": "\"https:\/\/api-v2\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 9338,
+      "offset": 9330,
       "length": 1,
       "value": "\".adrop.io\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 9396,
+      "offset": 9388,
       "length": 30,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 9411,
+      "offset": 9403,
       "length": 1,
       "value": "\"\/remote-config\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 9473,
+      "offset": 9465,
       "length": 28,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 9488,
+      "offset": 9480,
       "length": 1,
       "value": "\"\/request-ads\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 9645,
+      "offset": 9637,
       "length": 23,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 9660,
+      "offset": 9652,
       "length": 1,
       "value": "\"\/events\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 9715,
+      "offset": 9707,
       "length": 7,
       "value": "1800000"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/openrhapsody\/adrop\/adrop-ads-ios\/scripts\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 9764,
+      "offset": 9756,
       "length": 21,
       "value": "\"PUBLIC_TEST_UNIT_ID\""
     },
