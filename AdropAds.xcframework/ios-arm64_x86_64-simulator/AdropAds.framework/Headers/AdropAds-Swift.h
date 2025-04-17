@@ -319,18 +319,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @end
 
 
-SWIFT_CLASS("_TtC8AdropAds16AdropApplication")
-@interface AdropApplication : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
 SWIFT_PROTOCOL("_TtP8AdropAds19HandleAdClickCustom_")
 @protocol HandleAdClickCustom
 @property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
 @property (nonatomic) BOOL handleAdClickCustom;
-- (void)open:(NSString * _Nullable)url;
+- (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 @end
 
 @protocol AdropBannerDelegate;
@@ -346,7 +339,7 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @property (nonatomic) BOOL handleAdClickCustom;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
-- (void)open:(NSString * _Nullable)url;
+- (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
@@ -520,7 +513,7 @@ SWIFT_CLASS("_TtC8AdropAds12AdropPopupAd")
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)showFromRootViewController:(UIViewController * _Nonnull)fromRootViewController;
-- (void)open:(NSString * _Nullable)url;
+- (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 - (void)close;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -564,7 +557,7 @@ SWIFT_CLASS("_TtC8AdropAds16AdropQuestBanner")
 @interface AdropQuestBanner : AdropBanner
 - (nonnull instancetype)initWithChannel:(NSString * _Nonnull)channel format:(enum AdropQuestBannerFormat)format OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
-- (void)open:(NSString * _Nullable)url;
+- (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId SWIFT_UNAVAILABLE;
 @end
 
@@ -1056,18 +1049,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @end
 
 
-SWIFT_CLASS("_TtC8AdropAds16AdropApplication")
-@interface AdropApplication : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
 SWIFT_PROTOCOL("_TtP8AdropAds19HandleAdClickCustom_")
 @protocol HandleAdClickCustom
 @property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
 @property (nonatomic) BOOL handleAdClickCustom;
-- (void)open:(NSString * _Nullable)url;
+- (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 @end
 
 @protocol AdropBannerDelegate;
@@ -1083,7 +1069,7 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @property (nonatomic) BOOL handleAdClickCustom;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
-- (void)open:(NSString * _Nullable)url;
+- (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
@@ -1257,7 +1243,7 @@ SWIFT_CLASS("_TtC8AdropAds12AdropPopupAd")
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)showFromRootViewController:(UIViewController * _Nonnull)fromRootViewController;
-- (void)open:(NSString * _Nullable)url;
+- (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 - (void)close;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1301,7 +1287,7 @@ SWIFT_CLASS("_TtC8AdropAds16AdropQuestBanner")
 @interface AdropQuestBanner : AdropBanner
 - (nonnull instancetype)initWithChannel:(NSString * _Nonnull)channel format:(enum AdropQuestBannerFormat)format OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
-- (void)open:(NSString * _Nullable)url;
+- (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId SWIFT_UNAVAILABLE;
 @end
 
