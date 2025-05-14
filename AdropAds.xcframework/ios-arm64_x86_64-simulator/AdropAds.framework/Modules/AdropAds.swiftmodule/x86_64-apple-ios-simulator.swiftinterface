@@ -46,6 +46,10 @@ import zlib
 }
 @objc @_hasMissingDesignatedInitializers public class AdropSplashAd : ObjectiveC.NSObject, Combine.ObservableObject {
   @objc weak public var delegate: (any AdropAds.AdropSplashAdDelegate)?
+  public var onAdReceived: ((AdropAds.AdropSplashAd) -> Swift.Void)?
+  public var onAdFailedToReceive: ((AdropAds.AdropSplashAd, AdropAds.AdropErrorCode) -> Swift.Void)?
+  public var onAdImpression: ((AdropAds.AdropSplashAd) -> Swift.Void)?
+  public var onAdClose: ((AdropAds.AdropSplashAd, Swift.Bool) -> Swift.Void)?
   @objc public var unitId: Swift.String {
     @objc get
   }
@@ -95,10 +99,25 @@ import zlib
   }
   @objc weak public var delegate: (any AdropAds.AdropPopupAdDelegate)?
   @objc weak public var closeDelegate: (any AdropAds.AdropPopupAdCloseDelegate)?
+  public var onAdReceived: ((AdropAds.AdropPopupAd) -> Swift.Void)?
+  public var onAdFailedToReceive: ((AdropAds.AdropPopupAd, AdropAds.AdropErrorCode) -> Swift.Void)?
+  public var onAdImpression: ((AdropAds.AdropPopupAd) -> Swift.Void)?
+  public var onAdClicked: ((AdropAds.AdropPopupAd) -> Swift.Void)?
+  public var onAdWillPresentFullScreen: ((AdropAds.AdropPopupAd) -> Swift.Void)?
+  public var onAdDidPresentFullScreen: ((AdropAds.AdropPopupAd) -> Swift.Void)?
+  public var onAdWillDismissFullScreen: ((AdropAds.AdropPopupAd) -> Swift.Void)?
+  public var onAdDidDismissFullScreen: ((AdropAds.AdropPopupAd) -> Swift.Void)?
+  public var onAdFailedToShowFullScreen: ((AdropAds.AdropPopupAd, AdropAds.AdropErrorCode) -> Swift.Void)?
+  public var onClosed: ((AdropAds.AdropPopupAd) -> Swift.Void)?
+  public var onDimClicked: ((AdropAds.AdropPopupAd) -> Swift.Void)?
+  public var onTodayOffClicked: ((AdropAds.AdropPopupAd) -> Swift.Void)?
   @objc public var unitId: Swift.String {
     @objc get
   }
   @objc public var creativeIds: [Swift.String] {
+    @objc get
+  }
+  @objc public var creativeId: Swift.String? {
     @objc get
   }
   @objc public var isLoaded: Swift.Bool {
@@ -116,6 +135,15 @@ import zlib
 }
 @objc public class AdropRewardedAd : ObjectiveC.NSObject {
   @objc weak public var delegate: (any AdropAds.AdropRewardedAdDelegate)?
+  public var onAdReceived: ((AdropAds.AdropRewardedAd) -> Swift.Void)?
+  public var onAdFailedToReceive: ((AdropAds.AdropRewardedAd, AdropAds.AdropErrorCode) -> Swift.Void)?
+  public var onAdImpression: ((AdropAds.AdropRewardedAd) -> Swift.Void)?
+  public var onAdClicked: ((AdropAds.AdropRewardedAd) -> Swift.Void)?
+  public var onAdWillPresentFullScreen: ((AdropAds.AdropRewardedAd) -> Swift.Void)?
+  public var onAdDidPresentFullScreen: ((AdropAds.AdropRewardedAd) -> Swift.Void)?
+  public var onAdWillDismissFullScreen: ((AdropAds.AdropRewardedAd) -> Swift.Void)?
+  public var onAdDidDismissFullScreen: ((AdropAds.AdropRewardedAd) -> Swift.Void)?
+  public var onAdFailedToShowFullScreen: ((AdropAds.AdropRewardedAd, AdropAds.AdropErrorCode) -> Swift.Void)?
   @objc public var unitId: Swift.String {
     @objc get
   }
@@ -137,6 +165,10 @@ public struct AdropNativeAdProfile {
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class AdropBanner : UIKit.UIView, AdropAds.HandleAdClickCustom {
   @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any AdropAds.AdropBannerDelegate)?
+  @_Concurrency.MainActor @preconcurrency public var onAdReceived: ((AdropAds.AdropBanner) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var onAdFailedToReceive: ((AdropAds.AdropBanner, AdropAds.AdropErrorCode) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var onAdImpression: ((AdropAds.AdropBanner) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var onAdClicked: ((AdropAds.AdropBanner) -> Swift.Void)?
   @objc @_Concurrency.MainActor @preconcurrency public var unitId: Swift.String {
     @objc get
   }
@@ -315,6 +347,15 @@ public enum AdropBannerSize : Swift.String {
 }
 @objc public class AdropInterstitialAd : ObjectiveC.NSObject {
   @objc weak public var delegate: (any AdropAds.AdropInterstitialAdDelegate)?
+  public var onAdReceived: ((AdropAds.AdropInterstitialAd) -> Swift.Void)?
+  public var onAdFailedToReceive: ((AdropAds.AdropInterstitialAd, AdropAds.AdropErrorCode) -> Swift.Void)?
+  public var onAdImpression: ((AdropAds.AdropInterstitialAd) -> Swift.Void)?
+  public var onAdClicked: ((AdropAds.AdropInterstitialAd) -> Swift.Void)?
+  public var onAdWillPresentFullScreen: ((AdropAds.AdropInterstitialAd) -> Swift.Void)?
+  public var onAdDidPresentFullScreen: ((AdropAds.AdropInterstitialAd) -> Swift.Void)?
+  public var onAdWillDismissFullScreen: ((AdropAds.AdropInterstitialAd) -> Swift.Void)?
+  public var onAdDidDismissFullScreen: ((AdropAds.AdropInterstitialAd) -> Swift.Void)?
+  public var onAdFailedToShowFullScreen: ((AdropAds.AdropInterstitialAd, AdropAds.AdropErrorCode) -> Swift.Void)?
   @objc public var unitId: Swift.String {
     @objc get
   }
@@ -367,7 +408,8 @@ public typealias AdropUserDidEarnRewardHandler = (_ type: Swift.Int, _ amount: S
 @objc public protocol AdropNativeAdDelegate {
   @objc func onAdReceived(_ ad: AdropAds.AdropNativeAd)
   @objc func onAdFailedToReceive(_ ad: AdropAds.AdropNativeAd, _ errorCode: AdropAds.AdropErrorCode)
-  @objc func onAdClicked(_ ad: AdropAds.AdropNativeAd)
+  @objc optional func onAdClicked(_ ad: AdropAds.AdropNativeAd)
+  @objc optional func onAdImpression(_ ad: AdropAds.AdropNativeAd)
 }
 @objc public protocol AdropRewardedAdDelegate {
   @objc func onAdReceived(_ ad: AdropAds.AdropRewardedAd)
@@ -462,6 +504,10 @@ public typealias AdropUserDidEarnRewardHandler = (_ type: Swift.Int, _ amount: S
 public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.String
 @objc public class AdropNativeAd : ObjectiveC.NSObject {
   @objc weak public var delegate: (any AdropAds.AdropNativeAdDelegate)?
+  public var onAdReceived: ((AdropAds.AdropNativeAd) -> Swift.Void)?
+  public var onAdFailedToReceive: ((AdropAds.AdropNativeAd, AdropAds.AdropErrorCode) -> Swift.Void)?
+  public var onAdClicked: ((AdropAds.AdropNativeAd) -> Swift.Void)?
+  public var onAdImpression: ((AdropAds.AdropNativeAd) -> Swift.Void)?
   @objc public var unitId: Swift.String {
     @objc get
   }

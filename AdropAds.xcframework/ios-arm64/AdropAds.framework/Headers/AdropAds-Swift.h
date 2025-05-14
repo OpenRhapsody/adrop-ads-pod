@@ -483,7 +483,9 @@ SWIFT_PROTOCOL("_TtP8AdropAds21AdropNativeAdDelegate_")
 @protocol AdropNativeAdDelegate
 - (void)onAdReceived:(AdropNativeAd * _Nonnull)ad;
 - (void)onAdFailedToReceive:(AdropNativeAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
+@optional
 - (void)onAdClicked:(AdropNativeAd * _Nonnull)ad;
+- (void)onAdImpression:(AdropNativeAd * _Nonnull)ad;
 @end
 
 
@@ -517,6 +519,7 @@ SWIFT_CLASS("_TtC8AdropAds12AdropPopupAd")
 @property (nonatomic, weak) id <AdropPopupAdCloseDelegate> _Nullable closeDelegate;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull creativeIds;
+@property (nonatomic, readonly, copy) NSString * _Nullable creativeId;
 @property (nonatomic, readonly) BOOL isLoaded;
 @property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 @property (nonatomic, strong) UIColor * _Nullable hideForTodayTextColor;
