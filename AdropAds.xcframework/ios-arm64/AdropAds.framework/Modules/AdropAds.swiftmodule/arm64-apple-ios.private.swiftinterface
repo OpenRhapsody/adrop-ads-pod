@@ -402,6 +402,8 @@ public typealias AdropUserDidEarnRewardHandler = (_ type: Swift.Int, _ amount: S
   @objc public static func initialize(production: Swift.Bool = false, useInAppBrowser: Swift.Bool = false, targetCountries: [Swift.String]? = nil)
   @objc public static func setUID(_ uid: Swift.String)
   @discardableResult
+  @objc public static func openQuest(channel: Swift.String, path: Swift.String? = nil) -> Swift.Bool
+  @discardableResult
   @objc public static func handleDeepLink(url: Foundation.URL) -> Swift.Bool
   @objc deinit
 }

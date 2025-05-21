@@ -317,6 +317,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (void)initializeWithProduction:(BOOL)production useInAppBrowser:(BOOL)useInAppBrowser targetCountries:(NSArray<NSString *> * _Nullable)targetCountries;
 + (void)setUID:(NSString * _Nonnull)uid;
++ (BOOL)openQuestWithChannel:(NSString * _Nonnull)channel path:(NSString * _Nullable)path;
 /// Handles a deep link passed to the app and processes it through the Adrop SDK.
 /// Use this method inside your AppDelegate or SceneDelegate when a deep link is received.
 /// \param url The deep link URL to be handled. Must include the <code>adrop_landing_url</code> query parameter.
