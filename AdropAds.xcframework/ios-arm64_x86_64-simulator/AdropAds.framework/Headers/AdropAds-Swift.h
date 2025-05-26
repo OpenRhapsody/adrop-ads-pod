@@ -346,6 +346,7 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @property (nonatomic, weak) id <AdropBannerDelegate> _Nullable delegate;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
+@property (nonatomic, readonly) CGSize creativeSize;
 @property (nonatomic, readonly, copy) NSString * _Nonnull id SWIFT_DEPRECATED_MSG("", "unitId");
 @property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
 @property (nonatomic) BOOL handleAdClickCustom;
@@ -473,6 +474,7 @@ SWIFT_CLASS("_TtC8AdropAds13AdropNativeAd")
 @property (nonatomic, weak) id <AdropNativeAdDelegate> _Nullable delegate;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly) BOOL isLoaded;
+@property (nonatomic, readonly) CGSize creativeSize;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1091,6 +1093,7 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @property (nonatomic, weak) id <AdropBannerDelegate> _Nullable delegate;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
+@property (nonatomic, readonly) CGSize creativeSize;
 @property (nonatomic, readonly, copy) NSString * _Nonnull id SWIFT_DEPRECATED_MSG("", "unitId");
 @property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
 @property (nonatomic) BOOL handleAdClickCustom;
@@ -1218,6 +1221,7 @@ SWIFT_CLASS("_TtC8AdropAds13AdropNativeAd")
 @property (nonatomic, weak) id <AdropNativeAdDelegate> _Nullable delegate;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly) BOOL isLoaded;
+@property (nonatomic, readonly) CGSize creativeSize;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

@@ -175,6 +175,9 @@ public struct AdropNativeAdProfile {
   @objc @_Concurrency.MainActor @preconcurrency public var creativeId: Swift.String {
     @objc get
   }
+  @objc @_Concurrency.MainActor @preconcurrency public var creativeSize: CoreFoundation.CGSize {
+    @objc get
+  }
   @available(*, deprecated, renamed: "unitId")
   @objc @_Concurrency.MainActor @preconcurrency public var id: Swift.String {
     @objc get
@@ -514,6 +517,9 @@ public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.Strin
     @objc get
   }
   @objc public var isLoaded: Swift.Bool {
+    @objc get
+  }
+  @objc public var creativeSize: CoreFoundation.CGSize {
     @objc get
   }
   public var creativeId: Swift.String {
