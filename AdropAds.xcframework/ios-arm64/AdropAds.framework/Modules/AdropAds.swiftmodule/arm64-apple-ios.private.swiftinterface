@@ -82,6 +82,8 @@ import zlib
   }
   @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String)
   @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String, delegate: (any AdropAds.AdropBannerDelegate)?)
+  @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String, contextId: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String, contextId: Swift.String, delegate: (any AdropAds.AdropBannerDelegate)?)
   @_Concurrency.MainActor @preconcurrency public func makeUIView(context: AdropAds.AdropBannerRepresented.Context) -> AdropAds.AdropBanner
   @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: AdropAds.AdropBanner, context: AdropAds.AdropBannerRepresented.Context)
   @available(iOS 13.0, *)
@@ -172,6 +174,9 @@ public struct AdropNativeAdProfile {
   @objc @_Concurrency.MainActor @preconcurrency public var unitId: Swift.String {
     @objc get
   }
+  @objc @_Concurrency.MainActor @preconcurrency public var contextId: Swift.String {
+    @objc get
+  }
   @objc @_Concurrency.MainActor @preconcurrency public var creativeId: Swift.String {
     @objc get
   }
@@ -187,7 +192,7 @@ public struct AdropNativeAdProfile {
   }
   @_Concurrency.MainActor @preconcurrency @objc public var handleAdClickCustom: Swift.Bool
   @objc deinit
-  @objc @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String)
+  @objc @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String, contextId: Swift.String = "")
   @objc @_Concurrency.MainActor @preconcurrency public func load()
   @_Concurrency.MainActor @preconcurrency @objc public func open(_ url: Swift.String? = nil, useInAppBrowser: Swift.Bool = false)
 }
@@ -525,6 +530,9 @@ public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.Strin
   public var creativeId: Swift.String {
     get
   }
+  public var contextId: Swift.String {
+    get
+  }
   public var icon: Swift.String {
     get
   }
@@ -567,7 +575,7 @@ public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.Strin
   public var extra: [Swift.String : Swift.String] {
     get
   }
-  @objc public init(unitId: Swift.String)
+  @objc public init(unitId: Swift.String, contextId: Swift.String = "")
   @objc public func load()
   @objc deinit
 }

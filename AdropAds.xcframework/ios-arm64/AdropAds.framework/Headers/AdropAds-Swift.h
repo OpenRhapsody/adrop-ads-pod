@@ -345,12 +345,13 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @interface AdropBanner : UIView <HandleAdClickCustom>
 @property (nonatomic, weak) id <AdropBannerDelegate> _Nullable delegate;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull contextId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
 @property (nonatomic, readonly) CGSize creativeSize;
 @property (nonatomic, readonly, copy) NSString * _Nonnull id SWIFT_DEPRECATED_MSG("", "unitId");
 @property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
 @property (nonatomic) BOOL handleAdClickCustom;
-- (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
@@ -475,7 +476,7 @@ SWIFT_CLASS("_TtC8AdropAds13AdropNativeAd")
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly) BOOL isLoaded;
 @property (nonatomic, readonly) CGSize creativeSize;
-- (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -575,7 +576,7 @@ SWIFT_CLASS("_TtC8AdropAds16AdropQuestBanner")
 - (nonnull instancetype)initWithChannel:(NSString * _Nonnull)channel format:(enum AdropQuestBannerFormat)format OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
 - (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
-- (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId SWIFT_UNAVAILABLE;
 @end
 
 typedef SWIFT_ENUM(NSInteger, AdropQuestBannerFormat, open) {
