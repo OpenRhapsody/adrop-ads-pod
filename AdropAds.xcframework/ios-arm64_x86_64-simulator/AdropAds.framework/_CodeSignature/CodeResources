@@ -38,11 +38,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EvUgj+fE6DdsCBZMoPXvtw25u1o=
+		9UNxhG3vWbXBHme/qaxQbEcooBE=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		wu+ACnJBu5euUxx7aQ8w9BiUuyc=
+		m0iin3T6H9U9yioATdO3XhJaXyU=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ymRLelT6/5A/HoiEqh5w03cfI48=
+		iig87Orr/rQ9RBguZyvluwaVmWA=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		wu+ACnJBu5euUxx7aQ8w9BiUuyc=
+		m0iin3T6H9U9yioATdO3XhJaXyU=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fnZkbFzRWr6Cu1qp9Qd+jLOVBiE=
+		N342ojDGvqtd/h6UjP7HdY8aNsM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -173,7 +173,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N57DKjKHdrFNewWygmlNHCM87dJ1Y3AuZrAv4E5EJyQ=
+			x3b9UDuu3ATKFTUpULQp93vzn9VhLXVs3hynhS15q40=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -201,14 +201,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zduhTBGD9Bd9M1RfLmD925UpekeExVucTD0M3KSFLic=
+			QtTEVK0gRsME7R01LWrHJwgCCpc+6/w0fBi6LIcUCHQ=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N57DKjKHdrFNewWygmlNHCM87dJ1Y3AuZrAv4E5EJyQ=
+			x3b9UDuu3ATKFTUpULQp93vzn9VhLXVs3hynhS15q40=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -236,7 +236,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LxdWUA9hpwSXCe9KJShX9Xx2lxlQS68enDtmD/iYiNM=
+			fQoJe4CKNP/6EKriafVfbSyM6wDGJS9U44884eVov2s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
