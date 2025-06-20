@@ -331,10 +331,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @end
 
 
-SWIFT_PROTOCOL("_TtP8AdropAds19HandleAdClickCustom_")
-@protocol HandleAdClickCustom
+SWIFT_PROTOCOL("_TtP8AdropAds14UseCustomClick_")
+@protocol UseCustomClick
 @property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
-@property (nonatomic) BOOL handleAdClickCustom;
+@property (nonatomic) BOOL useCustomClick;
 - (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 @end
 
@@ -342,7 +342,7 @@ SWIFT_PROTOCOL("_TtP8AdropAds19HandleAdClickCustom_")
 @class NSCoder;
 
 SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
-@interface AdropBanner : UIView <HandleAdClickCustom>
+@interface AdropBanner : UIView <UseCustomClick>
 @property (nonatomic, weak) id <AdropBannerDelegate> _Nullable delegate;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull contextId;
@@ -350,7 +350,8 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @property (nonatomic, readonly) CGSize creativeSize;
 @property (nonatomic, readonly, copy) NSString * _Nonnull id SWIFT_DEPRECATED_MSG("", "unitId");
 @property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
-@property (nonatomic) BOOL handleAdClickCustom;
+@property (nonatomic) BOOL handleAdClickCustom SWIFT_DEPRECATED_MSG("", "useCustomClick");
+@property (nonatomic) BOOL useCustomClick;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
@@ -471,11 +472,14 @@ SWIFT_CLASS("_TtC8AdropAds12AdropMetrics")
 @protocol AdropNativeAdDelegate;
 
 SWIFT_CLASS("_TtC8AdropAds13AdropNativeAd")
-@interface AdropNativeAd : NSObject
+@interface AdropNativeAd : NSObject <UseCustomClick>
 @property (nonatomic, weak) id <AdropNativeAdDelegate> _Nullable delegate;
+@property (nonatomic) BOOL useCustomClick;
+- (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly) BOOL isLoaded;
 @property (nonatomic, readonly) CGSize creativeSize;
+@property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -506,19 +510,27 @@ SWIFT_CLASS("_TtC8AdropAds17AdropNativeAdView")
 - (void)setCallToActionView:(UIView * _Nonnull)view onClick:(void (^ _Nullable)(AdropNativeAd * _Nullable, UIView * _Nonnull))onClick;
 - (void)setProfileLogoView:(UIView * _Nonnull)view onClick:(void (^ _Nullable)(AdropNativeAd * _Nullable, UIView * _Nonnull))onClick;
 - (void)setProfileNameView:(UIView * _Nonnull)view onClick:(void (^ _Nullable)(AdropNativeAd * _Nullable, UIView * _Nonnull))onClick;
+- (void)performClick;
 - (void)setMediaView:(UIView * _Nonnull)view;
 - (void)setBodyView:(UIView * _Nonnull)view;
 @end
 
+
+@class UIGestureRecognizer;
+
+@interface AdropNativeAdView (SWIFT_EXTENSION(AdropAds)) <UIGestureRecognizerDelegate>
+- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
+@end
 
 @protocol AdropPopupAdDelegate;
 @protocol AdropPopupAdCloseDelegate;
 @class UIColor;
 
 SWIFT_CLASS("_TtC8AdropAds12AdropPopupAd")
-@interface AdropPopupAd : NSObject <HandleAdClickCustom>
+@interface AdropPopupAd : NSObject <UseCustomClick>
 @property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
-@property (nonatomic) BOOL handleAdClickCustom;
+@property (nonatomic) BOOL useCustomClick;
+@property (nonatomic) BOOL handleAdClickCustom SWIFT_DEPRECATED_MSG("", "useCustomClick");
 @property (nonatomic, weak) id <AdropPopupAdDelegate> _Nullable delegate;
 @property (nonatomic, weak) id <AdropPopupAdCloseDelegate> _Nullable closeDelegate;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
@@ -575,6 +587,7 @@ SWIFT_CLASS("_TtC8AdropAds16AdropQuestBanner")
 @interface AdropQuestBanner : AdropBanner
 - (nonnull instancetype)initWithChannel:(NSString * _Nonnull)channel format:(enum AdropQuestBannerFormat)format OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
+- (void)setFrom:(NSString * _Nonnull)from;
 - (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId SWIFT_UNAVAILABLE;
 @end
@@ -1079,10 +1092,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @end
 
 
-SWIFT_PROTOCOL("_TtP8AdropAds19HandleAdClickCustom_")
-@protocol HandleAdClickCustom
+SWIFT_PROTOCOL("_TtP8AdropAds14UseCustomClick_")
+@protocol UseCustomClick
 @property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
-@property (nonatomic) BOOL handleAdClickCustom;
+@property (nonatomic) BOOL useCustomClick;
 - (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 @end
 
@@ -1090,7 +1103,7 @@ SWIFT_PROTOCOL("_TtP8AdropAds19HandleAdClickCustom_")
 @class NSCoder;
 
 SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
-@interface AdropBanner : UIView <HandleAdClickCustom>
+@interface AdropBanner : UIView <UseCustomClick>
 @property (nonatomic, weak) id <AdropBannerDelegate> _Nullable delegate;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull contextId;
@@ -1098,7 +1111,8 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @property (nonatomic, readonly) CGSize creativeSize;
 @property (nonatomic, readonly, copy) NSString * _Nonnull id SWIFT_DEPRECATED_MSG("", "unitId");
 @property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
-@property (nonatomic) BOOL handleAdClickCustom;
+@property (nonatomic) BOOL handleAdClickCustom SWIFT_DEPRECATED_MSG("", "useCustomClick");
+@property (nonatomic) BOOL useCustomClick;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
@@ -1219,11 +1233,14 @@ SWIFT_CLASS("_TtC8AdropAds12AdropMetrics")
 @protocol AdropNativeAdDelegate;
 
 SWIFT_CLASS("_TtC8AdropAds13AdropNativeAd")
-@interface AdropNativeAd : NSObject
+@interface AdropNativeAd : NSObject <UseCustomClick>
 @property (nonatomic, weak) id <AdropNativeAdDelegate> _Nullable delegate;
+@property (nonatomic) BOOL useCustomClick;
+- (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly) BOOL isLoaded;
 @property (nonatomic, readonly) CGSize creativeSize;
+@property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1254,19 +1271,27 @@ SWIFT_CLASS("_TtC8AdropAds17AdropNativeAdView")
 - (void)setCallToActionView:(UIView * _Nonnull)view onClick:(void (^ _Nullable)(AdropNativeAd * _Nullable, UIView * _Nonnull))onClick;
 - (void)setProfileLogoView:(UIView * _Nonnull)view onClick:(void (^ _Nullable)(AdropNativeAd * _Nullable, UIView * _Nonnull))onClick;
 - (void)setProfileNameView:(UIView * _Nonnull)view onClick:(void (^ _Nullable)(AdropNativeAd * _Nullable, UIView * _Nonnull))onClick;
+- (void)performClick;
 - (void)setMediaView:(UIView * _Nonnull)view;
 - (void)setBodyView:(UIView * _Nonnull)view;
 @end
 
+
+@class UIGestureRecognizer;
+
+@interface AdropNativeAdView (SWIFT_EXTENSION(AdropAds)) <UIGestureRecognizerDelegate>
+- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
+@end
 
 @protocol AdropPopupAdDelegate;
 @protocol AdropPopupAdCloseDelegate;
 @class UIColor;
 
 SWIFT_CLASS("_TtC8AdropAds12AdropPopupAd")
-@interface AdropPopupAd : NSObject <HandleAdClickCustom>
+@interface AdropPopupAd : NSObject <UseCustomClick>
 @property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
-@property (nonatomic) BOOL handleAdClickCustom;
+@property (nonatomic) BOOL useCustomClick;
+@property (nonatomic) BOOL handleAdClickCustom SWIFT_DEPRECATED_MSG("", "useCustomClick");
 @property (nonatomic, weak) id <AdropPopupAdDelegate> _Nullable delegate;
 @property (nonatomic, weak) id <AdropPopupAdCloseDelegate> _Nullable closeDelegate;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
@@ -1323,6 +1348,7 @@ SWIFT_CLASS("_TtC8AdropAds16AdropQuestBanner")
 @interface AdropQuestBanner : AdropBanner
 - (nonnull instancetype)initWithChannel:(NSString * _Nonnull)channel format:(enum AdropQuestBannerFormat)format OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
+- (void)setFrom:(NSString * _Nonnull)from;
 - (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId SWIFT_UNAVAILABLE;
 @end
