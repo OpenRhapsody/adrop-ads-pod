@@ -377,6 +377,10 @@
              scrollBody.useDuration(speed).useFriction(friction);
              scrollTo.distance(force, !dragFree);
              isMouse = false;
+             setTimeout(() => {
+                 preventClick = false;
+                 isMoving = false;
+             }, 100);
              eventHandler.emit('pointerUp');
          }
          function click(evt) {
