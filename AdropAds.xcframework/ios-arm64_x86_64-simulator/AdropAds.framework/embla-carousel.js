@@ -384,6 +384,7 @@
              eventHandler.emit('pointerUp');
          }
          function click(evt) {
+             console.log('embla click', evt, preventClick)
              if (preventClick) {
                  evt.stopPropagation();
                  evt.preventDefault();

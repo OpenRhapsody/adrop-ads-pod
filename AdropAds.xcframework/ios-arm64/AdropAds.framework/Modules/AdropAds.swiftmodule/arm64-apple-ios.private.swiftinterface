@@ -246,7 +246,7 @@ public typealias AdropUserDidEarnRewardHandler = (_ type: Swift.Int, _ amount: S
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @objc @_Concurrency.MainActor @preconcurrency public func close()
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class AdropBanner : UIKit.UIView, AdropAds.UseCustomClick {
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class AdropBanner : UIKit.UIView, AdropAds.UseCustomClick, WebKit.WKScriptMessageHandler {
   @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any AdropAds.AdropBannerDelegate)?
   @_Concurrency.MainActor @preconcurrency public var onAdReceived: ((AdropAds.AdropBanner) -> Swift.Void)?
   @_Concurrency.MainActor @preconcurrency public var onAdFailedToReceive: ((AdropAds.AdropBanner, AdropAds.AdropErrorCode) -> Swift.Void)?
@@ -281,6 +281,7 @@ public typealias AdropUserDidEarnRewardHandler = (_ type: Swift.Int, _ amount: S
     @objc set
   }
   @objc deinit
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func hitTest(_ point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
   @objc @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String, contextId: Swift.String = "")
   @objc @_Concurrency.MainActor @preconcurrency public func load()
   @_Concurrency.MainActor @preconcurrency @objc public func open(_ url: Swift.String? = nil, useInAppBrowser: Swift.Bool = false)
@@ -289,6 +290,9 @@ extension AdropAds.AdropBanner : WebKit.WKNavigationDelegate, WebKit.WKUIDelegat
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation)
+}
+extension AdropAds.AdropBanner {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
 }
 @_inheritsConvenienceInitializers @objc public class AdropKey : Foundation.NSString {
   @objc public static let AGE: Swift.String
