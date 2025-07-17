@@ -377,6 +377,10 @@
              scrollBody.useDuration(speed).useFriction(friction);
              scrollTo.distance(force, !dragFree);
              isMouse = false;
+             setTimeout(() => {
+                 preventClick = false;
+                 isMoving = false;
+             }, 100);
              eventHandler.emit('pointerUp');
          }
          function click(evt) {
@@ -1820,83 +1824,6 @@
      }
      Autoplay.globalOptions = void 0;
      
-     // Auto-apply click fix for Flutter WebView drag issue
-     const originalEmblaCarousel = EmblaCarousel;
-     window.EmblaCarousel = function(root, userOptions, userPlugins) {
-         const embla = originalEmblaCarousel(root, userOptions, userPlugins);
-         
-         // Auto-apply click fix
-         let isDragging = false;
-         let dragStartTime = 0;
-         let dragStartX = 0;
-         let dragStartY = 0;
-         
-         embla.on('pointerDown', () => {
-             isDragging = true;
-             dragStartTime = Date.now();
-             console.log('Embla drag started');
-             
-             // Get current mouse/touch position if available
-             dragStartX = 0;
-             dragStartY = 0;
-         });
-         
-         let dragEndTime = 0;
-         
-         embla.on('settle', () => {
-             const dragDuration = Date.now() - dragStartTime;
-             dragEndTime = Date.now(); // Track drag end time
-             
-             // Only block clicks if it was actually a drag (more than 100ms and some movement)
-             if (dragDuration > 100) {
-                 setTimeout(() => {
-                     isDragging = false;
-                 }, 50); // Short delay for actual drags
-             } else {
-                 isDragging = false; // Immediate release for taps
-             }
-         });
-         
-         // Apply container-level click handling for <a href="..."><img onclick='fetch("...")' /></a> structure
-         const slideNodes = embla.slideNodes();
-         
-         slideNodes.forEach(slide => {
-             const clickableElements = slide.querySelectorAll('a, button, [onclick], [role="button"]');
-             
-             clickableElements.forEach(element => {
-                 element.addEventListener('click', (e) => {
-                     const timeSincePointerDown = Date.now() - dragStartTime;
-                     console.log('Click detected:', {
-                         isDragging,
-                         timeSincePointerDown,
-                         href: element.href,
-                         tagName: element.tagName
-                     });
-                     
-                     // Allow click if:
-                     // 1. Not currently dragging, OR
-                     // 2. It was a quick tap (less than 200ms)
-                     
-                     if (!isDragging || timeSincePointerDown < 200) {
-                         console.log('Click allowed');
-                         return; // Allow the click
-                     }
-                     
-                     // Block the click if it seems like it was after a drag
-                     console.log('Click blocked - drag detected');
-                     e.preventDefault();
-                     e.stopPropagation();
-                     e.stopImmediatePropagation();
-                     
-                     return false;
-                 }, true);
-             });
-         });
-         
-         return embla;
-     };
-     
-     // Keep the original constructor properties
-     window.EmblaCarousel.globalOptions = originalEmblaCarousel.globalOptions;
+     window.EmblaCarousel = EmblaCarousel;
      window.Autoplay = Autoplay;
  })();

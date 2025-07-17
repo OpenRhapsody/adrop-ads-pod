@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/AdropAds-Swift.h</key>
 		<data>
-		RGLr9U7xEfGN5X9VmCcDdLQfgU0=
+		i589htqpS3br3qspoUvuo4IALrs=
 		</data>
 		<key>Headers/AdropAds.h</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		bPkM6zELWEXu+X6ofhzx+7UV78A=
+		tpi8F6WCxS7oj0tKZNdhL+xEX9k=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		nuO3vHsO1Qx7DHcEWp3bcU7NtnU=
+		ZWtuA4/Fc+rjwunbvf9hlkjX2O4=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,19 +54,19 @@
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		nuO3vHsO1Qx7DHcEWp3bcU7NtnU=
+		ZWtuA4/Fc+rjwunbvf9hlkjX2O4=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		12YcPYcdwY68PMerSoUczVYqltk=
+		yGSCMHWnTQvVqoxgtdh7F39HBsg=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		bPkM6zELWEXu+X6ofhzx+7UV78A=
+		tpi8F6WCxS7oj0tKZNdhL+xEX9k=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		fo0R1J+YqJKwqHzbNbaZv6nishk=
+		um+t0RxOljCOZJ59wGTAOWzScNU=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		fo0R1J+YqJKwqHzbNbaZv6nishk=
+		um+t0RxOljCOZJ59wGTAOWzScNU=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/Co5g+RzVyrurgxsVIn6/97elvg=
+		eosEybLZ8IZrstNGXhiY6NotSKw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>embla-carousel.js</key>
 		<data>
-		dP51zGKNIMX5nmzX9Rjt7NHwE6E=
+		gtKXWHfkNTbaHKY9ZqLjEOP+7Sc=
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
@@ -159,7 +159,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NKmP7mDRu3zMcW4VAqY0sx4bZ1CqwTiTZYxZjSRMSJ0=
+			zOWkN+pWQCXP+Q9aJw+jAvTXJsAyqugzVBey6mw7A1k=
 			</data>
 		</dict>
 		<key>Headers/AdropAds.h</key>
@@ -173,14 +173,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o5VidtpqVkTwNBcNKAJ084dvnSXINQhhkdeyjdUl0CI=
+			TPslanHjIeWZaVsVFGFaA6DFiEc31IBP0rZe9b+8vTo=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lfZs9PQRDzCpEI2slgnho6jPPnjyuex4smbZZAfjJEc=
+			KqsOKGsJuMJtsnzYba2PykltKKAQHwwd/CDgl3gbrCw=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -194,28 +194,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lfZs9PQRDzCpEI2slgnho6jPPnjyuex4smbZZAfjJEc=
+			KqsOKGsJuMJtsnzYba2PykltKKAQHwwd/CDgl3gbrCw=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OghBjNj7YfXZCqt5d3FiLs3zxCYh6rtwHB8mOt7CqCw=
+			B7g2KcdprsWvu5pDAyd6cJBLox2TM64R0flLBC2wfVc=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o5VidtpqVkTwNBcNKAJ084dvnSXINQhhkdeyjdUl0CI=
+			TPslanHjIeWZaVsVFGFaA6DFiEc31IBP0rZe9b+8vTo=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GmwxBZSXvziiUDlN9JMtJtSpD1vWw6aCM3AMxgQFXjI=
+			fLnxue6rFYoEK12OHAJzi7blwT0XCTDoQWXQW5jysEQ=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -229,14 +229,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GmwxBZSXvziiUDlN9JMtJtSpD1vWw6aCM3AMxgQFXjI=
+			fLnxue6rFYoEK12OHAJzi7blwT0XCTDoQWXQW5jysEQ=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9nnUgzmIv3tnDMupS9qqWtMDDqSxYvGDSUlPei0j7mw=
+			y90G2rLuOUEFiASOkylP/cApH3opSUXv0Wh8nVcjoLs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -257,7 +257,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VA1RWD7DaPBtMTOYfXD11f3gxthZJ4M2dtLpkaNa3uc=
+			MHBvO/7xTbUsBcbitDMz10yiPa0XYYscS6QT6mi83uw=
 			</data>
 		</dict>
 		<key>en.lproj/Localizable.strings</key>

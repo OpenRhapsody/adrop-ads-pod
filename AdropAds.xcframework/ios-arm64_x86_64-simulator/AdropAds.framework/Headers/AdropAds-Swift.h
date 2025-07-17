@@ -339,11 +339,10 @@ SWIFT_PROTOCOL("_TtP8AdropAds14UseCustomClick_")
 @end
 
 @protocol AdropBannerDelegate;
-@class UIEvent;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
-@interface AdropBanner : UIView <UseCustomClick, WKScriptMessageHandler>
+@interface AdropBanner : UIView <UseCustomClick>
 @property (nonatomic, weak) id <AdropBannerDelegate> _Nullable delegate;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull contextId;
@@ -353,19 +352,12 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
 @property (nonatomic) BOOL handleAdClickCustom SWIFT_DEPRECATED_MSG("", "useCustomClick");
 @property (nonatomic) BOOL useCustomClick;
-- (UIView * _Nullable)hitTest:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-@end
-
-@class WKUserContentController;
-@class WKScriptMessage;
-
-@interface AdropBanner (SWIFT_EXTENSION(AdropAds))
-- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 @end
 
 
@@ -524,12 +516,12 @@ SWIFT_CLASS("_TtC8AdropAds17AdropNativeAdView")
 - (void)setBodyView:(UIView * _Nonnull)view;
 @end
 
+
 @class UIGestureRecognizer;
 
 @interface AdropNativeAdView (SWIFT_EXTENSION(AdropAds)) <UIGestureRecognizerDelegate>
 - (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 @protocol AdropPopupAdDelegate;
 @protocol AdropPopupAdCloseDelegate;
@@ -1109,11 +1101,10 @@ SWIFT_PROTOCOL("_TtP8AdropAds14UseCustomClick_")
 @end
 
 @protocol AdropBannerDelegate;
-@class UIEvent;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
-@interface AdropBanner : UIView <UseCustomClick, WKScriptMessageHandler>
+@interface AdropBanner : UIView <UseCustomClick>
 @property (nonatomic, weak) id <AdropBannerDelegate> _Nullable delegate;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull contextId;
@@ -1123,19 +1114,12 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
 @property (nonatomic) BOOL handleAdClickCustom SWIFT_DEPRECATED_MSG("", "useCustomClick");
 @property (nonatomic) BOOL useCustomClick;
-- (UIView * _Nullable)hitTest:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-@end
-
-@class WKUserContentController;
-@class WKScriptMessage;
-
-@interface AdropBanner (SWIFT_EXTENSION(AdropAds))
-- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 @end
 
 
@@ -1294,12 +1278,12 @@ SWIFT_CLASS("_TtC8AdropAds17AdropNativeAdView")
 - (void)setBodyView:(UIView * _Nonnull)view;
 @end
 
+
 @class UIGestureRecognizer;
 
 @interface AdropNativeAdView (SWIFT_EXTENSION(AdropAds)) <UIGestureRecognizerDelegate>
 - (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 @protocol AdropPopupAdDelegate;
 @protocol AdropPopupAdCloseDelegate;
