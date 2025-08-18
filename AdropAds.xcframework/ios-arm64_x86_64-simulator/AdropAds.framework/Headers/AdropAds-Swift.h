@@ -361,6 +361,7 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @end
 
 
+
 @class WKWebView;
 @class WKWebViewConfiguration;
 @class WKNavigationAction;
@@ -1121,6 +1122,7 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 - (void)layoutSubviews;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
+
 
 
 @class WKWebView;
