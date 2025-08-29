@@ -1826,4 +1826,57 @@
      
      window.EmblaCarousel = EmblaCarousel;
      window.Autoplay = Autoplay;
+     
+     // 광고 임프레션 제어 스크립트
+     window.adTrackingControl = {
+         blocked: true,
+         pendingImpressions: new Map(),
+         
+         init: function() {
+             if (!window._originalFetch) {
+                 window._originalFetch = window.fetch;
+                 
+                 window.fetch = function(url, ...args) {
+                     if (url && url.includes('action=AD_IMPR')) {
+                         if (window.adTrackingControl.blocked) {
+                             const imgId = url.match(/txid=([^&]+)/)?.[1];
+                             if (imgId) {
+                                 window.adTrackingControl.pendingImpressions.set(imgId, () => {
+                                     window._originalFetch(url, ...args)
+                                         .then(response => {
+                                         })
+                                         .catch(error => {
+                                         });
+                                 });
+                             }
+                             return Promise.resolve(new Response());
+                         }
+                     }
+                     return window._originalFetch(url, ...args);
+                 };
+             }
+         },
+         
+         block: function() {
+             this.blocked = true;
+         },
+         
+         unblock: function() {
+             this.blocked = false;
+             this.pendingImpressions.forEach((callback, imgId) => {
+                 callback();
+             });
+             
+             this.pendingImpressions.clear();
+         },
+         
+         getStatus: function() {
+             return {
+                 blocked: this.blocked,
+                 pendingCount: this.pendingImpressions.size,
+                 pendingIds: Array.from(this.pendingImpressions.keys())
+             };
+         }
+     };
+     window.adTrackingControl.init();
  })();

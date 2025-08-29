@@ -1428,6 +1428,35 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "containsEmblaCarousel",
+            "printedName": "containsEmblaCarousel(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AdropAds17HTMLContentHelperC21containsEmblaCarouselySbSSFZ",
+            "mangledName": "$s8AdropAds17HTMLContentHelperC21containsEmblaCarouselySbSSFZ",
+            "moduleName": "AdropAds",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -1455,6 +1484,23 @@
             "mangledName": "$ss9EscapableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AdropAds",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "StoreKit",
+        "printedName": "StoreKit",
+        "declKind": "Import",
+        "moduleName": "AdropAds"
       },
       {
         "kind": "Import",
@@ -26797,6 +26843,13 @@
       "value": "\"v0.0.13\""
     },
     {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/CarouselVisibilityTracker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 483,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/Concurrency.swift",
       "kind": "BooleanLiteral",
       "offset": 10745,
@@ -27730,35 +27783,42 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "Dictionary",
-      "offset": 1716,
+      "offset": 1778,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 1743,
+      "offset": 1805,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 2071,
+      "offset": 2133,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2174,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 2301,
+      "offset": 2454,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 4131,
+      "offset": 4418,
       "length": 5,
       "value": "false"
     },
@@ -27802,7 +27862,7 @@
       "kind": "StringLiteral",
       "offset": 10751,
       "length": 7,
-      "value": "\"1.4.0\""
+      "value": "\"1.4.2\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropConfig.swift",

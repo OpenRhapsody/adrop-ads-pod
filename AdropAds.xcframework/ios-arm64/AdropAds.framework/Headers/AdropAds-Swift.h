@@ -362,6 +362,7 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 
 
 
+
 @class WKWebView;
 @class WKWebViewConfiguration;
 @class WKNavigationAction;

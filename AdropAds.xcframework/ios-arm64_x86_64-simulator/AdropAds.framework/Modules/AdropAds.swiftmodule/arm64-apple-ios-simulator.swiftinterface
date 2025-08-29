@@ -66,6 +66,7 @@ import zlib
 }
 @_hasMissingDesignatedInitializers public class HTMLContentHelper {
   public static func containsVideoTag(_ content: Swift.String) -> Swift.Bool
+  public static func containsEmblaCarousel(_ content: Swift.String) -> Swift.Bool
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers public class AdropPopupAdViewController : ObjectiveC.NSObject {
