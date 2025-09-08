@@ -362,7 +362,6 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 
 
 
-
 @class WKWebView;
 @class WKWebViewConfiguration;
 @class WKNavigationAction;
@@ -374,6 +373,7 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Nonnull)navigation;
 @end
+
 
 enum AdropErrorCode : NSInteger;
 
@@ -1126,7 +1126,6 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 
 
 
-
 @class WKWebView;
 @class WKWebViewConfiguration;
 @class WKNavigationAction;
@@ -1138,6 +1137,7 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Nonnull)navigation;
 @end
+
 
 enum AdropErrorCode : NSInteger;
 

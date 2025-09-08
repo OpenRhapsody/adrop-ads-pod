@@ -27818,7 +27818,7 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 4418,
+      "offset": 4532,
       "length": 5,
       "value": "false"
     },
@@ -27862,7 +27862,7 @@
       "kind": "StringLiteral",
       "offset": 10751,
       "length": 7,
-      "value": "\"1.4.2\""
+      "value": "\"1.4.3\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropConfig.swift",
