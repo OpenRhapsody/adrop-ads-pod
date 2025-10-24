@@ -93,18 +93,6 @@ public class AdropPageTracker {
   @objc optional func onAdFailedToShowFullScreen(_ ad: AdropAds.AdropRewardedAd, _ errorCode: AdropAds.AdropErrorCode)
 }
 @objc public class AdropPopupAd : ObjectiveC.NSObject, AdropAds.UseCustomClick {
-  @objc public var destinationURL: Swift.String? {
-    @objc get
-  }
-  @objc public var useCustomClick: Swift.Bool {
-    @objc get
-    @objc set
-  }
-  @available(*, deprecated, renamed: "useCustomClick")
-  @objc public var handleAdClickCustom: Swift.Bool {
-    @objc get
-    @objc set
-  }
   @objc weak public var delegate: (any AdropAds.AdropPopupAdDelegate)?
   @objc weak public var closeDelegate: (any AdropAds.AdropPopupAdCloseDelegate)?
   public var onAdReceived: ((AdropAds.AdropPopupAd) -> Swift.Void)?
@@ -119,13 +107,37 @@ public class AdropPageTracker {
   public var onClosed: ((AdropAds.AdropPopupAd) -> Swift.Void)?
   public var onDimClicked: ((AdropAds.AdropPopupAd) -> Swift.Void)?
   public var onTodayOffClicked: ((AdropAds.AdropPopupAd) -> Swift.Void)?
+  @objc public var txIds: [Swift.String] {
+    @objc get
+  }
+  @objc public var txId: Swift.String {
+    @objc get
+  }
+  @objc public var campaignIds: [Swift.String] {
+    @objc get
+  }
+  @objc public var campaignId: Swift.String {
+    @objc get
+  }
   @objc public var unitId: Swift.String {
     @objc get
   }
-  @objc public var creativeIds: [Swift.String] {
+  @objc public var destinationURL: Swift.String? {
     @objc get
   }
   @objc public var creativeId: Swift.String? {
+    @objc get
+  }
+  @objc public var useCustomClick: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @available(*, deprecated, renamed: "useCustomClick")
+  @objc public var handleAdClickCustom: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var creativeIds: [Swift.String] {
     @objc get
   }
   @objc public var isLoaded: Swift.Bool {
@@ -213,13 +225,22 @@ public class BackgroundReloadManager {
   public var onAdWillDismissFullScreen: ((AdropAds.AdropInterstitialAd) -> Swift.Void)?
   public var onAdDidDismissFullScreen: ((AdropAds.AdropInterstitialAd) -> Swift.Void)?
   public var onAdFailedToShowFullScreen: ((AdropAds.AdropInterstitialAd, AdropAds.AdropErrorCode) -> Swift.Void)?
+  @objc public var txId: Swift.String {
+    @objc get
+  }
+  @objc public var campaignId: Swift.String {
+    @objc get
+  }
   @objc public var unitId: Swift.String {
     @objc get
   }
-  @objc public var isLoaded: Swift.Bool {
+  @objc public var destinationURL: Swift.String {
     @objc get
   }
   @objc public var creativeId: Swift.String {
+    @objc get
+  }
+  @objc public var isLoaded: Swift.Bool {
     @objc get
   }
   @objc public init(unitId: Swift.String)
@@ -227,13 +248,40 @@ public class BackgroundReloadManager {
   @objc public func show(fromRootViewController: UIKit.UIViewController)
   @objc deinit
 }
+public enum BrowserTarget : Swift.Int, Swift.Codable {
+  case EXTERNAL
+  case INTERNAL
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum BrowserTargetObjC : Swift.Int {
+  case EXTERNAL = 0
+  case INTERNAL = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc @_hasMissingDesignatedInitializers public class AdropSplashAd : ObjectiveC.NSObject, Combine.ObservableObject {
   @objc weak public var delegate: (any AdropAds.AdropSplashAdDelegate)?
   public var onAdReceived: ((AdropAds.AdropSplashAd) -> Swift.Void)?
   public var onAdFailedToReceive: ((AdropAds.AdropSplashAd, AdropAds.AdropErrorCode) -> Swift.Void)?
   public var onAdImpression: ((AdropAds.AdropSplashAd) -> Swift.Void)?
   public var onAdClose: ((AdropAds.AdropSplashAd, Swift.Bool) -> Swift.Void)?
+  @objc public var txId: Swift.String {
+    @objc get
+  }
+  @objc public var campaignId: Swift.String {
+    @objc get
+  }
   @objc public var unitId: Swift.String {
+    @objc get
+  }
+  @objc public var destinationURL: Swift.String {
     @objc get
   }
   @objc public var creativeId: Swift.String {
@@ -254,10 +302,19 @@ public class BackgroundReloadManager {
   @_Concurrency.MainActor @preconcurrency public var onAdFailedToReceive: ((AdropAds.AdropBanner, AdropAds.AdropErrorCode) -> Swift.Void)?
   @_Concurrency.MainActor @preconcurrency public var onAdImpression: ((AdropAds.AdropBanner) -> Swift.Void)?
   @_Concurrency.MainActor @preconcurrency public var onAdClicked: ((AdropAds.AdropBanner) -> Swift.Void)?
+  @objc @_Concurrency.MainActor @preconcurrency public var txId: Swift.String {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency public var campaignId: Swift.String {
+    @objc get
+  }
   @objc @_Concurrency.MainActor @preconcurrency public var unitId: Swift.String {
     @objc get
   }
   @objc @_Concurrency.MainActor @preconcurrency public var contextId: Swift.String {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc public var destinationURL: Swift.String? {
     @objc get
   }
   @objc @_Concurrency.MainActor @preconcurrency public var creativeId: Swift.String {
@@ -268,9 +325,6 @@ public class BackgroundReloadManager {
   }
   @available(*, deprecated, renamed: "unitId")
   @objc @_Concurrency.MainActor @preconcurrency public var id: Swift.String {
-    @objc get
-  }
-  @_Concurrency.MainActor @preconcurrency @objc public var destinationURL: Swift.String? {
     @objc get
   }
   @available(*, deprecated, renamed: "useCustomClick")
@@ -369,7 +423,16 @@ public enum AdropBannerSize : Swift.String {
   public var onAdWillDismissFullScreen: ((AdropAds.AdropRewardedAd) -> Swift.Void)?
   public var onAdDidDismissFullScreen: ((AdropAds.AdropRewardedAd) -> Swift.Void)?
   public var onAdFailedToShowFullScreen: ((AdropAds.AdropRewardedAd, AdropAds.AdropErrorCode) -> Swift.Void)?
+  @objc public var txId: Swift.String {
+    @objc get
+  }
+  @objc public var campaignId: Swift.String {
+    @objc get
+  }
   @objc public var unitId: Swift.String {
+    @objc get
+  }
+  @objc public var destinationURL: Swift.String {
     @objc get
   }
   @objc public var creativeId: Swift.String {
@@ -445,7 +508,19 @@ public struct AdropNativeAdProfile {
     @objc set
   }
   @objc public func open(_ url: Swift.String?, useInAppBrowser: Swift.Bool = false)
+  @objc public var txId: Swift.String {
+    @objc get
+  }
+  @objc public var campaignId: Swift.String {
+    @objc get
+  }
   @objc public var unitId: Swift.String {
+    @objc get
+  }
+  @objc public var destinationURL: Swift.String? {
+    @objc get
+  }
+  @objc public var creativeId: Swift.String {
     @objc get
   }
   @objc public var isLoaded: Swift.Bool {
@@ -454,53 +529,62 @@ public struct AdropNativeAdProfile {
   @objc public var creativeSize: CoreFoundation.CGSize {
     @objc get
   }
-  public var creativeId: Swift.String {
-    get
-  }
-  public var contextId: Swift.String {
-    get
-  }
-  public var icon: Swift.String {
-    get
-  }
-  public var cover: Swift.String {
-    get
-  }
-  public var advertiser: Swift.String {
-    get
-  }
-  public var advertiserURL: Swift.String {
-    get
-  }
-  public var headline: Swift.String {
-    get
-  }
-  public var body: Swift.String {
-    get
-  }
-  public var creative: Swift.String {
-    get
-  }
-  @objc public var destinationURL: Swift.String? {
+  @objc public var contextId: Swift.String {
     @objc get
   }
-  public var callToAction: Swift.String {
-    get
+  @objc public var icon: Swift.String {
+    @objc get
   }
-  public var asset: Swift.String {
-    get
+  @objc public var cover: Swift.String {
+    @objc get
   }
-  public var accountTag: [Swift.String : Any] {
-    get
+  @objc public var advertiser: Swift.String {
+    @objc get
   }
-  public var creativeTag: [Swift.String : Any] {
-    get
+  @objc public var advertiserURL: Swift.String {
+    @objc get
+  }
+  @objc public var headline: Swift.String {
+    @objc get
+  }
+  @objc public var body: Swift.String {
+    @objc get
+  }
+  @objc public var creative: Swift.String {
+    @objc get
+  }
+  @objc public var callToAction: Swift.String {
+    @objc get
+  }
+  @objc public var asset: Swift.String {
+    @objc get
+  }
+  @objc public var accountTag: [Swift.String : Any] {
+    @objc get
+  }
+  @objc public var creativeTag: [Swift.String : Any] {
+    @objc get
   }
   public var profile: AdropAds.AdropNativeAdProfile {
     get
   }
-  public var extra: [Swift.String : Swift.String] {
+  @objc public var profileDisplayLogo: Swift.String {
+    @objc get
+  }
+  @objc public var profileDisplayName: Swift.String {
+    @objc get
+  }
+  @objc public var profileLink: Swift.String? {
+    @objc get
+  }
+  @objc public var extra: [Swift.String : Swift.String] {
+    @objc get
+  }
+  public var browserTarget: AdropAds.BrowserTarget? {
     get
+  }
+  @objc public var browserTargetValue: AdropAds.BrowserTargetObjC {
+    @objc get
   }
   @objc public init(unitId: Swift.String, contextId: Swift.String = "")
   @objc public func load()
@@ -619,6 +703,12 @@ extension AdropAds.AdropNativeAdView : UIKit.UIGestureRecognizerDelegate {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @objc @_Concurrency.MainActor @preconcurrency public func close()
 }
+extension AdropAds.BrowserTarget : Swift.Equatable {}
+extension AdropAds.BrowserTarget : Swift.Hashable {}
+extension AdropAds.BrowserTarget : Swift.RawRepresentable {}
+extension AdropAds.BrowserTargetObjC : Swift.Equatable {}
+extension AdropAds.BrowserTargetObjC : Swift.Hashable {}
+extension AdropAds.BrowserTargetObjC : Swift.RawRepresentable {}
 extension AdropAds.AdropBannerSize : Swift.Equatable {}
 extension AdropAds.AdropBannerSize : Swift.Hashable {}
 extension AdropAds.AdropBannerSize : Swift.RawRepresentable {}

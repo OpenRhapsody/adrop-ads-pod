@@ -344,12 +344,14 @@ SWIFT_PROTOCOL("_TtP8AdropAds14UseCustomClick_")
 SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @interface AdropBanner : UIView <UseCustomClick>
 @property (nonatomic, weak) id <AdropBannerDelegate> _Nullable delegate;
+@property (nonatomic, readonly, copy) NSString * _Nonnull txId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull campaignId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull contextId;
+@property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
 @property (nonatomic, readonly) CGSize creativeSize;
 @property (nonatomic, readonly, copy) NSString * _Nonnull id SWIFT_DEPRECATED_MSG("", "unitId");
-@property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
 @property (nonatomic) BOOL handleAdClickCustom SWIFT_DEPRECATED_MSG("", "useCustomClick");
 @property (nonatomic) BOOL useCustomClick;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId OBJC_DESIGNATED_INITIALIZER;
@@ -409,9 +411,12 @@ typedef SWIFT_ENUM(NSInteger, AdropErrorCode, open) {
 SWIFT_CLASS("_TtC8AdropAds19AdropInterstitialAd")
 @interface AdropInterstitialAd : NSObject
 @property (nonatomic, weak) id <AdropInterstitialAdDelegate> _Nullable delegate;
+@property (nonatomic, readonly, copy) NSString * _Nonnull txId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull campaignId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
-@property (nonatomic, readonly) BOOL isLoaded;
+@property (nonatomic, readonly, copy) NSString * _Nonnull destinationURL;
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
+@property (nonatomic, readonly) BOOL isLoaded;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)showFromRootViewController:(UIViewController * _Nonnull)fromRootViewController;
@@ -473,16 +478,37 @@ SWIFT_CLASS("_TtC8AdropAds12AdropMetrics")
 
 
 @protocol AdropNativeAdDelegate;
+enum BrowserTargetObjC : NSInteger;
 
 SWIFT_CLASS("_TtC8AdropAds13AdropNativeAd")
 @interface AdropNativeAd : NSObject <UseCustomClick>
 @property (nonatomic, weak) id <AdropNativeAdDelegate> _Nullable delegate;
 @property (nonatomic) BOOL useCustomClick;
 - (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
+@property (nonatomic, readonly, copy) NSString * _Nonnull txId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull campaignId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
+@property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
+@property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
 @property (nonatomic, readonly) BOOL isLoaded;
 @property (nonatomic, readonly) CGSize creativeSize;
-@property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
+@property (nonatomic, readonly, copy) NSString * _Nonnull contextId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull icon;
+@property (nonatomic, readonly, copy) NSString * _Nonnull cover;
+@property (nonatomic, readonly, copy) NSString * _Nonnull advertiser;
+@property (nonatomic, readonly, copy) NSString * _Nonnull advertiserURL;
+@property (nonatomic, readonly, copy) NSString * _Nonnull headline;
+@property (nonatomic, readonly, copy) NSString * _Nonnull body;
+@property (nonatomic, readonly, copy) NSString * _Nonnull creative;
+@property (nonatomic, readonly, copy) NSString * _Nonnull callToAction;
+@property (nonatomic, readonly, copy) NSString * _Nonnull asset;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull accountTag;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull creativeTag;
+@property (nonatomic, readonly, copy) NSString * _Nonnull profileDisplayLogo;
+@property (nonatomic, readonly, copy) NSString * _Nonnull profileDisplayName;
+@property (nonatomic, readonly, copy) NSString * _Nullable profileLink;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull extra;
+@property (nonatomic, readonly) enum BrowserTargetObjC browserTargetValue;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -518,12 +544,12 @@ SWIFT_CLASS("_TtC8AdropAds17AdropNativeAdView")
 - (void)setBodyView:(UIView * _Nonnull)view;
 @end
 
-
 @class UIGestureRecognizer;
 
 @interface AdropNativeAdView (SWIFT_EXTENSION(AdropAds)) <UIGestureRecognizerDelegate>
 - (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 @protocol AdropPopupAdDelegate;
 @protocol AdropPopupAdCloseDelegate;
@@ -531,14 +557,18 @@ SWIFT_CLASS("_TtC8AdropAds17AdropNativeAdView")
 
 SWIFT_CLASS("_TtC8AdropAds12AdropPopupAd")
 @interface AdropPopupAd : NSObject <UseCustomClick>
-@property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
-@property (nonatomic) BOOL useCustomClick;
-@property (nonatomic) BOOL handleAdClickCustom SWIFT_DEPRECATED_MSG("", "useCustomClick");
 @property (nonatomic, weak) id <AdropPopupAdDelegate> _Nullable delegate;
 @property (nonatomic, weak) id <AdropPopupAdCloseDelegate> _Nullable closeDelegate;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull txIds;
+@property (nonatomic, readonly, copy) NSString * _Nonnull txId;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull campaignIds;
+@property (nonatomic, readonly, copy) NSString * _Nonnull campaignId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
-@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull creativeIds;
+@property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
 @property (nonatomic, readonly, copy) NSString * _Nullable creativeId;
+@property (nonatomic) BOOL useCustomClick;
+@property (nonatomic) BOOL handleAdClickCustom SWIFT_DEPRECATED_MSG("", "useCustomClick");
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull creativeIds;
 @property (nonatomic, readonly) BOOL isLoaded;
 @property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 @property (nonatomic, strong) UIColor * _Nullable hideForTodayTextColor;
@@ -605,7 +635,10 @@ typedef SWIFT_ENUM(NSInteger, AdropQuestBannerFormat, open) {
 SWIFT_CLASS("_TtC8AdropAds15AdropRewardedAd")
 @interface AdropRewardedAd : NSObject
 @property (nonatomic, weak) id <AdropRewardedAdDelegate> _Nullable delegate;
+@property (nonatomic, readonly, copy) NSString * _Nonnull txId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull campaignId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull destinationURL;
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
 @property (nonatomic, readonly) BOOL isLoaded;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
@@ -635,7 +668,10 @@ SWIFT_PROTOCOL("_TtP8AdropAds23AdropRewardedAdDelegate_")
 SWIFT_CLASS("_TtC8AdropAds13AdropSplashAd")
 @interface AdropSplashAd : NSObject
 @property (nonatomic, weak) id <AdropSplashAdDelegate> _Nullable delegate;
+@property (nonatomic, readonly, copy) NSString * _Nonnull txId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull campaignId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull destinationURL;
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -730,6 +766,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+typedef SWIFT_ENUM(NSInteger, BrowserTargetObjC, open) {
+  BrowserTargetObjCEXTERNAL = 0,
+  BrowserTargetObjCINTERNAL = 1,
+};
 
 
 
