@@ -309,6 +309,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 @class NSString;
+enum AdropTheme : NSInteger;
 @class NSURL;
 SWIFT_CLASS("_TtC8AdropAds5Adrop")
 @interface Adrop : NSObject
@@ -318,6 +319,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (void)initializeWithProduction:(BOOL)production useInAppBrowser:(BOOL)useInAppBrowser targetCountries:(NSArray<NSString *> * _Nullable)targetCountries;
 + (void)setUID:(NSString * _Nonnull)uid;
++ (void)setTheme:(enum AdropTheme)theme;
 + (BOOL)openQuestWithChannel:(NSString * _Nonnull)channel path:(NSString * _Nullable)path;
 /// Handles a deep link passed to the app and processes it through the Adrop SDK.
 /// Use this method inside your AppDelegate or SceneDelegate when a deep link is received.
@@ -714,6 +716,12 @@ SWIFT_PROTOCOL("_TtP8AdropAds25AdropSplashAdViewDelegate_")
 - (void)onAdFailedToReceive:(AdropSplashAdView * _Nonnull)adView :(enum AdropErrorCode)errorCode;
 - (void)onAdImpression:(AdropSplashAdView * _Nonnull)adView;
 @end
+
+typedef SWIFT_ENUM(NSInteger, AdropTheme, open) {
+  AdropThemeLight = 0,
+  AdropThemeDark = 1,
+  AdropThemeAuto = 2,
+};
 
 SWIFT_CLASS("_TtC8AdropAds10AdropValue")
 @interface AdropValue : NSString
@@ -1059,6 +1067,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 @class NSString;
+enum AdropTheme : NSInteger;
 @class NSURL;
 SWIFT_CLASS("_TtC8AdropAds5Adrop")
 @interface Adrop : NSObject
@@ -1068,6 +1077,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (void)initializeWithProduction:(BOOL)production useInAppBrowser:(BOOL)useInAppBrowser targetCountries:(NSArray<NSString *> * _Nullable)targetCountries;
 + (void)setUID:(NSString * _Nonnull)uid;
++ (void)setTheme:(enum AdropTheme)theme;
 + (BOOL)openQuestWithChannel:(NSString * _Nonnull)channel path:(NSString * _Nullable)path;
 /// Handles a deep link passed to the app and processes it through the Adrop SDK.
 /// Use this method inside your AppDelegate or SceneDelegate when a deep link is received.
@@ -1464,6 +1474,12 @@ SWIFT_PROTOCOL("_TtP8AdropAds25AdropSplashAdViewDelegate_")
 - (void)onAdFailedToReceive:(AdropSplashAdView * _Nonnull)adView :(enum AdropErrorCode)errorCode;
 - (void)onAdImpression:(AdropSplashAdView * _Nonnull)adView;
 @end
+
+typedef SWIFT_ENUM(NSInteger, AdropTheme, open) {
+  AdropThemeLight = 0,
+  AdropThemeDark = 1,
+  AdropThemeAuto = 2,
+};
 
 SWIFT_CLASS("_TtC8AdropAds10AdropValue")
 @interface AdropValue : NSString
