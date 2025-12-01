@@ -352,6 +352,7 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
 @property (nonatomic, readonly) CGSize creativeSize;
+@property (nonatomic, readonly) BOOL isBackfilled;
 @property (nonatomic, readonly, copy) NSString * _Nonnull id SWIFT_DEPRECATED_MSG("", "unitId");
 @property (nonatomic) BOOL handleAdClickCustom SWIFT_DEPRECATED_MSG("", "useCustomClick");
 @property (nonatomic) BOOL useCustomClick;
@@ -499,6 +500,7 @@ SWIFT_CLASS("_TtC8AdropAds13AdropNativeAd")
 @property (nonatomic, readonly, copy) NSString * _Nullable profileLink;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull extra;
 @property (nonatomic, readonly) enum BrowserTargetObjC browserTargetValue;
+@property (nonatomic, readonly) BOOL isBackfilled;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
