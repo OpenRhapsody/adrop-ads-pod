@@ -6642,7 +6642,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -6665,7 +6665,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -6700,7 +6700,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -6731,7 +6731,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -6766,7 +6766,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -6797,7 +6797,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -6832,7 +6832,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -6863,7 +6863,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -6898,7 +6898,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -6929,7 +6929,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -6964,7 +6964,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -6995,7 +6995,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -7030,7 +7030,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -7061,7 +7061,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -7096,7 +7096,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -7127,7 +7127,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -7162,7 +7162,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -7193,7 +7193,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -7228,7 +7228,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -7259,7 +7259,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -7294,7 +7294,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -7325,7 +7325,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -7360,7 +7360,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -7391,7 +7391,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -7426,7 +7426,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -7457,7 +7457,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -7492,7 +7492,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -7523,7 +7523,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -7558,7 +7558,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -7589,7 +7589,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -7624,7 +7624,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -7655,7 +7655,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -7690,7 +7690,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -7721,7 +7721,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -7756,7 +7756,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -7787,7 +7787,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -7822,7 +7822,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -7853,7 +7853,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -7896,7 +7896,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -7935,7 +7935,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -7970,7 +7970,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -8001,7 +8001,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -8036,7 +8036,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -8067,7 +8067,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -8102,7 +8102,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -8133,7 +8133,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -8168,7 +8168,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -8199,7 +8199,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -8234,7 +8234,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -8265,7 +8265,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -8300,7 +8300,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -8331,7 +8331,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -8361,7 +8361,7 @@
             "moduleName": "AdropAds",
             "implicit": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "throwing": true,
             "init_kind": "Designated"
@@ -8389,7 +8389,7 @@
             "moduleName": "AdropAds",
             "implicit": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
@@ -8404,7 +8404,7 @@
           "SPIAccessControl"
         ],
         "spi_group_names": [
-          "AdropCore_1_4_1F680"
+          "AdropCore_1_7_1F680"
         ],
         "conformances": [
           {
@@ -8471,7 +8471,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -8502,7 +8502,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -8529,7 +8529,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -8552,7 +8552,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -8587,7 +8587,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -8618,7 +8618,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -8653,7 +8653,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -8684,7 +8684,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -8719,7 +8719,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -8750,7 +8750,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -8785,7 +8785,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -8816,7 +8816,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -8851,7 +8851,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -8882,7 +8882,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -8915,7 +8915,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "throwing": true,
             "init_kind": "Designated"
@@ -8941,7 +8941,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -8962,7 +8962,7 @@
                 "moduleName": "AdropAds",
                 "static": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -8989,7 +8989,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -9010,7 +9010,7 @@
                 "moduleName": "AdropAds",
                 "static": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               }
@@ -9043,7 +9043,7 @@
               "AccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -9070,7 +9070,7 @@
             "moduleName": "AdropAds",
             "implicit": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
@@ -9085,7 +9085,7 @@
           "SPIAccessControl"
         ],
         "spi_group_names": [
-          "AdropCore_1_4_1F680"
+          "AdropCore_1_7_1F680"
         ],
         "conformances": [
           {
@@ -12633,7 +12633,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "hasStorage": true,
             "accessors": [
@@ -12733,7 +12733,7 @@
                   "Final"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -12838,7 +12838,7 @@
                   "Final"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -12863,7 +12863,7 @@
                   "Final"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -14762,7 +14762,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -14783,7 +14783,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -14810,7 +14810,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -14835,7 +14835,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -14863,7 +14863,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -14884,7 +14884,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -14911,7 +14911,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -14936,7 +14936,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -14964,7 +14964,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -14985,7 +14985,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -15012,7 +15012,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -15037,7 +15037,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -15065,7 +15065,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -15086,7 +15086,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -15113,7 +15113,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -15138,7 +15138,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -15166,7 +15166,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -15187,7 +15187,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -15214,7 +15214,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -15239,7 +15239,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -15287,7 +15287,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -15328,7 +15328,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -15375,7 +15375,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -15400,7 +15400,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -15448,7 +15448,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -15593,7 +15593,7 @@
               "SPIAccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "hasStorage": true,
             "accessors": [
@@ -15623,7 +15623,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -15658,7 +15658,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -15679,7 +15679,7 @@
                 "moduleName": "AdropAds",
                 "implicit": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -16714,47 +16714,6 @@
           },
           {
             "kind": "Var",
-            "name": "AD_TRY",
-            "printedName": "AD_TRY",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdropAds.AdropMetricCode.Type) -> AdropAds.AdropMetricCode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdropMetricCode",
-                    "printedName": "AdropAds.AdropMetricCode",
-                    "usr": "c:@M@AdropAds@E@AdropMetricCode"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdropAds.AdropMetricCode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdropMetricCode",
-                        "printedName": "AdropAds.AdropMetricCode",
-                        "usr": "c:@M@AdropAds@E@AdropMetricCode"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@AdropAds@E@AdropMetricCode@AdropMetricCodeAD_TRY",
-            "mangledName": "$s8AdropAds0A10MetricCodeO6AD_TRYyA2CmF",
-            "moduleName": "AdropAds",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 5
-          },
-          {
-            "kind": "Var",
             "name": "AD_TODAY_OFF",
             "printedName": "AD_TODAY_OFF",
             "children": [
@@ -16792,7 +16751,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 6
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Var",
@@ -16833,7 +16792,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 7
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Var",
@@ -16874,7 +16833,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 8
+            "fixedbinaryorder": 7
           },
           {
             "kind": "Var",
@@ -16915,7 +16874,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 9
+            "fixedbinaryorder": 8
           },
           {
             "kind": "Var",
@@ -16956,7 +16915,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 10
+            "fixedbinaryorder": 9
           },
           {
             "kind": "Var",
@@ -16997,7 +16956,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 11
+            "fixedbinaryorder": 10
           },
           {
             "kind": "Var",
@@ -17038,7 +16997,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 12
+            "fixedbinaryorder": 11
           },
           {
             "kind": "Var",
@@ -17079,7 +17038,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 13
+            "fixedbinaryorder": 12
           },
           {
             "kind": "Var",
@@ -17120,7 +17079,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 14
+            "fixedbinaryorder": 13
           },
           {
             "kind": "Var",
@@ -17879,6 +17838,47 @@
           },
           {
             "kind": "Var",
+            "name": "ERROR_CODE_AD_BACKFILL_NO_FILL",
+            "printedName": "ERROR_CODE_AD_BACKFILL_NO_FILL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdropAds.AdropErrorCode.Type) -> AdropAds.AdropErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdropErrorCode",
+                    "printedName": "AdropAds.AdropErrorCode",
+                    "usr": "c:@M@AdropAds@E@AdropErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdropAds.AdropErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdropErrorCode",
+                        "printedName": "AdropAds.AdropErrorCode",
+                        "usr": "c:@M@AdropAds@E@AdropErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdropAds@E@AdropErrorCode@AdropErrorCodeERROR_CODE_AD_BACKFILL_NO_FILL",
+            "mangledName": "$s8AdropAds0A9ErrorCodeO30ERROR_CODE_AD_BACKFILL_NO_FILLyA2CmF",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 14
+          },
+          {
+            "kind": "Var",
             "name": "keyString",
             "printedName": "keyString",
             "children": [
@@ -18204,7 +18204,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "hasStorage": true,
             "accessors": [
@@ -18304,7 +18304,7 @@
                   "Final"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -18409,7 +18409,7 @@
                   "Final"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -18434,7 +18434,7 @@
                   "Final"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -20722,7 +20722,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -20743,7 +20743,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -20770,7 +20770,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -20795,7 +20795,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -20823,7 +20823,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -20844,7 +20844,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -20871,7 +20871,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -20896,7 +20896,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -20924,7 +20924,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -20945,7 +20945,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -20972,7 +20972,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -20997,7 +20997,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -21025,7 +21025,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -21046,7 +21046,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -21073,7 +21073,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -21098,7 +21098,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -21134,7 +21134,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -21163,7 +21163,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -21198,7 +21198,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -21223,7 +21223,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -21270,7 +21270,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -21768,7 +21768,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "hasStorage": true,
             "accessors": [
@@ -21868,7 +21868,7 @@
                   "Final"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -21973,7 +21973,7 @@
                   "Final"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -21998,7 +21998,7 @@
                   "Final"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -23920,7 +23920,7 @@
               "SPIAccessControl"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -23972,7 +23972,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -23993,7 +23993,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -24020,7 +24020,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -24045,7 +24045,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -24073,7 +24073,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -24094,7 +24094,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -24121,7 +24121,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -24146,7 +24146,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -24174,7 +24174,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -24195,7 +24195,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -24222,7 +24222,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -24247,7 +24247,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -24275,7 +24275,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -24296,7 +24296,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -24323,7 +24323,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -24348,7 +24348,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -24376,7 +24376,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -24397,7 +24397,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -24424,7 +24424,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -24449,7 +24449,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -24535,7 +24535,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -24614,7 +24614,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -24699,7 +24699,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -24724,7 +24724,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -24771,7 +24771,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -26745,35 +26745,6 @@
         "moduleName": "AdropAds",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "AdropConnector",
-        "printedName": "AdropConnector",
-        "declKind": "Class",
-        "usr": "s:8AdropAds0A9ConnectorC",
-        "mangledName": "$s8AdropAds0A9ConnectorC",
-        "moduleName": "AdropAds",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
         ]
       },
       {
@@ -30827,7 +30798,7 @@
             "moduleName": "AdropAds",
             "protocolReq": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -30850,7 +30821,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.InternalAdState>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -30878,7 +30849,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -30901,7 +30872,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.InternalAdState>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -30931,7 +30902,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.InternalAdState>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
@@ -30959,7 +30930,7 @@
                   "SPIAccessControl"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "_modify"
@@ -30987,7 +30958,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -31010,7 +30981,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.InternalAdState>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -31040,7 +31011,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.InternalAdState>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
@@ -31068,7 +31039,7 @@
                   "SPIAccessControl"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "_modify"
@@ -31096,7 +31067,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -31119,7 +31090,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.InternalAdState>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -31149,7 +31120,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.InternalAdState>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
@@ -31177,7 +31148,7 @@
                   "SPIAccessControl"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "_modify"
@@ -31205,7 +31176,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -31228,7 +31199,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.InternalAdState>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -31258,7 +31229,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.InternalAdState>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
@@ -31286,7 +31257,7 @@
                   "SPIAccessControl"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "_modify"
@@ -31335,7 +31306,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -31353,7 +31324,7 @@
           "RawDocComment"
         ],
         "spi_group_names": [
-          "AdropCore_1_4_1F680"
+          "AdropCore_1_7_1F680"
         ],
         "conformances": [
           {
@@ -31395,7 +31366,7 @@
             "moduleName": "AdropAds",
             "protocolReq": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -31418,7 +31389,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.BannerInternalAccess>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -31454,7 +31425,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -31485,7 +31456,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.BannerInternalAccess>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -31523,7 +31494,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.BannerInternalAccess>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
@@ -31551,7 +31522,7 @@
                   "SPIAccessControl"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "_modify"
@@ -31587,7 +31558,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -31618,7 +31589,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.BannerInternalAccess>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -31656,7 +31627,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.BannerInternalAccess>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
@@ -31684,7 +31655,7 @@
                   "SPIAccessControl"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "_modify"
@@ -31719,7 +31690,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -31737,7 +31708,7 @@
           "RawDocComment"
         ],
         "spi_group_names": [
-          "AdropCore_1_4_1F680"
+          "AdropCore_1_7_1F680"
         ],
         "conformances": [
           {
@@ -31789,7 +31760,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -31812,7 +31783,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.InterstitialInternalAccess>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -31842,7 +31813,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.InterstitialInternalAccess>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
@@ -31870,7 +31841,7 @@
                   "SPIAccessControl"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "_modify"
@@ -31918,7 +31889,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -31961,7 +31932,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.InterstitialInternalAccess>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -32011,7 +31982,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.InterstitialInternalAccess>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
@@ -32039,7 +32010,7 @@
                   "SPIAccessControl"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "_modify"
@@ -32059,7 +32030,7 @@
           "RawDocComment"
         ],
         "spi_group_names": [
-          "AdropCore_1_4_1F680"
+          "AdropCore_1_7_1F680"
         ],
         "conformances": [
           {
@@ -32111,7 +32082,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -32134,7 +32105,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.RewardedInternalAccess>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -32164,7 +32135,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.RewardedInternalAccess>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
@@ -32192,7 +32163,7 @@
                   "SPIAccessControl"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "_modify"
@@ -32278,7 +32249,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -32359,7 +32330,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.RewardedInternalAccess>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -32447,7 +32418,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.RewardedInternalAccess>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
@@ -32475,7 +32446,7 @@
                   "SPIAccessControl"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "_modify"
@@ -32495,7 +32466,7 @@
           "RawDocComment"
         ],
         "spi_group_names": [
-          "AdropCore_1_4_1F680"
+          "AdropCore_1_7_1F680"
         ],
         "conformances": [
           {
@@ -32544,7 +32515,7 @@
             "moduleName": "AdropAds",
             "protocolReq": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -32567,7 +32538,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.NativeInternalAccess>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -32603,7 +32574,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -32634,7 +32605,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.NativeInternalAccess>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -32672,7 +32643,7 @@
                 "sugared_genericSig": "<Self where Self : AdropAds.NativeInternalAccess>",
                 "protocolReq": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
@@ -32700,7 +32671,7 @@
                   "SPIAccessControl"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "_modify"
@@ -32720,7 +32691,7 @@
           "RawDocComment"
         ],
         "spi_group_names": [
-          "AdropCore_1_4_1F680"
+          "AdropCore_1_7_1F680"
         ],
         "conformances": [
           {
@@ -32866,7 +32837,7 @@
                   "RawDocComment"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessors": [
                   {
@@ -32975,7 +32946,7 @@
                     "moduleName": "AdropAds",
                     "static": true,
                     "spi_group_names": [
-                      "AdropCore_1_4_1F680"
+                      "AdropCore_1_7_1F680"
                     ],
                     "accessorKind": "get"
                   },
@@ -33090,7 +33061,7 @@
                     "moduleName": "AdropAds",
                     "static": true,
                     "spi_group_names": [
-                      "AdropCore_1_4_1F680"
+                      "AdropCore_1_7_1F680"
                     ],
                     "accessorKind": "set"
                   },
@@ -33115,7 +33086,7 @@
                       "SPIAccessControl"
                     ],
                     "spi_group_names": [
-                      "AdropCore_1_4_1F680"
+                      "AdropCore_1_7_1F680"
                     ],
                     "accessorKind": "_modify"
                   }
@@ -33217,7 +33188,7 @@
                   "RawDocComment"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessors": [
                   {
@@ -33312,7 +33283,7 @@
                     "moduleName": "AdropAds",
                     "static": true,
                     "spi_group_names": [
-                      "AdropCore_1_4_1F680"
+                      "AdropCore_1_7_1F680"
                     ],
                     "accessorKind": "get"
                   },
@@ -33413,7 +33384,7 @@
                     "moduleName": "AdropAds",
                     "static": true,
                     "spi_group_names": [
-                      "AdropCore_1_4_1F680"
+                      "AdropCore_1_7_1F680"
                     ],
                     "accessorKind": "set"
                   },
@@ -33438,7 +33409,7 @@
                       "SPIAccessControl"
                     ],
                     "spi_group_names": [
-                      "AdropCore_1_4_1F680"
+                      "AdropCore_1_7_1F680"
                     ],
                     "accessorKind": "_modify"
                   }
@@ -33540,7 +33511,7 @@
                   "RawDocComment"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessors": [
                   {
@@ -33635,7 +33606,7 @@
                     "moduleName": "AdropAds",
                     "static": true,
                     "spi_group_names": [
-                      "AdropCore_1_4_1F680"
+                      "AdropCore_1_7_1F680"
                     ],
                     "accessorKind": "get"
                   },
@@ -33736,7 +33707,7 @@
                     "moduleName": "AdropAds",
                     "static": true,
                     "spi_group_names": [
-                      "AdropCore_1_4_1F680"
+                      "AdropCore_1_7_1F680"
                     ],
                     "accessorKind": "set"
                   },
@@ -33761,7 +33732,7 @@
                       "SPIAccessControl"
                     ],
                     "spi_group_names": [
-                      "AdropCore_1_4_1F680"
+                      "AdropCore_1_7_1F680"
                     ],
                     "accessorKind": "_modify"
                   }
@@ -33863,7 +33834,7 @@
                   "RawDocComment"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessors": [
                   {
@@ -33958,7 +33929,7 @@
                     "moduleName": "AdropAds",
                     "static": true,
                     "spi_group_names": [
-                      "AdropCore_1_4_1F680"
+                      "AdropCore_1_7_1F680"
                     ],
                     "accessorKind": "get"
                   },
@@ -34059,7 +34030,7 @@
                     "moduleName": "AdropAds",
                     "static": true,
                     "spi_group_names": [
-                      "AdropCore_1_4_1F680"
+                      "AdropCore_1_7_1F680"
                     ],
                     "accessorKind": "set"
                   },
@@ -34084,7 +34055,7 @@
                       "SPIAccessControl"
                     ],
                     "spi_group_names": [
-                      "AdropCore_1_4_1F680"
+                      "AdropCore_1_7_1F680"
                     ],
                     "accessorKind": "_modify"
                   }
@@ -34100,7 +34071,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "conformances": [
               {
@@ -34200,7 +34171,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -34259,7 +34230,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -34305,7 +34276,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -34345,7 +34316,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -34360,7 +34331,7 @@
           "RawDocComment"
         ],
         "spi_group_names": [
-          "AdropCore_1_4_1F680"
+          "AdropCore_1_7_1F680"
         ],
         "conformances": [
           {
@@ -34534,7 +34505,7 @@
               "RawDocComment"
             ],
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "hasStorage": true,
             "accessors": [
@@ -34648,7 +34619,7 @@
                   "Final"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -34767,7 +34738,7 @@
                   "Final"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -34792,7 +34763,7 @@
                   "Final"
                 ],
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -36510,7 +36481,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -36531,7 +36502,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -36558,7 +36529,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -36583,7 +36554,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -36613,7 +36584,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -36634,7 +36605,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -36661,7 +36632,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -36686,7 +36657,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -36716,7 +36687,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -36737,7 +36708,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -36764,7 +36735,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -36789,7 +36760,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -36819,7 +36790,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -36840,7 +36811,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -36867,7 +36838,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -36892,7 +36863,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -36930,7 +36901,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -36959,7 +36930,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -36994,7 +36965,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -37019,7 +36990,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -37057,7 +37028,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "accessors": [
               {
@@ -37086,7 +37057,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "get"
               },
@@ -37121,7 +37092,7 @@
                 "moduleName": "AdropAds",
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "set"
               },
@@ -37146,7 +37117,7 @@
                 ],
                 "isFromExtension": true,
                 "spi_group_names": [
-                  "AdropCore_1_4_1F680"
+                  "AdropCore_1_7_1F680"
                 ],
                 "accessorKind": "_modify"
               }
@@ -37181,7 +37152,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -37229,7 +37200,7 @@
             ],
             "isFromExtension": true,
             "spi_group_names": [
-              "AdropCore_1_4_1F680"
+              "AdropCore_1_7_1F680"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -41881,125 +41852,125 @@
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
       "offset": 12104,
-      "length": 15,
-      "value": "\"1.7.0-alpha.0\""
+      "length": 7,
+      "value": "\"1.7.0\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12145,
+      "offset": 12137,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12225,
+      "offset": 12217,
       "length": 36,
       "value": "\"https:\/\/api\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12243,
+      "offset": 12235,
       "length": 1,
       "value": "\".adrop.io\/graphql\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12295,
+      "offset": 12287,
       "length": 31,
       "value": "\"https:\/\/api-v2\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12316,
+      "offset": 12308,
       "length": 1,
       "value": "\".adrop.io\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12374,
+      "offset": 12366,
       "length": 30,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12389,
+      "offset": 12381,
       "length": 1,
       "value": "\"\/remote-config\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12442,
+      "offset": 12434,
       "length": 28,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12457,
+      "offset": 12449,
       "length": 1,
       "value": "\"\/request-ads\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12511,
+      "offset": 12503,
       "length": 23,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12526,
+      "offset": 12518,
       "length": 1,
       "value": "\"\/events\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12567,
+      "offset": 12559,
       "length": 52,
       "value": "\"https:\/\/\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12592,
+      "offset": 12584,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12597,
+      "offset": 12589,
       "length": 6,
       "value": "\"dev.\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12604,
+      "offset": 12596,
       "length": 5,
       "value": "\"quest.adrop.io\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 12657,
+      "offset": 12649,
       "length": 7,
       "value": "1800000"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12706,
+      "offset": 12698,
       "length": 21,
       "value": "\"PUBLIC_TEST_UNIT_ID\""
     },
@@ -42944,14 +42915,14 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropAPI.swift",
       "kind": "BooleanLiteral",
-      "offset": 236,
+      "offset": 255,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropAPI.swift",
       "kind": "StringLiteral",
-      "offset": 1033,
+      "offset": 1052,
       "length": 2,
       "value": "\"\""
     },
@@ -43273,84 +43244,84 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 1883,
+      "offset": 1867,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 1910,
+      "offset": 1894,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 1947,
+      "offset": 1931,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1975,
+      "offset": 1959,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2009,
+      "offset": 1993,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2041,
+      "offset": 2025,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 4767,
+      "offset": 4564,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 4839,
+      "offset": 4636,
       "length": 55,
       "value": "\"request ad failed. \""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 4893,
+      "offset": 4690,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 5375,
+      "offset": 5172,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 6283,
+      "offset": 6080,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 6326,
+      "offset": 6123,
       "length": 4,
       "value": "true"
     },
@@ -43393,162 +43364,162 @@
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
       "offset": 212,
-      "length": 6,
+      "length": 12,
       "value": "5"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 228,
-      "length": 12,
+      "offset": 234,
+      "length": 5,
       "value": "6"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 250,
-      "length": 5,
+      "offset": 249,
+      "length": 4,
       "value": "7"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 265,
-      "length": 4,
+      "offset": 263,
+      "length": 10,
       "value": "8"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 279,
-      "length": 10,
+      "offset": 283,
+      "length": 9,
       "value": "9"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 299,
-      "length": 9,
+      "offset": 302,
+      "length": 12,
       "value": "10"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 318,
-      "length": 12,
+      "offset": 324,
+      "length": 8,
       "value": "11"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 340,
-      "length": 8,
+      "offset": 342,
+      "length": 11,
       "value": "12"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 358,
-      "length": 11,
+      "offset": 363,
+      "length": 12,
       "value": "13"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 379,
-      "length": 12,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1360,
+      "offset": 1302,
       "length": 19,
       "value": "1"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1389,
+      "offset": 1331,
       "length": 21,
       "value": "2"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1420,
+      "offset": 1362,
       "length": 23,
       "value": "3"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1453,
+      "offset": 1395,
       "length": 29,
       "value": "4"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1492,
+      "offset": 1434,
       "length": 22,
       "value": "5"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1524,
+      "offset": 1466,
       "length": 21,
       "value": "6"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1555,
+      "offset": 1497,
       "length": 29,
       "value": "7"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1594,
+      "offset": 1536,
       "length": 21,
       "value": "8"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1625,
+      "offset": 1567,
       "length": 19,
       "value": "9"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1654,
+      "offset": 1596,
       "length": 19,
       "value": "10"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1683,
+      "offset": 1625,
       "length": 28,
       "value": "11"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1721,
+      "offset": 1663,
       "length": 39,
       "value": "12"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1770,
+      "offset": 1712,
       "length": 32,
       "value": "13"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1754,
+      "length": 30,
+      "value": "14"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/ParameterEncoding.swift",
@@ -43721,35 +43692,35 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 7093,
+      "offset": 7048,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 7164,
+      "offset": 7119,
       "length": 55,
       "value": "\"request ad failed. \""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 7218,
+      "offset": 7173,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 8320,
+      "offset": 8275,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 8441,
+      "offset": 8396,
       "length": 4,
       "value": "true"
     },
@@ -44155,84 +44126,84 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 1613,
+      "offset": 1597,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 1640,
+      "offset": 1624,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 1677,
+      "offset": 1661,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1705,
+      "offset": 1689,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1739,
+      "offset": 1723,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1771,
+      "offset": 1755,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 4649,
+      "offset": 4455,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 4721,
+      "offset": 4527,
       "length": 55,
       "value": "\"request ad failed. \""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 4775,
+      "offset": 4581,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 5231,
+      "offset": 5037,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 6129,
+      "offset": 5935,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 6172,
+      "offset": 5978,
       "length": 4,
       "value": "true"
     },
@@ -44687,7 +44658,7 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 6679,
+      "offset": 6413,
       "length": 5,
       "value": "false"
     },
@@ -44715,7 +44686,7 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConnector.swift",
       "kind": "StringLiteral",
-      "offset": 1501,
+      "offset": 1578,
       "length": 25,
       "value": "\"X-Ios-Bundle-Identifier\""
     },
@@ -44946,7 +44917,7 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropPopupAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 6150,
+      "offset": 6042,
       "length": 5,
       "value": "false"
     },
@@ -45086,28 +45057,28 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3406,
+      "offset": 3764,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 5835,
+      "offset": 6206,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 8379,
+      "offset": 8750,
       "length": 55,
       "value": "\"request ad failed. \""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 8433,
+      "offset": 8804,
       "length": 2,
       "value": "\"\""
     },

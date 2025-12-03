@@ -400,6 +400,7 @@ typedef SWIFT_ENUM(NSInteger, AdropErrorCode, open) {
   AdropErrorCodeERROR_CODE_AD_HIDE_FOR_TODAY = 11,
   AdropErrorCodeERROR_CODE_ACCOUNT_USAGE_LIMIT_EXCEEDED = 12,
   AdropErrorCodeERROR_CODE_LANDSCAPE_UNSUPPORTED = 13,
+  AdropErrorCodeERROR_CODE_AD_BACKFILL_NO_FILL = 14,
 };
 
 @protocol AdropInterstitialAdDelegate;
@@ -452,16 +453,15 @@ typedef SWIFT_ENUM(NSInteger, AdropMetricCode, open) {
   AdropMetricCodeINVALID_SHOW = 2,
   AdropMetricCodeAD_IMPR = 3,
   AdropMetricCodeAD_CLICK = 4,
-  AdropMetricCodeAD_TRY = 5,
-  AdropMetricCodeAD_TODAY_OFF = 6,
-  AdropMetricCodeCLOSE = 7,
-  AdropMetricCodeOPEN = 8,
-  AdropMetricCodeWILL_CLOSE = 9,
-  AdropMetricCodeWILL_OPEN = 10,
-  AdropMetricCodeOPEN_INVALID = 11,
-  AdropMetricCodePAGE_ATS = 12,
-  AdropMetricCodePAGE_ATTACH = 13,
-  AdropMetricCodeSET_PROPERTY = 14,
+  AdropMetricCodeAD_TODAY_OFF = 5,
+  AdropMetricCodeCLOSE = 6,
+  AdropMetricCodeOPEN = 7,
+  AdropMetricCodeWILL_CLOSE = 8,
+  AdropMetricCodeWILL_OPEN = 9,
+  AdropMetricCodeOPEN_INVALID = 10,
+  AdropMetricCodePAGE_ATS = 11,
+  AdropMetricCodePAGE_ATTACH = 12,
+  AdropMetricCodeSET_PROPERTY = 13,
 };
 
 SWIFT_CLASS("_TtC8AdropAds12AdropMetrics")

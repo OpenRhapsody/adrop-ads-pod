@@ -421,7 +421,6 @@ extension AdropAds.AdropNativeAdView : UIKit.UIGestureRecognizerDelegate {
   case INVALID_SHOW
   case AD_IMPR
   case AD_CLICK
-  case AD_TRY
   case AD_TODAY_OFF
   case CLOSE
   case OPEN
@@ -457,6 +456,7 @@ extension AdropAds.AdropNativeAdView : UIKit.UIGestureRecognizerDelegate {
   case ERROR_CODE_AD_HIDE_FOR_TODAY
   case ERROR_CODE_ACCOUNT_USAGE_LIMIT_EXCEEDED
   case ERROR_CODE_LANDSCAPE_UNSUPPORTED
+  case ERROR_CODE_AD_BACKFILL_NO_FILL
   public var keyString: Swift.String {
     get
   }
@@ -667,9 +667,6 @@ public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.Strin
 @_hasMissingDesignatedInitializers public class HTMLContentHelper {
   public static func containsVideoTag(_ content: Swift.String) -> Swift.Bool
   public static func containsEmblaCarousel(_ content: Swift.String) -> Swift.Bool
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class AdropConnector {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @available(*, deprecated, message: "Warning: This class should not be used for accurate data")
