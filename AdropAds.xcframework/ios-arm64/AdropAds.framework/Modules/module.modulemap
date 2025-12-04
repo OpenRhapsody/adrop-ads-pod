@@ -1,4 +1,11 @@
 framework module AdropAds {
+  umbrella header "AdropAds.h"
+  export *
+
+  module * { export * }
+}
+
+module AdropAds.Swift {
   header "AdropAds-Swift.h"
   requires objc
 }
