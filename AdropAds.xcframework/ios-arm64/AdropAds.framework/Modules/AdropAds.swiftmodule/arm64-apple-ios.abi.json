@@ -6208,6 +6208,79 @@
         "moduleName": "AdropAds"
       },
       {
+        "kind": "Function",
+        "name": "createAdWindow",
+        "printedName": "createAdWindow()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "UIKit.UIWindow?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIWindow",
+                "printedName": "UIKit.UIWindow",
+                "usr": "c:objc(cs)UIWindow"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8AdropAds14createAdWindowSo8UIWindowCSgyF",
+        "mangledName": "$s8AdropAds14createAdWindowSo8UIWindowCSgyF",
+        "moduleName": "AdropAds",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "AdropCore_1_7_1F680"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "dismissAdWindow",
+        "printedName": "dismissAdWindow(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "UIKit.UIWindow?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIWindow",
+                "printedName": "UIKit.UIWindow",
+                "usr": "c:objc(cs)UIWindow"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:8AdropAds15dismissAdWindowyySo8UIWindowCSgF",
+        "mangledName": "$s8AdropAds15dismissAdWindowyySo8UIWindowCSgF",
+        "moduleName": "AdropAds",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "AdropCore_1_7_1F680"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -14585,6 +14658,50 @@
                 "declKind": "Accessor",
                 "usr": "c:@M@AdropAds@objc(cs)AdropInterstitialAd(im)creativeId",
                 "mangledName": "$s8AdropAds0A14InterstitialAdC10creativeIdSSvg",
+                "moduleName": "AdropAds",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isBackfilled",
+            "printedName": "isBackfilled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdropAds@objc(cs)AdropInterstitialAd(py)isBackfilled",
+            "mangledName": "$s8AdropAds0A14InterstitialAdC12isBackfilledSbvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdropAds@objc(cs)AdropInterstitialAd(im)isBackfilled",
+                "mangledName": "$s8AdropAds0A14InterstitialAdC12isBackfilledSbvg",
                 "moduleName": "AdropAds",
                 "declAttributes": [
                   "ObjC"
@@ -23722,6 +23839,50 @@
           },
           {
             "kind": "Var",
+            "name": "isBackfilled",
+            "printedName": "isBackfilled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdropAds@objc(cs)AdropRewardedAd(py)isBackfilled",
+            "mangledName": "$s8AdropAds0A10RewardedAdC12isBackfilledSbvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdropAds@objc(cs)AdropRewardedAd(im)isBackfilled",
+                "mangledName": "$s8AdropAds0A10RewardedAdC12isBackfilledSbvg",
+                "moduleName": "AdropAds",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "isLoaded",
             "printedName": "isLoaded",
             "children": [
@@ -23870,51 +24031,6 @@
             "declAttributes": [
               "AccessControl",
               "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "notify",
-            "printedName": "notify(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AdropMetricCode",
-                "printedName": "AdropAds.AdropMetricCode",
-                "usr": "c:@M@AdropAds@E@AdropMetricCode"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AdropAds.AdropErrorCode?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdropErrorCode",
-                    "printedName": "AdropAds.AdropErrorCode",
-                    "usr": "c:@M@AdropAds@E@AdropErrorCode"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8AdropAds0A10RewardedAdC6notifyyyAA0A10MetricCodeO_AA0a5ErrorG0OSgtF",
-            "mangledName": "$s8AdropAds0A10RewardedAdC6notifyyyAA0A10MetricCodeO_AA0a5ErrorG0OSgtF",
-            "moduleName": "AdropAds",
-            "declAttributes": [
-              "AccessControl",
-              "SPIAccessControl"
-            ],
-            "spi_group_names": [
-              "AdropCore_1_7_1F680"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -41542,14 +41658,14 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 802,
+      "offset": 834,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1071,
+      "offset": 1103,
       "length": 4,
       "value": "true"
     },
@@ -41810,7 +41926,7 @@
       "kind": "StringLiteral",
       "offset": 12104,
       "length": 15,
-      "value": "\"1.7.2-alpha.0\""
+      "value": "\"1.7.2-alpha.1\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
@@ -42410,7 +42526,7 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitalAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 623,
+      "offset": 659,
       "length": 5,
       "value": "false"
     },
@@ -43200,85 +43316,92 @@
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1845,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 1867,
+      "offset": 2056,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 1894,
+      "offset": 2083,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 1931,
+      "offset": 2120,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1959,
+      "offset": 2148,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1993,
+      "offset": 2182,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2025,
+      "offset": 2214,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 4564,
+      "offset": 4714,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 4636,
+      "offset": 4786,
       "length": 55,
       "value": "\"request ad failed. \""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 4690,
+      "offset": 4840,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 5172,
+      "offset": 5322,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 6080,
+      "offset": 6314,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 6123,
+      "offset": 6357,
       "length": 4,
       "value": "true"
     },
@@ -44082,85 +44205,92 @@
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1575,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 1597,
+      "offset": 1786,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 1624,
+      "offset": 1813,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 1661,
+      "offset": 1850,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1689,
+      "offset": 1878,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1723,
+      "offset": 1912,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1755,
+      "offset": 1944,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 4455,
+      "offset": 4603,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 4527,
+      "offset": 4675,
       "length": 55,
       "value": "\"request ad failed. \""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 4581,
+      "offset": 4729,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 5037,
+      "offset": 5185,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 5935,
+      "offset": 6167,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 5978,
+      "offset": 6210,
       "length": 4,
       "value": "true"
     },

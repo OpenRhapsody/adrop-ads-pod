@@ -413,6 +413,7 @@ SWIFT_CLASS("_TtC8AdropAds19AdropInterstitialAd")
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull destinationURL;
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
+@property (nonatomic, readonly) BOOL isBackfilled;
 @property (nonatomic, readonly) BOOL isLoaded;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
@@ -634,6 +635,7 @@ SWIFT_CLASS("_TtC8AdropAds15AdropRewardedAd")
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull destinationURL;
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
+@property (nonatomic, readonly) BOOL isBackfilled;
 @property (nonatomic, readonly) BOOL isLoaded;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
@@ -1193,6 +1195,7 @@ SWIFT_CLASS("_TtC8AdropAds19AdropInterstitialAd")
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull destinationURL;
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
+@property (nonatomic, readonly) BOOL isBackfilled;
 @property (nonatomic, readonly) BOOL isLoaded;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
@@ -1414,6 +1417,7 @@ SWIFT_CLASS("_TtC8AdropAds15AdropRewardedAd")
 @property (nonatomic, readonly, copy) NSString * _Nonnull unitId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull destinationURL;
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
+@property (nonatomic, readonly) BOOL isBackfilled;
 @property (nonatomic, readonly) BOOL isLoaded;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;

@@ -340,6 +340,9 @@ public enum AdUnitFormat : Swift.Int {
   @objc public var creativeId: Swift.String {
     @objc get
   }
+  @objc public var isBackfilled: Swift.Bool {
+    @objc get
+  }
   @objc public var isLoaded: Swift.Bool {
     @objc get
   }
@@ -544,6 +547,9 @@ public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.Strin
     @objc get
   }
   @objc public var creativeId: Swift.String {
+    @objc get
+  }
+  @objc public var isBackfilled: Swift.Bool {
     @objc get
   }
   @objc public var isLoaded: Swift.Bool {

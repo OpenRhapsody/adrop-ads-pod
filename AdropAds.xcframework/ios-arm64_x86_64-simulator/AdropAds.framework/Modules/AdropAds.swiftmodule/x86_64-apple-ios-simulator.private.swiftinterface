@@ -191,6 +191,8 @@ public enum AdropBannerSize : Swift.String {
     get
   }
 }
+@_spi(AdropCore_1_7_1F680) public func createAdWindow() -> UIKit.UIWindow?
+@_spi(AdropCore_1_7_1F680) public func dismissAdWindow(_ window: UIKit.UIWindow?)
 @objc public protocol AdropSplashAdDelegate {
   @objc optional func onAdReceived(_ ad: AdropAds.AdropSplashAd)
   @objc optional func onAdFailedToReceive(_ ad: AdropAds.AdropSplashAd, _ errorCode: AdropAds.AdropErrorCode)
@@ -387,6 +389,9 @@ public enum AdUnitFormat : Swift.Int {
     @objc get
   }
   @objc public var creativeId: Swift.String {
+    @objc get
+  }
+  @objc public var isBackfilled: Swift.Bool {
     @objc get
   }
   @objc public var isLoaded: Swift.Bool {
@@ -648,13 +653,15 @@ public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.Strin
   @objc public var creativeId: Swift.String {
     @objc get
   }
+  @objc public var isBackfilled: Swift.Bool {
+    @objc get
+  }
   @objc public var isLoaded: Swift.Bool {
     @objc get
   }
   @objc public init(unitId: Swift.String)
   @objc public func load()
   @objc public func show(fromRootViewController: UIKit.UIViewController, userDidEarnRewardHandler: @escaping AdropAds.AdropUserDidEarnRewardHandler)
-  @_spi(AdropCore_1_7_1F680) public func notify(_ code: AdropAds.AdropMetricCode, _ error: AdropAds.AdropErrorCode? = nil)
   @objc deinit
 }
 @_spi(AdropCore_1_7_1F680) extension AdropAds.AdropRewardedAd : AdropAds.RewardedInternalAccess {
