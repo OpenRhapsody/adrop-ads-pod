@@ -309,12 +309,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 @class NSString;
+@protocol AdropConsentManager;
 enum AdropTheme : NSInteger;
 @class NSURL;
+@class WKWebView;
 SWIFT_CLASS("_TtC8AdropAds5Adrop")
 @interface Adrop : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull sdkVersion;)
 + (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;
+/// Consent 관리자 (AdropAdsBackfill 설치 시 자동 설정됨)
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <AdropConsentManager> _Nullable consentManager;)
++ (id <AdropConsentManager> _Nullable)consentManager SWIFT_WARN_UNUSED_RESULT;
++ (void)setConsentManager:(id <AdropConsentManager> _Nullable)newValue;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (void)initializeWithProduction:(BOOL)production useInAppBrowser:(BOOL)useInAppBrowser targetCountries:(NSArray<NSString *> * _Nullable)targetCountries;
@@ -331,6 +337,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// returns:
 /// <code>true</code> if the URL was successfully handled by Adrop, otherwise <code>false</code>.
 + (BOOL)handleDeepLinkWithUrl:(NSURL * _Nonnull)url;
+/// AdSense 광고를 웹뷰에서 사용하기 위해 WebView를 등록합니다.
+/// note:
+/// AdropAdsBackfill이 설치되어 있어야 실제 등록이 수행됩니다.
+/// AdropAdsBackfill이 없으면 이 호출은 무시됩니다.
+/// important:
+/// 메인 스레드에서 호출해야 합니다.
+/// 광고 로드 전 가능한 빨리 호출하세요 (예: viewDidLoad).
+/// \param webView 등록할 WKWebView 인스턴스
+///
++ (void)registerWebView:(WKWebView * _Nonnull)webView;
 @end
 
 SWIFT_PROTOCOL("_TtP8AdropAds14UseCustomClick_")
@@ -364,7 +380,6 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
-@class WKWebView;
 @class WKWebViewConfiguration;
 @class WKNavigationAction;
 @class WKWindowFeatures;
@@ -385,6 +400,75 @@ SWIFT_PROTOCOL("_TtP8AdropAds19AdropBannerDelegate_")
 - (void)onAdClicked:(AdropBanner * _Nonnull)banner;
 @end
 
+/// 테스트용 지역 설정 (UMPDebugGeography와 매핑)
+typedef SWIFT_ENUM(NSInteger, AdropConsentDebugGeography, open) {
+/// 디버그 지역 설정 안함 (실제 기기 위치 사용)
+  AdropConsentDebugGeographyDisabled = 0,
+/// EEA (유럽 경제 지역) - GDPR 적용
+  AdropConsentDebugGeographyEEA = 1,
+/// @deprecated - <code>other</code> 사용 권장
+  AdropConsentDebugGeographyNotEEA = 2,
+/// 규제 대상 미국 주 (캘리포니아 등) - CCPA 적용
+  AdropConsentDebugGeographyRegulatedUSState = 3,
+/// 규제가 없는 지역 (notEEA 대체)
+  AdropConsentDebugGeographyOther = 4,
+};
+
+@class UIViewController;
+@class AdropConsentResult;
+enum AdropConsentStatus : NSInteger;
+/// Consent 관리 프로토콜
+/// AdropAdsBackfill에서 UMP를 통해 구현됨
+SWIFT_PROTOCOL("_TtP8AdropAds19AdropConsentManager_")
+@protocol AdropConsentManager
+/// Consent 정보 업데이트 및 필요시 팝업 표시
+/// \param viewController 팝업을 표시할 뷰 컨트롤러
+///
+/// \param completion 완료 콜백 (result: AdropConsentResult)
+///
+- (void)requestConsentInfoUpdateFrom:(UIViewController * _Nullable)viewController completion:(void (^ _Nonnull)(AdropConsentResult * _Nonnull))completion;
+/// Consent 상태만 확인 (팝업 표시 안함)
+- (enum AdropConsentStatus)getConsentStatus SWIFT_WARN_UNUSED_RESULT;
+/// 광고 요청 가능 여부 확인
+- (BOOL)canRequestAds SWIFT_WARN_UNUSED_RESULT;
+/// Consent 설정 리셋 (테스트/디버그용)
+- (void)reset;
+/// 테스트 설정 (DEBUG 빌드에서만 동작)
+/// \param testDeviceIdentifiers 테스트 기기 ID 배열 (Xcode 콘솔에서 확인 가능)
+///
+/// \param geography 테스트할 지역 (.EEA = GDPR, .notEEA = CCPA 등)
+///
+- (void)setDebugSettingsWithTestDeviceIdentifiers:(NSArray<NSString *> * _Nonnull)testDeviceIdentifiers geography:(enum AdropConsentDebugGeography)geography;
+@end
+
+/// Consent 요청 결과
+SWIFT_CLASS("_TtC8AdropAds18AdropConsentResult")
+@interface AdropConsentResult : NSObject
+/// Consent 상태
+@property (nonatomic, readonly) enum AdropConsentStatus status;
+/// 광고 요청 가능 여부 (핵심 값)
+@property (nonatomic, readonly) BOOL canRequestAds;
+/// 개인화 광고 가능 여부
+@property (nonatomic, readonly) BOOL canShowPersonalizedAds;
+/// 에러 (있는 경우)
+@property (nonatomic, readonly) NSError * _Nullable error;
+- (nonnull instancetype)initWithStatus:(enum AdropConsentStatus)status canRequestAds:(BOOL)canRequestAds canShowPersonalizedAds:(BOOL)canShowPersonalizedAds error:(NSError * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 사용자 동의 상태
+typedef SWIFT_ENUM(NSInteger, AdropConsentStatus, open) {
+/// 아직 결정되지 않음
+  AdropConsentStatusUnknown = 0,
+/// 동의가 필요함 (팝업 표시 필요)
+  AdropConsentStatusRequired = 1,
+/// 동의가 필요 없음 (해당 지역 아님)
+  AdropConsentStatusNotRequired = 2,
+/// 동의 완료됨
+  AdropConsentStatusObtained = 3,
+};
+
 typedef SWIFT_ENUM(NSInteger, AdropErrorCode, open) {
   AdropErrorCodeERROR_CODE_NETWORK = 0,
   AdropErrorCodeERROR_CODE_INTERNAL = 1,
@@ -404,7 +488,6 @@ typedef SWIFT_ENUM(NSInteger, AdropErrorCode, open) {
 };
 
 @protocol AdropInterstitialAdDelegate;
-@class UIViewController;
 SWIFT_CLASS("_TtC8AdropAds19AdropInterstitialAd")
 @interface AdropInterstitialAd : NSObject
 @property (nonatomic, weak) id <AdropInterstitialAdDelegate> _Nullable delegate;
@@ -467,6 +550,15 @@ typedef SWIFT_ENUM(NSInteger, AdropMetricCode, open) {
 
 SWIFT_CLASS("_TtC8AdropAds12AdropMetrics")
 @interface AdropMetrics : NSObject
+/// 현재 사용자 데이터 동의 상태 (기본값: true)
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL userDataConsent;)
++ (BOOL)userDataConsent SWIFT_WARN_UNUSED_RESULT;
+/// 사용자 데이터 수집 동의 상태 설정
+/// note:
+/// 비동의 시 로컬 데이터는 유지되고 서버 전송만 차단됨
+/// \param consent true = 동의, false = 비동의
+///
++ (void)setUserDataConsent:(BOOL)consent;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1091,12 +1183,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 @class NSString;
+@protocol AdropConsentManager;
 enum AdropTheme : NSInteger;
 @class NSURL;
+@class WKWebView;
 SWIFT_CLASS("_TtC8AdropAds5Adrop")
 @interface Adrop : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull sdkVersion;)
 + (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;
+/// Consent 관리자 (AdropAdsBackfill 설치 시 자동 설정됨)
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <AdropConsentManager> _Nullable consentManager;)
++ (id <AdropConsentManager> _Nullable)consentManager SWIFT_WARN_UNUSED_RESULT;
++ (void)setConsentManager:(id <AdropConsentManager> _Nullable)newValue;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (void)initializeWithProduction:(BOOL)production useInAppBrowser:(BOOL)useInAppBrowser targetCountries:(NSArray<NSString *> * _Nullable)targetCountries;
@@ -1113,6 +1211,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// returns:
 /// <code>true</code> if the URL was successfully handled by Adrop, otherwise <code>false</code>.
 + (BOOL)handleDeepLinkWithUrl:(NSURL * _Nonnull)url;
+/// AdSense 광고를 웹뷰에서 사용하기 위해 WebView를 등록합니다.
+/// note:
+/// AdropAdsBackfill이 설치되어 있어야 실제 등록이 수행됩니다.
+/// AdropAdsBackfill이 없으면 이 호출은 무시됩니다.
+/// important:
+/// 메인 스레드에서 호출해야 합니다.
+/// 광고 로드 전 가능한 빨리 호출하세요 (예: viewDidLoad).
+/// \param webView 등록할 WKWebView 인스턴스
+///
++ (void)registerWebView:(WKWebView * _Nonnull)webView;
 @end
 
 SWIFT_PROTOCOL("_TtP8AdropAds14UseCustomClick_")
@@ -1146,7 +1254,6 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
-@class WKWebView;
 @class WKWebViewConfiguration;
 @class WKNavigationAction;
 @class WKWindowFeatures;
@@ -1167,6 +1274,75 @@ SWIFT_PROTOCOL("_TtP8AdropAds19AdropBannerDelegate_")
 - (void)onAdClicked:(AdropBanner * _Nonnull)banner;
 @end
 
+/// 테스트용 지역 설정 (UMPDebugGeography와 매핑)
+typedef SWIFT_ENUM(NSInteger, AdropConsentDebugGeography, open) {
+/// 디버그 지역 설정 안함 (실제 기기 위치 사용)
+  AdropConsentDebugGeographyDisabled = 0,
+/// EEA (유럽 경제 지역) - GDPR 적용
+  AdropConsentDebugGeographyEEA = 1,
+/// @deprecated - <code>other</code> 사용 권장
+  AdropConsentDebugGeographyNotEEA = 2,
+/// 규제 대상 미국 주 (캘리포니아 등) - CCPA 적용
+  AdropConsentDebugGeographyRegulatedUSState = 3,
+/// 규제가 없는 지역 (notEEA 대체)
+  AdropConsentDebugGeographyOther = 4,
+};
+
+@class UIViewController;
+@class AdropConsentResult;
+enum AdropConsentStatus : NSInteger;
+/// Consent 관리 프로토콜
+/// AdropAdsBackfill에서 UMP를 통해 구현됨
+SWIFT_PROTOCOL("_TtP8AdropAds19AdropConsentManager_")
+@protocol AdropConsentManager
+/// Consent 정보 업데이트 및 필요시 팝업 표시
+/// \param viewController 팝업을 표시할 뷰 컨트롤러
+///
+/// \param completion 완료 콜백 (result: AdropConsentResult)
+///
+- (void)requestConsentInfoUpdateFrom:(UIViewController * _Nullable)viewController completion:(void (^ _Nonnull)(AdropConsentResult * _Nonnull))completion;
+/// Consent 상태만 확인 (팝업 표시 안함)
+- (enum AdropConsentStatus)getConsentStatus SWIFT_WARN_UNUSED_RESULT;
+/// 광고 요청 가능 여부 확인
+- (BOOL)canRequestAds SWIFT_WARN_UNUSED_RESULT;
+/// Consent 설정 리셋 (테스트/디버그용)
+- (void)reset;
+/// 테스트 설정 (DEBUG 빌드에서만 동작)
+/// \param testDeviceIdentifiers 테스트 기기 ID 배열 (Xcode 콘솔에서 확인 가능)
+///
+/// \param geography 테스트할 지역 (.EEA = GDPR, .notEEA = CCPA 등)
+///
+- (void)setDebugSettingsWithTestDeviceIdentifiers:(NSArray<NSString *> * _Nonnull)testDeviceIdentifiers geography:(enum AdropConsentDebugGeography)geography;
+@end
+
+/// Consent 요청 결과
+SWIFT_CLASS("_TtC8AdropAds18AdropConsentResult")
+@interface AdropConsentResult : NSObject
+/// Consent 상태
+@property (nonatomic, readonly) enum AdropConsentStatus status;
+/// 광고 요청 가능 여부 (핵심 값)
+@property (nonatomic, readonly) BOOL canRequestAds;
+/// 개인화 광고 가능 여부
+@property (nonatomic, readonly) BOOL canShowPersonalizedAds;
+/// 에러 (있는 경우)
+@property (nonatomic, readonly) NSError * _Nullable error;
+- (nonnull instancetype)initWithStatus:(enum AdropConsentStatus)status canRequestAds:(BOOL)canRequestAds canShowPersonalizedAds:(BOOL)canShowPersonalizedAds error:(NSError * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 사용자 동의 상태
+typedef SWIFT_ENUM(NSInteger, AdropConsentStatus, open) {
+/// 아직 결정되지 않음
+  AdropConsentStatusUnknown = 0,
+/// 동의가 필요함 (팝업 표시 필요)
+  AdropConsentStatusRequired = 1,
+/// 동의가 필요 없음 (해당 지역 아님)
+  AdropConsentStatusNotRequired = 2,
+/// 동의 완료됨
+  AdropConsentStatusObtained = 3,
+};
+
 typedef SWIFT_ENUM(NSInteger, AdropErrorCode, open) {
   AdropErrorCodeERROR_CODE_NETWORK = 0,
   AdropErrorCodeERROR_CODE_INTERNAL = 1,
@@ -1186,7 +1362,6 @@ typedef SWIFT_ENUM(NSInteger, AdropErrorCode, open) {
 };
 
 @protocol AdropInterstitialAdDelegate;
-@class UIViewController;
 SWIFT_CLASS("_TtC8AdropAds19AdropInterstitialAd")
 @interface AdropInterstitialAd : NSObject
 @property (nonatomic, weak) id <AdropInterstitialAdDelegate> _Nullable delegate;
@@ -1249,6 +1424,15 @@ typedef SWIFT_ENUM(NSInteger, AdropMetricCode, open) {
 
 SWIFT_CLASS("_TtC8AdropAds12AdropMetrics")
 @interface AdropMetrics : NSObject
+/// 현재 사용자 데이터 동의 상태 (기본값: true)
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL userDataConsent;)
++ (BOOL)userDataConsent SWIFT_WARN_UNUSED_RESULT;
+/// 사용자 데이터 수집 동의 상태 설정
+/// note:
+/// 비동의 시 로컬 데이터는 유지되고 서버 전송만 차단됨
+/// \param consent true = 동의, false = 비동의
+///
++ (void)setUserDataConsent:(BOOL)consent;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
