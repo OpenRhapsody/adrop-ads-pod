@@ -839,6 +839,12 @@ public class AdropPageTracker {
   @_spi(AdropCore_1_7_1F680) public struct WebView {
     @_spi(AdropCore_1_7_1F680) public static var registerHandler: ((WebKit.WKWebView) -> Swift.Void)?
   }
+  @_spi(AdropCore_1_7_1F680) public struct Backfill {
+    @_spi(AdropCore_1_7_1F680) public static var sdkVersion: Swift.String? {
+      @_spi(AdropCore_1_7_1F680) get
+      @_spi(AdropCore_1_7_1F680) set
+    }
+  }
 }
 public enum AdropConstants {
   public static let backfillTxIdPrefix: Swift.String

@@ -32689,6 +32689,165 @@
                 "mangledName": "$ss9EscapableP"
               }
             ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Backfill",
+            "printedName": "Backfill",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "sdkVersion",
+                "printedName": "sdkVersion",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8AdropAds0A8InternalV8BackfillV10sdkVersionSSSgvpZ",
+                "mangledName": "$s8AdropAds0A8InternalV8BackfillV10sdkVersionSSSgvpZ",
+                "moduleName": "AdropAds",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "AdropCore_1_7_1F680"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8AdropAds0A8InternalV8BackfillV10sdkVersionSSSgvgZ",
+                    "mangledName": "$s8AdropAds0A8InternalV8BackfillV10sdkVersionSSSgvgZ",
+                    "moduleName": "AdropAds",
+                    "static": true,
+                    "spi_group_names": [
+                      "AdropCore_1_7_1F680"
+                    ],
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8AdropAds0A8InternalV8BackfillV10sdkVersionSSSgvsZ",
+                    "mangledName": "$s8AdropAds0A8InternalV8BackfillV10sdkVersionSSSgvsZ",
+                    "moduleName": "AdropAds",
+                    "static": true,
+                    "spi_group_names": [
+                      "AdropCore_1_7_1F680"
+                    ],
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8AdropAds0A8InternalV8BackfillV10sdkVersionSSSgvMZ",
+                    "mangledName": "$s8AdropAds0A8InternalV8BackfillV10sdkVersionSSSgvMZ",
+                    "moduleName": "AdropAds",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "SPIAccessControl"
+                    ],
+                    "spi_group_names": [
+                      "AdropCore_1_7_1F680"
+                    ],
+                    "accessorKind": "_modify"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:8AdropAds0A8InternalV8BackfillV",
+            "mangledName": "$s8AdropAds0A8InternalV8BackfillV",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "AdropCore_1_7_1F680"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
@@ -43417,7 +43576,7 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropAPI+GraphQL.swift",
       "kind": "StringLiteral",
-      "offset": 1479,
+      "offset": 1676,
       "length": 2,
       "value": "\"\""
     },
@@ -43522,7 +43681,7 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropAPI.swift",
       "kind": "StringLiteral",
-      "offset": 1020,
+      "offset": 992,
       "length": 2,
       "value": "\"\""
     },
@@ -46904,111 +47063,111 @@
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
       "offset": 12043,
-      "length": 7,
-      "value": "\"1.7.3\""
+      "length": 15,
+      "value": "\"1.7.4-alpha.1\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12076,
-      "length": 2,
-      "value": "\"\""
+      "offset": 12084,
+      "length": 6,
+      "value": "\"-dev\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12159,
+      "offset": 12171,
       "length": 31,
       "value": "\"https:\/\/api-v2\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12180,
+      "offset": 12192,
       "length": 1,
       "value": "\".adrop.io\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12238,
+      "offset": 12250,
       "length": 30,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12253,
+      "offset": 12265,
       "length": 1,
       "value": "\"\/remote-config\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12306,
+      "offset": 12318,
       "length": 28,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12321,
+      "offset": 12333,
       "length": 1,
       "value": "\"\/request-ads\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12375,
+      "offset": 12387,
       "length": 23,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12390,
+      "offset": 12402,
       "length": 1,
       "value": "\"\/events\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12431,
+      "offset": 12443,
       "length": 52,
       "value": "\"https:\/\/\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12456,
+      "offset": 12468,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12461,
+      "offset": 12473,
       "length": 6,
       "value": "\"dev.\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12468,
+      "offset": 12480,
       "length": 5,
       "value": "\"quest.adrop.io\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 12521,
+      "offset": 12533,
       "length": 7,
       "value": "1800000"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12570,
+      "offset": 12582,
       "length": 21,
       "value": "\"PUBLIC_TEST_UNIT_ID\""
     },
@@ -47048,7 +47207,7 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/DerivedData\/AdropAds\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AdropAds\/IntermediateBuildFilesPath\/AdropAds.build\/Release-iphoneos\/AdropAds.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/leo\/Library\/Developer\/Xcode\/DerivedData\/AdropAds-cyjoxbdurjqbbefbthkfzeouaymr\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AdropAds\/IntermediateBuildFilesPath\/AdropAds.build\/Release-iphoneos\/AdropAds.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 734,
       "length": 13,
