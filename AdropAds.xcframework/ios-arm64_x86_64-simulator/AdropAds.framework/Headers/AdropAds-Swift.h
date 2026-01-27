@@ -357,6 +357,7 @@ SWIFT_PROTOCOL("_TtP8AdropAds14UseCustomClick_")
 @end
 
 @protocol AdropBannerDelegate;
+enum BrowserTargetObjC : NSInteger;
 @class NSCoder;
 SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @interface AdropBanner : UIView <UseCustomClick>
@@ -368,6 +369,9 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
 @property (nonatomic, readonly) CGSize creativeSize;
+/// 광고 클릭 시 URL을 여는 방식 (Objective-C용)
+/// 값이 없는 경우 기본값 EXTERNAL(0) 반환
+@property (nonatomic, readonly) enum BrowserTargetObjC browserTargetValue;
 @property (nonatomic, readonly) BOOL isBackfilled;
 @property (nonatomic, readonly, copy) NSString * _Nonnull id SWIFT_DEPRECATED_MSG("", "unitId");
 @property (nonatomic) BOOL handleAdClickCustom SWIFT_DEPRECATED_MSG("", "useCustomClick");
@@ -498,6 +502,9 @@ SWIFT_CLASS("_TtC8AdropAds19AdropInterstitialAd")
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
 @property (nonatomic, readonly) BOOL isBackfilled;
 @property (nonatomic, readonly) BOOL isLoaded;
+/// 광고 클릭 시 URL을 여는 방식 (Objective-C용)
+/// 값이 없는 경우 기본값 EXTERNAL(0) 반환
+@property (nonatomic, readonly) enum BrowserTargetObjC browserTargetValue;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)showFromRootViewController:(UIViewController * _Nonnull)fromRootViewController;
@@ -563,7 +570,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL userDataConsent
 @end
 
 @protocol AdropNativeAdDelegate;
-enum BrowserTargetObjC : NSInteger;
 SWIFT_CLASS("_TtC8AdropAds13AdropNativeAd")
 @interface AdropNativeAd : NSObject <UseCustomClick>
 @property (nonatomic, weak) id <AdropNativeAdDelegate> _Nullable delegate;
@@ -662,6 +668,9 @@ SWIFT_CLASS("_TtC8AdropAds12AdropPopupAd")
 @property (nonatomic) BOOL handleAdClickCustom SWIFT_DEPRECATED_MSG("", "useCustomClick");
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull creativeIds;
 @property (nonatomic, readonly) BOOL isLoaded;
+/// 광고 클릭 시 URL을 여는 방식 (Objective-C용)
+/// 값이 없는 경우 기본값 EXTERNAL(0) 반환
+@property (nonatomic, readonly) enum BrowserTargetObjC browserTargetValue;
 @property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 @property (nonatomic, strong) UIColor * _Nullable hideForTodayTextColor;
 @property (nonatomic, strong) UIColor * _Nullable closeTextColor;
@@ -729,6 +738,9 @@ SWIFT_CLASS("_TtC8AdropAds15AdropRewardedAd")
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
 @property (nonatomic, readonly) BOOL isBackfilled;
 @property (nonatomic, readonly) BOOL isLoaded;
+/// 광고 클릭 시 URL을 여는 방식 (Objective-C용)
+/// 값이 없는 경우 기본값 EXTERNAL(0) 반환
+@property (nonatomic, readonly) enum BrowserTargetObjC browserTargetValue;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)showFromRootViewController:(UIViewController * _Nonnull)fromRootViewController userDidEarnRewardHandler:(void (^ _Nonnull)(NSInteger, NSInteger))userDidEarnRewardHandler;
@@ -1231,6 +1243,7 @@ SWIFT_PROTOCOL("_TtP8AdropAds14UseCustomClick_")
 @end
 
 @protocol AdropBannerDelegate;
+enum BrowserTargetObjC : NSInteger;
 @class NSCoder;
 SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @interface AdropBanner : UIView <UseCustomClick>
@@ -1242,6 +1255,9 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
 @property (nonatomic, readonly) CGSize creativeSize;
+/// 광고 클릭 시 URL을 여는 방식 (Objective-C용)
+/// 값이 없는 경우 기본값 EXTERNAL(0) 반환
+@property (nonatomic, readonly) enum BrowserTargetObjC browserTargetValue;
 @property (nonatomic, readonly) BOOL isBackfilled;
 @property (nonatomic, readonly, copy) NSString * _Nonnull id SWIFT_DEPRECATED_MSG("", "unitId");
 @property (nonatomic) BOOL handleAdClickCustom SWIFT_DEPRECATED_MSG("", "useCustomClick");
@@ -1372,6 +1388,9 @@ SWIFT_CLASS("_TtC8AdropAds19AdropInterstitialAd")
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
 @property (nonatomic, readonly) BOOL isBackfilled;
 @property (nonatomic, readonly) BOOL isLoaded;
+/// 광고 클릭 시 URL을 여는 방식 (Objective-C용)
+/// 값이 없는 경우 기본값 EXTERNAL(0) 반환
+@property (nonatomic, readonly) enum BrowserTargetObjC browserTargetValue;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)showFromRootViewController:(UIViewController * _Nonnull)fromRootViewController;
@@ -1437,7 +1456,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL userDataConsent
 @end
 
 @protocol AdropNativeAdDelegate;
-enum BrowserTargetObjC : NSInteger;
 SWIFT_CLASS("_TtC8AdropAds13AdropNativeAd")
 @interface AdropNativeAd : NSObject <UseCustomClick>
 @property (nonatomic, weak) id <AdropNativeAdDelegate> _Nullable delegate;
@@ -1536,6 +1554,9 @@ SWIFT_CLASS("_TtC8AdropAds12AdropPopupAd")
 @property (nonatomic) BOOL handleAdClickCustom SWIFT_DEPRECATED_MSG("", "useCustomClick");
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull creativeIds;
 @property (nonatomic, readonly) BOOL isLoaded;
+/// 광고 클릭 시 URL을 여는 방식 (Objective-C용)
+/// 값이 없는 경우 기본값 EXTERNAL(0) 반환
+@property (nonatomic, readonly) enum BrowserTargetObjC browserTargetValue;
 @property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 @property (nonatomic, strong) UIColor * _Nullable hideForTodayTextColor;
 @property (nonatomic, strong) UIColor * _Nullable closeTextColor;
@@ -1603,6 +1624,9 @@ SWIFT_CLASS("_TtC8AdropAds15AdropRewardedAd")
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeId;
 @property (nonatomic, readonly) BOOL isBackfilled;
 @property (nonatomic, readonly) BOOL isLoaded;
+/// 광고 클릭 시 URL을 여는 방식 (Objective-C용)
+/// 값이 없는 경우 기본값 EXTERNAL(0) 반환
+@property (nonatomic, readonly) enum BrowserTargetObjC browserTargetValue;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)showFromRootViewController:(UIViewController * _Nonnull)fromRootViewController userDidEarnRewardHandler:(void (^ _Nonnull)(NSInteger, NSInteger))userDidEarnRewardHandler;

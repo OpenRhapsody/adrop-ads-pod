@@ -112,6 +112,12 @@ extension AdropAds.ULID : Swift.Codable {
   @objc public var isLoaded: Swift.Bool {
     @objc get
   }
+  public var browserTarget: AdropAds.BrowserTarget? {
+    get
+  }
+  @objc public var browserTargetValue: AdropAds.BrowserTargetObjC {
+    @objc get
+  }
   @objc public var backgroundColor: UIKit.UIColor?
   @objc public var hideForTodayTextColor: UIKit.UIColor?
   @objc public var closeTextColor: UIKit.UIColor?
@@ -237,6 +243,12 @@ extension AdropAds.AdropNativeAdView : UIKit.UIGestureRecognizerDelegate {
     @objc get
   }
   @objc @_Concurrency.MainActor @preconcurrency public var creativeSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency public var browserTarget: AdropAds.BrowserTarget? {
+    get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency public var browserTargetValue: AdropAds.BrowserTargetObjC {
     @objc get
   }
   @objc @_Concurrency.MainActor @preconcurrency public var isBackfilled: Swift.Bool {
@@ -424,6 +436,12 @@ public class AdropPageTracker {
     @objc get
   }
   @objc public var isLoaded: Swift.Bool {
+    @objc get
+  }
+  public var browserTarget: AdropAds.BrowserTarget? {
+    get
+  }
+  @objc public var browserTargetValue: AdropAds.BrowserTargetObjC {
     @objc get
   }
   @objc public init(unitId: Swift.String)
@@ -792,6 +810,12 @@ public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.Strin
     @objc get
   }
   @objc public var isLoaded: Swift.Bool {
+    @objc get
+  }
+  public var browserTarget: AdropAds.BrowserTarget? {
+    get
+  }
+  @objc public var browserTargetValue: AdropAds.BrowserTargetObjC {
     @objc get
   }
   @objc public init(unitId: Swift.String)
