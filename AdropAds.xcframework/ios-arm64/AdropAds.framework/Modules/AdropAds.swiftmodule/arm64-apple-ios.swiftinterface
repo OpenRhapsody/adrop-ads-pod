@@ -776,6 +776,8 @@ public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.Strin
   @objc public static func setUserDataConsent(_ consent: Swift.Bool)
   public static func properties() -> [Swift.String : any Swift.Encodable]
   public static func setProperty(key: Swift.String, value: (any Swift.Encodable)?)
+  @objc public static func sendEvent(name: Swift.String, params: [Swift.String : Any]? = nil)
+  @available(*, deprecated, renamed: "sendEvent(name:params:)")
   public static func logEvent(name: Swift.String, params: [Swift.String : any Swift.Encodable]? = [:])
   @objc override dynamic public init()
   @objc deinit

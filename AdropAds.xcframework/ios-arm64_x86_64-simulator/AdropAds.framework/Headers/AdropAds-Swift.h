@@ -566,6 +566,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL userDataConsent
 /// \param consent true = 동의, false = 비동의
 ///
 + (void)setUserDataConsent:(BOOL)consent;
++ (void)sendEventWithName:(NSString * _Nonnull)name params:(NSDictionary<NSString *, id> * _Nullable)params;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1452,6 +1453,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL userDataConsent
 /// \param consent true = 동의, false = 비동의
 ///
 + (void)setUserDataConsent:(BOOL)consent;
++ (void)sendEventWithName:(NSString * _Nonnull)name params:(NSDictionary<NSString *, id> * _Nullable)params;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

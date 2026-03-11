@@ -8,11 +8,11 @@
 
 Pod::Spec.new do |s|
   s.name             = 'adrop-ads'
-  s.version          = '1.8.0-alpha.0'
+  s.version          = '1.8.0'
   s.summary          = 'Adrop ads'
   s.homepage         = 'https://adrop.io'
   
-  s.author           = { 'Leo' => 'hc@adrop.io', 'Leo' => 'leo@openrhapsody.com', 'dev' => 'dev@openrhapsody.com' }
+  s.author           = { 'hc' => 'hc@adrop.io', 'Leo' => 'leo@openrhapsody.com', 'Tochy' => 'tochy@adrop.io', 'dev' => 'dev@openrhapsody.com' }
   s.license          = { :type => 'CUSTOM (https://adrop.io)' }
   s.swift_version    = '5.0'
   s.platform         = :ios

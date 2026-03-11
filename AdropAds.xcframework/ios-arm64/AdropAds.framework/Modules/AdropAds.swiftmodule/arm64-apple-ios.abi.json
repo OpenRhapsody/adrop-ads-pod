@@ -36534,6 +36534,64 @@
           },
           {
             "kind": "Function",
+            "name": "sendEvent",
+            "printedName": "sendEvent(name:params:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdropAds@objc(cs)AdropMetrics(cm)sendEventWithName:params:",
+            "mangledName": "$s8AdropAds0A7MetricsC9sendEvent4name6paramsySS_SDySSypGSgtFZ",
+            "moduleName": "AdropAds",
+            "static": true,
+            "objc_name": "sendEventWithName:params:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "logEvent",
             "printedName": "logEvent(name:params:)",
             "children": [
@@ -36583,9 +36641,11 @@
             "mangledName": "$s8AdropAds0A7MetricsC8logEvent4name6paramsySS_SDySSSE_pGSgtFZ",
             "moduleName": "AdropAds",
             "static": true,
+            "deprecated": true,
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -43988,7 +44048,14 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropAPI+GraphQL.swift",
       "kind": "StringLiteral",
-      "offset": 1676,
+      "offset": 674,
+      "length": 156,
+      "value": "\"mutation SendEvent($input: UserEventInput!) {\n    sendEvent(input: $input) {\n        message\n    }\n}\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropAPI+GraphQL.swift",
+      "kind": "StringLiteral",
+      "offset": 2253,
       "length": 2,
       "value": "\"\""
     },
@@ -46690,58 +46757,149 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
       "kind": "Dictionary",
-      "offset": 846,
+      "offset": 859,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
       "kind": "IntegerLiteral",
-      "offset": 959,
+      "offset": 914,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 961,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1074,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
       "kind": "IntegerLiteral",
-      "offset": 1013,
+      "offset": 1128,
       "length": 3,
       "value": "256"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
       "kind": "IntegerLiteral",
-      "offset": 1061,
+      "offset": 1184,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1241,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1290,
       "length": 3,
       "value": "256"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
       "kind": "IntegerLiteral",
-      "offset": 1116,
+      "offset": 1345,
       "length": 16,
       "value": "9007199254740991"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
       "kind": "BooleanLiteral",
-      "offset": 1427,
+      "offset": 1656,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
       "kind": "BooleanLiteral",
-      "offset": 1582,
+      "offset": 1811,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
       "kind": "Dictionary",
-      "offset": 4938,
+      "offset": 8265,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13034,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13038,
+      "length": 3,
+      "value": "256"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13067,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13071,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13127,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13132,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13138,
+      "length": 10,
+      "value": "0xEDB88320"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13159,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13173,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
@@ -47475,111 +47633,111 @@
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
       "offset": 12043,
-      "length": 15,
-      "value": "\"1.8.0-alpha.0\""
+      "length": 7,
+      "value": "\"1.8.0\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12084,
+      "offset": 12076,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12167,
+      "offset": 12159,
       "length": 31,
       "value": "\"https:\/\/api-v2\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12188,
+      "offset": 12180,
       "length": 1,
       "value": "\".adrop.io\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12246,
+      "offset": 12238,
       "length": 30,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12261,
+      "offset": 12253,
       "length": 1,
       "value": "\"\/remote-config\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12314,
+      "offset": 12306,
       "length": 28,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12329,
+      "offset": 12321,
       "length": 1,
       "value": "\"\/request-ads\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12383,
+      "offset": 12375,
       "length": 23,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12398,
+      "offset": 12390,
       "length": 1,
       "value": "\"\/events\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12439,
+      "offset": 12431,
       "length": 52,
       "value": "\"https:\/\/\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12464,
+      "offset": 12456,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12469,
+      "offset": 12461,
       "length": 6,
       "value": "\"dev.\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12476,
+      "offset": 12468,
       "length": 5,
       "value": "\"quest.adrop.io\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 12529,
+      "offset": 12521,
       "length": 7,
       "value": "1800000"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
       "kind": "StringLiteral",
-      "offset": 12578,
+      "offset": 12570,
       "length": 21,
       "value": "\"PUBLIC_TEST_UNIT_ID\""
     },
