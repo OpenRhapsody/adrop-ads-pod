@@ -729,6 +729,7 @@ typedef SWIFT_ENUM(NSInteger, AdropQuestBannerFormat, open) {
 };
 
 @protocol AdropRewardedAdDelegate;
+@class AdropServerSideVerificationOptions;
 SWIFT_CLASS("_TtC8AdropAds15AdropRewardedAd")
 @interface AdropRewardedAd : NSObject
 @property (nonatomic, weak) id <AdropRewardedAdDelegate> _Nullable delegate;
@@ -742,6 +743,8 @@ SWIFT_CLASS("_TtC8AdropAds15AdropRewardedAd")
 /// 광고 클릭 시 URL을 여는 방식 (Objective-C용)
 /// 값이 없는 경우 기본값 EXTERNAL(0) 반환
 @property (nonatomic, readonly) enum BrowserTargetObjC browserTargetValue;
+/// 서버 사이드 검증 옵션 (백필 광고 제공자에서 사용)
+@property (nonatomic, strong) AdropServerSideVerificationOptions * _Nullable serverSideVerificationOptions;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (void)showFromRootViewController:(UIViewController * _Nonnull)fromRootViewController userDidEarnRewardHandler:(void (^ _Nonnull)(NSInteger, NSInteger))userDidEarnRewardHandler;
@@ -761,6 +764,15 @@ SWIFT_PROTOCOL("_TtP8AdropAds23AdropRewardedAdDelegate_")
 - (void)onAdWillDismissFullScreen:(AdropRewardedAd * _Nonnull)ad;
 - (void)onAdDidDismissFullScreen:(AdropRewardedAd * _Nonnull)ad;
 - (void)onAdFailedToShowFullScreen:(AdropRewardedAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
+@end
+
+SWIFT_CLASS("_TtC8AdropAds34AdropServerSideVerificationOptions")
+@interface AdropServerSideVerificationOptions : NSObject
+@property (nonatomic, copy) NSString * _Nullable userId;
+@property (nonatomic, copy) NSString * _Nullable customData;
+- (nonnull instancetype)initWithUserId:(NSString * _Nullable)userId customData:(NSString * _Nullable)customData OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @protocol AdropSplashAdDelegate;
