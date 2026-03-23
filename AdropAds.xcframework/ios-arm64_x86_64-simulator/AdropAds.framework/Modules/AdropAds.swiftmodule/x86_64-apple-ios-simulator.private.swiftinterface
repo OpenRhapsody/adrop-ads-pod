@@ -426,6 +426,7 @@ extension AdropAds.AdropBanner : WebKit.WKNavigationDelegate, WebKit.WKUIDelegat
     @_spi(AdropCore_1_7_1F680) set
   }
   @_spi(AdropCore_1_7_1F680) public func internalNotify(_ code: AdropAds.AdropMetricCode, _ error: AdropAds.AdropErrorCode?)
+  @_spi(AdropCore_1_7_1F680) public func internalResetImpressionAndClickState()
 }
 @_spi(AdropCore_1_7_1F680) public typealias AdResponse = AdropAds.AdRes
 @_spi(AdropCore_1_7_1F680) public typealias AdLoadCompletionHandler = (_ ad: AdropAds.AdRes?, _ error: (any Swift.Error)?) -> Swift.Void
@@ -458,6 +459,7 @@ extension AdropAds.AdropBanner : WebKit.WKNavigationDelegate, WebKit.WKUIDelegat
 @_spi(AdropCore_1_7_1F680) public protocol NativeInternalAccess : AdropAds.InternalAdState {
   @_spi(AdropCore_1_7_1F680) var contextId: Swift.String { get }
   @_spi(AdropCore_1_7_1F680) var internalAdRes: AdropAds.AdRes? { get set }
+  @_spi(AdropCore_1_7_1F680) func internalResetImpressionAndClickState()
 }
 @_spi(AdropCore_1_7_1F680) public struct AdropInternal {
   @_spi(AdropCore_1_7_1F680) public struct Loaders {

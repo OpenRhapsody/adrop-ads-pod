@@ -14028,6 +14028,31 @@
               "AdropCore_1_7_1F680"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "internalResetImpressionAndClickState",
+            "printedName": "internalResetImpressionAndClickState()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AdropAds0A8NativeAdC36internalResetImpressionAndClickStateyyF",
+            "mangledName": "$s8AdropAds0A8NativeAdC36internalResetImpressionAndClickStateyyF",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "AdropCore_1_7_1F680"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -16048,6 +16073,33 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "internalResetImpressionAndClickState",
+            "printedName": "internalResetImpressionAndClickState()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AdropAds20NativeInternalAccessP36internalResetImpressionAndClickStateyyF",
+            "mangledName": "$s8AdropAds20NativeInternalAccessP36internalResetImpressionAndClickStateyyF",
+            "moduleName": "AdropAds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdropAds.NativeInternalAccess>",
+            "sugared_genericSig": "<Self where Self : AdropAds.NativeInternalAccess>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "AdropCore_1_7_1F680"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -44985,7 +45037,7 @@
       "kind": "StringLiteral",
       "offset": 12620,
       "length": 7,
-      "value": "\"1.9.0\""
+      "value": "\"1.9.1\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
@@ -45900,7 +45952,7 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropNativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1165,
+      "offset": 1141,
       "length": 5,
       "value": "false"
     },
@@ -46712,7 +46764,7 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInternal.swift",
       "kind": "StringLiteral",
-      "offset": 4683,
+      "offset": 4814,
       "length": 2,
       "value": "\"\""
     },
