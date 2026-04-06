@@ -377,6 +377,8 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @property (nonatomic) BOOL handleAdClickCustom SWIFT_DEPRECATED_MSG("", "useCustomClick");
 @property (nonatomic) BOOL useCustomClick;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId OBJC_DESIGNATED_INITIALIZER;
+- (void)play;
+- (void)pause;
 - (void)load;
 - (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
@@ -1276,6 +1278,8 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @property (nonatomic) BOOL handleAdClickCustom SWIFT_DEPRECATED_MSG("", "useCustomClick");
 @property (nonatomic) BOOL useCustomClick;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId OBJC_DESIGNATED_INITIALIZER;
+- (void)play;
+- (void)pause;
 - (void)load;
 - (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
