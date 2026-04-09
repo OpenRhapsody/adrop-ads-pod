@@ -404,6 +404,8 @@ SWIFT_PROTOCOL("_TtP8AdropAds19AdropBannerDelegate_")
 @optional
 - (void)onAdImpression:(AdropBanner * _Nonnull)banner;
 - (void)onAdClicked:(AdropBanner * _Nonnull)banner;
+- (void)onAdVideoStart:(AdropBanner * _Nonnull)banner;
+- (void)onAdVideoEnd:(AdropBanner * _Nonnull)banner;
 @end
 
 /// 테스트용 지역 설정 (UMPDebugGeography와 매핑)
@@ -547,14 +549,16 @@ typedef SWIFT_ENUM(NSInteger, AdropMetricCode, open) {
   AdropMetricCodeAD_IMPR = 3,
   AdropMetricCodeAD_CLICK = 4,
   AdropMetricCodeAD_TODAY_OFF = 5,
-  AdropMetricCodeCLOSE = 6,
-  AdropMetricCodeOPEN = 7,
-  AdropMetricCodeWILL_CLOSE = 8,
-  AdropMetricCodeWILL_OPEN = 9,
-  AdropMetricCodeOPEN_INVALID = 10,
-  AdropMetricCodePAGE_ATS = 11,
-  AdropMetricCodePAGE_ATTACH = 12,
-  AdropMetricCodeSET_PROPERTY = 13,
+  AdropMetricCodeAD_VIDEO_START = 6,
+  AdropMetricCodeAD_VIDEO_END = 7,
+  AdropMetricCodeCLOSE = 8,
+  AdropMetricCodeOPEN = 9,
+  AdropMetricCodeWILL_CLOSE = 10,
+  AdropMetricCodeWILL_OPEN = 11,
+  AdropMetricCodeOPEN_INVALID = 12,
+  AdropMetricCodePAGE_ATS = 13,
+  AdropMetricCodePAGE_ATTACH = 14,
+  AdropMetricCodeSET_PROPERTY = 15,
 };
 
 SWIFT_CLASS("_TtC8AdropAds12AdropMetrics")
@@ -616,6 +620,8 @@ SWIFT_PROTOCOL("_TtP8AdropAds21AdropNativeAdDelegate_")
 @optional
 - (void)onAdClicked:(AdropNativeAd * _Nonnull)ad;
 - (void)onAdImpression:(AdropNativeAd * _Nonnull)ad;
+- (void)onAdVideoStart:(AdropNativeAd * _Nonnull)ad;
+- (void)onAdVideoEnd:(AdropNativeAd * _Nonnull)ad;
 @end
 
 SWIFT_CLASS("_TtC8AdropAds17AdropNativeAdView")
@@ -657,6 +663,8 @@ SWIFT_CLASS("_TtC8AdropAds12AdropPopupAd")
 @property (nonatomic, copy) void (^ _Nullable onAdWillDismissFullScreen)(AdropPopupAd * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onAdDidDismissFullScreen)(AdropPopupAd * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onAdFailedToShowFullScreen)(AdropPopupAd * _Nonnull, enum AdropErrorCode);
+@property (nonatomic, copy) void (^ _Nullable onAdVideoStart)(AdropPopupAd * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable onAdVideoEnd)(AdropPopupAd * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onClosed)(AdropPopupAd * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onDimClicked)(AdropPopupAd * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onTodayOffClicked)(AdropPopupAd * _Nonnull);
@@ -707,6 +715,8 @@ SWIFT_PROTOCOL("_TtP8AdropAds20AdropPopupAdDelegate_")
 - (void)onAdWillDismissFullScreen:(AdropPopupAd * _Nonnull)ad;
 - (void)onAdDidDismissFullScreen:(AdropPopupAd * _Nonnull)ad;
 - (void)onAdFailedToShowFullScreen:(AdropPopupAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
+- (void)onAdVideoStart:(AdropPopupAd * _Nonnull)ad;
+- (void)onAdVideoEnd:(AdropPopupAd * _Nonnull)ad;
 @end
 
 SWIFT_CLASS("_TtC8AdropAds26AdropPopupAdViewController")
@@ -1305,6 +1315,8 @@ SWIFT_PROTOCOL("_TtP8AdropAds19AdropBannerDelegate_")
 @optional
 - (void)onAdImpression:(AdropBanner * _Nonnull)banner;
 - (void)onAdClicked:(AdropBanner * _Nonnull)banner;
+- (void)onAdVideoStart:(AdropBanner * _Nonnull)banner;
+- (void)onAdVideoEnd:(AdropBanner * _Nonnull)banner;
 @end
 
 /// 테스트용 지역 설정 (UMPDebugGeography와 매핑)
@@ -1448,14 +1460,16 @@ typedef SWIFT_ENUM(NSInteger, AdropMetricCode, open) {
   AdropMetricCodeAD_IMPR = 3,
   AdropMetricCodeAD_CLICK = 4,
   AdropMetricCodeAD_TODAY_OFF = 5,
-  AdropMetricCodeCLOSE = 6,
-  AdropMetricCodeOPEN = 7,
-  AdropMetricCodeWILL_CLOSE = 8,
-  AdropMetricCodeWILL_OPEN = 9,
-  AdropMetricCodeOPEN_INVALID = 10,
-  AdropMetricCodePAGE_ATS = 11,
-  AdropMetricCodePAGE_ATTACH = 12,
-  AdropMetricCodeSET_PROPERTY = 13,
+  AdropMetricCodeAD_VIDEO_START = 6,
+  AdropMetricCodeAD_VIDEO_END = 7,
+  AdropMetricCodeCLOSE = 8,
+  AdropMetricCodeOPEN = 9,
+  AdropMetricCodeWILL_CLOSE = 10,
+  AdropMetricCodeWILL_OPEN = 11,
+  AdropMetricCodeOPEN_INVALID = 12,
+  AdropMetricCodePAGE_ATS = 13,
+  AdropMetricCodePAGE_ATTACH = 14,
+  AdropMetricCodeSET_PROPERTY = 15,
 };
 
 SWIFT_CLASS("_TtC8AdropAds12AdropMetrics")
@@ -1517,6 +1531,8 @@ SWIFT_PROTOCOL("_TtP8AdropAds21AdropNativeAdDelegate_")
 @optional
 - (void)onAdClicked:(AdropNativeAd * _Nonnull)ad;
 - (void)onAdImpression:(AdropNativeAd * _Nonnull)ad;
+- (void)onAdVideoStart:(AdropNativeAd * _Nonnull)ad;
+- (void)onAdVideoEnd:(AdropNativeAd * _Nonnull)ad;
 @end
 
 SWIFT_CLASS("_TtC8AdropAds17AdropNativeAdView")
@@ -1558,6 +1574,8 @@ SWIFT_CLASS("_TtC8AdropAds12AdropPopupAd")
 @property (nonatomic, copy) void (^ _Nullable onAdWillDismissFullScreen)(AdropPopupAd * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onAdDidDismissFullScreen)(AdropPopupAd * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onAdFailedToShowFullScreen)(AdropPopupAd * _Nonnull, enum AdropErrorCode);
+@property (nonatomic, copy) void (^ _Nullable onAdVideoStart)(AdropPopupAd * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable onAdVideoEnd)(AdropPopupAd * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onClosed)(AdropPopupAd * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onDimClicked)(AdropPopupAd * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onTodayOffClicked)(AdropPopupAd * _Nonnull);
@@ -1608,6 +1626,8 @@ SWIFT_PROTOCOL("_TtP8AdropAds20AdropPopupAdDelegate_")
 - (void)onAdWillDismissFullScreen:(AdropPopupAd * _Nonnull)ad;
 - (void)onAdDidDismissFullScreen:(AdropPopupAd * _Nonnull)ad;
 - (void)onAdFailedToShowFullScreen:(AdropPopupAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
+- (void)onAdVideoStart:(AdropPopupAd * _Nonnull)ad;
+- (void)onAdVideoEnd:(AdropPopupAd * _Nonnull)ad;
 @end
 
 SWIFT_CLASS("_TtC8AdropAds26AdropPopupAdViewController")
