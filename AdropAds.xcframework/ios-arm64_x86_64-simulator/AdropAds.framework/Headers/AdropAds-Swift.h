@@ -325,6 +325,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <AdropConsentManage
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (void)initializeWithProduction:(BOOL)production useInAppBrowser:(BOOL)useInAppBrowser targetCountries:(NSArray<NSString *> * _Nullable)targetCountries;
 + (void)setUID:(NSString * _Nonnull)uid;
+/// Sets the user’s marketing consent state for push notification ad targeting.
+/// The consent state and its change timestamp are stored locally and forwarded to the
+/// server via the next remote-config call. Calling this method with the same value as
+/// the current state is a no-op, so <code>consentedAt</code> always represents the actual
+/// decision time.
+/// Must be called after <code>initialize</code>; calls before initialization are dropped with a
+/// warning.
+/// This API is independent of <code>AdropMetrics.userDataConsent</code> (GDPR): toggling the GDPR
+/// flag off does not prevent marketing consent from being sent to the server.
+/// \param consent <code>true</code> for opt-in (stored as 1), <code>false</code> for opt-out (stored as 0).
+///
++ (void)setMarketingConsent:(BOOL)consent;
 + (void)setTheme:(enum AdropTheme)theme;
 + (BOOL)openQuestWithChannel:(NSString * _Nonnull)channel path:(NSString * _Nullable)path;
 /// Handles a deep link passed to the app and processes it through the Adrop SDK.
@@ -373,6 +385,11 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 /// 값이 없는 경우 기본값 EXTERNAL(0) 반환
 @property (nonatomic, readonly) enum BrowserTargetObjC browserTargetValue;
 @property (nonatomic, readonly) BOOL isBackfilled;
+/// Creative medium of the currently-loaded ad: <code>"display"</code> or <code>"video"</code>.
+/// Read from the server’s <code>type</code> field on the ad response (falls back to inspecting
+/// the creative HTML via <code>HTMLContentHelper.containsVideoTag(_:)</code> for legacy responses).
+/// Returns <code>"display"</code> before an ad is loaded.
+@property (nonatomic, readonly, copy) NSString * _Nonnull creativeType;
 @property (nonatomic, readonly, copy) NSString * _Nonnull id SWIFT_DEPRECATED_MSG("", "unitId");
 @property (nonatomic) BOOL handleAdClickCustom SWIFT_DEPRECATED_MSG("", "useCustomClick");
 @property (nonatomic) BOOL useCustomClick;
@@ -607,6 +624,11 @@ SWIFT_CLASS("_TtC8AdropAds13AdropNativeAd")
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull extra;
 @property (nonatomic, readonly) enum BrowserTargetObjC browserTargetValue;
 @property (nonatomic, readonly) BOOL isBackfilled;
+/// Creative medium of the currently-loaded ad: <code>"display"</code> or <code>"video"</code>.
+/// Read from the server’s <code>type</code> field on the ad response (falls back to inspecting
+/// the creative HTML via <code>HTMLContentHelper.containsVideoTag(_:)</code> for legacy responses).
+/// Returns <code>"display"</code> before an ad is loaded.
+@property (nonatomic, readonly, copy) NSString * _Nonnull creativeType;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -682,6 +704,12 @@ SWIFT_CLASS("_TtC8AdropAds12AdropPopupAd")
 /// 광고 클릭 시 URL을 여는 방식 (Objective-C용)
 /// 값이 없는 경우 기본값 EXTERNAL(0) 반환
 @property (nonatomic, readonly) enum BrowserTargetObjC browserTargetValue;
+/// Creative medium of the currently-displayed ad: <code>"display"</code> or <code>"video"</code>.
+/// For carousel popups, this value updates as the carousel slides — <code>currentAd</code> is
+/// reassigned on each <code>AD_IMPR</code>/<code>AD_CLICK</code> in <code>requestAd()</code> so a slide change yields
+/// a fresh type. Reads the server’s <code>type</code> field, falling back to HTML inspection.
+/// Returns <code>"display"</code> before any ad is shown.
+@property (nonatomic, readonly, copy) NSString * _Nonnull creativeType;
 @property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 @property (nonatomic, strong) UIColor * _Nullable hideForTodayTextColor;
 @property (nonatomic, strong) UIColor * _Nullable closeTextColor;
@@ -1236,6 +1264,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <AdropConsentManage
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (void)initializeWithProduction:(BOOL)production useInAppBrowser:(BOOL)useInAppBrowser targetCountries:(NSArray<NSString *> * _Nullable)targetCountries;
 + (void)setUID:(NSString * _Nonnull)uid;
+/// Sets the user’s marketing consent state for push notification ad targeting.
+/// The consent state and its change timestamp are stored locally and forwarded to the
+/// server via the next remote-config call. Calling this method with the same value as
+/// the current state is a no-op, so <code>consentedAt</code> always represents the actual
+/// decision time.
+/// Must be called after <code>initialize</code>; calls before initialization are dropped with a
+/// warning.
+/// This API is independent of <code>AdropMetrics.userDataConsent</code> (GDPR): toggling the GDPR
+/// flag off does not prevent marketing consent from being sent to the server.
+/// \param consent <code>true</code> for opt-in (stored as 1), <code>false</code> for opt-out (stored as 0).
+///
++ (void)setMarketingConsent:(BOOL)consent;
 + (void)setTheme:(enum AdropTheme)theme;
 + (BOOL)openQuestWithChannel:(NSString * _Nonnull)channel path:(NSString * _Nullable)path;
 /// Handles a deep link passed to the app and processes it through the Adrop SDK.
@@ -1284,6 +1324,11 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 /// 값이 없는 경우 기본값 EXTERNAL(0) 반환
 @property (nonatomic, readonly) enum BrowserTargetObjC browserTargetValue;
 @property (nonatomic, readonly) BOOL isBackfilled;
+/// Creative medium of the currently-loaded ad: <code>"display"</code> or <code>"video"</code>.
+/// Read from the server’s <code>type</code> field on the ad response (falls back to inspecting
+/// the creative HTML via <code>HTMLContentHelper.containsVideoTag(_:)</code> for legacy responses).
+/// Returns <code>"display"</code> before an ad is loaded.
+@property (nonatomic, readonly, copy) NSString * _Nonnull creativeType;
 @property (nonatomic, readonly, copy) NSString * _Nonnull id SWIFT_DEPRECATED_MSG("", "unitId");
 @property (nonatomic) BOOL handleAdClickCustom SWIFT_DEPRECATED_MSG("", "useCustomClick");
 @property (nonatomic) BOOL useCustomClick;
@@ -1518,6 +1563,11 @@ SWIFT_CLASS("_TtC8AdropAds13AdropNativeAd")
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull extra;
 @property (nonatomic, readonly) enum BrowserTargetObjC browserTargetValue;
 @property (nonatomic, readonly) BOOL isBackfilled;
+/// Creative medium of the currently-loaded ad: <code>"display"</code> or <code>"video"</code>.
+/// Read from the server’s <code>type</code> field on the ad response (falls back to inspecting
+/// the creative HTML via <code>HTMLContentHelper.containsVideoTag(_:)</code> for legacy responses).
+/// Returns <code>"display"</code> before an ad is loaded.
+@property (nonatomic, readonly, copy) NSString * _Nonnull creativeType;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1593,6 +1643,12 @@ SWIFT_CLASS("_TtC8AdropAds12AdropPopupAd")
 /// 광고 클릭 시 URL을 여는 방식 (Objective-C용)
 /// 값이 없는 경우 기본값 EXTERNAL(0) 반환
 @property (nonatomic, readonly) enum BrowserTargetObjC browserTargetValue;
+/// Creative medium of the currently-displayed ad: <code>"display"</code> or <code>"video"</code>.
+/// For carousel popups, this value updates as the carousel slides — <code>currentAd</code> is
+/// reassigned on each <code>AD_IMPR</code>/<code>AD_CLICK</code> in <code>requestAd()</code> so a slide change yields
+/// a fresh type. Reads the server’s <code>type</code> field, falling back to HTML inspection.
+/// Returns <code>"display"</code> before any ad is shown.
+@property (nonatomic, readonly, copy) NSString * _Nonnull creativeType;
 @property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 @property (nonatomic, strong) UIColor * _Nullable hideForTodayTextColor;
 @property (nonatomic, strong) UIColor * _Nullable closeTextColor;

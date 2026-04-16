@@ -329,6 +329,9 @@ public enum AdropBannerSize : Swift.String {
   @objc public var isBackfilled: Swift.Bool {
     @objc get
   }
+  @objc public var creativeType: Swift.String {
+    @objc get
+  }
   @objc public init(unitId: Swift.String, contextId: Swift.String = "")
   @objc public func load()
   @objc deinit
@@ -369,6 +372,9 @@ public enum AdropBannerSize : Swift.String {
     @objc get
   }
   @objc @_Concurrency.MainActor @preconcurrency public var isBackfilled: Swift.Bool {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency public var creativeType: Swift.String {
     @objc get
   }
   @available(*, deprecated, renamed: "unitId")
@@ -841,6 +847,9 @@ public struct AdExtra : Swift.Codable {
   @objc public var browserTargetValue: AdropAds.BrowserTargetObjC {
     @objc get
   }
+  @objc public var creativeType: Swift.String {
+    @objc get
+  }
   @objc public var backgroundColor: UIKit.UIColor?
   @objc public var hideForTodayTextColor: UIKit.UIColor?
   @objc public var closeTextColor: UIKit.UIColor?
@@ -871,6 +880,7 @@ public struct AdExtra : Swift.Codable {
   }
   @objc public static func initialize(production: Swift.Bool = false, useInAppBrowser: Swift.Bool = false, targetCountries: [Swift.String]? = nil)
   @objc public static func setUID(_ uid: Swift.String)
+  @objc public static func setMarketingConsent(_ consent: Swift.Bool)
   @objc public static func setTheme(_ theme: AdropAds.AdropTheme)
   @discardableResult
   @objc public static func openQuest(channel: Swift.String, path: Swift.String? = nil) -> Swift.Bool
