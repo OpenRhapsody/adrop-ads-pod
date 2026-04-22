@@ -400,6 +400,39 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 - (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)layoutSubviews;
+/// Requests multiple banner ads in a single batched call and delivers
+/// ready-to-use [AdropBanner] instances via the shared [delegate].
+/// <ul>
+///   <li>
+///     Returned banners have their ad data applied; WKWebView rendering
+///     happens asynchronously after the caller attaches them to a view
+///     hierarchy. This matches the single <code>load()</code> contract where
+///     <code>onAdReceived</code> fires as soon as data is applied, not when the
+///     WebView finishes loading.
+///   </li>
+///   <li>
+///     The [delegate] is auto-attached to every returned banner. Click /
+///     impression / video callbacks fire on each instance as usual. The
+///     singular <code>onAdReceived</code> is NOT invoked on the loads() path — batch
+///     delivery via <code>onAdsReceived</code> is the sole success signal.
+///   </li>
+///   <li>
+///     Backfill is intentionally NOT applied on this path — failures report
+///     via <code>delegate.onAdsFailedToReceive(_:)</code>.
+///   </li>
+///   <li>
+///     At most [maxLoadsBatch] banners are returned; extras from the server
+///     response are discarded to bound client-side memory.
+///     Upper bound on ads returned from a single <code>loads()</code> call.
+///     Each ad owns a WKWebView (~5-15 MB) so we cap to prevent OOM on
+///     low-memory devices when the server returns an oversized batch.
+///     Keep aligned with <code>AdropNativeAd.maxLoadsBatch</code> and Android
+///     <code>AdropBanner.MAX_LOADS_BATCH</code> / <code>AdropNativeAd.MAX_LOADS_BATCH</code>.
+///   </li>
+/// </ul>
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger maxLoadsBatch;)
++ (NSInteger)maxLoadsBatch SWIFT_WARN_UNUSED_RESULT;
++ (void)loadsWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId delegate:(id <AdropBannerDelegate> _Nonnull)delegate;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -423,6 +456,8 @@ SWIFT_PROTOCOL("_TtP8AdropAds19AdropBannerDelegate_")
 - (void)onAdClicked:(AdropBanner * _Nonnull)banner;
 - (void)onAdVideoStart:(AdropBanner * _Nonnull)banner;
 - (void)onAdVideoEnd:(AdropBanner * _Nonnull)banner;
+- (void)onAdsReceived:(NSArray<AdropBanner *> * _Nonnull)banners;
+- (void)onAdsFailedToReceive:(enum AdropErrorCode)errorCode;
 @end
 
 /// 테스트용 지역 설정 (UMPDebugGeography와 매핑)
@@ -631,6 +666,37 @@ SWIFT_CLASS("_TtC8AdropAds13AdropNativeAd")
 @property (nonatomic, readonly, copy) NSString * _Nonnull creativeType;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
+/// Requests multiple native ads in a single batched call and delivers
+/// ready-to-use [AdropNativeAd] instances via the shared [delegate].
+/// <ul>
+///   <li>
+///     Unlike banner loads(), native loads() waits (via DispatchGroup) for
+///     every returned ad’s WebView to finish loading before firing
+///     <code>onAdsReceived</code>, so each instance is fully rendered when delivered.
+///   </li>
+///   <li>
+///     The [delegate] is auto-attached to every returned ad. Click /
+///     impression / video callbacks fire on each instance as usual. The
+///     singular <code>onAdReceived</code> is NOT invoked on the loads() path — batch
+///     delivery via <code>onAdsReceived</code> is the sole success signal.
+///   </li>
+///   <li>
+///     Backfill is intentionally NOT applied on this path — failures report
+///     via <code>delegate.onAdsFailedToReceive(_:)</code>.
+///   </li>
+///   <li>
+///     At most [maxLoadsBatch] ads are returned; extras from the server
+///     response are discarded to bound client-side memory.
+///     Upper bound on ads returned from a single <code>loads()</code> call.
+///     Each native ad owns a WKWebView (~5-15 MB) so we cap to prevent
+///     OOM on low-memory devices when the server returns an oversized batch.
+///     Keep aligned with <code>AdropBanner.maxLoadsBatch</code> and Android
+///     <code>AdropBanner.MAX_LOADS_BATCH</code> / <code>AdropNativeAd.MAX_LOADS_BATCH</code>.
+///   </li>
+/// </ul>
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger maxLoadsBatch;)
++ (NSInteger)maxLoadsBatch SWIFT_WARN_UNUSED_RESULT;
++ (void)loadsWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId delegate:(id <AdropNativeAdDelegate> _Nonnull)delegate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -644,6 +710,8 @@ SWIFT_PROTOCOL("_TtP8AdropAds21AdropNativeAdDelegate_")
 - (void)onAdImpression:(AdropNativeAd * _Nonnull)ad;
 - (void)onAdVideoStart:(AdropNativeAd * _Nonnull)ad;
 - (void)onAdVideoEnd:(AdropNativeAd * _Nonnull)ad;
+- (void)onAdsReceived:(NSArray<AdropNativeAd *> * _Nonnull)ads;
+- (void)onAdsFailedToReceive:(enum AdropErrorCode)errorCode;
 @end
 
 SWIFT_CLASS("_TtC8AdropAds17AdropNativeAdView")

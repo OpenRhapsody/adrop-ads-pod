@@ -14896,6 +14896,103 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Var",
+            "name": "maxLoadsBatch",
+            "printedName": "maxLoadsBatch",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdropAds@objc(cs)AdropNativeAd(cpy)maxLoadsBatch",
+            "mangledName": "$s8AdropAds0A8NativeAdC13maxLoadsBatchSivpZ",
+            "moduleName": "AdropAds",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdropAds@objc(cs)AdropNativeAd(cm)maxLoadsBatch",
+                "mangledName": "$s8AdropAds0A8NativeAdC13maxLoadsBatchSivgZ",
+                "moduleName": "AdropAds",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "loads",
+            "printedName": "loads(unitId:contextId:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdropNativeAdDelegate",
+                "printedName": "any AdropAds.AdropNativeAdDelegate",
+                "usr": "c:@M@AdropAds@objc(pl)AdropNativeAdDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdropAds@objc(cs)AdropNativeAd(cm)loadsWithUnitId:contextId:delegate:",
+            "mangledName": "$s8AdropAds0A8NativeAdC5loads6unitId07contextG08delegateySS_SSAA0acD8Delegate_ptFZ",
+            "moduleName": "AdropAds",
+            "static": true,
+            "objc_name": "loadsWithUnitId:contextId:delegate:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -18062,6 +18159,107 @@
               "Custom",
               "Override",
               "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "maxLoadsBatch",
+            "printedName": "maxLoadsBatch",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdropAds@objc(cs)AdropBanner(cpy)maxLoadsBatch",
+            "mangledName": "$s8AdropAds0A6BannerC13maxLoadsBatchSivpZ",
+            "moduleName": "AdropAds",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdropAds@objc(cs)AdropBanner(cm)maxLoadsBatch",
+                "mangledName": "$s8AdropAds0A6BannerC13maxLoadsBatchSivgZ",
+                "moduleName": "AdropAds",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "loads",
+            "printedName": "loads(unitId:contextId:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdropBannerDelegate",
+                "printedName": "any AdropAds.AdropBannerDelegate",
+                "usr": "c:@M@AdropAds@objc(pl)AdropBannerDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdropAds@objc(cs)AdropBanner(cm)loadsWithUnitId:contextId:delegate:",
+            "mangledName": "$s8AdropAds0A6BannerC5loads6unitId07contextF08delegateySS_SSAA0aC8Delegate_ptFZ",
+            "moduleName": "AdropAds",
+            "static": true,
+            "objc_name": "loadsWithUnitId:contextId:delegate:",
+            "declAttributes": [
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -27309,6 +27507,76 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAdsReceived",
+            "printedName": "onAdsReceived(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AdropAds.AdropNativeAd]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdropNativeAd",
+                    "printedName": "AdropAds.AdropNativeAd",
+                    "usr": "c:@M@AdropAds@objc(cs)AdropNativeAd"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdropAds@objc(pl)AdropNativeAdDelegate(im)onAdsReceived:",
+            "mangledName": "$s8AdropAds0A16NativeAdDelegateP02onB8ReceivedyySayAA0acD0CGF",
+            "moduleName": "AdropAds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdropAds.AdropNativeAdDelegate>",
+            "sugared_genericSig": "<Self where Self : AdropAds.AdropNativeAdDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAdsFailedToReceive",
+            "printedName": "onAdsFailedToReceive(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdropErrorCode",
+                "printedName": "AdropAds.AdropErrorCode",
+                "usr": "c:@M@AdropAds@E@AdropErrorCode"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdropAds@objc(pl)AdropNativeAdDelegate(im)onAdsFailedToReceive:",
+            "mangledName": "$s8AdropAds0A16NativeAdDelegateP02onB15FailedToReceiveyyAA0A9ErrorCodeOF",
+            "moduleName": "AdropAds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdropAds.AdropNativeAdDelegate>",
+            "sugared_genericSig": "<Self where Self : AdropAds.AdropNativeAdDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -27546,6 +27814,76 @@
             "declKind": "Func",
             "usr": "c:@M@AdropAds@objc(pl)AdropBannerDelegate(im)onAdVideoEnd:",
             "mangledName": "$s8AdropAds0A14BannerDelegateP12onAdVideoEndyyAA0aC0CF",
+            "moduleName": "AdropAds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdropAds.AdropBannerDelegate>",
+            "sugared_genericSig": "<Self where Self : AdropAds.AdropBannerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAdsReceived",
+            "printedName": "onAdsReceived(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AdropAds.AdropBanner]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdropBanner",
+                    "printedName": "AdropAds.AdropBanner",
+                    "usr": "c:@M@AdropAds@objc(cs)AdropBanner"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdropAds@objc(pl)AdropBannerDelegate(im)onAdsReceived:",
+            "mangledName": "$s8AdropAds0A14BannerDelegateP02onB8ReceivedyySayAA0aC0CGF",
+            "moduleName": "AdropAds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdropAds.AdropBannerDelegate>",
+            "sugared_genericSig": "<Self where Self : AdropAds.AdropBannerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAdsFailedToReceive",
+            "printedName": "onAdsFailedToReceive(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdropErrorCode",
+                "printedName": "AdropAds.AdropErrorCode",
+                "usr": "c:@M@AdropAds@E@AdropErrorCode"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdropAds@objc(pl)AdropBannerDelegate(im)onAdsFailedToReceive:",
+            "mangledName": "$s8AdropAds0A14BannerDelegateP02onB15FailedToReceiveyyAA0A9ErrorCodeOF",
             "moduleName": "AdropAds",
             "genericSig": "<τ_0_0 where τ_0_0 : AdropAds.AdropBannerDelegate>",
             "sugared_genericSig": "<Self where Self : AdropAds.AdropBannerDelegate>",
@@ -46538,6 +46876,13 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropAPI+GraphQL.swift",
+      "kind": "StringLiteral",
+      "offset": 5892,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropSplashAd.swift",
       "kind": "StringLiteral",
       "offset": 607,
@@ -47476,6 +47821,20 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropNativeAd.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13229,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropNativeAd.swift",
+      "kind": "StringLiteral",
+      "offset": 13320,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/RequestTaskMap.swift",
       "kind": "Dictionary",
       "offset": 1712,
@@ -47626,6 +47985,20 @@
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
       "offset": 13329,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16346,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 16437,
       "length": 2,
       "value": "\"\""
     },
@@ -48617,6 +48990,13 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 1889,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropPopupAdView.swift",
       "kind": "BooleanLiteral",
       "offset": 1492,
@@ -49391,7 +49771,7 @@
       "kind": "StringLiteral",
       "offset": 15137,
       "length": 8,
-      "value": "\"1.10.1\""
+      "value": "\"1.10.2\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",

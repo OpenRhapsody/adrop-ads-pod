@@ -334,6 +334,8 @@ public enum AdropBannerSize : Swift.String {
   }
   @objc public init(unitId: Swift.String, contextId: Swift.String = "")
   @objc public func load()
+  @objc public static let maxLoadsBatch: Swift.Int
+  @objc public static func loads(unitId: Swift.String, contextId: Swift.String = "", delegate: any AdropAds.AdropNativeAdDelegate)
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class AdropBanner : UIKit.UIView, AdropAds.UseCustomClick {
@@ -397,6 +399,8 @@ public enum AdropBannerSize : Swift.String {
   @objc @_Concurrency.MainActor @preconcurrency public func load()
   @_Concurrency.MainActor @preconcurrency @objc public func open(_ url: Swift.String? = nil, useInAppBrowser: Swift.Bool = false)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @objc @_Concurrency.MainActor @preconcurrency public static let maxLoadsBatch: Swift.Int
+  @objc @_Concurrency.MainActor @preconcurrency public static func loads(unitId: Swift.String, contextId: Swift.String = "", delegate: any AdropAds.AdropBannerDelegate)
 }
 extension AdropAds.AdropBanner : WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
@@ -578,6 +582,8 @@ public enum AdUnitFormat : Swift.Int {
   @objc optional func onAdImpression(_ ad: AdropAds.AdropNativeAd)
   @objc optional func onAdVideoStart(_ ad: AdropAds.AdropNativeAd)
   @objc optional func onAdVideoEnd(_ ad: AdropAds.AdropNativeAd)
+  @objc optional func onAdsReceived(_ ads: [AdropAds.AdropNativeAd])
+  @objc optional func onAdsFailedToReceive(_ errorCode: AdropAds.AdropErrorCode)
 }
 @objc public protocol AdropBannerDelegate {
   @objc func onAdReceived(_ banner: AdropAds.AdropBanner)
@@ -586,6 +592,8 @@ public enum AdUnitFormat : Swift.Int {
   @objc optional func onAdClicked(_ banner: AdropAds.AdropBanner)
   @objc optional func onAdVideoStart(_ banner: AdropAds.AdropBanner)
   @objc optional func onAdVideoEnd(_ banner: AdropAds.AdropBanner)
+  @objc optional func onAdsReceived(_ banners: [AdropAds.AdropBanner])
+  @objc optional func onAdsFailedToReceive(_ errorCode: AdropAds.AdropErrorCode)
 }
 @available(iOS 13.0, *)
 @_Concurrency.MainActor @preconcurrency public struct AdropBannerRepresented : SwiftUI.UIViewRepresentable {
