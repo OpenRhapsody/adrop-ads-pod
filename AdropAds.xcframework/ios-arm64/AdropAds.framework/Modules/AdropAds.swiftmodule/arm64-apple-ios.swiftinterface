@@ -116,6 +116,12 @@ public func AdropErrorCodeToString(code: AdropAds.AdropErrorCode) -> Swift.Strin
   @objc public var creativeId: Swift.String {
     @objc get
   }
+  public var campaignStartTime: Swift.Int64? {
+    get
+  }
+  public var campaignEndTime: Swift.Int64? {
+    get
+  }
   @objc public var readyToShow: Swift.Bool {
     @objc get
   }
@@ -332,6 +338,12 @@ public enum AdropBannerSize : Swift.String {
   @objc public var creativeType: Swift.String {
     @objc get
   }
+  public var campaignStartTime: Swift.Int64? {
+    get
+  }
+  public var campaignEndTime: Swift.Int64? {
+    get
+  }
   @objc public init(unitId: Swift.String, contextId: Swift.String = "")
   @objc public func load()
   @objc public static let maxLoadsBatch: Swift.Int
@@ -378,6 +390,12 @@ public enum AdropBannerSize : Swift.String {
   }
   @objc @_Concurrency.MainActor @preconcurrency public var creativeType: Swift.String {
     @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency public var campaignStartTime: Swift.Int64? {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var campaignEndTime: Swift.Int64? {
+    get
   }
   @available(*, deprecated, renamed: "unitId")
   @objc @_Concurrency.MainActor @preconcurrency public var id: Swift.String {
@@ -494,6 +512,12 @@ extension AdropAds.AdropSplashAdView : AdropAds.AdropSplashAdDelegate {
   }
   @objc public var browserTargetValue: AdropAds.BrowserTargetObjC {
     @objc get
+  }
+  public var campaignStartTime: Swift.Int64? {
+    get
+  }
+  public var campaignEndTime: Swift.Int64? {
+    get
   }
   @objc public init(unitId: Swift.String)
   @objc public func load()
@@ -706,6 +730,12 @@ public class AdropPageTracker {
   @objc public var browserTargetValue: AdropAds.BrowserTargetObjC {
     @objc get
   }
+  public var campaignStartTime: Swift.Int64? {
+    get
+  }
+  public var campaignEndTime: Swift.Int64? {
+    get
+  }
   @objc public var serverSideVerificationOptions: AdropAds.AdropServerSideVerificationOptions?
   @objc public init(unitId: Swift.String)
   @objc public func load()
@@ -857,6 +887,12 @@ public struct AdExtra : Swift.Codable {
   }
   @objc public var creativeType: Swift.String {
     @objc get
+  }
+  public var campaignStartTime: Swift.Int64? {
+    get
+  }
+  public var campaignEndTime: Swift.Int64? {
+    get
   }
   @objc public var backgroundColor: UIKit.UIColor?
   @objc public var hideForTodayTextColor: UIKit.UIColor?

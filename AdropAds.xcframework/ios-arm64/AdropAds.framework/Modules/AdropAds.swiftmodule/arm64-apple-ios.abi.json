@@ -3282,6 +3282,119 @@
           },
           {
             "kind": "Var",
+            "name": "campaignStartTime",
+            "printedName": "campaignStartTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AdropAds0A8SplashAdC17campaignStartTimes5Int64VSgvp",
+            "mangledName": "$s8AdropAds0A8SplashAdC17campaignStartTimes5Int64VSgvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A8SplashAdC17campaignStartTimes5Int64VSgvg",
+                "mangledName": "$s8AdropAds0A8SplashAdC17campaignStartTimes5Int64VSgvg",
+                "moduleName": "AdropAds",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "campaignEndTime",
+            "printedName": "campaignEndTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AdropAds0A8SplashAdC15campaignEndTimes5Int64VSgvp",
+            "mangledName": "$s8AdropAds0A8SplashAdC15campaignEndTimes5Int64VSgvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A8SplashAdC15campaignEndTimes5Int64VSgvg",
+                "mangledName": "$s8AdropAds0A8SplashAdC15campaignEndTimes5Int64VSgvg",
+                "moduleName": "AdropAds",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "readyToShow",
             "printedName": "readyToShow",
             "children": [
@@ -14839,6 +14952,119 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "campaignStartTime",
+            "printedName": "campaignStartTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AdropAds0A8NativeAdC17campaignStartTimes5Int64VSgvp",
+            "mangledName": "$s8AdropAds0A8NativeAdC17campaignStartTimes5Int64VSgvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A8NativeAdC17campaignStartTimes5Int64VSgvg",
+                "mangledName": "$s8AdropAds0A8NativeAdC17campaignStartTimes5Int64VSgvg",
+                "moduleName": "AdropAds",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "campaignEndTime",
+            "printedName": "campaignEndTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AdropAds0A8NativeAdC15campaignEndTimes5Int64VSgvp",
+            "mangledName": "$s8AdropAds0A8NativeAdC15campaignEndTimes5Int64VSgvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A8NativeAdC15campaignEndTimes5Int64VSgvg",
+                "mangledName": "$s8AdropAds0A8NativeAdC15campaignEndTimes5Int64VSgvg",
+                "moduleName": "AdropAds",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(unitId:contextId:)",
@@ -17740,6 +17966,123 @@
                 "declAttributes": [
                   "ObjC"
                 ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "campaignStartTime",
+            "printedName": "campaignStartTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AdropAds0A6BannerC17campaignStartTimes5Int64VSgvp",
+            "mangledName": "$s8AdropAds0A6BannerC17campaignStartTimes5Int64VSgvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A6BannerC17campaignStartTimes5Int64VSgvg",
+                "mangledName": "$s8AdropAds0A6BannerC17campaignStartTimes5Int64VSgvg",
+                "moduleName": "AdropAds",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "campaignEndTime",
+            "printedName": "campaignEndTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AdropAds0A6BannerC15campaignEndTimes5Int64VSgvp",
+            "mangledName": "$s8AdropAds0A6BannerC15campaignEndTimes5Int64VSgvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A6BannerC15campaignEndTimes5Int64VSgvg",
+                "mangledName": "$s8AdropAds0A6BannerC15campaignEndTimes5Int64VSgvg",
+                "moduleName": "AdropAds",
                 "accessorKind": "get"
               }
             ]
@@ -23324,6 +23667,119 @@
                 "declAttributes": [
                   "ObjC"
                 ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "campaignStartTime",
+            "printedName": "campaignStartTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AdropAds0A14InterstitialAdC17campaignStartTimes5Int64VSgvp",
+            "mangledName": "$s8AdropAds0A14InterstitialAdC17campaignStartTimes5Int64VSgvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A14InterstitialAdC17campaignStartTimes5Int64VSgvg",
+                "mangledName": "$s8AdropAds0A14InterstitialAdC17campaignStartTimes5Int64VSgvg",
+                "moduleName": "AdropAds",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "campaignEndTime",
+            "printedName": "campaignEndTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AdropAds0A14InterstitialAdC15campaignEndTimes5Int64VSgvp",
+            "mangledName": "$s8AdropAds0A14InterstitialAdC15campaignEndTimes5Int64VSgvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A14InterstitialAdC15campaignEndTimes5Int64VSgvg",
+                "mangledName": "$s8AdropAds0A14InterstitialAdC15campaignEndTimes5Int64VSgvg",
+                "moduleName": "AdropAds",
                 "accessorKind": "get"
               }
             ]
@@ -32211,6 +32667,119 @@
                 "declAttributes": [
                   "ObjC"
                 ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "campaignStartTime",
+            "printedName": "campaignStartTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AdropAds0A10RewardedAdC17campaignStartTimes5Int64VSgvp",
+            "mangledName": "$s8AdropAds0A10RewardedAdC17campaignStartTimes5Int64VSgvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A10RewardedAdC17campaignStartTimes5Int64VSgvg",
+                "mangledName": "$s8AdropAds0A10RewardedAdC17campaignStartTimes5Int64VSgvg",
+                "moduleName": "AdropAds",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "campaignEndTime",
+            "printedName": "campaignEndTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AdropAds0A10RewardedAdC15campaignEndTimes5Int64VSgvp",
+            "mangledName": "$s8AdropAds0A10RewardedAdC15campaignEndTimes5Int64VSgvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A10RewardedAdC15campaignEndTimes5Int64VSgvg",
+                "mangledName": "$s8AdropAds0A10RewardedAdC15campaignEndTimes5Int64VSgvg",
+                "moduleName": "AdropAds",
                 "accessorKind": "get"
               }
             ]
@@ -42097,6 +42666,119 @@
           },
           {
             "kind": "Var",
+            "name": "campaignStartTime",
+            "printedName": "campaignStartTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AdropAds0A7PopupAdC17campaignStartTimes5Int64VSgvp",
+            "mangledName": "$s8AdropAds0A7PopupAdC17campaignStartTimes5Int64VSgvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A7PopupAdC17campaignStartTimes5Int64VSgvg",
+                "mangledName": "$s8AdropAds0A7PopupAdC17campaignStartTimes5Int64VSgvg",
+                "moduleName": "AdropAds",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "campaignEndTime",
+            "printedName": "campaignEndTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AdropAds0A7PopupAdC15campaignEndTimes5Int64VSgvp",
+            "mangledName": "$s8AdropAds0A7PopupAdC15campaignEndTimes5Int64VSgvp",
+            "moduleName": "AdropAds",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AdropAds0A7PopupAdC15campaignEndTimes5Int64VSgvg",
+                "mangledName": "$s8AdropAds0A7PopupAdC15campaignEndTimes5Int64VSgvg",
+                "moduleName": "AdropAds",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "backgroundColor",
             "printedName": "backgroundColor",
             "children": [
@@ -46899,42 +47581,42 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1323,
+      "offset": 1794,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1360,
+      "offset": 1831,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1404,
+      "offset": 1875,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1549,
+      "offset": 2020,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropSplashAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 1671,
+      "offset": 2142,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 6455,
+      "offset": 6926,
       "length": 5,
       "value": "false"
     },
@@ -47781,56 +48463,56 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 6441,
+      "offset": 6894,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 7728,
+      "offset": 8181,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 7799,
+      "offset": 8252,
       "length": 55,
       "value": "\"request ad failed. \""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 7853,
+      "offset": 8306,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 8955,
+      "offset": 9408,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 9076,
+      "offset": 9529,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 13229,
+      "offset": 13682,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 13320,
+      "offset": 13773,
       "length": 2,
       "value": "\"\""
     },
@@ -47914,91 +48596,91 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 3243,
+      "offset": 3929,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "Dictionary",
-      "offset": 3828,
+      "offset": 4514,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3856,
+      "offset": 4542,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3891,
+      "offset": 4577,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 4266,
+      "offset": 4952,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 4307,
+      "offset": 4993,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 4506,
+      "offset": 5192,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 5687,
+      "offset": 6373,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 10437,
+      "offset": 11123,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 13275,
+      "offset": 13961,
       "length": 55,
       "value": "\"request ad failed. \""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 13329,
+      "offset": 14015,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 16346,
+      "offset": 17032,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropBanner.swift",
       "kind": "StringLiteral",
-      "offset": 16437,
+      "offset": 17123,
       "length": 2,
       "value": "\"\""
     },
@@ -48264,84 +48946,84 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 2562,
+      "offset": 3013,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 2589,
+      "offset": 3040,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 2626,
+      "offset": 3077,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2646,
+      "offset": 3097,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2672,
+      "offset": 3123,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2696,
+      "offset": 3147,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 5196,
+      "offset": 5647,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 5268,
+      "offset": 5719,
       "length": 55,
       "value": "\"request ad failed. \""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 5322,
+      "offset": 5773,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 5804,
+      "offset": 6255,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 6835,
+      "offset": 7286,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 6878,
+      "offset": 7329,
       "length": 4,
       "value": "true"
     },
@@ -49771,7 +50453,7 @@
       "kind": "StringLiteral",
       "offset": 15137,
       "length": 8,
-      "value": "\"1.10.2\""
+      "value": "\"1.10.3\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropConfig.swift",
@@ -49888,84 +50570,84 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 2292,
+      "offset": 2743,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 2319,
+      "offset": 2770,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 2356,
+      "offset": 2807,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2376,
+      "offset": 2827,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2402,
+      "offset": 2853,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2426,
+      "offset": 2877,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 5252,
+      "offset": 5703,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 5324,
+      "offset": 5775,
       "length": 55,
       "value": "\"request ad failed. \""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 5378,
+      "offset": 5829,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 5834,
+      "offset": 6285,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 6855,
+      "offset": 7306,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 6898,
+      "offset": 7349,
       "length": 4,
       "value": "true"
     },
@@ -50336,63 +51018,63 @@
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropPopupAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 3881,
+      "offset": 4428,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropPopupAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 3907,
+      "offset": 4454,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropPopupAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 3931,
+      "offset": 4478,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropPopupAd.swift",
       "kind": "Array",
-      "offset": 4172,
+      "offset": 4719,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropPopupAd.swift",
       "kind": "Array",
-      "offset": 4210,
+      "offset": 4757,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropPopupAd.swift",
       "kind": "StringLiteral",
-      "offset": 4325,
+      "offset": 4872,
       "length": 19,
       "value": "\"io.adrop.popup-ad\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropPopupAd.swift",
       "kind": "StringLiteral",
-      "offset": 4389,
+      "offset": 4936,
       "length": 31,
       "value": "\"adrop_popup_ad_hide_for_today\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropPopupAd.swift",
       "kind": "StringLiteral",
-      "offset": 4473,
+      "offset": 5020,
       "length": 17,
       "value": "\"hide_this_today\""
     },
     {
       "filePath": "\/Users\/leo\/Documents\/adrop\/AdropAds\/AdropAds\/AdropAds\/AdropPopupAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 7480,
+      "offset": 8027,
       "length": 5,
       "value": "false"
     },

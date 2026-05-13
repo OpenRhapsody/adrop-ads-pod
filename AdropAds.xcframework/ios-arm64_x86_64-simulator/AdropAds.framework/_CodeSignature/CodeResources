@@ -30,43 +30,43 @@
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		HnZOeax5vfz2f8KFG6l9Hd51Rio=
+		AGbXZEtomXcKjI/cNuAPIXUQxgc=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		DWDliB2RaHqJM7tc6Mz6M59jr6Q=
+		up9pG3cmJTdZ2d1n7tA+eL5sXfA=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		5Mph9nK42QMeOrpFbunQxmuTw8k=
+		PJxDSmSXn8CQKAaAjHkeCnhkn04=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		SyZP7hsidOk9JUJBqFHUfQzylhw=
+		S2jkbUDUOokeCbQk8uxBk3unAbs=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8O2wjlGphlt5qKx4DkZYHcFJy9M=
+		BFzj+Z9FAI4in4qzTYMge3H5RDI=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		HnZOeax5vfz2f8KFG6l9Hd51Rio=
+		AGbXZEtomXcKjI/cNuAPIXUQxgc=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		6cKO+pEHP88gsC+jOEIDr5XZfPY=
+		Ex8bjZcsCZTy84UId95WyadsrIY=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Y8yGJJE/cxiP1hrDK0topIEEz1U=
+		Zq8nISqBL73BiJZhQdP7Kg6NoHU=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Qc6ofo+3FtjY1vdosL2RtTf1sMc=
+		bE+DcOEPtGrY/4HW9V8m/Hz63cw=
 		</data>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rRaBLH+OUTOki83peuKHRyWFwvY=
+		owkDmFFxqu9OEhfxSnHKSA2iLRc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -140,70 +140,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3IXPDxmxlLqKU6oaBkKKpkMOn3ReaulzznocRPhLSmo=
+			UWn24CFSffw0VYHKgeInhVQ5uKhvPLp+tVJR7hv+nvs=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pxM0T2ZHFVcH6C/XOow4B37fiaAG65njTLX+G1N0HLU=
+			8BLpNhIidU1ryrL+Q428+21IUuQ3/7FzXuP8dAXN5AQ=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tKmO1UfgaWbkr9HDNuF8ICg5BWGalK3UW0vViB+7et8=
+			IYLAJZgBaLwAPDETrI6+LW+Xkx9DZXGZ19D2bXf/Ig8=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YzAoeRdjA0wiXYQzIQ1+bd8H6x2xqkvaDx3Lb6blGl0=
+			aS9oOX361swts5ccU8E69sCE6+rRLAgZU1zuJVj22to=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ec/+jk8xWP/J8KmiQYICL8Q04Q2PvzB0ildqTQVmyxQ=
+			zqU4wuyzP5o+6kU8LrNiLIoIXZwxvqbBLA0VJGv5h2g=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3IXPDxmxlLqKU6oaBkKKpkMOn3ReaulzznocRPhLSmo=
+			UWn24CFSffw0VYHKgeInhVQ5uKhvPLp+tVJR7hv+nvs=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TgryBjSEDRVkVFKtwggBhcqdqC0hRyZdRph/vB0+Clc=
+			3Xy54UnOajAQfpPEr+9pR+creC9YYx/HJ2YPoHt3Z9E=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jVplNSfykQtnCdD6ezndBFrjCjVirk1pgwFPUI8SAbo=
+			h0fHf0meBFbAuJN/1gvxXisyx3vMPwC1M67kJF8Qpyc=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zdvfZj/27x2SgfuJlwgw2ssTiZYJ5aD4eSc12NSLr7A=
+			L2HGPt0+lkURwWSm4i7XxY4likhAEOS9FR+eJUDkMMw=
 			</data>
 		</dict>
 		<key>Modules/AdropAds.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QQf8+HOAZDRow/tou4r0LBU4c3xBJ5BriGrO67RX7yw=
+			Rdu0DR0qZaqdRIkVy37XLNjl1VplxgAKOx+p33cj4z8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
