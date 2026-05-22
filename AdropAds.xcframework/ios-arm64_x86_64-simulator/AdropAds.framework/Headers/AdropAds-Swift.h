@@ -361,6 +361,21 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <AdropConsentManage
 + (void)registerWebView:(WKWebView * _Nonnull)webView;
 @end
 
+/// AdMob 백필 네이티브 광고의 AdChoices 아이콘 표시 위치.
+/// important:
+/// AdMob/Google 등 백필 네트워크에 전달되는 <em>선호 위치 힌트</em>다.
+/// 네트워크가 정책상 다른 위치를 강제할 수 있으며, 직광고에는 적용되지 않는다.
+typedef SWIFT_ENUM(NSInteger, AdropAdChoicesPosition, open) {
+/// 좌측 상단
+  AdropAdChoicesPositionTopLeft = 0,
+/// 우측 상단 (기본값 — AdMob SDK 기본값과 동일)
+  AdropAdChoicesPositionTopRight = 1,
+/// 좌측 하단
+  AdropAdChoicesPositionBottomLeft = 2,
+/// 우측 하단
+  AdropAdChoicesPositionBottomRight = 3,
+};
+
 SWIFT_PROTOCOL("_TtP8AdropAds14UseCustomClick_")
 @protocol UseCustomClick
 @property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
@@ -633,6 +648,10 @@ SWIFT_CLASS("_TtC8AdropAds13AdropNativeAd")
 @interface AdropNativeAd : NSObject <UseCustomClick>
 @property (nonatomic, weak) id <AdropNativeAdDelegate> _Nullable delegate;
 @property (nonatomic) BOOL useCustomClick;
+/// AdMob 백필 네이티브 광고의 AdChoices 아이콘 표시 위치 (선호 값).
+/// <code>load()</code> 호출 <em>전</em>에 설정해야 적용된다. 기본값 <code>.topRight</code>.
+/// 직광고에는 효과가 없으며, AdMob 등 백필 네트워크가 정책상 무시할 수 있다.
+@property (nonatomic) enum AdropAdChoicesPosition preferredAdChoicesPosition;
 - (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 @property (nonatomic, readonly, copy) NSString * _Nonnull txId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull campaignId;
@@ -1368,6 +1387,21 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <AdropConsentManage
 + (void)registerWebView:(WKWebView * _Nonnull)webView;
 @end
 
+/// AdMob 백필 네이티브 광고의 AdChoices 아이콘 표시 위치.
+/// important:
+/// AdMob/Google 등 백필 네트워크에 전달되는 <em>선호 위치 힌트</em>다.
+/// 네트워크가 정책상 다른 위치를 강제할 수 있으며, 직광고에는 적용되지 않는다.
+typedef SWIFT_ENUM(NSInteger, AdropAdChoicesPosition, open) {
+/// 좌측 상단
+  AdropAdChoicesPositionTopLeft = 0,
+/// 우측 상단 (기본값 — AdMob SDK 기본값과 동일)
+  AdropAdChoicesPositionTopRight = 1,
+/// 좌측 하단
+  AdropAdChoicesPositionBottomLeft = 2,
+/// 우측 하단
+  AdropAdChoicesPositionBottomRight = 3,
+};
+
 SWIFT_PROTOCOL("_TtP8AdropAds14UseCustomClick_")
 @protocol UseCustomClick
 @property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
@@ -1640,6 +1674,10 @@ SWIFT_CLASS("_TtC8AdropAds13AdropNativeAd")
 @interface AdropNativeAd : NSObject <UseCustomClick>
 @property (nonatomic, weak) id <AdropNativeAdDelegate> _Nullable delegate;
 @property (nonatomic) BOOL useCustomClick;
+/// AdMob 백필 네이티브 광고의 AdChoices 아이콘 표시 위치 (선호 값).
+/// <code>load()</code> 호출 <em>전</em>에 설정해야 적용된다. 기본값 <code>.topRight</code>.
+/// 직광고에는 효과가 없으며, AdMob 등 백필 네트워크가 정책상 무시할 수 있다.
+@property (nonatomic) enum AdropAdChoicesPosition preferredAdChoicesPosition;
 - (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 @property (nonatomic, readonly, copy) NSString * _Nonnull txId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull campaignId;
