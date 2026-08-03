@@ -1140,6 +1140,10 @@ extension AdropAds.AdropSplashAdView : AdropAds.AdropSplashAdDelegate {
     @objc set
   }
   @objc deinit
+  @objc @_Concurrency.MainActor @preconcurrency public var webContentProcessIdentifier: Swift.Int32 {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency public func destroy()
   @objc @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String, contextId: Swift.String = "")
   @objc @_Concurrency.MainActor @preconcurrency public func play()
   @objc @_Concurrency.MainActor @preconcurrency public func pause()

@@ -408,6 +408,26 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @property (nonatomic, readonly, copy) NSString * _Nonnull id SWIFT_DEPRECATED_MSG("", "unitId");
 @property (nonatomic) BOOL handleAdClickCustom SWIFT_DEPRECATED_MSG("", "useCustomClick");
 @property (nonatomic) BOOL useCustomClick;
+/// 현재 배너 WKWebView가 사용 중인 WebContent 프로세스 PID.
+/// 0이면 조회 실패 또는 지원되지 않음. 프로세스 재기동/모니터링 용도.
+/// warning:
+/// <code>_webProcessIdentifier</code>는 WebKit <em>비공개 API</em>다. KVC 문자열이
+/// 릴리즈 바이너리에 포함되면 App Store 심사에서 리젝될 수 있으므로 <em>DEBUG
+/// 빌드에서만 컴파일</em>한다 (릴리즈 바이너리에는 이 코드·문자열이 들어가지 않음).
+@property (nonatomic, readonly) int32_t webContentProcessIdentifier;
+/// 배너의 미디어 파이프라인·WebView 로딩·트래킹 상태를 명시적으로 해제합니다.
+/// 화면을 완전히 벗어나 이 인스턴스를 더 이상 쓰지 않을 때의 <em>최종 정리용</em>입니다.
+/// idempotent — 여러 번 호출해도 안전하며, 호출 후 이 인스턴스는 재사용할 수 없습니다.
+/// important:
+/// 탭 전환처럼 같은 화면에서 광고만 바꿀 때는 destroy() + 재생성이 아니라
+/// <em>배너 인스턴스 1개를 유지한 채 <code>load()</code> 재호출</em>이 권장 패턴입니다. 재생성 churn 은
+/// 공유 GPUProcess high-water 를 끌어올려 (iOS 26.x 실측) 미디어 파이프라인 이상을 유발합니다.
+/// WKWebView 조작과 main RunLoop 에 부착된 tracker <code>Timer</code> 해제는 <em>메인 스레드 전용</em>이므로,
+/// 오프메인(예: 백그라운드 스레드에서의 dealloc)에서 호출되면 메인 큐로 디스패치한다.
+/// 이때 <code>self</code> 가 아니라 webView·tracker 를 지역 상수로 <em>강하게 캡처</em>하여 self 가 먼저
+/// 해제돼도 teardown 이 살아있는 객체에서 실행되도록 보장한다 — 이로써 async JS teardown 이
+/// dealloc 경로에서 no-op 이 되는 문제도 함께 해소된다.
+- (void)destroy;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId OBJC_DESIGNATED_INITIALIZER;
 - (void)play;
 - (void)pause;
@@ -1434,6 +1454,26 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 @property (nonatomic, readonly, copy) NSString * _Nonnull id SWIFT_DEPRECATED_MSG("", "unitId");
 @property (nonatomic) BOOL handleAdClickCustom SWIFT_DEPRECATED_MSG("", "useCustomClick");
 @property (nonatomic) BOOL useCustomClick;
+/// 현재 배너 WKWebView가 사용 중인 WebContent 프로세스 PID.
+/// 0이면 조회 실패 또는 지원되지 않음. 프로세스 재기동/모니터링 용도.
+/// warning:
+/// <code>_webProcessIdentifier</code>는 WebKit <em>비공개 API</em>다. KVC 문자열이
+/// 릴리즈 바이너리에 포함되면 App Store 심사에서 리젝될 수 있으므로 <em>DEBUG
+/// 빌드에서만 컴파일</em>한다 (릴리즈 바이너리에는 이 코드·문자열이 들어가지 않음).
+@property (nonatomic, readonly) int32_t webContentProcessIdentifier;
+/// 배너의 미디어 파이프라인·WebView 로딩·트래킹 상태를 명시적으로 해제합니다.
+/// 화면을 완전히 벗어나 이 인스턴스를 더 이상 쓰지 않을 때의 <em>최종 정리용</em>입니다.
+/// idempotent — 여러 번 호출해도 안전하며, 호출 후 이 인스턴스는 재사용할 수 없습니다.
+/// important:
+/// 탭 전환처럼 같은 화면에서 광고만 바꿀 때는 destroy() + 재생성이 아니라
+/// <em>배너 인스턴스 1개를 유지한 채 <code>load()</code> 재호출</em>이 권장 패턴입니다. 재생성 churn 은
+/// 공유 GPUProcess high-water 를 끌어올려 (iOS 26.x 실측) 미디어 파이프라인 이상을 유발합니다.
+/// WKWebView 조작과 main RunLoop 에 부착된 tracker <code>Timer</code> 해제는 <em>메인 스레드 전용</em>이므로,
+/// 오프메인(예: 백그라운드 스레드에서의 dealloc)에서 호출되면 메인 큐로 디스패치한다.
+/// 이때 <code>self</code> 가 아니라 webView·tracker 를 지역 상수로 <em>강하게 캡처</em>하여 self 가 먼저
+/// 해제돼도 teardown 이 살아있는 객체에서 실행되도록 보장한다 — 이로써 async JS teardown 이
+/// dealloc 경로에서 no-op 이 되는 문제도 함께 해소된다.
+- (void)destroy;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId OBJC_DESIGNATED_INITIALIZER;
 - (void)play;
 - (void)pause;
