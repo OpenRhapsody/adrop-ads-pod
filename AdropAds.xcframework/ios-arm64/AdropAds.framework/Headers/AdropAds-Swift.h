@@ -376,6 +376,45 @@ typedef SWIFT_ENUM(NSInteger, AdropAdChoicesPosition, open) {
   AdropAdChoicesPositionBottomRight = 3,
 };
 
+enum AdropAdValuePrecision : NSInteger;
+@class NSDecimalNumber;
+/// Impression-level ad revenue for a single backfill impression.
+/// Only carries the revenue data — the ad that earned it is delivered alongside this value
+/// (<code>onPaidEvent(ad, value)</code>), so read <code>unitId</code>, <code>txId</code> and friends from that ad instance.
+/// Adrop direct ads never produce this value; it is the ad provider’s own gross estimate
+/// and not a settlement figure.
+SWIFT_CLASS("_TtC8AdropAds12AdropAdValue")
+@interface AdropAdValue : NSObject
+/// Backfill provider that served the ad, e.g. <code>"admob"</code>.
+@property (nonatomic, readonly, copy) NSString * _Nonnull network;
+/// Mediation ad source inside the provider (e.g. <code>"AppLovin"</code>), nil when unknown.
+@property (nonatomic, readonly, copy) NSString * _Nullable adSourceName;
+/// Revenue in 1/1,000,000 of <code>currencyCode</code>.
+@property (nonatomic, readonly) int64_t valueMicros;
+/// ISO 4217 currency code, passed through from the provider.
+@property (nonatomic, readonly, copy) NSString * _Nonnull currencyCode;
+/// How accurate <code>valueMicros</code> is.
+@property (nonatomic, readonly) enum AdropAdValuePrecision precision;
+/// <code>valueMicros</code> in whole currency units. Use <code>valueMicros</code> for arithmetic.
+@property (nonatomic, readonly, strong) NSDecimalNumber * _Nonnull value;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// AdropAdValue 의 정밀도(precision) 분류. AdMob GADAdValuePrecision 와
+/// 동일한 4단계로, 추가되는 백필 프로바이더를 위해 Adrop 이 소유하는 enum 으로 분리한다.
+typedef SWIFT_ENUM(NSInteger, AdropAdValuePrecision, open) {
+/// 알 수 없음 — LTV 핑백이 활성화됐지만 충분한 데이터가 없는 상태
+  AdropAdValuePrecisionUnknown = 0,
+/// 집계 데이터로부터 추정된 값
+  AdropAdValuePrecisionEstimated = 1,
+/// 미디에이션 그룹의 수동 eCPM 등 매체사가 직접 제공한 값
+  AdropAdValuePrecisionPublisherProvided = 2,
+/// 입찰 결과 등 실제로 지급되는 정밀한 값
+  AdropAdValuePrecisionPrecise = 3,
+};
+
 SWIFT_PROTOCOL("_TtP8AdropAds14UseCustomClick_")
 @protocol UseCustomClick
 @property (nonatomic, readonly, copy) NSString * _Nullable destinationURL;
@@ -486,6 +525,7 @@ SWIFT_PROTOCOL("_TtP8AdropAds19AdropBannerDelegate_")
 - (void)onAdVideoEnd:(AdropBanner * _Nonnull)banner;
 - (void)onAdsReceived:(NSArray<AdropBanner *> * _Nonnull)banners;
 - (void)onAdsFailedToReceive:(enum AdropErrorCode)errorCode;
+- (void)onPaidEvent:(AdropBanner * _Nonnull)banner :(AdropAdValue * _Nonnull)value;
 @end
 
 /// 테스트용 지역 설정 (UMPDebugGeography와 매핑)
@@ -608,6 +648,7 @@ SWIFT_PROTOCOL("_TtP8AdropAds27AdropInterstitialAdDelegate_")
 - (void)onAdWillDismissFullScreen:(AdropInterstitialAd * _Nonnull)ad;
 - (void)onAdDidDismissFullScreen:(AdropInterstitialAd * _Nonnull)ad;
 - (void)onAdFailedToShowFullScreen:(AdropInterstitialAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
+- (void)onPaidEvent:(AdropInterstitialAd * _Nonnull)ad :(AdropAdValue * _Nonnull)value;
 @end
 
 SWIFT_CLASS("_TtC8AdropAds8AdropKey")
@@ -744,6 +785,7 @@ SWIFT_PROTOCOL("_TtP8AdropAds21AdropNativeAdDelegate_")
 - (void)onAdVideoEnd:(AdropNativeAd * _Nonnull)ad;
 - (void)onAdsReceived:(NSArray<AdropNativeAd *> * _Nonnull)ads;
 - (void)onAdsFailedToReceive:(enum AdropErrorCode)errorCode;
+- (void)onPaidEvent:(AdropNativeAd * _Nonnull)ad :(AdropAdValue * _Nonnull)value;
 @end
 
 SWIFT_CLASS("_TtC8AdropAds17AdropNativeAdView")
@@ -904,6 +946,7 @@ SWIFT_PROTOCOL("_TtP8AdropAds23AdropRewardedAdDelegate_")
 - (void)onAdWillDismissFullScreen:(AdropRewardedAd * _Nonnull)ad;
 - (void)onAdDidDismissFullScreen:(AdropRewardedAd * _Nonnull)ad;
 - (void)onAdFailedToShowFullScreen:(AdropRewardedAd * _Nonnull)ad :(enum AdropErrorCode)errorCode;
+- (void)onPaidEvent:(AdropRewardedAd * _Nonnull)ad :(AdropAdValue * _Nonnull)value;
 @end
 
 SWIFT_CLASS("_TtC8AdropAds34AdropServerSideVerificationOptions")
