@@ -379,8 +379,10 @@ typedef SWIFT_ENUM(NSInteger, AdropAdChoicesPosition, open) {
 enum AdropAdValuePrecision : NSInteger;
 @class NSDecimalNumber;
 /// Impression-level ad revenue for a single backfill impression.
-/// Only carries the revenue data — the ad that earned it is delivered alongside this value
-/// (<code>onPaidEvent(ad, value)</code>), so read <code>unitId</code>, <code>txId</code> and friends from that ad instance.
+/// Carries the revenue data plus the user it is attributable to. The <em>ad</em> that earned it is
+/// delivered alongside this value (<code>onPaidEvent(ad, value)</code>), so read <code>unitId</code>, <code>txId</code> and
+/// friends from that ad instance — only the <em>user</em> identifier lives here, because the ad
+/// instance has no notion of one.
 /// Adrop direct ads never produce this value; it is the ad provider’s own gross estimate
 /// and not a settlement figure.
 SWIFT_CLASS("_TtC8AdropAds12AdropAdValue")
@@ -395,6 +397,15 @@ SWIFT_CLASS("_TtC8AdropAds12AdropAdValue")
 @property (nonatomic, readonly, copy) NSString * _Nonnull currencyCode;
 /// How accurate <code>valueMicros</code> is.
 @property (nonatomic, readonly) enum AdropAdValuePrecision precision;
+/// The original, pre-hash UID passed to <code>Adrop.setUID</code>, or nil when it was never set.
+/// Use it to attribute this impression’s revenue to a user in your own analytics or MMP.
+/// It is the value <em>you</em> supplied: Adrop keeps a SHA-256 hash of it as its internal user
+/// id, and already sends the raw value to Adrop’s own servers in its remote-config sync
+/// (<code>RemoteConfigInput.externalUid</code> — not the ad request). Reading it here sends it nowhere
+/// new, and the ad provider never receives it.
+/// Sampled when the impression is recorded, so switching users mid-session attributes
+/// later impressions to the new user.
+@property (nonatomic, readonly, copy) NSString * _Nullable externalUid;
 /// <code>valueMicros</code> in whole currency units. Use <code>valueMicros</code> for arithmetic.
 @property (nonatomic, readonly, strong) NSDecimalNumber * _Nonnull value;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
