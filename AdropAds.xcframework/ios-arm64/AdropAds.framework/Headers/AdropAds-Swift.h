@@ -561,6 +561,8 @@ enum AdropConsentStatus : NSInteger;
 SWIFT_PROTOCOL("_TtP8AdropAds19AdropConsentManager_")
 @protocol AdropConsentManager
 /// Consent 정보 업데이트 및 필요시 팝업 표시
+/// 앱 실행마다 호출한다. 상태가 이미 결정됐더라도 불러야 <code>getPrivacyOptionsRequirementStatus()</code> 가
+/// 이번 세션 값을 준다.
 /// \param viewController 팝업을 표시할 뷰 컨트롤러
 ///
 /// \param completion 완료 콜백 (result: AdropConsentResult)
@@ -570,7 +572,8 @@ SWIFT_PROTOCOL("_TtP8AdropAds19AdropConsentManager_")
 - (enum AdropConsentStatus)getConsentStatus SWIFT_WARN_UNUSED_RESULT;
 /// 광고 요청 가능 여부 확인
 - (BOOL)canRequestAds SWIFT_WARN_UNUSED_RESULT;
-/// Consent 설정 리셋 (테스트/디버그용)
+/// Consent 설정 리셋 — <em>테스트 전용, 운영 코드에서 호출하지 않는다.</em>
+/// 사용자가 동의를 바꾸게 하려면 <code>showPrivacyOptionsForm(from:completion:)</code> 을 쓴다.
 - (void)reset;
 /// 테스트 설정 (DEBUG 빌드에서만 동작)
 /// \param testDeviceIdentifiers 테스트 기기 ID 배열 (Xcode 콘솔에서 확인 가능)
@@ -905,6 +908,17 @@ SWIFT_CLASS("_TtC8AdropAds26AdropPopupAdViewController")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+/// 개인정보 설정(privacy options) 진입점 노출 필요 여부
+/// 값은 UMP <code>UMPPrivacyOptionsRequirementStatus</code> 원시값과 같다. 4개 SDK 가 같은 값을 쓴다.
+typedef SWIFT_ENUM(NSInteger, AdropPrivacyOptionsRequirementStatus, open) {
+/// 아직 판정 전 — 이번 세션에 requestConsentInfoUpdate 가 끝나지 않았거나 백필이 지원하지 않음
+  AdropPrivacyOptionsRequirementStatusUnknown = 0,
+/// 진입점을 노출해야 함
+  AdropPrivacyOptionsRequirementStatusRequired = 1,
+/// 진입점이 필요 없음
+  AdropPrivacyOptionsRequirementStatusNotRequired = 2,
+};
 
 enum AdropQuestBannerFormat : NSInteger;
 SWIFT_CLASS("_TtC8AdropAds16AdropQuestBanner")
