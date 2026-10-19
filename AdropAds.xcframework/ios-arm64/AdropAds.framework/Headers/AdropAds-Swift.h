@@ -712,6 +712,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL userDataConsent
 @end
 
 @protocol AdropNativeAdDelegate;
+@class AdropNativeAsset;
 SWIFT_CLASS("_TtC8AdropAds13AdropNativeAd")
 @interface AdropNativeAd : NSObject <UseCustomClick>
 @property (nonatomic, weak) id <AdropNativeAdDelegate> _Nullable delegate;
@@ -744,6 +745,10 @@ SWIFT_CLASS("_TtC8AdropAds13AdropNativeAd")
 @property (nonatomic, readonly, copy) NSString * _Nonnull profileDisplayName;
 @property (nonatomic, readonly, copy) NSString * _Nullable profileLink;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull extra;
+/// 유닛에 정의된 미디어 슬롯 (key = 미디어 ID, 기본 <code>m1</code>). 슬롯을 쓰지 않는 소재(미디어 1개)는 빈 딕셔너리이고 백필 광고는 항상 빈 딕셔너리다.
+/// 유닛의 첫 슬롯(<code>m1</code>)이 <code>asset</code> / <code>creative</code> / <code>cover</code> 와 같은 미디어다. 슬롯별 렌더링은 매체사 몫이다 — SDK 는 데이터만 노출한다.
+/// Dictionary 라 순회 순서는 보장하지 않는다 — 슬롯 ID 로 조회한다.
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, AdropNativeAsset *> * _Nonnull extraAssets;
 @property (nonatomic, readonly) enum BrowserTargetObjC browserTargetValue;
 @property (nonatomic, readonly) BOOL isBackfilled;
 /// Creative medium of the currently-loaded ad: <code>"display"</code> or <code>"video"</code>.
@@ -823,6 +828,26 @@ SWIFT_CLASS("_TtC8AdropAds17AdropNativeAdView")
 @class UIGestureRecognizer;
 @interface AdropNativeAdView (SWIFT_EXTENSION(AdropAds)) <UIGestureRecognizerDelegate>
 - (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
+@end
+
+/// 네이티브 유닛의 미디어 슬롯 하나. <code>AdropNativeAd.extraAssets</code> 에 슬롯 id 를 키로 담긴다.
+/// SDK 가 응답을 파싱해 만들고 매체사는 읽기만 한다 (Android <code>AdropNativeAsset</code> 과 같은 필드).
+SWIFT_CLASS("_TtC8AdropAds16AdropNativeAsset")
+@interface AdropNativeAsset : NSObject
+/// 매체사가 유닛에 정의한 슬롯 id (첫 슬롯은 <code>"m1"</code>).
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
+/// 슬롯 미디어 URL — 이미지 파일이거나 동영상 파일(.mp4 / .m3u8).
+@property (nonatomic, readonly, copy) NSString * _Nonnull asset;
+/// 슬롯 미디어를 그리는 HTML 크리에이티브 — 서버가 준 값 그대로. 웹뷰로 렌더할 때 쓴다.
+@property (nonatomic, readonly, copy) NSString * _Nonnull creative;
+/// 동영상 슬롯의 포스터 이미지 URL. 이미지 슬롯이거나 값이 없으면 nil.
+@property (nonatomic, readonly, copy) NSString * _Nullable cover;
+/// 슬롯 미디어 종류 <code>"display"</code> | <code>"video"</code> (서버 <code>type</code>). 구 서버·strip-empty 응답이면 nil.
+@property (nonatomic, readonly, copy) NSString * _Nullable type;
+/// 서버가 <code>type</code> 을 주면 그것만 믿는다. 없으면(legacy) <code>cover</code> 유무·확장자(.mp4 / .m3u8)로 추론.
+@property (nonatomic, readonly) BOOL isVideo;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @protocol AdropPopupAdDelegate;
