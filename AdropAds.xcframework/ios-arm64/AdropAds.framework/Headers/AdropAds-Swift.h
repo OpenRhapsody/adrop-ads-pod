@@ -511,6 +511,39 @@ SWIFT_CLASS("_TtC8AdropAds11AdropBanner")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger maxLoadsBatch;)
 + (NSInteger)maxLoadsBatch SWIFT_WARN_UNUSED_RESULT;
 + (void)loadsWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId delegate:(id <AdropBannerDelegate> _Nonnull)delegate;
+/// Preloads a <em>backfill (AdMob)</em> banner into an in-memory pool so that a later
+/// <code>load()</code> of the same unit <em>and the same size</em> that falls back to backfill
+/// attaches it without the AdMob round-trip. The direct-ad request of that <code>load()</code>
+/// still runs first — preload never changes which ad wins.
+/// <em>Runs only while the app has no direct ad to serve</em> — i.e. the server reported
+/// <code>active:false</code> (production or not), and the unit is not a public test unit.
+/// Otherwise it fails with <code>ERROR_CODE_AD_PRELOAD_SKIPPED</code> <em>without any AdMob request</em>.
+/// That is the normal result for apps with direct campaigns; call <code>preload</code> again right
+/// before the next screen.
+/// Failure codes: <code>ERROR_CODE_INVALID_UNIT</code> (empty unit) · <code>ERROR_CODE_INITIALIZE</code> ·
+/// <code>ERROR_CODE_AD_NO_FILL</code> (no backfill module; the device is outside the <code>targetCountries</code>
+/// given to <code>Adrop.initialize</code>, where backfill is not activated; or no AdMob mapping yet) ·
+/// <code>ERROR_CODE_AD_PRELOAD_SKIPPED</code> (see above) · <code>ERROR_CODE_AD_BACKFILL_NO_FILL</code> (AdMob declined).
+/// After <code>ERROR_CODE_AD_NO_FILL</code>, call <code>preload</code> again <em>later</em> (e.g. right before the next
+/// screen), not in a loop from the failure callback — without the backfill module or outside
+/// the target countries the result never changes.
+/// Calling again for the same unit and size does not send another request: a loaded entry
+/// answers <code>onAdPreloadReceived</code> again, an in-flight one joins. It is <em>not</em> a refresh.
+/// Exception: if consent changed since the earlier call, the entry is dropped and requested
+/// again; an earlier call still loading then ends with the new result.
+/// One entry per slot, at most 5 slots; entries expire after 30 minutes.
+/// \param adSize The slot size in points. <code>.zero</code> means <code>320x50</code>. The pool is keyed by
+/// the AdMob unit <em>and</em> this size: the consuming banner’s <code>frame.size</code> at <code>load()</code>
+/// time must equal it, or the pooled ad is left untouched and <code>load()</code> requests
+/// AdMob as usual. Fix the banner’s frame (or layout) before calling <code>load()</code>.
+/// If <code>adSize</code> is omitted (320x50), give the consuming banner a 320x50 frame.
+///
+/// \param contextId Echoed back in the callbacks only. Not part of the pool key.
+///
+/// \param delegate Held weakly. Receives exactly one of <code>onAdPreloadReceived</code> /
+/// <code>onAdPreloadFailedToReceive</code>, always asynchronously on the main queue.
+///
++ (void)preloadWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId adSize:(CGSize)adSize delegate:(id <AdropBannerDelegate> _Nullable)delegate;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -537,6 +570,16 @@ SWIFT_PROTOCOL("_TtP8AdropAds19AdropBannerDelegate_")
 - (void)onAdsReceived:(NSArray<AdropBanner *> * _Nonnull)banners;
 - (void)onAdsFailedToReceive:(enum AdropErrorCode)errorCode;
 - (void)onPaidEvent:(AdropBanner * _Nonnull)banner :(AdropAdValue * _Nonnull)value;
+/// <code>AdropBanner.preload(...)</code> 의 로드가 끝났다 — 같은 유닛·크기의 다음 <code>load()</code> 가 백필로 떨어지면 AdMob 왕복 없이 붙는다.
+/// “pool 에 남아 있다” 가 아니라 “로드가 끝났다” 이다(이미 기다리던 <code>load()</code> 가 가져갔을 수 있다).
+/// preload 호출마다 이것과 <code>onAdPreloadFailedToReceive</code> 중 정확히 하나가 한 번, 항상 main 큐에서 비동기로 온다.
+- (void)onAdPreloadReceived:(NSString * _Nonnull)unitId :(NSString * _Nonnull)contextId;
+/// preload 를 하지 않았거나 실패했다. <code>ERROR_CODE_AD_PRELOAD_SKIPPED</code> 는 실패가 아니라 “직광고가 나갈 수 있는 앱이라
+/// AdMob 을 당기지 않았다” 이다 — 다음 화면 직전에 다시 부른다. <code>ERROR_CODE_AD_NO_FILL</code> 은 백필 모듈이 없거나,
+/// <code>Adrop.initialize</code> 의 <code>targetCountries</code> 밖이라 백필이 켜지지 않았거나, AdMob 매핑이 아직 없다 — <em>나중에</em>(다음 화면
+/// 직전 등) 다시 부르고 이 콜백 안에서 반복 호출하지 않는다(백필 모듈이 없거나 대상 국가 밖이면 결과가 바뀌지 않는다).
+/// <code>ERROR_CODE_AD_BACKFILL_NO_FILL</code> 은 AdMob 거절.
+- (void)onAdPreloadFailedToReceive:(NSString * _Nonnull)unitId :(NSString * _Nonnull)contextId :(enum AdropErrorCode)errorCode;
 @end
 
 /// 테스트용 지역 설정 (UMPDebugGeography와 매핑)
@@ -627,6 +670,9 @@ typedef SWIFT_ENUM(NSInteger, AdropErrorCode, open) {
   AdropErrorCodeERROR_CODE_ACCOUNT_USAGE_LIMIT_EXCEEDED = 12,
   AdropErrorCodeERROR_CODE_LANDSCAPE_UNSUPPORTED = 13,
   AdropErrorCodeERROR_CODE_AD_BACKFILL_NO_FILL = 14,
+/// preload 를 하지 않았다 — 앱 게이트가 열려 있거나(직광고가 나갈 수 있는 앱) 아직 확인되지 않았다.
+/// AdMob 요청은 나가지 않았다. 다음 화면 직전에 다시 preload 하면 된다. 반드시 <em>끝</em>에 둔다(<code>Int</code> raw 값 보존).
+  AdropErrorCodeERROR_CODE_AD_PRELOAD_SKIPPED = 15,
 };
 
 @protocol AdropInterstitialAdDelegate;
@@ -789,6 +835,38 @@ SWIFT_CLASS("_TtC8AdropAds13AdropNativeAd")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger maxLoadsBatch;)
 + (NSInteger)maxLoadsBatch SWIFT_WARN_UNUSED_RESULT;
 + (void)loadsWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId delegate:(id <AdropNativeAdDelegate> _Nonnull)delegate;
+/// Preloads a <em>backfill (AdMob)</em> native ad into an in-memory pool so that a later
+/// <code>load()</code> of the same unit <em>and the same <code>preferredAdChoicesPosition</code></em> that falls back
+/// to backfill uses it without the AdMob round-trip. The direct-ad request of that <code>load()</code>
+/// still runs first — preload never changes which ad wins.
+/// <em>Runs only while the app has no direct ad to serve</em> — i.e. the server reported
+/// <code>active:false</code> (production or not), and the unit is not a public test unit.
+/// Otherwise it fails with <code>ERROR_CODE_AD_PRELOAD_SKIPPED</code> <em>without any AdMob request</em>.
+/// That is the normal result for apps with direct campaigns; call <code>preload</code> again right
+/// before the next screen.
+/// Failure codes: <code>ERROR_CODE_INVALID_UNIT</code> (empty unit) · <code>ERROR_CODE_INITIALIZE</code> ·
+/// <code>ERROR_CODE_AD_NO_FILL</code> (no backfill module; the device is outside the <code>targetCountries</code>
+/// given to <code>Adrop.initialize</code>, where backfill is not activated; or no AdMob mapping yet) ·
+/// <code>ERROR_CODE_AD_PRELOAD_SKIPPED</code> (see above) · <code>ERROR_CODE_AD_BACKFILL_NO_FILL</code> (AdMob declined).
+/// After <code>ERROR_CODE_AD_NO_FILL</code>, call <code>preload</code> again <em>later</em> (e.g. right before the next
+/// screen), not in a loop from the failure callback — without the backfill module or outside
+/// the target countries the result never changes.
+/// Calling again for the same unit and position does not send another request: a loaded entry
+/// answers <code>onAdPreloadReceived</code> again, an in-flight one joins. It is <em>not</em> a refresh.
+/// Exception: if consent changed since the earlier call, the entry is dropped and requested
+/// again; an earlier call still loading then ends with the new result.
+/// One entry per slot, at most 5 slots; entries expire after 30 minutes.
+/// \param preferredAdChoicesPosition The AdChoices icon position requested from AdMob. It is fixed
+/// into the loaded ad, so the pool is keyed by the AdMob unit <em>and</em> this position: the
+/// consuming ad’s <code>preferredAdChoicesPosition</code> at <code>load()</code> time must equal it, or the pooled
+/// ad is left untouched and <code>load()</code> requests AdMob as usual.
+///
+/// \param contextId Echoed back in the callbacks only. Not part of the pool key.
+///
+/// \param delegate Held weakly. Receives exactly one of <code>onAdPreloadReceived</code> /
+/// <code>onAdPreloadFailedToReceive</code>, always asynchronously on the main queue.
+///
++ (void)preloadWithUnitId:(NSString * _Nonnull)unitId contextId:(NSString * _Nonnull)contextId preferredAdChoicesPosition:(enum AdropAdChoicesPosition)preferredAdChoicesPosition delegate:(id <AdropNativeAdDelegate> _Nullable)delegate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -805,6 +883,16 @@ SWIFT_PROTOCOL("_TtP8AdropAds21AdropNativeAdDelegate_")
 - (void)onAdsReceived:(NSArray<AdropNativeAd *> * _Nonnull)ads;
 - (void)onAdsFailedToReceive:(enum AdropErrorCode)errorCode;
 - (void)onPaidEvent:(AdropNativeAd * _Nonnull)ad :(AdropAdValue * _Nonnull)value;
+/// <code>AdropNativeAd.preload(...)</code> 의 로드가 끝났다 — 같은 유닛·AdChoices 위치의 다음 <code>load()</code> 가 백필로 떨어지면
+/// AdMob 왕복 없이 붙는다. “pool 에 남아 있다” 가 아니라 “로드가 끝났다” 이다(이미 기다리던 <code>load()</code> 가 가져갔을 수 있다).
+/// preload 호출마다 이것과 <code>onAdPreloadFailedToReceive</code> 중 정확히 하나가 한 번, 항상 main 큐에서 비동기로 온다.
+- (void)onAdPreloadReceived:(NSString * _Nonnull)unitId :(NSString * _Nonnull)contextId;
+/// preload 를 하지 않았거나 실패했다. <code>ERROR_CODE_AD_PRELOAD_SKIPPED</code> 는 실패가 아니라 “직광고가 나갈 수 있는 앱이라
+/// AdMob 을 당기지 않았다” 이다 — 다음 화면 직전에 다시 부른다. <code>ERROR_CODE_AD_NO_FILL</code> 은 백필 모듈이 없거나,
+/// <code>Adrop.initialize</code> 의 <code>targetCountries</code> 밖이라 백필이 켜지지 않았거나, AdMob 매핑이 아직 없다 — <em>나중에</em>(다음 화면
+/// 직전 등) 다시 부르고 이 콜백 안에서 반복 호출하지 않는다(백필 모듈이 없거나 대상 국가 밖이면 결과가 바뀌지 않는다).
+/// <code>ERROR_CODE_AD_BACKFILL_NO_FILL</code> 은 AdMob 거절.
+- (void)onAdPreloadFailedToReceive:(NSString * _Nonnull)unitId :(NSString * _Nonnull)contextId :(enum AdropErrorCode)errorCode;
 @end
 
 SWIFT_CLASS("_TtC8AdropAds17AdropNativeAdView")
