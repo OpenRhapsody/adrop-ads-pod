@@ -698,6 +698,10 @@ SWIFT_CLASS("_TtC8AdropAds19AdropInterstitialAd")
 @property (nonatomic, readonly) enum BrowserTargetObjC browserTargetValue;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
+/// Shows the loaded full-screen ad in the window of <code>fromRootViewController</code>.
+/// Pass the view controller of the screen the user is looking at. When the app has more than one window
+/// (iPad, iPhone Duo split view), the full-screen ad appears in that view controller’s window.
+/// If that window is in the background, the ad appears in an active window of the app instead.
 - (void)showFromRootViewController:(UIViewController * _Nonnull)fromRootViewController;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -992,6 +996,9 @@ SWIFT_CLASS("_TtC8AdropAds12AdropPopupAd")
 @property (nonatomic, strong) UIColor * _Nullable ctaTextColor;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
+/// Shows the loaded popup in the window of <code>fromRootViewController</code>.
+/// Pass the view controller of the screen the user is looking at. When the app has more than one window
+/// (iPad, iPhone Duo split view), the popup appears in that view controller’s window.
 - (void)showFromRootViewController:(UIViewController * _Nonnull)fromRootViewController;
 - (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 - (void)close;
@@ -1074,6 +1081,10 @@ SWIFT_CLASS("_TtC8AdropAds15AdropRewardedAd")
 @property (nonatomic, strong) AdropServerSideVerificationOptions * _Nullable serverSideVerificationOptions;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
+/// Shows the loaded full-screen ad in the window of <code>fromRootViewController</code>.
+/// Pass the view controller of the screen the user is looking at. When the app has more than one window
+/// (iPad, iPhone Duo split view), the full-screen ad appears in that view controller’s window.
+/// If that window is in the background, the ad appears in an active window of the app instead.
 - (void)showFromRootViewController:(UIViewController * _Nonnull)fromRootViewController userDidEarnRewardHandler:(void (^ _Nonnull)(NSInteger, NSInteger))userDidEarnRewardHandler;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1925,6 +1936,10 @@ SWIFT_CLASS("_TtC8AdropAds19AdropInterstitialAd")
 @property (nonatomic, readonly) enum BrowserTargetObjC browserTargetValue;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
+/// Shows the loaded full-screen ad in the window of <code>fromRootViewController</code>.
+/// Pass the view controller of the screen the user is looking at. When the app has more than one window
+/// (iPad, iPhone Duo split view), the full-screen ad appears in that view controller’s window.
+/// If that window is in the background, the ad appears in an active window of the app instead.
 - (void)showFromRootViewController:(UIViewController * _Nonnull)fromRootViewController;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -2219,6 +2234,9 @@ SWIFT_CLASS("_TtC8AdropAds12AdropPopupAd")
 @property (nonatomic, strong) UIColor * _Nullable ctaTextColor;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
+/// Shows the loaded popup in the window of <code>fromRootViewController</code>.
+/// Pass the view controller of the screen the user is looking at. When the app has more than one window
+/// (iPad, iPhone Duo split view), the popup appears in that view controller’s window.
 - (void)showFromRootViewController:(UIViewController * _Nonnull)fromRootViewController;
 - (void)open:(NSString * _Nullable)url useInAppBrowser:(BOOL)useInAppBrowser;
 - (void)close;
@@ -2301,6 +2319,10 @@ SWIFT_CLASS("_TtC8AdropAds15AdropRewardedAd")
 @property (nonatomic, strong) AdropServerSideVerificationOptions * _Nullable serverSideVerificationOptions;
 - (nonnull instancetype)initWithUnitId:(NSString * _Nonnull)unitId OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
+/// Shows the loaded full-screen ad in the window of <code>fromRootViewController</code>.
+/// Pass the view controller of the screen the user is looking at. When the app has more than one window
+/// (iPad, iPhone Duo split view), the full-screen ad appears in that view controller’s window.
+/// If that window is in the background, the ad appears in an active window of the app instead.
 - (void)showFromRootViewController:(UIViewController * _Nonnull)fromRootViewController userDidEarnRewardHandler:(void (^ _Nonnull)(NSInteger, NSInteger))userDidEarnRewardHandler;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
